@@ -1,14 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Layout from './Components/layout/Layout';
+import Layout from './layout/Layout.jsx';
+
 
 function App() {
   return (
-    <Layout>
-      <div>
-        Content
-      </div>
-    </Layout>
+     <Layout>
+      <h2>This Content</h2>
+     </Layout>
   );
 }
 
