@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import Layout from './layout/Layout.jsx';
 import Profile from './page/Profile.jsx';
 import Home from './page/Home.jsx';
