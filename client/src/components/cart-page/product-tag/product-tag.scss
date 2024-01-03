@@ -1,0 +1,99 @@
+.product-tag {
+
+    .container {
+        position: relative;
+        background: var(--Desert-Storm, #F1EBE3);
+        justify-content: space-between;
+    }
+
+    .check-input input[type="checkbox"] {
+        accent-color: var(--Accent-Color, #5E503F);
+    }
+
+    .check-input {
+        position: absolute;
+        left: -5%;
+    }
+
+    .prod-image {
+        padding: 10px;
+    }
+
+    .prod-image img {
+        max-width: 142px;
+        max-height: 142px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .prod-detail {
+        position: relative;
+        padding: 20px 24px;
+        width: 535px;
+    }
+
+    .vt-divider {
+        border-left: 1px solid #3B302340;
+        margin: 1.5% 0px;
+        align-self: stretch;
+    }
+
+    .function-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 24px;   
+    }
+    
+    .order-quantity, .order-variant {
+        padding: 8px 12px;
+        border-radius: 5px;
+        border: 1px solid var(--Accent-Color, #5E503F);
+        background: #EAE0D5;
+    }
+
+    .quantity-value {
+        width: 20px;
+    }
+
+    .quantity-value, .order-detail i {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+
+    .selected-variant {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+
+    .add-to-wishlist, .delete-from-cart {
+        cursor: pointer;
+    }
+
+    .function-btn > div:hover {
+        opacity: 0.8;
+    }
+
+    .prod-total-price {
+        width: 120px;
+        align-self: stretch;
+        color: #fff;
+        background: var(--Judge-Grey, #5E503F);
+    }
+
+    .prod-total-price .total-price-value {
+        max-width: 100%;
+
+    }
+}

@@ -1,0 +1,89 @@
+.about-us-page {
+
+    .hero-image img {
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    
+    .img-size {
+        height: 300px;
+        align-self: stretch;
+    }
+    
+    .sectionContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 128px 0px;
+    }
+    
+    .section {
+        width: 80%;
+    }
+    
+    .ourStoryContainer {
+        padding: 80px unset;
+    }
+    
+    
+    .lrg-spc {
+        padding: 64px 128px;
+    }
+    
+    .md-spc {
+        padding: 48px 64px;
+    }
+    
+    
+    .our-value {
+        align-items: flex-start;
+    }
+    
+    .our-story {
+        display: flex;
+        padding: var(--spacing-spc-none, 0px) var(--spacing-spc-lg, 48px);
+        text-align: left;
+        align-items: center;
+        gap: var(--spacing-spc-lg, 48px);
+        background-color: #EAE0D5;
+    }
+    
+    .value-images {
+        justify-content: space-between;
+    }
+    
+    .value-images img {
+        width: 100%;
+        height: 453px;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    
+    .image-slider {
+        position: absolute;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .ivory-bg {
+        background-color: #F9F6F3;
+    }
+    
+    .right-container {
+        width: 40%;
+        height: 426px;
+    }
+    
+    .left-container {
+        padding: var(--spacing-spc-xl, 64px) var(--spacing-spc-none, 0px);
+        align-items: flex-start;
+        flex: 1 0 0;
+    }
+    
+    .testframe {
+        padding: 48px;
+    }
+}

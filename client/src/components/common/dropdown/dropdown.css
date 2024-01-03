@@ -1,0 +1,32 @@
+.collection-dropdown {
+    padding: 24px 32px;
+    border-radius: 5px;
+    border: 2px solid #3B3023;
+    background: #F9F6F3;
+}
+.collection-titles{
+    color: white
+}
+.user-setting-dropdown {
+    color: #5E503F;
+    padding: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--Judge-Grey, #5E503F);
+    background: var(--Ivory, #F9F6F3);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.user-setting-dropdown .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.user-setting-dropdown .icon-size-17 {
+    font-size: 17px;
+}
+
+.user-setting-dropdown .setting-btn {
+    text-transform: capitalize;
+}
