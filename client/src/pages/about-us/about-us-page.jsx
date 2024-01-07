@@ -4,7 +4,7 @@ import Button from "../../components/common/button/button";
 import DropdownButton from "../../components/common/button/dropdown-button";
 import "./about-us-page.css";
 
-import UsImage from "../../assets/img/about-us/us.png";
+import UsImage from "../../assets/img/about-us/uss.png";
 import SkincareImage from "../../assets/img/about-us/skin-care.png";
 import MakeupImage from "../../assets/img/about-us/makeup.png";
 import Value1 from "../../assets/img/about-us/value-1.png";

@@ -162,7 +162,7 @@ padding: var(--spacing-spc-2xl, 80px) var(--spacing-spc-lg, 48px);
     right: 0;
     height: 50%;
     border-right: 1px solid #333;
- }
+}
 
 .collection-img img {
     align-self: stretch;
@@ -240,6 +240,7 @@ padding: var(--spacing-spc-2xl, 80px) var(--spacing-spc-lg, 48px);
 .prod-query-content .vt-divider {
     border-width: 0.1px;
 }
+
 .product-collect3-search-bar {
     display: flex;
     align-items: center;
@@ -248,9 +249,10 @@ padding: var(--spacing-spc-2xl, 80px) var(--spacing-spc-lg, 48px);
 
 
 .product-collect3-search-btn {
-    width: 40px; 
-    height: 40px; 
-    background: transparent; /* Nền trong suốt */
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    /* Nền trong suốt */
     border: none;
     cursor: pointer;
     display: flex;
@@ -263,7 +265,7 @@ padding: var(--spacing-spc-2xl, 80px) var(--spacing-spc-lg, 48px);
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background: transparent; 
+    background: transparent;
 }
 
 #sort {
