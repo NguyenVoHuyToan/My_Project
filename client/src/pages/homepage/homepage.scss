@@ -1,0 +1,362 @@
+.homepage {
+  .homepage-first {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 840px;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .home-product {
+    display: flex;
+    padding: var(--spacing-spc-md, 64px) 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .about-us-see-more {
+    display: none;
+  }
+  
+  .hero-text {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 260px;
+    position: absolute;
+    right: 133px;
+    bottom: 170px;
+    width: 521px;
+    height: 521px;
+    text-align: center;
+  }
+  
+  .text-product {
+    text-align: center;
+    width: 632px;
+    height: 138px;
+    display: flex;
+    padding: var(--spacing-spc-none, 0px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-spc-xs, 8px);
+  }
+  
+  .product-parent-detail {
+    max-width: 1440px;
+  }
+  
+  .home-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    width: 26px;
+    height: 24.877px;
+    padding: 2.331px 7.311px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pic-parent {
+    display: flex;
+    width: 300%;
+    animation: slideImages 20s linear infinite;
+  }
+  
+  .pic-1,
+  .pic-2,
+  .pic-3 {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes slideImages {
+    0% {
+      margin-left: 60;
+    }
+  
+    33.33% {
+      margin-left: -100%;
+    }
+  
+    66.66% {
+      margin-left: -200%;
+    }
+  
+    100% {
+      margin-left: 0;
+    }
+  }
+
+  .wireframe-5 {
+    padding: var(--spacing-spc-3xl, 128px) 123px;
+  }
+  
+  .content-holder {
+    align-self: stretch;
+    padding: 64px;
+  }
+  
+  .home-about-us {
+    position: relative;
+    overflow: hidden;
+    max-width: 1440px;
+  }
+  
+  .about-us-content {
+    max-width: 800px;
+  }
+  
+  .img-container {
+    max-width: 645px;
+    max-height: 800px;
+    overflow: hidden;
+  }
+  
+  .image-box img {
+    width: 100%;
+    aspect-ratio: 645/800;
+  }
+  
+  .text-coll {
+    color: var(--Dark-Brown, #3b3023);
+  }
+  
+  .collection-container {
+    padding: 128px 0px;
+  }
+  
+  .wireframe-6 {
+    width: 100%;
+    align-self: stretch;
+    border-radius: var(--spacing-spc-none, 0px);
+    background: var(--Rodeo-Dust-100, #f1ebe3);
+    padding: var(--spacing-spc-3xl, 128px) var(--spacing-spc-none, 0px);
+  }
+  
+  .contact-container {
+    width: 1192px;
+    height: 536px;
+    text-align: unset;
+  }
+  
+  .image-contact {
+    width: 479px;
+    height: 536px;
+    flex-shrink: 0;
+    border-radius: var(--spacing-spc-none, 0px);
+    background: url(../../Components/Assets/Media/Homepage/Contact_us.png),
+      lightgray 50% / cover no-repeat;
+  }
+  
+  .contact-content {
+    width: 533px;
+    padding: var(--spacing-spc-none, 0px);
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--spacing-spc-lg, 48px);
+    flex-shrink: 0;
+  }
+  
+  .text-contact-icon {
+    align-items: flex-start;
+  }
+  
+  .text-contact {
+    align-items: unset;
+  }
+  
+  .media-icon {
+    font-size: 26px;
+  }
+  
+  .carousel-container {
+    width: 1210px;
+  }
+  
+  .width-reset {
+    padding: 0 4px;
+    width: fit-content !important;
+  }
+  
+  @media only screen and (max-width: 1040px) {
+    .hero-text {
+      scale: 0.8;
+      gap: 1.42519rem;
+      position: absolute;
+      right: 3rem;
+      bottom: 3rem;
+      border-radius: 540px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .connect-with-radiant {
+      font-size: 20px;
+    }
+
+    .img-container {
+      display: none;
+    }
+
+    .home-about-us {
+      justify-content: center;
+    }
+
+    .content-holder {
+      width: 80%;
+    }
+
+    .about-us-content {
+      max-width: 100%;
+    }
+  
+    .home-product-container {
+      width: 100%;
+    }
+
+    .about-us-see-more {
+      display: block;
+    }
+
+    .home-product-container {
+      width: 100%;
+      padding-bottom: 0px;
+    }
+
+    .text-product {
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .home-about-us {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 500px;
+    }
+
+    .content-holder {
+      align-self: unset;
+    }
+
+    .wireframe-6 {
+      padding: 64px;
+    }
+
+    .contact-container {
+      width: 100%;
+      flex-direction: column;
+      height: fit-content;
+      gap: 24px;
+    }
+
+    .image-contact {
+      width: 100%;
+      background-color: transparent;
+    }
+
+    .contact-content {
+      width: 100%;
+    }
+
+    .home-btn-see>Button>div>p{
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .res-width {
+      width: 100%;
+    }
+
+    .carousel-container {
+      width: 726px;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+  .homepage-first {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .hero-text {
+    padding: 16px 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    scale: unset;
+    gap: 4px;
+    height: fit-content;
+    width: 100%;
+    border-radius: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+  }
+
+  .carousel-container {
+    width: 484px;
+  }
+
+  .collection-container {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  .section-container {
+    overflow: hidden;
+  }
+
+  .wireframe-6 {
+    padding: 48px 24px;
+  }
+
+  .homepage-shine-container{
+    max-width: 100%;
+  }
+  
+  .homepage-shine-container > div {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .home-about-us {
+    padding: 48px 24px;
+    height: fit-content;
+  }
+
+  .text-product {
+    width: 80%;
+  }
+
+  .home-about-us .content-holder {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .body {
+    font-size: 12px;
+  }
+
+  .body-bld {
+    font-size: 12px;
+  }
+
+  .carousel-container {
+    width: 363px;
+  }
+}
+}

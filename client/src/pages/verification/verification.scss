@@ -1,0 +1,46 @@
+.verification-page {
+    margin-top: 64px;
+    padding: 80px;
+
+    .verify-form-container {
+        max-width: 410px;
+        padding: 48px;
+        border-radius: var(--spacing-spc-none, 0px);
+        border: 1px solid var(--Pearl-Bush-900, #593C35);
+        background: var(--Rodeo-Dust-100, #F1EBE3);
+    }
+
+    .title {
+        align-self: unset;
+    }
+
+    a { 
+        font-weight: bold;
+        color: #c93713;
+        text-decoration: none;
+    }
+
+    .logo {
+        width: 50%;
+        min-width: 500px;
+    }
+    .num-verify {
+        display: flex;
+        margin: 0 auto;  
+    }
+    .auth-input[type="text"]{
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+        border: 1.292px solid var(--Pearl-Bush-900, #593C35);
+        background: #FFF;
+        font-family: Nunito;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.672px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

@@ -1,0 +1,46 @@
+.cart-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .billing-container {
+        padding: 32px 24px;
+        border: 1px solid #5E503F80;
+        background: #F1EBE3;
+        width: 354px;
+    }
+
+    .order-title, .item, .discount-section, .total-price, .checkout-btns {
+        justify-content: space-between;
+    }
+
+    .discount-section .discount-tags,
+    .order-items .item {
+        padding-left: 10px;
+    }
+
+    .hr-divider {
+        border-top: 2px dashed #5E503F80;
+        align-self: stretch;
+    }
+
+    .discount-input input {
+        border: 1px solid #5E503F80;
+        background: #FFF;
+        outline: none;
+        padding: 10px;
+    }
+
+    .checkout-btns button {
+        color: #5E503F;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .item .product-name {
+        max-width: 80%;
+    }
+}

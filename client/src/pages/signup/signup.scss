@@ -1,0 +1,37 @@
+.signup-page {
+    margin-top: 64px;
+    padding: 80px;
+
+    .signup-form-container {
+        max-width: 500px;
+        padding: 48px;
+        border-radius: var(--spacing-spc-none, 0px);
+        border: 1px solid var(--Pearl-Bush-900, #593C35);
+        background: var(--Rodeo-Dust-100, #F1EBE3);
+    }
+
+    .title {
+        align-self: unset;
+    }
+
+    a { 
+        font-weight: bold;
+        color: #593C35;
+        text-decoration: none;
+    }
+
+    .logo {
+        width: 50%;
+        min-width: 500px;
+    }
+
+    input[type="checkbox"] {
+        border-color: #593C35;
+        width: 16px;
+        height: 16px;
+    }
+
+    input[type="checkbox"]:checked {
+        accent-color: #593C35;
+    }
+}

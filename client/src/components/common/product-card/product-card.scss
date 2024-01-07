@@ -1,0 +1,244 @@
+.product-card-com {
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+    
+    .prod-holder {
+        height: 100%;
+        justify-content: flex-start;
+    }
+    
+    .prod-img-container {
+        padding: 8px;
+        width: 234px;
+        height: 234px;
+        background-color: #EEE6DD;
+    }
+    
+    .prod-img {
+        width: 100%;
+        height: auto;
+        max-height: 202px;
+        border-radius: 4px;
+    }
+    
+    .prod-info {
+        max-height: 102px;
+        width: 100%;
+        height: 100%;
+        padding: 14px;
+        justify-content: space-between;
+    }
+    
+    .prod-name {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.24px;
+        max-width: 400px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical; 
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .prod-price {
+        font-family: Nunito;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .color-vars {
+        max-width: 400px;
+    }
+    
+    .color-var {
+        background-color: #EAE0D5;
+        padding: 4px 8px;
+        border-radius: 5px;
+        border: 1px solid #5E503F;
+        cursor: pointer;
+    }
+    
+    .prod-n-pr,
+    .left-bar {
+        align-items: flex-start;
+    }
+
+    // .icon-collection {
+    //     height: 100%;
+    // }
+    
+    .icon-collection i {
+        font-size: 12px;
+    }
+    
+    .icon-collection i:hover {
+        cursor: pointer;
+    }
+    
+    .prod-review {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .review-rate {
+        font-family: Nunito;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+    
+    .review-stars i {
+        font-size: 11px;
+    }
+    
+    .prod-brand {
+        color: rgba(0, 0, 0, 0.45);
+        font-family: Nunito;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.2px;
+    }
+    
+    .prod-des {
+        max-width: 350px;
+        font-family: Nunito;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; 
+        overflow: hidden;
+    }
+    
+    .select-label {
+        font-family: Montserrat;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+    
+    .version-var {
+        color: #000;
+        font-family: Nunito;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.16px;
+    }
+    
+    .btn-collection button {
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: 1px solid #5E503F;
+        background: #EAE0D5;
+    }
+    
+    .prod-brand {
+        color: rgba(0, 0, 0, 0.45);
+        font-family: Nunito;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    }
+    
+    .prod-info-exp-holder {
+        gap: 10 px;
+    }
+}
+
+.prod-c {
+    width: 234px;
+    .prod-info-exp {
+        display: none;
+    }
+
+    .color-vars {
+        display: none;
+    }
+}
+
+.prod-exp {
+    width: 718px;
+    border: 1.337px solid #000;
+
+    .prod-img-container {
+        padding: 8px;
+        height: 320px;
+    }
+    
+    .prod-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .prod-info {
+        display: none;
+    }
+
+    .icon-collection {
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+
+    .icon-collection .bi-cart-plus {
+        display: none;
+    }
+}
+
+.prod-info-exp {
+    height: 320px;
+    width: 484px;
+    padding: var(--spc-tk-ms);
+    background-color: #FFFCF8;
+    position: relative;
+
+    .prod-name {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    .prod-price {
+        font-family: Nunito;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    button:disabled {
+        color: #000;
+    }
+}
+
+.prod-container {
+    height: 320px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #EEE6DD;
+}

@@ -1,0 +1,54 @@
+{
+    "policies": {
+        "returnAndRefund": {
+            "title": "Return and Refund Policy",
+            "details": {
+                "Conditions": "Clearly outline the conditions under which customers can return cosmetic products.",
+                "Time Frame": "Specify the timeframe within which returns are accepted.",
+                "Opened Used Products": "Clarify whether opened or used products are eligible for return.",
+                "Return Process": "Explain the process for initiating a return and obtaining a refund.",
+                "Refund Information": "Include any exceptions or restrictions, such as non-returnable items."
+            }
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "details": {
+                "Data Handling": "Clearly communicate how customer data, especially sensitive information, will be handled.",
+                "Personal Information": "Specify the type of personal information collected and the purpose of its use.",
+                "Data Sharing": "Explain whether customer data will be shared with third parties and under what circumstances.",
+                "Security Measures": "Detail the security measures in place to protect customer information.",
+                "Customer Rights": "Inform customers about their rights regarding their personal data."
+            }
+        },
+        "productQualityAssurance": {
+            "title": "Product Quality Assurance",
+            "details": {
+                "Quality Assurance": "Assure customers of the quality and safety standards of your cosmetic products.",
+                "Ethical Standards": "Clearly state if your products are cruelty-free, vegan, or adhere to any specific ethical standards.",
+                "Testing Procedures": "Provide information about the testing procedures your products undergo.",
+                "Guarantees Warranties": "Outline any guarantees or warranties on the quality of your cosmetics.",
+                "Reporting Issues": "Include a process for customers to report any issues with product quality."
+            }
+        },
+        "shippingAndDelivery": {
+            "title": "Shipping and Delivery Policy",
+            "details": {
+                "Shipping Methods": "Specify the shipping methods available and associated costs.",
+                "Delivery Times": "Clearly state the estimated delivery times for different regions or shipping options.",
+                "International Shipping": "Communicate any restrictions on international shipping.",
+                "Order Tracking": "Provide information on order tracking and how customers can monitor the status of their shipments.",
+                "Potential Delays": "Address any potential delays and how they will be communicated to customers."
+            }
+        },
+        "termsOfService": {
+            "title": "Terms of Service",
+            "details": {
+                "Access And Use": "Define the terms under which customers can access and use your website.",
+                "Content Restrictions": "Outline any restrictions on the use of content, images, or information from your site.",
+                "Customer Responsibilities": "Specify the responsibilities of both the customer and the company in the purchase and use of cosmetic products.",
+                "Legal Disclaimers": "Clarify any legal disclaimers or limitations of liability.",
+                "Updates And Modifications": "Include information about how the company may update or modify the terms and how customers will be notified."
+            }
+        }
+    }
+}

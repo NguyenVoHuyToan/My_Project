@@ -1,0 +1,7 @@
+.App > div:nth-of-type(3) {
+    min-height: calc(100vh - 365px);
+}
+
+.App {
+    background: var(--Rodeo-Dust-50, #F9F6F3);
+}
