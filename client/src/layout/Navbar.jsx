@@ -8,8 +8,8 @@ let menu = [
     href: "/",
   },
   {
-    name: "About",
-    href: "/about",
+    name: "Products",
+    href: "/product",
   },
   {
     name: "Contact",
@@ -31,7 +31,7 @@ function Navbar() {
             </div>
           );
         })}
-        <div className="navbar-login-register">
+        <div>
             <Login/>
         </div>
       </div>

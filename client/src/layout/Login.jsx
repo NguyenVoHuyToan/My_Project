@@ -18,14 +18,14 @@ function Login() {
       <Button className="button-login" type="primary" onClick={showModal}>
         Login
       </Button>
-      <Modal
+      <Modal className="title"
         title="LOGIN"
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <div><Input type="text" placeholder="Username"></Input></div>
-        <div><Input type="text" placeholder="Password"></Input></div>
+        <div className="modal"><Input type="text" placeholder="Username"></Input></div>
+        <div className="modal"><Input type="text" placeholder="Password"></Input></div>
       </Modal>
     </div>
   );
