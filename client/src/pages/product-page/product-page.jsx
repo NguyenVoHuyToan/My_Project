@@ -17,109 +17,109 @@ const ProductPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  //   useEffect(() => {
-  //     fetch("http://localhost:3000/product/products")
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setProducts(data);
-  //         setFilteredProducts(data);
-  //       })
-  //       .catch((error) => console.error("Error:", error));
-  //   }, []);
+  useEffect(() => {
+    fetch("http://localhost:3000/product/products")
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data);
+        setFilteredProducts(data);
+      })
+      .catch((error) => console.error("Error:", error));
+  }, []);
 
-  //   useEffect(() => {
-  //     fetch("http://localhost:3000/product/brands")
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setBrands(data);
-  //       })
-  //       .catch((error) => console.error("Error:", error));
-  //   }, []);
+  useEffect(() => {
+    fetch("http://localhost:3000/product/brands")
+      .then((response) => response.json())
+      .then((data) => {
+        setBrands(data);
+      })
+      .catch((error) => console.error("Error:", error));
+  }, []);
 
-  //   useEffect(() => {
-  //     fetch("http://localhost:3000/product/types")
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setTypes(data);
-  //       })
-  //       .catch((error) => console.error("Error:", error));
-  //   }, []);
+  useEffect(() => {
+    fetch("http://localhost:3000/product/types")
+      .then((response) => response.json())
+      .then((data) => {
+        setTypes(data);
+      })
+      .catch((error) => console.error("Error:", error));
+  }, []);
 
-  //   useEffect(() => {
-  //     if (!searchTerm) {
-  //       setFilteredProducts(products);
-  //     } else {
-  //       const tempFilteredProducts = products.filter(
-  //         (product) =>
-  //           product &&
-  //           product.product_name &&
-  //           product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
-  //       );
-  //       setFilteredProducts(tempFilteredProducts);
-  //     }
-  //   }, [searchTerm, products]);
+  useEffect(() => {
+    if (!searchTerm) {
+      setFilteredProducts(products);
+    } else {
+      const tempFilteredProducts = products.filter(
+        (product) =>
+          product &&
+          product.product_name &&
+          product.product_name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredProducts(tempFilteredProducts);
+    }
+  }, [searchTerm, products]);
 
-  //   const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState("");
 
-  //   const [page, setPage] = useState(1);
-  //   const itemsPerPage = 24;
-  //   const [selectedProducts, setSelectedProducts] = useState([]);
-  //   const handleAddToCart = (product) => {
-  //     setSelectedProducts((prevSelectedProducts) => [
-  //       ...prevSelectedProducts,
-  //       product,
-  //     ]);
-  //   };
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 24;
+  const [selectedProducts, setSelectedProducts] = useState([]);
+  const handleAddToCart = (product) => {
+    setSelectedProducts((prevSelectedProducts) => [
+      ...prevSelectedProducts,
+      product,
+    ]);
+  };
 
-  //   const handleChange = (event, value) => {
-  //     setPage(value);
-  //     const elements = document.getElementsByClassName("prod-query-content");
-  //     if (elements && elements[0]) {
-  //       window.scrollTo({ top: elements[0].offsetTop, behavior: "smooth" });
-  //     }
-  //   };
+  const handleChange = (event, value) => {
+    setPage(value);
+    const elements = document.getElementsByClassName("prod-query-content");
+    if (elements && elements[0]) {
+      window.scrollTo({ top: elements[0].offsetTop, behavior: "smooth" });
+    }
+  };
 
-  //   const [isExpanded, setIsExpanded] = useState(false);
-  //   const [iconState, setIconState] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [iconState, setIconState] = useState(false);
 
-  //   const handleClick = () => {
-  //     setIsExpanded(!isExpanded);
-  //     setIconState(!iconState);
-  //   };
+  const handleClick = () => {
+    setIsExpanded(!isExpanded);
+    setIconState(!iconState);
+  };
 
-  //   const [isExpanded2, setIsExpanded2] = useState(false);
-  //   const [iconState2, setIconState2] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+  const [iconState2, setIconState2] = useState(false);
 
-  //   const handleClick2 = () => {
-  //     setIsExpanded2(!isExpanded2);
-  //     setIconState2(!iconState2);
-  //   };
+  const handleClick2 = () => {
+    setIsExpanded2(!isExpanded2);
+    setIconState2(!iconState2);
+  };
 
-  //   const handleBrandClick = (brand) => {
-  //     fetch(`http://localhost:3000/product/products/brand/${brand}`)
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setFilteredProducts(data);
-  //       })
-  //       .catch((error) => console.error("Error:", error));
-  //     const elements = document.getElementsByClassName("prod-query-content");
-  //     if (elements && elements[0]) {
-  //       window.scrollTo({ top: elements[0].offsetTop, behavior: "smooth" });
-  //     }
-  //   };
+  const handleBrandClick = (brand) => {
+    fetch(`http://localhost:3000/product/products/brand/${brand}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setFilteredProducts(data);
+      })
+      .catch((error) => console.error("Error:", error));
+    const elements = document.getElementsByClassName("prod-query-content");
+    if (elements && elements[0]) {
+      window.scrollTo({ top: elements[0].offsetTop, behavior: "smooth" });
+    }
+  };
 
-  //   const handleTypeClick = (type) => {
-  //     fetch(`http://localhost:3000/product/products/type/${type}`)
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setFilteredProducts(data);
-  //       })
-  //       .catch((error) => console.error("Error:", error));
-  //     const elements = document.getElementsByClassName("prod-query-content");
-  //     if (elements && elements[0]) {
-  //       window.scrollTo({ top: elements[0].offsetTop, behavior: "smooth" });
-  //     }
-  //   };
+  const handleTypeClick = (type) => {
+    fetch(`http://localhost:3000/product/products/type/${type}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setFilteredProducts(data);
+      })
+      .catch((error) => console.error("Error:", error));
+    const elements = document.getElementsByClassName("prod-query-content");
+    if (elements && elements[0]) {
+      window.scrollTo({ top: elements[0].offsetTop, behavior: "smooth" });
+    }
+  };
 
   const currentItems = filteredProducts.slice(
     (page - 1) * itemsPerPage,
