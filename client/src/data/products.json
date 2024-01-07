@@ -18,11 +18,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28798/z4635400015624_0219c6adc7764dd7908e7e19afd09d4f.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28928/z4767129684998_da8913def5fc6119a02ca5b8a9b42a06.jpg"
     ],
-    "variants": [
-      "#02 Rosy",
-      "#03 Cool Pink",
-      "#04 Coral"
-    ],
+    "variants": ["#02 Rosy", "#03 Cool Pink", "#04 Coral"],
     "brands": "Nature Republic",
     "tab_data": {
       "description": [
@@ -87,10 +83,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29247/z4923559793177_40efe527f72b93984ff5f116c14662bb.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29148/z4891856356887_c80433fa13fda02d464d5bb96373129c.jpg"
     ],
-    "variants": [
-      "#02 Flex",
-      "#03 Slay"
-    ],
+    "variants": ["#02 Flex", "#03 Slay"],
     "brands": "Ofélia",
     "tab_data": {
       "description": [
@@ -160,10 +153,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29081/z4860464881511_59aa915da45b9bb07a74a5b6b22c6b57.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29148/z4891856356887_c80433fa13fda02d464d5bb96373129c.jpg"
     ],
-    "variants": [
-      "Xám - Gray Stick Slender  ",
-      "Vàng - Yellow Tube Curl  "
-    ],
+    "variants": ["Xám - Gray Stick Slender  ", "Vàng - Yellow Tube Curl  "],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -178,19 +168,14 @@
         "Xuất xứ:  Trung Quốc",
         "Thương hiệu:  Gogo Tales"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Nuty về 2 phiên bản:",
         "- Màu xám GT261: giúp làm dài mi",
         "- Màu vang GT262: giúp làm cong mi"
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -304,10 +289,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28550/z4476799204464_612f5c000333c04486f87a06e20ca718.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29081/z4860464881511_59aa915da45b9bb07a74a5b6b22c6b57.jpg"
     ],
-    "variants": [
-      "#01 ",
-      "#02"
-    ],
+    "variants": ["#01 ", "#02"],
     "brands": "Glamrr Q",
     "tab_data": {
       "description": [
@@ -327,10 +309,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Glamrr Q"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Thích hợp cho nàng thích trang điểm style căng bóng",
@@ -389,10 +368,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: YNM"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Dưỡng ẩm cho môi khô, nứt nẻ.",
@@ -432,11 +408,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28431/glm-5.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29088/z4864192510428_fa8a324b2342f42ca8578c314d66f15c.jpg"
     ],
-    "variants": [
-      "#Pink Sunset",
-      "#Coral Moment",
-      "#Crimson Chili "
-    ],
+    "variants": ["#Pink Sunset", "#Coral Moment", "#Crimson Chili "],
     "brands": "YNM",
     "tab_data": {
       "description": [
@@ -455,12 +427,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: YNM"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Bơ hạt xoài",
-        "Dầu dừa",
-        "Squalane"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Bơ hạt xoài", "Dầu dừa", "Squalane"],
       "effects": [
         "CÔNG DỤNG:",
         "- Dưỡng môi và tint, chăm sóc toàn phần\n- Bất cứ nơi nào với màu sắc sống động như son tint nhưng ngậm nước như son môi\n- Nuôi dưỡng đầy đủ để trẻ hóa\n- Chức năng cơ bản chăm sóc môi, đồng thời trang điểm má"
@@ -496,13 +463,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28689/z4588473505182_ca5df00aaec52251516ed722c9f91b6b.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28431/glm-5.jpg"
     ],
-    "variants": [
-      "#​LP03",
-      "#​LP04",
-      "#​LP05",
-      "#LP01",
-      "#LP02"
-    ],
+    "variants": ["#​LP03", "#​LP04", "#​LP05", "#LP01", "#LP02"],
     "brands": "Dearmay",
     "tab_data": {
       "description": [
@@ -599,9 +560,7 @@
         "-  Chất son kem dạng  mềm mịn như bơ,  giúp son lên môi dễ dàng,  có thể sử dụng nhiều lớp trên môi mà không sợ bị vón",
         "- L ớp finish lì có khả năng phủ đều rảnh môi g iúp che đi khuyết điểm môi một cách tự nhiên, không làm lộ vân môi và gây khô môi."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -714,10 +673,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29004/z4926749157823_de52f9347a69539d8767d41341849732.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28908/z4758170631125_61d17adf813d5bfd63b80f354b7fdf09.jpg"
     ],
-    "variants": [
-      "#Y225",
-      " #Y215"
-    ],
+    "variants": ["#Y225", " #Y215"],
     "brands": "MAKE UP FOR EVER",
     "tab_data": {
       "description": [
@@ -766,10 +722,7 @@
         "- Đổ 1 lượng kem nền vừa đủ lên tay.",
         "-  Dùng cọ hoặc mút tán đều lên khắp mặt để tạo một lớp nền mịn màng."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Độ bền màu của em ấy cũng rất đáng nể, kéo dài cả ngày. Không cần phủ thêm phấn để giữ lớp make up, vì kem nền Maybelline Fit Me Matte And Poreless đã ổn rồi.",
@@ -805,10 +758,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28704/z4591369677104_74afd89964577e4b72cd9929be5c70c6.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29055/z4857793562564_5f9efcb0f8536770a41a02988dfb8d18.jpg"
     ],
-    "variants": [
-      "#10 Rose beige",
-      "#20 Skin beige"
-    ],
+    "variants": ["#10 Rose beige", "#20 Skin beige"],
     "brands": "LIME",
     "tab_data": {
       "description": [
@@ -1142,15 +1092,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29287/z4969913630447_27b6ab24389ffce7bff562b395892473.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29286/z4973139003271_1804ed88bf144e7c02b6e6a2b110dd58.jpg"
     ],
-    "variants": [
-      "#DL15",
-      "#DL16",
-      "#DL17",
-      "#DL18",
-      "#DL19",
-      "#DL20",
-      "#DL21"
-    ],
+    "variants": ["#DL15", "#DL16", "#DL17", "#DL18", "#DL19", "#DL20", "#DL21"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -1242,10 +1184,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28902/z4773161730247_e4225ff89f547cc314fdfbb0916d6139.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29287/z4969913630447_27b6ab24389ffce7bff562b395892473.jpg"
     ],
-    "variants": [
-      "#210 Hồng Trà Sữa",
-      "#490 Gạch Đun"
-    ],
+    "variants": ["#210 Hồng Trà Sữa", "#490 Gạch Đun"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -1275,9 +1214,7 @@
         "-  Salicylic acid có tính kháng viêm và kháng khuẩn, giúp loại bỏ bụi bẩn và tạp chất trên da đầu, giúp làm sạch dầu và chất bã nhờn, giảm tình trạng da đầu nhờn và gàu, có khả năng giảm sự viêm nhiễm trên da đầu, giúp làm giảm tình trạng ngứa và đỏ da đầu.",
         "-  Muối từ Andes làm sạch và loại bỏ tế bào chết trên da đầu, giúp làm sạch sâu và giảm tình trạng gàu, ngứa và khô da đầu, giúp tăng cường lưu thông máu, kích thích tế bào mới hình thành, giúp tóc khỏe mạnh hơn, có khả năng loại bỏ bụi bẩn và tạp chất trên da đầu, giúp làm sạch sâu và ngăn ngừa tình trạng tắc nghẽn lỗ chân lông, giúp làm giảm tình trạng bã nhờn và tóc bết dính."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -1365,10 +1302,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29251/66.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29292/z4975997839785_8833f74770b83efbe5d7657d091971dc.jpg"
     ],
-    "variants": [
-      "#10",
-      "#20"
-    ],
+    "variants": ["#10", "#20"],
     "brands": "LIME",
     "tab_data": {
       "description": [
@@ -1453,10 +1387,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Glamrr Q"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Siêu phấn nước cải tiến với công nghệ che phủ cao 3Cover Layer, cố định nền hoàn hảo kết hợp chăm sóc tái sinh làn da với 36% Rau Má GCE+ và chống nắng SPF50/PA+++.",
@@ -1497,12 +1428,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29073/z4857605876155_f42cbda9829ae60e850fd313cad4d406.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28722/z4926749360862_efb0babcddda75a63168a70f46a6c3c1.jpg"
     ],
-    "variants": [
-      "#04",
-      "#03",
-      "#02",
-      "#01"
-    ],
+    "variants": ["#04", "#03", "#02", "#01"],
     "brands": "Dearmay",
     "tab_data": {
       "description": [
@@ -1566,11 +1492,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28427/glam-2.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29073/z4857605876155_f42cbda9829ae60e850fd313cad4d406.jpg"
     ],
-    "variants": [
-      "#21 IVORY",
-      "#22 PETAL",
-      "#23 BEIGE"
-    ],
+    "variants": ["#21 IVORY", "#22 PETAL", "#23 BEIGE"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -1619,11 +1541,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28946/z4780474968888_5e2cda56ae8f86d432f777d5250d58c1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28427/glam-2.jpg"
     ],
-    "variants": [
-      "#Apple Red",
-      "#Coral Pink ",
-      "#Peach Orange"
-    ],
+    "variants": ["#Apple Red", "#Coral Pink ", "#Peach Orange"],
     "brands": "Horus",
     "tab_data": {
       "description": [
@@ -1637,10 +1555,7 @@
         "HƯỚNG DẪN SỬ DỤNG:",
         "Dùng cọ hoặc bông mút lấy một lương phấn vừa đủ, lắc nhẹ đầu cọ hoặc tan đều bông mút rồi dặm hoặc tan nhẹ và đều lên bầu má"
       ],
-      "ingredients": [
-        "THÀNH PHẦN",
-        "- Xem thêm trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN", "- Xem thêm trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG SẢN PHẨM:",
         "- Hạt phấn siêu nhỏ mịn bám da cực tốt nhưng không hề gây cảm giác nặng nề cho da, không gây bít lỗ chân lông \n- Khả năng lên màu chuẩn rõ từ lần chạm đầu tiên cùng độ bám cực tốt cho đôi má luôn ửng hồng luôn tràn đầy sức sống cả ngày dài \n- Công nghệ kháng nước và hoạt chất hút dầu thừa trên mặt giúp phấn má bền màu và lâu trôi đến 12h \n- Không chứa dầu khoáng, không chứa cồn khô, không chứa hương liệu gây hại, dùng được cho cả làn da nhạy cảm"
@@ -1702,10 +1617,7 @@
         "Xuất xứ:  Pháp",
         "Thương hiệu:  L'Oréal"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Hiệu ứng nhung mịn- lì - nhẹ tênh - màu lên chuẩn, chỉ sau 1 lần lướt trên môi. Cùng với các màu son tôn da ngay tức thì mà không cần trang điểm cầu kỳ chuyên nghiệp. Color Riche Intense Volume Matte - cho sắc mặt bạn bừng sáng chỉ sau 1 lần lướt nhẹ son, mang đến thần thái thời thượng &amp; trẻ trung\n- Thiết kế thanh lịch, sang trọng, son Color Riche Intense Volume Matte sẽ là món đồ trang điểm &amp; phụ kiện không thể thiếu của bạn khi ra đi ra đường!"
@@ -1741,15 +1653,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28117/3.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27255/z4935400922828_791920d2b399d6a09c0a25446ba72ce0.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05",
-      "#06",
-      "#07"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05", "#06", "#07"],
     "brands": "Gilaa",
     "tab_data": {
       "description": [
@@ -1790,10 +1694,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28588/z4929972776343_bbe0f2cfdd9f55eb5fdca5f91454b142.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28117/3.jpg"
     ],
-    "variants": [
-      "#196",
-      "#505"
-    ],
+    "variants": ["#196", "#505"],
     "brands": "Lancome",
     "tab_data": {
       "description": [
@@ -1846,10 +1747,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28106/z4886554180309_217ca7e222b3e20c5bb9ccbd2d65b9d5.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28588/z4929972776343_bbe0f2cfdd9f55eb5fdca5f91454b142.jpg"
     ],
-    "variants": [
-      "#196",
-      "#505"
-    ],
+    "variants": ["#196", "#505"],
     "brands": "Lancome",
     "tab_data": {
       "description": [
@@ -1906,11 +1804,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29289/z4970772941753_fd8acf16cede3569d0b4f42ff909c0d1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28106/z4886554180309_217ca7e222b3e20c5bb9ccbd2d65b9d5.jpg"
     ],
-    "variants": [
-      "#Natural Brown",
-      " #Gray Brown",
-      " #Dark Brown"
-    ],
+    "variants": ["#Natural Brown", " #Gray Brown", " #Dark Brown"],
     "brands": "Lemonade",
     "tab_data": {
       "description": [
@@ -1977,10 +1871,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29302/z4970856038893_49139398610f3234442b0762c8786e84-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/29289/z4970772941753_fd8acf16cede3569d0b4f42ff909c0d1.jpg"
     ],
-    "variants": [
-      "#10 Pink Vanilla",
-      " #20 Pink Beige"
-    ],
+    "variants": ["#10 Pink Vanilla", " #20 Pink Beige"],
     "brands": "LIME",
     "tab_data": {
       "description": [
@@ -2037,11 +1928,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27359/z4652428354706_7198b7a35bdc13939e744fb3e89e0d47.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29302/z4970856038893_49139398610f3234442b0762c8786e84-(1).jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03"
-    ],
+    "variants": ["#01", "#02", "#03"],
     "brands": "Horus",
     "tab_data": {
       "description": [
@@ -2094,9 +1981,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29072/z4857605864210_92eaf67b13a33d1a6f2d600d5f1a774f.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27359/z4652428354706_7198b7a35bdc13939e744fb3e89e0d47.jpg"
     ],
-    "variants": [
-      "#01 "
-    ],
+    "variants": ["#01 "],
     "brands": "Glamrr Q",
     "tab_data": {
       "description": [
@@ -2178,9 +2063,7 @@
         "Bảng phấn mắt Bbia Ready To Wear Palette – #01 Nude Blush",
         "Bảng phấn mắt Bbia Ready To Wear Palette – #02 Mood Blush"
       ],
-      "ingredients": [
-        "- Xem thêm trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Xem thêm trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG",
         "- Phấn Mắt Bbia Ready To Wear Eye Palette 5g là một trong những sản phẩm nổi bật của thương hiệu Bbia. Đây là bảng màu mắt đa năng với 5 gam màu khác nhau, giúp bạn tạo ra nhiều phong cách trang điểm khác nhau. Mỗi gam màu được thiết kế đặc biệt để có thể phối hợp với nhau tốt nhất để tạo ra vẻ đẹp tự nhiên hoặc quyến rũ.",
@@ -2221,10 +2104,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28438/glam-7.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28100/chi-ke-may-horus-easy-blend-auto-eyebrow-1-1-(1).png"
     ],
-    "variants": [
-      "#01 Romantic",
-      "#02 Delicate"
-    ],
+    "variants": ["#01 Romantic", "#02 Delicate"],
     "brands": "Lilybyred",
     "tab_data": {
       "description": [
@@ -2243,10 +2123,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu:  Lilybyred"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem thêm trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem thêm trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG",
         "- Chất phấn mịn, dễ tán và có độ bám cao giúp cho màu sắc của sản phẩm không bị bay đi trong quá trình sử dụng."
@@ -2285,10 +2162,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28469/z4401484567894_232fda5bfe7a67dfaf2a2ea75bcc8379.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28438/glam-7.jpg"
     ],
-    "variants": [
-      "#Be Berry",
-      "#Merry Red "
-    ],
+    "variants": ["#Be Berry", "#Merry Red "],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -2307,10 +2181,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Espoir"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG",
         "- Son Espoir Lipstick Nowear Velvet  với chất son môi mờ nhung vừa vặn thoải mái.",
@@ -2408,11 +2279,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28312/z4935400949199_e5b64134fd3c75dafc6ee5b7bdabe1f5.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28928/z4767129684998_da8913def5fc6119a02ca5b8a9b42a06.jpg"
     ],
-    "variants": [
-      "#GT01",
-      "#GT02",
-      "#GT03"
-    ],
+    "variants": ["#GT01", "#GT02", "#GT03"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -2422,18 +2289,14 @@
         "Thiết kế vỏ giấy đơn giản với logo được phủ một lớp hologram đẹp mắt ở mặt trước.  \n \n  Ánh Hologram với nhiều sắc màu đa dạng nhưng vẫn tạo cảm giác cân bằng. Glass Rainbow với màu trắng- bạc là chủ đạo, điểm xuyến với sắc ngọc trai hồng, glitter bạc, cam, xanh, vàng cùng các hạt tam giác vàng gold và xanh lá tạo nên một sức hút vô cùng đặc biệt nhưng vẫn nhẹ nhàng, để các cô gái có thể sử dụng hàng ngày. \n  Với màu Sea Rainbow, bạn sẽ có cảm giác như đôi mắt đang tận hưởng cảm giác ngắm nhìn những tia nắng hoàng hôn đang phản chiếu trên mặt biển. Với màu xanh dịu mát, ánh ngọc trai xanh cùng màu, tổ hợp glitter: xanh dương, xanh lá, cam với các hạt tam giác màu vàng gold và xanh lá sẽ cho bạn một makeup look vô cùng độc đáo, phù hợp với các buổi hẹn hò nếu như bạn muốn tạo “ấn tượng khó phai”.",
         "Chất nhũ: \nNhũ mắt với nền nước mềm mại, ẩm mướt nhưng không gây cảm giác bết dính, khó chịu hay kích ứng. \nVới cấu tạo độc đáo Air Texture, Pearlvely I Glitter - Triangle tạo cảm giác “nhẹ như không” dễ chịu trên mắt trong suốt cả ngày. \nPearlvely I Glitter - Triangle là sự kết hợp độc đáo giữa glitter tròn, tam giác, lục giác tạo nên sự đa dạng, độc đáo, hô biến đôi mắt long lanh đa chiều, đẹp hoàn hảo ở mọi góc độ. \nƯu điểm: \n- Thiết kế nhỏ gọn, tiện dụng, dễ dàng mang theo mọi nơi. \n- Với texture nền nước mang đặc tính mềm và ẩm nhưng không tạo cảm giác bết dính khó chịu trên mắt, không gây kích ứng đồng thời giữ lâu các hạt nhũ trên mắt."
       ],
-      "ingredients": [
-        "THÀNH PHẦN"
-      ],
+      "ingredients": ["THÀNH PHẦN"],
       "effects": [
         "CÔNG DỤNG:",
         "Với cấu tạo độc đáo Air Texture, Pearlvely I Glitter -\nTriangle tạo cảm giác “nhẹ như không” dễ chịu trên mắt trong suốt cả ngày.",
         "Pearlvely I Glitter - Triangle là sự kết hợp độc đáo giữa\nglitter tròn, tam giác, lục giác tạo nên sự đa dạng, độc đáo, hô biến đôi mắt\nlong lanh đa chiều, đẹp hoàn hảo ở mọi góc độ.",
         "Nuty về 2 màu:  \n Glass Rainbow - GT01:  Ánh Hologram với nhiều sắc màu đa dạng nhưng vẫn tạo cảm giác cân bằng. Glass Rainbow với màu trắng- bạc là chủ đạo, điểm xuyến với sắc ngọc trai hồng, glitter bạc, cam, xanh, vàng cùng các hạt tam giác vàng gold và xanh lá tạo nên một sức hút vô cùng đặc biệt nhưng vẫn nhẹ nhàng, để các cô gái có thể sử dụng hàng ngày.\n Sea Rainbow - GT02:   Với màu Sea Rainbow, bạn sẽ có cảm giác như đôi mắt đang tận hưởng cảm giác ngắm nhìn những tia nắng hoàng hôn đang phản chiếu trên mặt biển. Với màu xanh dịu mát, ánh ngọc trai xanh cùng màu, tổ hợp glitter: xanh dương, xanh lá, cam với các hạt tam giác màu vàng gold và xanh lá sẽ cho bạn một makeup look vô cùng độc đáo, phù hợp với các buổi hẹn hò nếu như bạn muốn tạo “ấn tượng khó phai”."
       ],
-      "instruction": [
-        "Đánh nhẹ nhũ mắt lên vùng bầu mắt"
-      ]
+      "instruction": ["Đánh nhẹ nhũ mắt lên vùng bầu mắt"]
     }
   },
   {
@@ -2470,17 +2333,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28426/glam-6.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28312/z4935400949199_e5b64134fd3c75dafc6ee5b7bdabe1f5.jpg"
     ],
-    "variants": [
-      "#07",
-      "#06",
-      "#05",
-      "#04",
-      "#09",
-      "#11",
-      "#08",
-      "#01",
-      "#02"
-    ],
+    "variants": ["#07", "#06", "#05", "#04", "#09", "#11", "#08", "#01", "#02"],
     "brands": "Glamrr Q",
     "tab_data": {
       "description": [
@@ -2588,10 +2441,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: M.A.C"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Sản phẩm không có dầu Oil free nên rất an toàn khi sử dụng.",
@@ -2635,10 +2485,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28415/z4810102458681_5fbeda45686085fee499158c0899a51b.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28798/z4635400015624_0219c6adc7764dd7908e7e19afd09d4f.jpg"
     ],
-    "variants": [
-      "#01",
-      "#04"
-    ],
+    "variants": ["#01", "#04"],
     "brands": "Lilybyred",
     "tab_data": {
       "description": [
@@ -2657,10 +2504,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu:  Lilybyred"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem thêm trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem thêm trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG",
         "-  Khả năng chống trôi  kéo dài từ 9 giờ sáng đến 9 giờ tối như tên gọi.",
@@ -2783,13 +2627,9 @@
         "Má Hồng Dạng Kem Siêu Xinh 3CE Velvet Liquid Blusher là má hồng thuộc thương hiệu 3CE với kết cấu lì mượt mà, cùng bảng màu tự nhiên dễ dùng mang đến một kết thúc màu ẩm mịn, giúp tạo màu má trang điểm mướt mịn và tự nhiên cho bạn gương mặt tươi tắn rạng rỡ suốt cả ngày",
         "Nuty về các màu:"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [],
-      "instruction": [
-        "Dùng một lượng vừa đủ apply lên gò má và tán đều"
-      ]
+      "instruction": ["Dùng một lượng vừa đủ apply lên gò má và tán đều"]
     }
   },
   {
@@ -2818,10 +2658,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29142/z4889745053166_31767a9a7f956d8b53ef49ea7a8116c9.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28950/z4780403540669_93dc44deec24e7999f2ed03aac9f1abd.jpg"
     ],
-    "variants": [
-      " #C1",
-      " #C2"
-    ],
+    "variants": [" #C1", " #C2"],
     "brands": "M.A.C",
     "tab_data": {
       "description": [
@@ -2839,10 +2676,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: M.A.C"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Là 1 loại found dạng lỏng, không thấm nước, cho một lớp nền bền màu.",
@@ -2955,10 +2789,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28707/z4591342098711_741baedd348bd442f8032017db3c786b.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27560/z4591723118268_8a5da03f9afc843515136c1145af0fc9.jpg"
     ],
-    "variants": [
-      "##Brick Red - Màu Đỏ Gạch ",
-      " #Sandy Pink - Màu Hồng Đất "
-    ],
+    "variants": ["##Brick Red - Màu Đỏ Gạch ", " #Sandy Pink - Màu Hồng Đất "],
     "brands": "LipIce",
     "tab_data": {
       "description": [
@@ -3036,11 +2867,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28598/z4562731810300_8a1008c285d3aed3a360ad9a5d8a192a.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28707/z4591342098711_741baedd348bd442f8032017db3c786b.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -3096,11 +2923,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28903/z4759290001107_98f3b650b63eb675ec4d044497454eaa.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28598/z4562731810300_8a1008c285d3aed3a360ad9a5d8a192a.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -3156,19 +2979,14 @@
       "https://nuty.vn/Data/Sites/1/Product/26887/z4064406072568_c9f099f1b6823c007fcbca0d276968ed-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/28903/z4759290001107_98f3b650b63eb675ec4d044497454eaa.jpg"
     ],
-    "variants": [
-      "#11",
-      "#12"
-    ],
+    "variants": ["#11", "#12"],
     "brands": "Color School",
     "tab_data": {
       "description": [
         "Bảng Phấn Mắt 8 Ô Color School Playing Magic Cube Eye Shadow Palette",
         "Bảng Phấn Mắt 8 Ô Color School Playing Magic Cube Eye Shadow Palette  mới từ nhà Color School nổi tiếng tại Trung có 8 ô màu cả lì cả nhũ với chất phấn mịn mượt dễ lên màu, chống bay phấn, chống nước, dễ tẩy trang, tiện lợi và đa dạng."
       ],
-      "ingredients": [
-        "-Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["-Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem dù dùng tay tán phấn vì thành phần dầu binder thân thiện với da, đồng thời khả năng bám màu cũng “siêu ấn tượng”.",
@@ -3327,11 +3145,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28331/z4976961927229_068bab2d196c8c27e0b9692d40430bd7.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27507/z4464417857764_3773be089169a2a2a42c388ab0a53175.jpg"
     ],
-    "variants": [
-      "#1 Shell Pink",
-      "#3 Cranberry",
-      "#2 Coral Dew"
-    ],
+    "variants": ["#1 Shell Pink", "#3 Cranberry", "#2 Coral Dew"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -3509,10 +3323,7 @@
         "Mỹ",
         "Ecotools"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem trên bao bì sản phẩm"],
       "effects": [
         "- Cọ chuyên dụng dành cho mặt dùng để tán  phấn dạng bột hoặc dạng nén.",
         "- Ngoài phấn phủ có thể sử dụng cọ để tán  phấn má, phấn tạo khối…"
@@ -3563,10 +3374,7 @@
         "Mỹ",
         "Ecotools"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem trên bao bì sản phẩm"],
       "effects": [
         "- Cọ chuyên dụng dành cho mặt dùng để tán kem nền  & các loại kem trang điểm.",
         "- Thiết kế hình bầu dục dễ dàng thao tác, che phủ tự nhiên."
@@ -3626,10 +3434,7 @@
         "HƯỚNG DẪN SỬ DỤNG:",
         "- Vui lòng sử sụng sau khi đã hoàn thành các bước dưỡng da hoặc sau lớp kem lót. \n     - Lắc đều trước khi dùng. \n     - Cho 1 lượng kem vừa đủ lên mặt hoặc ra tay và chấm đều lên 5 điểm trên gương mặt. \n     - Dùng tay/bông mút/cọ tán đều kem ra, nhớ tán phần cổ luôn nhé."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Lớp nền hoàn hảo, mỏng nhẹ tựa như không, bền màu tới nhiều giờ.",
@@ -3669,10 +3474,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27899/be4b394d68b1b5efeca0.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27895/cfc918c84934946acd25.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01", "#02"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -3691,10 +3493,7 @@
         "- B1: Kẻ những đường ngắn sát mi mắt.",
         "- B2: Nối những đường kẻ cho nét vẽ liền mạch, tạo nét vẽ mỏng hoặc dày tùy theo phong cách"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem trên bao bì"],
       "effects": [
         "- Bút có nét vẽ đậm nhưng thanh mảnh, nhanh khô và không gây bóng, tạo cho đôi mắt một ánh nhìn tự nhiên nhất.",
         "- Đặc biệt chống thấm nước và mồ hôi nên phù hợp cho các nàng sử dụng trong mùa hè, đi du lịch, tắm biển,…",
@@ -3844,12 +3643,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28297/z4333103793422_08af8d9a8dccb0f83a7adc7b0367f6cf.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28554/ke-mat-gogo-tales-fine-make-up-eyeliner.jpg"
     ],
-    "variants": [
-      "#402",
-      "#403",
-      "#401",
-      "#404"
-    ],
+    "variants": ["#402", "#403", "#401", "#404"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -3908,10 +3702,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27300/z4043631697302_5e510edf8562c0c402444977836b73fc.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28297/z4333103793422_08af8d9a8dccb0f83a7adc7b0367f6cf.jpg"
     ],
-    "variants": [
-      "#01. Vỏ tím",
-      "#02.Vỏ xanh"
-    ],
+    "variants": ["#01. Vỏ tím", "#02.Vỏ xanh"],
     "brands": "MEMERABA",
     "tab_data": {
       "description": [],
@@ -4051,9 +3842,7 @@
         "- Bám dính cực tốt nhưng dễ dàng tẩy sạch cùng nước tẩy trang chuyên dụng",
         "- Biến mình thành cô em đẹp bền bỉ, bất chấp nắng mưa với các tông màu cực trendy"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
       "effects": [
         "-  Đầu bút sáp mắt mềm mại, màu sắc ánh nhũ tuyệt đẹp, không thấm nước, chống mồ hôi, giữ màu lên đến 24 tiếng. Có thể sử dụng để tô điểm mí mắt dưới, cho đôi mắt long lanh hơn. Đầu bút kẻ mắt màu nâu sẫm, vẽ dễ dàng, cho đôi mắt sắc nét. Trang điểm mắt đẹp chỉ với một cây bút, dễ dàng mang theo, dễ dàng sử dụng."
       ],
@@ -4085,11 +3874,7 @@
       "https://nuty.vn/Data/Sites/1/Product/9854/z4929937742611_2f6b0206a5a178b73036bc4a0c6ebbdb.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27344/z4064189772121_efa2481336f378715373fb06f0508125.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03"
-    ],
+    "variants": ["#01", "#02", "#03"],
     "brands": "CANMAKE",
     "tab_data": {
       "description": [
@@ -4098,16 +3883,12 @@
         "[02] Apricot Fleur☆",
         "[03] Fairy Orange Fleur☆"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "– Má hồng Canmake Powder cheek có chất phấn nhẹ, mịn và bám đều lên da, nhẹ nhàng che đi lỗ chân lông trên da, hút bã nhờn và che phủ cả những nếp nhăn, chỉ cần một lần phấn là đã cho một màu hồng cực kì tự nhiên \n – Hương thơm của hoa thoang thoảng dễ chịu nhưng hương thơm này sẽ biến mất sau vài phút khi thoa phấn lên da nên sẽ không hề có hại cho da nhé nàng ơi! \n – Sản phẩm của nhà Canmake rất chú trọng vào việc dưỡng da và đặc biệt quan tâm đến sức khỏe vào làn da của các nàng nên sẽ không chứa cồn, không chứa dầu khoáng, không chất tạo mùi, hoàn toàn lành tính. \n – Với thiết kế đầy ngọt ngào và đáng yêu, chứa 4 màu hoa phấn từ đậm đến nhạt và một màu highlight phía bên trái. Ngăn dưới là một chiếc cọ nhỏ tiện dụng, lông rất mềm giúp nàng đánh phấn mọi lúc mọi nơi mà không cần đem theo cọ bên ngoài."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -4140,10 +3921,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27365/z4066610575904_daff1cf51a2476c9048599086e66c9f1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9854/z4929937742611_2f6b0206a5a178b73036bc4a0c6ebbdb.jpg"
     ],
-    "variants": [
-      "#WN601 Vampy",
-      "#6 Nutty"
-    ],
+    "variants": ["#WN601 Vampy", "#6 Nutty"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -4201,11 +3979,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27533/canmake-glow-1-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/27365/z4066610575904_daff1cf51a2476c9048599086e66c9f1.jpg"
     ],
-    "variants": [
-      "#Way Back",
-      "#Hazy Rose",
-      " #Chill Move"
-    ],
+    "variants": ["#Way Back", "#Hazy Rose", " #Chill Move"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -4525,11 +4299,7 @@
       "https://nuty.vn/Data/Sites/1/Product/12312/z4003021611448_1a8551c4a2304b6507ac755f5d9f66ff.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27876/z4379034872535_15ad9df7cdfd4cee0f2660433c8d6f60.jpg"
     ],
-    "variants": [
-      "#Unstained Red",
-      "#Sensual Breeze",
-      "#Eternal Warm"
-    ],
+    "variants": ["#Unstained Red", "#Sensual Breeze", "#Eternal Warm"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -4549,9 +4319,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương Hiệu: 3CE"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
       "effects": [
         "- Môi lên màu chuẩn suốt cả ngày dài, không lem, không trôi và không gây khô môi"
       ],
@@ -4588,11 +4356,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28655/z4554883134890_560f30edc1ddfd61c0ddd599289eec5a.jpg",
       "https://nuty.vn/Data/Sites/1/Product/12312/z4003021611448_1a8551c4a2304b6507ac755f5d9f66ff.jpg"
     ],
-    "variants": [
-      "#Soft Mellow",
-      " #Orange Breeze ",
-      "#Warmish Move"
-    ],
+    "variants": ["#Soft Mellow", " #Orange Breeze ", "#Warmish Move"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -4636,9 +4400,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26664/z4926893032049_1d1ff578a819ea5dbe77ea8223f066b4.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28655/z4554883134890_560f30edc1ddfd61c0ddd599289eec5a.jpg"
     ],
-    "variants": [
-      "#Sensual Breeze"
-    ],
+    "variants": ["#Sensual Breeze"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -4658,10 +4420,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương Hiệu: 3CE"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Bảng màu thời thượng",
@@ -4702,10 +4461,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26682/z4926893084371_d1788b262ccece5a6a3f3da6a380e9a1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26664/z4926893032049_1d1ff578a819ea5dbe77ea8223f066b4.jpg"
     ],
-    "variants": [
-      "#11 Gentle Coconut",
-      "#12 Black Rose Apple"
-    ],
+    "variants": ["#11 Gentle Coconut", "#12 Black Rose Apple"],
     "brands": "Lilybyred",
     "tab_data": {
       "description": [
@@ -4722,9 +4478,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Lilybyred"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm"],
       "effects": [
         "- Son tint mang lại đôi môi căng mướt, mềm mại",
         "- Chứa tinh dầu jojoba giúp nuôi dưỡng bờ môi khô bong tróc",
@@ -4732,9 +4486,7 @@
         "- Không gây nặng môi, hỗ trợ che phủ vân môi",
         "- Son nước Lilybyred Bloody Liar Coating Tint mang mùi hương trái cây dịu ngọt khiến bạn yêu thích."
       ],
-      "instruction": [
-        "- Dùng để đánh lòng môi hoặc full môi"
-      ]
+      "instruction": ["- Dùng để đánh lòng môi hoặc full môi"]
     }
   },
   {
@@ -4783,16 +4535,12 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Lilybyred"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm"],
       "effects": [
         "Kết cấu son tint mềm và nhẹ môi giúp đôi môi mềm mịn.",
         "- Giúp bám màu lên môi tốt hơn, không lộ vân môi và không làm bong tróc tế bào chết môi."
       ],
-      "instruction": [
-        "- Dùng để đánh lòng môi hoặc full môi"
-      ]
+      "instruction": ["- Dùng để đánh lòng môi hoặc full môi"]
     }
   },
   {
@@ -4817,11 +4565,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29227/z4918785909038_389760a21a6929776a5f6291e95d9304.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27368/z4926749350243_fc608dd178fa2e15d024fcb1f7876f0e.jpg"
     ],
-    "variants": [
-      "Smoky Red",
-      "Overload",
-      "Stand Off"
-    ],
+    "variants": ["Smoky Red", "Overload", "Stand Off"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -4833,9 +4577,7 @@
         "Màu Hồng Khô cổ điển mang phong cách đô thị",
         "Màu Đỏ Tươi tăng thêm vẻ đẹp tinh tế cho đôi môi"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm"],
       "effects": [],
       "instruction": [
         "- Thoa son lên môI, layer từ 2-3 lần để có đươc màu son chuẩn nét."
@@ -4870,10 +4612,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28922/z4762196389774_846a8f35a964a5ed20d8992e2287eefe.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29227/z4918785909038_389760a21a6929776a5f6291e95d9304.jpg"
     ],
-    "variants": [
-      "#Auto Focus",
-      "#Beach Muse"
-    ],
+    "variants": ["#Auto Focus", "#Beach Muse"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -4923,13 +4662,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27580/z4591736870551_f4f3de0e40bac8d0d7cc804164f274e9.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28922/z4762196389774_846a8f35a964a5ed20d8992e2287eefe.jpg"
     ],
-    "variants": [
-      "#02",
-      "#03",
-      "#04",
-      "#05",
-      "#01"
-    ],
+    "variants": ["#02", "#03", "#04", "#05", "#01"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -5029,18 +4762,13 @@
       "https://nuty.vn/Data/Sites/1/Product/26917/z4064406153178_5cde3974cd489f1863b4a98d70b27996-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/26665/z4926892846429_a724dcad2f1489d045c1a84a22ce309f.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01", "#02"],
     "brands": "Too Cool For School",
     "tab_data": {
       "description": [
         "Phấn bắt sáng Too Cool For School Artclass By Rodin Highlighter là sản phẩm makeup dành cho các nàng đang mê mẩn phong cách Makeup Strobing (là sự nâng cấp của highlight khi tập trung vào những vùng bắt sáng trên khuôn mặt. Khuôn mặt sẽ có độ căng bóng, khỏe tự nhiên bằng phương pháp làm nổi bật những vùng thường hứng nhiều ánh sáng nhất trên mặt. Cụ thể là vùng giữa trán, sống mũi, xương gò má, nhân trung và cằm). \n \nPhấn Bắt Sáng Too Cool For School Artclass By Rodin Highlighter là sản phẩm highlighter đến từ thương hiệu Too Cool For School của Hàn Quốc, được thiết kế ở dạng phấn nén, bao gồm 3 ô màu chứa các hạt nhũ cực nhuyễn mịn, khi lên da bắt sáng cực tốt, tạo hiệu ứng gương mặt rạng rỡ và nổi bật hơn bao giờ hết. \n \n \n \nVui lòng xem trên bao bì  \n \nĐặc điểm : \n- Gồm 3 ngăn màu chứa các hạt phấn cực nhuyễn mịn, lên da bắt sáng cực tốt. \n- Kết hợp cả highlight và shading 2 trong 1, giúp bạn dễ dàng tạo điểm nhấn và đường nét thanh thoát cho gương mặt một cách tự nhiên và dễ dàng nhất. \n- Tạo hiệu ứng gương mặt nổi bật rạng ngời như tỏa hào quang mà trông vẫn cực mịn mượt. \n- Có khả năng hấp thụ bã nhờn dư thừa trên da, giữ da luôn khô ráo, thoáng mịn và không bóng dầu. \n- Cho bạn gương mặt đẹp tựa nữ thần trên các sàn diễn thời trang quốc tế. \n- Có thể dùng làm phấn mắt. \n \n- Trộn 3 màu tô lên một số vùng nhỏ. \n- Trộn màu theo tỉ lệ 2:1 tô lên vùng xương má cho vẻ ngoài tự nhiên và tràn đầy sức sống. \n \nXuất xứ: Hàn Quốc  \n \nThương hiệu: Too Cool For School"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:  Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:  Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:  Đặc điểm : - Gồm 3 ngăn màu chứa các hạt phấn cực nhuyễn mịn, lên da bắt sáng cực tốt. - Kết hợp cả highlight và shading 2 trong 1, giúp bạn dễ dàng tạo điểm nhấn và đường nét thanh thoát cho gương mặt một cách tự nhiên và dễ dàng nhất. - Tạo hiệu ứng gương mặt nổi bật rạng ngời như tỏa hào quang mà trông vẫn cực mịn mượt. - Có khả năng hấp thụ bã nhờn dư thừa trên da, giữ da luôn khô ráo, thoáng mịn và không bóng dầu. - Cho bạn gương mặt đẹp tựa nữ thần trên các sàn diễn thời trang quốc tế. - Có thể dùng làm phấn mắt."
       ],
@@ -5147,9 +4875,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: MAC"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bào bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bào bì"],
       "effects": [
         "ƯU ĐIỂM NỔI BẬT:",
         "-  Son lên màu chuẩn nét ngay từ những lớp son đầu tiên, chất son lì giữ màu lâu lên môi vô cùng mỏng nhẹ, mềm mịn như nhung.",
@@ -5187,16 +4913,12 @@
       "description": [
         "Son Dưỡng Môi Byphasse Moisturizing Lip Balm là dòng sản phẩm chăm sóc môi đầu tiên vừa được ra mắt từ thương hiệu Byphasse, giúp dưỡng ẩm sâu và nuôi dưỡng cho đôi môi trở nên mềm mịn ngay tức thì, đồng thời duy trì độ ẩm lâu dài lên đến nhiều giờ."
       ],
-      "ingredients": [
-        "- 85% thành phần thiên nhiên"
-      ],
+      "ingredients": ["- 85% thành phần thiên nhiên"],
       "effects": [
         "- Bảo vệ đôi môi với chỉ số chống nắng SPF 30",
         "- Phục hồi sự mềm mại, mịn màng và ẩm mượt cho làn da."
       ],
-      "instruction": [
-        "- Thoa một lớp son nhẹ lên môi"
-      ]
+      "instruction": ["- Thoa một lớp son nhẹ lên môi"]
     }
   },
   {
@@ -5341,10 +5063,7 @@
         "- Lắc đều, giữ chai xịt cách 20 cm, xịt 3-4 lần đều toàn mặt, có thể xịt lại bất cứ lúc nào cần thiết. Vỗ nhẹ để dưỡng chất thẩm thấu tốt hơn.",
         "- Tips: Xịt Makeup Fixer Mist lên miếng mút trang điểm của bạn trước khi trang điểm để có lớp nền đều và liền mạch."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "- Giúp giữ lớp phấn trang điểm cố định & bền màu hơn, hạn chế những tác hại của hóa chất mỹ phẩm.",
@@ -5386,26 +5105,19 @@
       "https://nuty.vn/Data/Sites/1/Product/1639/19.png",
       "https://nuty.vn/Data/Sites/1/Product/28963/z4787971149099_648913cc295fc9050fee97b01c82a487.jpg"
     ],
-    "variants": [
-      "#05",
-      "#06"
-    ],
+    "variants": ["#05", "#06"],
     "brands": "16Brand",
     "tab_data": {
       "description": [
         "16brand  hay được gọi là Sixteen là một thương hiệu mỹ phẩm được ra đời nhờ chuyên gia trang điểm hàng đầu Hàn Quốc Cho Sung Ah - người đã tiếp xúc và trang điểm cho rất nhiều ngôi sao lớn đồng thời cũng là người dẫn đầu trào lưu trang điểm không chỉ tại Hàn Quốc mà còn với các nước trong khu vực châu Á. Châm ngôn trong nghệ thuật trang điểm của Cho Sung Ah là “make up phải thật đơn giản và thú vị”, và cô đã truyền tải châm ngôn này một cách chân thực và chính xác thông qua chính những sản phẩm đến từ thương hiệu của mình",
         "Hộp phấn mắt 16Brand mang thiết kế nhỏ gọn xinh xắn kèm 6 ô màu giúp bạn tô điểm đôi mắt thật lung linh và quyến rũ"
       ],
-      "ingredients": [
-        "Nuty về hai bảng màu"
-      ],
+      "ingredients": ["Nuty về hai bảng màu"],
       "effects": [
         "16 Brand My Magazine Multi Palette vol 05 Almond Cream Mood : mang sắc beige trung tính. Với tone màu này các bạn gái có thể kết hợp với phấn má tone cam và một chút son có gam màu đất để diện nhẹ nhàng đi học, đi chơi hay ở những bữa tiệc nhẹ buổi tối đều rất phù hợp. Nếu bạn yêu thích phong cách nhẹ nhàng, tối giản nhưng vẫn sang trọng, cuốn hút thì đây đích thị là màu sắc dành cho bạn.",
         "16 Brand My Magazine Multi Palette Vol 06 Burnt Pecan Mood : tone cam nude, trầm dễ dùng với các bạn nữ thích phong cách cá tính, mạnh mẽ và quyến rũ thì bảng màu này rất phù hợp cho bạn đấy. Các gam màu mang tone cam không quá chói lóa, mang lại cho bạn gương mặt có chiều sâu và thu hút mọi ánh nhìn. Với bảng màu này, bạn có thể diện để đi chơi cùng bạn bè hay đi tiệc đều nổi bật nhé."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -5428,10 +5140,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27620/z4134817143595_7b8f7a34f777ada284027fb36e35c309.jpg",
       "https://nuty.vn/Data/Sites/1/Product/1639/19.png"
     ],
-    "variants": [
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01", "#02"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -5495,14 +5204,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27758/z4574538174936_700b91d8b6d72c6e37d608e0df54e1ac.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27620/z4134817143595_7b8f7a34f777ada284027fb36e35c309.jpg"
     ],
-    "variants": [
-      "#MV01",
-      "#MV02",
-      "#MV03 ",
-      "#MV04 ",
-      "#MV05 ",
-      "#MV06 "
-    ],
+    "variants": ["#MV01", "#MV02", "#MV03 ", "#MV04 ", "#MV05 ", "#MV06 "],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -5523,10 +5225,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Black Rouge"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "-  Với kết cấu đặc trưng như “cushion” tối ưu elestomer và powder giúp che đi toàn bộ khuyết điểm của đôi môi, không lộ vân môi, rãnh môi. Tạo finish lì mềm mại và nhẹ như bông, giúp môi mịn mướt như nhung",
@@ -5683,11 +5382,7 @@
       "https://nuty.vn/Data/Sites/1/Product/12141/11.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28788/z4643863071760_c5ec482f36ad95482aedb75e25b39a66.jpg"
     ],
-    "variants": [
-      "#Pure Cake",
-      "#Peach Splash",
-      "#Rose Beige"
-    ],
+    "variants": ["#Pure Cake", "#Peach Splash", "#Rose Beige"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -5704,10 +5399,7 @@
         "#Peach Splash",
         "#Rose Beige"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Sở hữu chất phấn mịn màng tan trên da, 3CE sẽ đem đến cho đôi gò má màu sắc trong trẻo tựa như được ửng hồng từ sâu bên trong.",
@@ -5831,9 +5523,7 @@
         "Bổ sung thêm thành phần sáp ong  và dầu jojoba nuôi dưỡng bờ môi mềm mại, ngăn ngừa khô nứt.",
         "Đồng thời dẫn xuất từ vitamin E giúp chống oxy hóa cho môi."
       ],
-      "instruction": [
-        "Thoa trực tiếp lên môi trước hoặc sau khi thoa son màu"
-      ]
+      "instruction": ["Thoa trực tiếp lên môi trước hoặc sau khi thoa son màu"]
     }
   },
   {
@@ -5862,11 +5552,7 @@
       "https://nuty.vn/Data/Sites/1/Product/22065/z4976961907683_f6f7f77d7fbde1d646e04005ab75a7ab.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26671/z4926893052215_ba4209482b6cca7d692b85075dceae78.jpg"
     ],
-    "variants": [
-      "#Natural Brown",
-      " #Gray Brown",
-      " #Dark Brown"
-    ],
+    "variants": ["#Natural Brown", " #Gray Brown", " #Dark Brown"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -5876,9 +5562,7 @@
         "- 04 - Gray Brown: Nâu xám",
         "- Vui lòng xem trên bao bì sản phẩm \n \n \n \n- 36h kháng nước, không lem trôi \n \n- Dễ dàng kẻ, lên màu cực chuẩn \n \n- Đơn giản và tiện lợi, dễ dàng định hình, tô dáng và vẽ sợi chân mày \n \n \n \n- Định hình dáng chân mày phù hợp với khuôn mặt. \n \n - Dùng đầu nhọn vẽ khung chân mày, sau đó dùng cạnh bút nghiêng tô theo dáng chân mày đã định hình. \n \n - Tô lại những phần bị nhạt và tạo hình đuôi chân mày. \n \n - Dùng đầu lược chải và tán cho đều màu."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- 36h kháng nước, không lem trôi",
         "- Dễ dàng kẻ, lên màu cực chuẩn",
@@ -5962,11 +5646,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26580/37.jpg",
       "https://nuty.vn/Data/Sites/1/Product/23431/z4951506906577_53a2c5aac5fb7bacdda23df5f9533d5c.jpg"
     ],
-    "variants": [
-      "#Dear Nude",
-      " #All Nighter ",
-      "#Dry Bouquet"
-    ],
+    "variants": ["#Dear Nude", " #All Nighter ", "#Dry Bouquet"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -5975,12 +5655,8 @@
         "Với bảng màu khá đa dạng gồm 9 tone màu từ tươi sáng đến trầm ấm khác nhau, chất phấn li ti siêu mềm mịn, khả năng bám màu lâu và lên màu cực chuẩn, siêu phẩm phấn mắt 3CE Stylenanda Multi Eye Color Palette hứa hẹn sẽ khiến các tín đồ làm đẹp của 3CE phải phát cuồng.",
         "Thiết kế đơn giản, thanh lịch nhưng cực sang trọng. Chất phấn hoàn hảo với những hạt phấn li ti siêu nhỏ, mềm mịn, không gây cảm giác nặng nề khi apply lên mắt."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
-      "effects": [
-        "- Trang điểm mắt."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
+      "effects": ["- Trang điểm mắt."],
       "instruction": [
         "HƯỚNG DẪN SỬ DỤNG:",
         "- Dùng cọ hoặc đầu ngón tay thoa một lượng vừa đủ lên mí mắt và tán đều tự nhiên."
@@ -6015,9 +5691,7 @@
       "https://nuty.vn/Data/Sites/1/Product/24090/z4646682702018_a0b3560ebb591b62c41a5536c102cda9.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26580/37.jpg"
     ],
-    "variants": [
-      "#Eve"
-    ],
+    "variants": ["#Eve"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -6034,10 +5708,7 @@
         "Hàn Quốc",
         "Espoir"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì."
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì."],
       "effects": [
         "CÔNG DỤNG:",
         "- Chất son mịn lì, lướt nhẹ trên môi mà không bị vón cục.",
@@ -6099,9 +5770,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: Maybelline"
       ],
-      "ingredients": [
-        "- 120 Classic Ivory - dành cho tone da trùng bình sáng"
-      ],
+      "ingredients": ["- 120 Classic Ivory - dành cho tone da trùng bình sáng"],
       "effects": [
         "- Áp dụng  công nghệ Fit me  giúp lớp trang điểm tệp vào da đem lại lớp nền hoàn hảo nhưng vẫn tự nhiên.",
         "- Thành phần đất sét khoáng  có khả năng kiềm dầu hiệu quả và tạo hiệu ứng mịn lì nhanh chóng.",
@@ -6133,9 +5802,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29255/z4930164929364_246cb68d9f7a37917ade6394829c027f.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26677/phan-mat.jpg"
     ],
-    "variants": [
-      "#4 Coco Rum"
-    ],
+    "variants": ["#4 Coco Rum"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -6151,10 +5818,7 @@
         "Hàn Quốc",
         "Espoir"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì."
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì."],
       "effects": [
         "CÔNG DỤNG:",
         "- Chất son không quá lỏng, không quá đặc, vô cùng mềm mịn nhờ công thức giàu dưỡng chất nên không hề làm khô môi mà vẫn tạo cảm giác dễ chịu như một lớp sương trên môi mà không gây cảm giác bết dính.",
@@ -6214,9 +5878,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29247/z4923559793177_40efe527f72b93984ff5f116c14662bb.jpg",
       "https://nuty.vn/Data/Sites/1/Product/12203/36.jpg"
     ],
-    "variants": [
-      "#285"
-    ],
+    "variants": ["#285"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -6259,12 +5921,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28962/z4787923112194_e3a771948c842050db04dce848d66d17.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29247/z4923559793177_40efe527f72b93984ff5f116c14662bb.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04"
-    ],
+    "variants": ["#01", "#02", "#03", "#04"],
     "brands": "Habaria",
     "tab_data": {
       "description": [
@@ -6286,16 +5943,12 @@
         "Xuất xứ: Trung Quốc",
         "Thương hiệu: Habaria"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:"
-      ],
+      "ingredients": ["THÀNH PHẦN:"],
       "effects": [
         "CÔNG DỤNG:",
         ": dẹp và mảnh để dễ tạo dáng mày, tạo ra những đường mày sắc nét và có khả năng gẩy sợi giúp tạo hình khuôn mày, giúp đôi lông mày được sắc nét"
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -6316,14 +5969,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26529/11.png",
       "https://nuty.vn/Data/Sites/1/Product/28962/z4787923112194_e3a771948c842050db04dce848d66d17.jpg"
     ],
-    "variants": [
-      "#220",
-      "#225",
-      "#223",
-      "#129",
-      "#221",
-      "#222"
-    ],
+    "variants": ["#220", "#225", "#223", "#129", "#221", "#222"],
     "brands": "L'Oréal Paris",
     "tab_data": {
       "description": [
@@ -6349,9 +5995,7 @@
         "Xuất xứ: Pháp",
         "Thương hiệu: L'Oréal"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
       "effects": [
         "Tuy mỏng nhẹ nhưng dòng son kem lì này vẫn đáp ứng được những yêu cầu của một thỏi son kem lì cao cấp, mang lại sự thoải mái cho các nàng vì không làm khô môi.",
         "Thiết kế đầu cọ son mềm, dáng cong giúp cọ dễ lướt trên môi, dễ tán son và tạo viền môi xinh.",
@@ -6365,9 +6009,7 @@
         "226 I SINK IN: Màu đỏ hồng",
         "227 I LET GO: Màu đỏ nâu"
       ],
-      "instruction": [
-        "- Đánh lòng môi hoặc full môi"
-      ]
+      "instruction": ["- Đánh lòng môi hoặc full môi"]
     }
   },
   {
@@ -6414,13 +6056,8 @@
         "- Đặc biệt, chất son hiệu ứng mịn lì em đến cảm giác siêu nhẹ và mềm môi. Lúc mới tô, đôi môi lập tức căng đầy sức sống, màu lên chuẩn chỉ sau vài lần lướt. Sau đó sẽ tiệp vào môi mịn như nhung.",
         "- Bổ sung thành phần vitamin E giúp dưỡng ẩm cho đôi môi căng mọng hơn, hạn chế rãnh môi và nếp nhăn."
       ],
-      "effects": [
-        "CÔNG DỤNG:",
-        "- Makeup cho môi"
-      ],
-      "instruction": [
-        "- Đánh lòng môi hoặc full môi đều được"
-      ]
+      "effects": ["CÔNG DỤNG:", "- Makeup cho môi"],
+      "instruction": ["- Đánh lòng môi hoặc full môi đều được"]
     }
   },
   {
@@ -6502,12 +6139,8 @@
         "Ngoài ra, còn bổ sung các thành phần chăm sóc da như: niacinamide, adenosine, nước ép tre, thảo mộc, bí, hoa sen, quế, hoa oải hương, trà xanh và chiết xuất lô hội. Giữ cho da luôn sạch thoáng, không gây bí tắc lỗ chân lông và cung cấp độ ẩm cho da.",
         "The Saem Cover Perfection Tip Concealer có chứa chỉ số chống nắng SPF 28/PA++ giúp chống lại bức xạ của tia cực tím và năng ngừa sự hình ảnh của các nếp nhăn."
       ],
-      "ingredients": [
-        "#Contour Beige: sắc da nâu"
-      ],
-      "effects": [
-        "Giúp che khuyết điểm hiệu quả"
-      ],
+      "ingredients": ["#Contour Beige: sắc da nâu"],
+      "effects": ["Giúp che khuyết điểm hiệu quả"],
       "instruction": [
         "- Chấm lên các vùng có khuyết điểm/ quầng thâm trên da và tán đều"
       ]
@@ -6584,10 +6217,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26582/z4646645959126_567bc4aa297d4f73553b1c995d118d75.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27346/z4926749398851_f85d17d09a2b2519084fd4b40f133fb5.jpg"
     ],
-    "variants": [
-      "#01 ",
-      "#02"
-    ],
+    "variants": ["#01 ", "#02"],
     "brands": "the SAEM",
     "tab_data": {
       "description": [
@@ -6722,9 +6352,7 @@
       "description": [
         "Kem che khuyết điểm the SAEM Cover Perfection Tip Concealer với SPF28 PA+ có độ che phủ cao, giúp tạo lớp nền hoàn hảo và mỏng mịn. Sản phẩm dễ sử dụng cho người mới bắt đầu để đạt lớp trang điểm tự nhiên. Với bao bì nhỏ gọn và dễ mang theo, cây kem che khuyết điểm này là sản phẩm không thể thiếu trong bộ trang điểm của các nàng"
       ],
-      "ingredients": [
-        "Dùng để highlight tạo khối, che nốt đỏ"
-      ],
+      "ingredients": ["Dùng để highlight tạo khối, che nốt đỏ"],
       "effects": [
         "CÔNG DỤNG:",
         "- Che đi các khuyết điểm nhỏ như quầng thâm mắt, nám, tàn nhang và thâm mụn",
@@ -6787,9 +6415,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: MAC"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bào bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bào bì"],
       "effects": [
         "ƯU ĐIỂM NỔI BẬT:",
         "- Chất son kem lì đặc xốp, khi đánh lên rất chuẩn màu ngay từ lớp môi đầu tiên.",
@@ -6893,10 +6519,7 @@
         "- Pha trộn giữa các sắc màu là điểm xuyến thêm ô kim tuyến, giúp đôi mắt bạn trở nên thu hút và lấp lánh hơn."
       ],
       "ingredients": [],
-      "effects": [
-        "CÔNG DỤNG:",
-        "Giúp đôi mắt thêm lung linh, xinh xắn"
-      ],
+      "effects": ["CÔNG DỤNG:", "Giúp đôi mắt thêm lung linh, xinh xắn"],
       "instruction": [
         "HƯỚNG DẪN SỬ DỤNG:",
         "- Dùng cọ hoặc đầu ngón tay thoa một lượng vừa đủ lên mí mắt và tán đều tự nhiên."
@@ -6927,9 +6550,7 @@
       "description": [
         "Kem che khuyết điểm the SAEM Cover Perfection Tip Concealer với SPF28 PA+ có độ che phủ cao, giúp tạo lớp nền hoàn hảo và mỏng mịn. Sản phẩm dễ sử dụng cho người mới bắt đầu để đạt lớp trang điểm tự nhiên. Với bao bì nhỏ gọn và dễ mang theo, cây kem che khuyết điểm này là sản phẩm không thể thiếu trong bộ trang điểm của các nàng"
       ],
-      "ingredients": [
-        "Che quầng thâm da trung bình"
-      ],
+      "ingredients": ["Che quầng thâm da trung bình"],
       "effects": [
         "- Che đi các khuyết điểm nhỏ như quầng thâm mắt, nám, tàn nhang và thâm mụn",
         "- Kết cấu dạng lỏng giúp dễ tán đều hơn và để lại lớp nền mịn màng, không vón cục hay gây hằn.",
@@ -6939,9 +6560,7 @@
         "- Niacinamide và các chiết xuất thực vất giúp cho da trở nên trắng sáng và mềm mịn, tránh bị khô sau khi trang điểm.",
         "- Nhiều tone màu phù hợp cho mọi loại da. Có thể sử dụng để tạo khối."
       ],
-      "instruction": [
-        "Dùng để che các khuyết điểm, quầng thâm trên mặt"
-      ]
+      "instruction": ["Dùng để che các khuyết điểm, quầng thâm trên mặt"]
     }
   },
   {
@@ -7004,9 +6623,7 @@
         "799 - More Taupe: Cam ngả đất",
         "899 - More Rust: Đỏ gạch"
       ],
-      "instruction": [
-        "Đánh lòng môi hoặc full môi đều được"
-      ]
+      "instruction": ["Đánh lòng môi hoặc full môi đều được"]
     }
   },
   {
@@ -7037,9 +6654,7 @@
         "- Pha trộn giữa các sắc màu là điểm xuyến thêm ô kim tuyến, giúp đôi mắt bạn trở nên thu hút và lấp lánh hơn."
       ],
       "ingredients": [],
-      "effects": [
-        "Giúp đôi mắt thêm lung linh, xinh xắn"
-      ],
+      "effects": ["Giúp đôi mắt thêm lung linh, xinh xắn"],
       "instruction": [
         "- Dùng cọ hoặc đầu ngón tay thoa một lượng vừa đủ lên mí mắt và tán đều tự nhiên."
       ]
@@ -7120,13 +6735,7 @@
       "https://nuty.vn/Data/Sites/1/Product/24068/z4646645805203_33b27d8f3d2d6cda4655d92dc03fa7dc.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26528/24.jpg"
     ],
-    "variants": [
-      "#DL01",
-      "#DL03",
-      "#DL04",
-      "#DL05",
-      "#DL06 "
-    ],
+    "variants": ["#DL01", "#DL03", "#DL04", "#DL05", "#DL06 "],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -7139,13 +6748,9 @@
         "DL04 – Chili layer: Đỏ thuần",
         "DL06 – Woody layer: Đỏ nâu pha cam"
       ],
-      "ingredients": [
-        "Xem trên bao bì"
-      ],
+      "ingredients": ["Xem trên bao bì"],
       "effects": [],
-      "instruction": [
-        "Dùng để đánh lòng môi hoặc full môi"
-      ]
+      "instruction": ["Dùng để đánh lòng môi hoặc full môi"]
     }
   },
   {
@@ -7174,18 +6779,13 @@
       "https://nuty.vn/Data/Sites/1/Product/12186/14.jpg",
       "https://nuty.vn/Data/Sites/1/Product/24068/z4646645805203_33b27d8f3d2d6cda4655d92dc03fa7dc.jpg"
     ],
-    "variants": [
-      "#602",
-      "#603"
-    ],
+    "variants": ["#602", "#603"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
         "Phấn Nén Hold Live Soft Cute Cloud Sense Pressed Powder (10g) - Sản phẩm có kết cấu dạng phấn nén giúp che phủ các khuyết điểm cho da."
       ],
-      "ingredients": [
-        "Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Xem trên bao bì sản phẩm"],
       "effects": [
         "Khóa lớp trang điểm -  Giúp làn da bắt sáng và đều màu, rạng rỡ hơn",
         "Kiểm soát dầu thừa trên da, cho bạn làn da khô thoáng, sáng hồng."
@@ -7253,17 +6853,13 @@
       "description": [
         "Son Dưỡng Môi Byphasse Moisturizing Lip Balm là dòng sản phẩm chăm sóc môi đầu tiên vừa được ra mắt từ thương hiệu Byphasse, giúp dưỡng ẩm sâu và nuôi dưỡng cho đôi môi trở nên mềm mịn ngay tức thì, đồng thời duy trì độ ẩm lâu dài lên đến nhiều giờ."
       ],
-      "ingredients": [
-        "- 93% thành phần thiên nhiên"
-      ],
+      "ingredients": ["- 93% thành phần thiên nhiên"],
       "effects": [
         "- Phục hồi sự mềm mại, mịn màng và ẩm mượt cho làn da.",
         "-  Tạo ra màu sắc để đáp ứng với độ ẩm của môi.",
         "-  Bảo vệ đôi môi khỏi bị khô và chống lại các tác nhên gây hại bên trong và bên ngoài"
       ],
-      "instruction": [
-        "- Thoa 1 lớp son nhẹ lên môi"
-      ]
+      "instruction": ["- Thoa 1 lớp son nhẹ lên môi"]
     }
   },
   {
@@ -7292,10 +6888,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26644/10-(22).png",
       "https://nuty.vn/Data/Sites/1/Product/27542/z4682183868964_4273ba648182362f541594c6b561c822.jpg"
     ],
-    "variants": [
-      "#Peach Like ",
-      "#Apricot Me"
-    ],
+    "variants": ["#Peach Like ", "#Apricot Me"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -7305,9 +6898,7 @@
         "Đặc biệt thiết kế trong suốt giúp bạn dễ dàng quan sát chất và màu phấn ở bên trong.",
         "Nuty hiện có sẵn các tone màu hot nhất"
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "- 7 ô màu có thể mix tùy thích, tiện lợi và tiết kiệm  giúp đôi mắt bạn trở nên thu hút và lấp lánh hơn.",
         "-  Một bảng mắt với sự kết hợp giữa các chất phấn khác nhau gồm glitter, shimmer, matte và thêm cả satin giúp bạn dễ dàng tạo bọng mắt và mở góc mắt.",
@@ -7414,9 +7005,7 @@
       "ingredients": [
         "-  Chất liệu thép không rỉ kết hợp cùng miếng đệm từ silicon cao cấp."
       ],
-      "effects": [
-        "- Giúp uốn cong hàng mi từ gốc đến ngọn một cách hoàn hảo."
-      ],
+      "effects": ["- Giúp uốn cong hàng mi từ gốc đến ngọn một cách hoàn hảo."],
       "instruction": [
         "HƯỚNG DẪN SỬ DỤNG:",
         "- Trước khi thực hiện, bạn nên làm sạch lông mi và kẹp mi để tránh bụi rơi vào mắt.",
@@ -7447,11 +7036,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26585/51.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27479/z4935400843715_d0b5e143f6b1053db8ce006c73ceafb2.jpg"
     ],
-    "variants": [
-      "#112",
-      "#110",
-      "#220"
-    ],
+    "variants": ["#112", "#110", "#220"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -7470,9 +7055,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: Maybelline"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì"],
       "effects": [
         "-  Lớp nền lâu trôi lên tới 30H",
         "- Kiềm dầu tốt, lớp nền mịn lì lâu trôi hoàn hảo",
@@ -7514,10 +7097,7 @@
       "https://nuty.vn/Data/Sites/1/Product/24911/z4958244457735_cd6c9c83eb98fe370b82797d8d16dfb4.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26585/51.jpg"
     ],
-    "variants": [
-      "#13 ",
-      "#23"
-    ],
+    "variants": ["#13 ", "#23"],
     "brands": "Eglips",
     "tab_data": {
       "description": [
@@ -7529,15 +7109,9 @@
         "Có độ bám cao và lâu trôi, lâu xuống màu, giúp mang đến cho bạn làn da láng mịn tự nhiên.",
         "Phản xạ ánh sáng giúp da rạng rỡ và tươi tắn."
       ],
-      "ingredients": [
-        "Hàn Quốc",
-        "Eglips"
-      ],
+      "ingredients": ["Hàn Quốc", "Eglips"],
       "effects": [],
-      "instruction": [
-        "Xuất xứ: Hàn Quốc",
-        "Thương hiệu: Eglips"
-      ]
+      "instruction": ["Xuất xứ: Hàn Quốc", "Thương hiệu: Eglips"]
     }
   },
   {
@@ -7618,11 +7192,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26649/6-(43).png",
       "https://nuty.vn/Data/Sites/1/Product/28698/z4930089605471_9ac3f32387fead2d6a800d0b82cdf88e.jpg"
     ],
-    "variants": [
-      "#Ash Brown",
-      "#Chocolate Brown",
-      "#Dark Brown"
-    ],
+    "variants": ["#Ash Brown", "#Chocolate Brown", "#Dark Brown"],
     "brands": "Browit",
     "tab_data": {
       "description": [
@@ -7685,10 +7255,7 @@
         "-  Bấm mi kĩ trước khi chải mascara.",
         "-  Chải sát vào hàng mi và kéo dài từ gốc đến ngọn nhiều lần cho đến khi đạt được độ dài mong muốn."
       ],
-      "ingredients": [
-        "- Đầu cọ Flex Tower mới",
-        "- Chiết xuất từ tre"
-      ],
+      "ingredients": ["- Đầu cọ Flex Tower mới", "- Chiết xuất từ tre"],
       "effects": [
         "Đặc biệt công thức mascara với chiết xuất sợi tre cho làn mi dài, đầy đặn và nhẹ nhàng. Đã thử nghiệm dị ứng. Bác sĩ nhãn khoa đã kiểm tra. Thích hợp cho mắt nhạy cảm và người đeo kính áp tròng.",
         "Mascara chống lem, chống trôi hiệu quả giúp bạn tự tin với lớp trang điểm hoàn hảo suốt nhiều giờ liền nhưng vẫn dễ dàng tẩy trang với các sản phẩm chuyên dụng."
@@ -7732,10 +7299,7 @@
         "Xuất xứ:  Nhật Bản",
         "Thương hiệu:  Kiss Me"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Nét bút cực mảnh, cực sắc, đậm đẹp, bền màu, không lem trôi và đặc biệt là không thấm nước."
@@ -7767,13 +7331,7 @@
       "https://nuty.vn/Data/Sites/1/Product/12185/19.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27372/z4066610507883_81f3a7504302601baddf737ce71851ec.jpg"
     ],
-    "variants": [
-      "#112",
-      "#110",
-      "#120",
-      "#128",
-      "#220"
-    ],
+    "variants": ["#112", "#110", "#120", "#128", "#220"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -7830,18 +7388,14 @@
         "Bút kẻ lông mày chứa những thành phần chống thấm nước, mồ hôi giữ cho đường kẻ luôn đẹp trong thời gian dài.",
         "Sản phẩm Bút Chì Sáp Kẻ Mày Siêu Mịn Kissme Heroine Make Quick Eyebrow có nhiều tone màu tại Nuty cho bạn lựa chọn"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "#01 nâu đen",
         "- Tạo đường nét cho chân mày tự nhiên, dễ dàng và sắc nét trong suốt cả ngày dài.",
         "- Bút kẻ lông mày chứa những thành phần chống thấm nước, mồ hôi giữ cho đường kẻ luôn đẹp trong thời gian dài."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -7882,9 +7436,7 @@
         "THÀNH PHẦN:",
         "- Hạt phấn Micro powder cho lớp nền mịn, nhẹ, không bóng dầu."
       ],
-      "effects": [
-        "CÔNG DỤNG:"
-      ],
+      "effects": ["CÔNG DỤNG:"],
       "instruction": [
         "HƯỚNG DẪN SỬ DỤNG:",
         "Dùng ở bước cuối cùng khi makeup để khóa lớp nền và giữ lớp nền bền màu trong suốt nhiều giờ liền"
@@ -7915,10 +7467,7 @@
       "https://nuty.vn/Data/Sites/1/Product/9021/5.png",
       "https://nuty.vn/Data/Sites/1/Product/26586/z4930103857852_5400c77d425a86e2e65d44dc5c529f60.jpg"
     ],
-    "variants": [
-      "#A02",
-      "#A01"
-    ],
+    "variants": ["#A02", "#A01"],
     "brands": "Lemonade",
     "tab_data": {
       "description": [
@@ -7938,9 +7487,7 @@
         "Xuất xứ:  Việt Nam",
         "Thương hiệu:  Lemonade"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "- Phấn nước siêu lỳ Supermatte Cushion mang kết cấu hạt phấn mềm mại siêu nhẹ với độ kết dính cao giúp lớp nền bám và bền chặt, nhờ vậy tạo được lớp trang điểm cực kỳ mượt mà, tự nhiên và nhẹ mặt.",
         "- Phấn nước được bổ sung dầu dưỡng siêu nhẹ dễ bay hơi vào dung môi tạo bề mặt để giúp lớp nền dễ dàng tiệp nhanh vào da sau mỗi lần chạm, đồng thời dầu sẽ bay hơi ngay sau khi thoa để cho ra lớp nền lỳ và ráo mịn.",
@@ -7972,12 +7519,7 @@
       "https://nuty.vn/Data/Sites/1/Product/12198/58.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9021/5.png"
     ],
-    "variants": [
-      " #03 Peach",
-      " #04 Coral",
-      "#05 Rose",
-      "#06 Fig"
-    ],
+    "variants": [" #03 Peach", " #04 Coral", "#05 Rose", "#06 Fig"],
     "brands": "Eglips",
     "tab_data": {
       "description": [
@@ -7995,9 +7537,7 @@
         "- Sở hữu chất phấn mịn màng tan trên da, Eglips Cheek Fit Blusher sẽ đem đến cho đôi gò má màu sắc trong trẻo tựa như được ửng hồng từ sâu bên trong.",
         "- Bảng màu đa dạng được lấy cảm hứng từ màu sắc của những đóa hoa, Eglips Cheek Fit Blusher sẽ đem sự tươi trẻ đến với đôi má bạn."
       ],
-      "instruction": [
-        "- Dùng cọ hoặc tay tán đều phấn lên vùng má"
-      ]
+      "instruction": ["- Dùng cọ hoặc tay tán đều phấn lên vùng má"]
     }
   },
   {
@@ -8057,11 +7597,7 @@
       "https://nuty.vn/Data/Sites/1/Product/5471/4-(66).png",
       "https://nuty.vn/Data/Sites/1/Product/26567/19.png"
     ],
-    "variants": [
-      "#09 ",
-      "#08",
-      "#04"
-    ],
+    "variants": ["#09 ", "#08", "#04"],
     "brands": null,
     "tab_data": {
       "description": [
@@ -8073,9 +7609,7 @@
         "- Giúp tạo sợi chân mày rõ nét và đậm màu trông gương mặt thần thái và rạng rỡ hơn.",
         "- Thiết kế đầu chải thao tác dễ dàng, không bị vón cục."
       ],
-      "instruction": [
-        "Sử dụng cọ để chải và định hình chân mày"
-      ]
+      "instruction": ["Sử dụng cọ để chải và định hình chân mày"]
     }
   },
   {
@@ -8130,10 +7664,7 @@
         "-  HG08 - Hazelnut Syrup: Đỏ cam gạch"
       ],
       "ingredients": [],
-      "effects": [
-        "Xuất xứ: Hàn Quốc",
-        "Thương hiệu: Black Rouge"
-      ],
+      "effects": ["Xuất xứ: Hàn Quốc", "Thương hiệu: Black Rouge"],
       "instruction": []
     }
   },
@@ -8232,9 +7763,7 @@
         "-  Chất mực không lem, không trôi, có khả năng chịu nước và mồ hôi vượt trội, giữ đôi mắt sắc nét suốt nhiều giờ liền.",
         "-  Dễ dàng tẩy trang với các sản phẩm tẩy trang chuyên dụng."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -8261,10 +7790,7 @@
       "https://nuty.vn/Data/Sites/1/Product/24987/z4958244454583_7d42aca7cc4bbf40cf7194b7bf778a87.jpg",
       "https://nuty.vn/Data/Sites/1/Product/1726/z4635400028808_ea659465fa9c34beb019ee774c4adacd.jpg"
     ],
-    "variants": [
-      "#02 Brown ",
-      "#01 Jet Black "
-    ],
+    "variants": ["#02 Brown ", "#01 Jet Black "],
     "brands": "Kiss Me",
     "tab_data": {
       "description": [
@@ -8284,10 +7810,7 @@
         "Xuất xứ:Nhật Bản",
         "Thương hiệu: Kissme"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "-  Đầu cọ hình tam giác có thể vuốt mi từ tận gốc, đi vào tất cả các đường kẻ vào góc của mí mắt và tạo ra những lọn mi từ gốc, làm mi dài ra và tách mi thành từng sợi.",
@@ -8382,17 +7905,13 @@
         "-  Chất lông mịn mượt",
         "-  Cho hiệu ứng đường khối sắc nét, tự nhiên"
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "- Thiết kế đầu cọ ngang giúp cho đường nét tạo khối chuẩn xác và mềm mại. Sử dụng cho việc tạo khối gương mặt ở vùng dưới xương gò má và vùng xương quai xanh.",
         "-  Cho hiệu ứng đường khối sắc nét, tự nhiên.",
         "- Mang đến hiệu ứng trang điểm đẹp, định hình gương mặt dễ dàng ngay cả với những người mới bắt đầu makeup."
       ],
-      "instruction": [
-        "- Dùng với sản phẩm: dạng lỏng (liquid), bột (powder)"
-      ]
+      "instruction": ["- Dùng với sản phẩm: dạng lỏng (liquid), bột (powder)"]
     }
   },
   {
@@ -8470,12 +7989,7 @@
       "https://nuty.vn/Data/Sites/1/Product/24982/z4066913440710_e8e33f82ddd116ab9ba8cf7427eb0e8f.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27172/z4038962389576_1299f0d626f8e7a187b4661f9af0500a.jpg"
     ],
-    "variants": [
-      "#01 (kèm cọ)",
-      "#02 (kèm cọ)",
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01 (kèm cọ)", "#02 (kèm cọ)", "#01", "#02"],
     "brands": "Too Cool For School",
     "tab_data": {
       "description": [
@@ -8531,11 +8045,7 @@
       "https://nuty.vn/Data/Sites/1/Product/17418/z4090224366407_7f9d8b1f6153adfbda9c832fabcb6ed4.jpg",
       "https://nuty.vn/Data/Sites/1/Product/24982/z4066913440710_e8e33f82ddd116ab9ba8cf7427eb0e8f.jpg"
     ],
-    "variants": [
-      "#Expensive Nude",
-      "#Pink Glow",
-      "#Coco Glam"
-    ],
+    "variants": ["#Expensive Nude", "#Pink Glow", "#Coco Glam"],
     "brands": "Browit",
     "tab_data": {
       "description": [
@@ -8665,10 +8175,7 @@
         "Mỹ",
         "Ecotools"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem trên bao bì sản phẩm"],
       "effects": [
         "- Chất liệu bông mút xốp mềm, phù hợp để dặm phấn phủ/phấn nền, phấn má, phấn tạo khối, highlight. Set 2 bông mút fullsize."
       ],
@@ -8719,9 +8226,7 @@
         "THÀNH PHẦN",
         "Water, butylene glycol, aloe barbadensis leaf juice, phenoxyethanol 0,62%, carbomer, aminomethyl propanol, placental protein (sheep placenta), xanthan gum, allantoin, swertia japonica extract, salix alba (willow) bark extract, symphytum officinale leaf extract, nasturtium officinale leaf/stem extract, olea europaea (olive) leaf extract, panax ginseng root extract"
       ],
-      "effects": [
-        "Sản phẩm giúp dưỡng mi, giúp mi đẹp tự nhiên."
-      ],
+      "effects": ["Sản phẩm giúp dưỡng mi, giúp mi đẹp tự nhiên."],
       "instruction": []
     }
   },
@@ -8751,9 +8256,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27883/13769e7bcf8712d94b96.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28913/25.jpg"
     ],
-    "variants": [
-      "#01"
-    ],
+    "variants": ["#01"],
     "brands": "Vacosi",
     "tab_data": {
       "description": [
@@ -8771,10 +8274,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Vacosi"
       ],
-      "ingredients": [
-        "THÀNH PHẦN",
-        "- Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN", "- Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG",
         "- Giúp mắt cuốn hút, sắc sảo hơn.",
@@ -8814,9 +8314,7 @@
       "description": [
         "Spotlight Highlight Cream là sản phẩm bắt sáng trang điểm, với công thức dạng kem mịn dễ dàng mang đến cho bạn những đường nét vô cùng nổi bật. Chỉ cần apply một lớp mỏng lên các điểm cần bắt sáng là gương mặt bạn đã trở nên rạng rỡ hơn rất nhiều. Vừa giúp gương mặt có chiều sâu vừa giúp da bừng sáng hơn."
       ],
-      "ingredients": [
-        "Xem trên bao bì"
-      ],
+      "ingredients": ["Xem trên bao bì"],
       "effects": [
         "• Công thức kem mịn",
         "• Giúp lớp trang điểm mịn màng, căng sáng",
@@ -8863,18 +8361,14 @@
         "Xuất xứ: Nhật Bản",
         "Thương hiệu: Kiss Me"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "có những đặc trưng nổi bật như sau:",
         "- Chì kẻ mí mắt có thiết kế 2 đầu,1 đầu là lõi chì mịn dễ vẽ chống cọ sát da, đầu còn lại là đầu mút tán màu, mịn giúp nét kẻ luôn tự nhiên.",
         "- Chì kẻ mắt có khả năng chống trôi, chống mồ hôi và nước tốt.",
         "- Phù hợp cho người mới biết trang điềm hoặc thích tone màu tự nhiên"
       ],
-      "instruction": [
-        "- Kẻ theo viền mắt những dáng kẻ bạn yêu thích"
-      ]
+      "instruction": ["- Kẻ theo viền mắt những dáng kẻ bạn yêu thích"]
     }
   },
   {
@@ -8915,9 +8409,7 @@
         "Xuất xứ: Nhật Bản",
         "Thương hiệu: Kiss Me"
       ],
-      "ingredients": [
-        "- Công thức Shape-Memory Polymer"
-      ],
+      "ingredients": ["- Công thức Shape-Memory Polymer"],
       "effects": [],
       "instruction": []
     }
@@ -8962,18 +8454,14 @@
         "Xuất xứ: Nhật Bản",
         "Thương hiệu: Kiss Me"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "có những đặc trưng nổi bật như sau:",
         "- Chì kẻ mí mắt có thiết kế 2 đầu,1 đầu là lõi chì mịn dễ vẽ chống cọ sát da, đầu còn lại là đầu mút tán màu, mịn giúp nét kẻ luôn tự nhiên.",
         "- Chì kẻ mắt có khả năng chống trôi, chống mồ hôi và nước tốt.",
         "- Phù hợp cho người mới biết trang điềm hoặc thích tone màu tự nhiên"
       ],
-      "instruction": [
-        "- Kẻ theo viền mắt những dáng kẻ bạn yêu thích"
-      ]
+      "instruction": ["- Kẻ theo viền mắt những dáng kẻ bạn yêu thích"]
     }
   },
   {
@@ -9012,10 +8500,7 @@
         "-  Thiết kế 2 đầu, đầu chì có đầu chải giúp lông mày vào nếp gọn gàng.",
         "-  Panthenol  giúp chăm sóc và bảo vệ lông mày."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "- Đầu chì siêu nhỏ 1.6mm với chất liệu ngòi chì mềm mại dễ kẻ, phù hợp với những bạn mới bắt đầu makeup.",
@@ -9119,10 +8604,7 @@
         "-  Thiết kế 2 đầu, đầu chì có đầu chải giúp lông mày vào nếp gọn gàng.",
         "-  Panthenol  giúp chăm sóc và bảo vệ lông mày."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Đầu chì siêu nhỏ 1.6mm với chất liệu ngòi chì mềm mại dễ kẻ, phù hợp với những bạn mới bắt đầu makeup.",
         "- Chì kẻ với chất liệu chống thấm nước, màu sắc hài hòa sẽ giúp hoàn thiện lông mày với màu sắc tự nhiên, mềm mại.",
@@ -9173,10 +8655,7 @@
         "-  Thiết kế 2 đầu, đầu chì có đầu chải giúp lông mày vào nếp gọn gàng.",
         "-  Panthenol  giúp chăm sóc và bảo vệ lông mày."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Đầu chì siêu nhỏ 1.6mm với chất liệu ngòi chì mềm mại dễ kẻ, phù hợp với những bạn mới bắt đầu makeup.",
         "- Chì kẻ với chất liệu chống thấm nước, màu sắc hài hòa sẽ giúp hoàn thiện lông mày với màu sắc tự nhiên, mềm mại.",
@@ -9227,9 +8706,7 @@
         "-  Thiết kế 2 đầu, đầu chì có đầu chải giúp lông mày vào nếp gọn gàng.",
         "-  Panthenol  giúp chăm sóc và bảo vệ lông mày."
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "#08 xám tro",
         "- Đầu chì siêu nhỏ 1.6mm với chất liệu ngòi chì mềm mại dễ kẻ, phù hợp với những bạn mới bắt đầu makeup.",
@@ -9299,9 +8776,7 @@
         "#12 BERRY MUFFIN",
         "#13 CINNAMON SUGAR"
       ],
-      "instruction": [
-        "- Mang đến vẻ tươi tắn cho làn da."
-      ]
+      "instruction": ["- Mang đến vẻ tươi tắn cho làn da."]
     }
   },
   {
@@ -9380,10 +8855,7 @@
         "Khả năng chống nước và mồ hôi, an toàn cho vùng da nhạy cảm ở mắt, dễ tẩy xóa với nước tẩy trang chuyên dụng mắt môi.",
         "Sản phẩm có 2 tông màu cho bạn lựa chọn: #Deep Brown, #Midnight Black"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Midnight Black"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Midnight Black"],
       "effects": [
         "CÔNG DỤNG:",
         "- T hiết kế dạng sáp với đầu bút nhỏ chỉ 2mm thao tác dễ dàng, đường kẻ sắc nét, đậm màu và có khả năng không thấm nước, mồ hôi cao ."
@@ -9428,9 +8900,7 @@
         "Đồng hành cùng các tín đồ yêu thích làm đẹp tại thị trường Việt Nam từ năm 2012, VACOSI luôn biết cách tạo ra sự khác biệt, không ngừng cải tiến cập nhật xu hướng mới để đáp ứng nhu cầu của khách hàng hiện đại, đặc biệt là những Makeup Artist chuyên nghiệp.  VACOSI sở hữu 02 dòng sản phẩm luôn được người tiêu dùng ưa chuộng, đó là VACOSI Natural Studio và VACOSI Professional Studio.",
         "Chuốt Mi 2 Đầu Làm Dài và Tơi Mi Vacosi Natural Lash Domination Mascara là dòng Mascara đến từ Hàn Quốc với thiết kế hai đầu thông minh cùng chất mực cải tiến, mang lại đôi mi đẹp đúng chuẩn  mang lại cho bạn đôi mi đúng chuẩn ĐẸP LONG LANH với hiệu ứng full fan không bao giờ hết hot."
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "-  Giúp nâng và làm dài mi mà không mất đi vẻ tự nhiên.",
         "- T ạo cảm giác đôi mắt to tròn cùng hàng mi cong vút. Sợi mi tơi và không hề dính đâu ạ.",
@@ -9475,9 +8945,7 @@
         "Khả năng chống nước và mồ hôi, an toàn cho vùng da nhạy cảm ở mắt, dễ tẩy xóa với nước tẩy trang chuyên dụng mắt môi.",
         "Sản phẩm có 2 tông màu cho bạn lựa chọn: #DeepBrown, #MidnightBlack"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "- T hiết kế dạng sáp với đầu bút nhỏ chỉ 2mm thao tác dễ dàng, đường kẻ sắc nét, đậm màu và có khả năng không thấm nước, mồ hôi cao ."
       ],
@@ -9811,9 +9279,7 @@
         "Với thiết kế 2 đầu gồm một đầu lõi gel mềm mại giúp lên màu đều và rõ, đầu còn lại là đầu chổi giúp chải đều lông mày và màu không bị vón. Công thức chống trôi và siêu giữ màu, giúp màu vẽ siêu bền, không trôi khi tiếp xúc với nước, mồ hôi, bã nhờn.",
         "Ngoài ra sản phẩm có chứa thành phần Panthenol dưỡng ẩm chăm sóc nhẹ nhàng cho lông mày."
       ],
-      "ingredients": [
-        "Nâu tự nhiên"
-      ],
+      "ingredients": ["Nâu tự nhiên"],
       "effects": [
         "CÔNG DỤNG:",
         "Nâu tự nhiên",
@@ -9854,11 +9320,7 @@
       "https://nuty.vn/Data/Sites/1/Product/2391/z4380746504906_37b720e3e3e24992b9d33b845afaf99b.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26680/flawsome.png"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -9924,9 +9386,7 @@
         "Với thiết kế 2 đầu gồm một đầu lõi gel mềm mại giúp lên màu đều và rõ, đầu còn lại là đầu chổi giúp chải đều lông mày và màu không bị vón. Công thức chống trôi và siêu giữ màu, giúp màu vẽ siêu bền, không trôi khi tiếp xúc với nước, mồ hôi, bã nhờn.",
         "Ngoài ra sản phẩm có chứa thành phần Panthenol dưỡng ẩm chăm sóc nhẹ nhàng cho lông mày."
       ],
-      "ingredients": [
-        "Nâu đen"
-      ],
+      "ingredients": ["Nâu đen"],
       "effects": [
         "Sản phẩm kẻ lông mày giúp trang điểm, tạo màu và tạo đường nét cho lông mày"
       ],
@@ -9965,12 +9425,8 @@
       "description": [
         "Chuốt Mi Hold Live Thick Curly Mascara giúp lông mi nhìn cong, dài và dày hơn. Sản phẩm bền  và lâu trôi màu cùng với việc tạo độ cong tuyệt đẹp.  Sản phẩm nhanh khô, không bị lem màu, không thấm nước, bền màu ngay cả khi da bạn tiết nhiều mồ hôi."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
-      "effects": [
-        "- Chuốt mi cong dài và dày hơn"
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
+      "effects": ["- Chuốt mi cong dài và dày hơn"],
       "instruction": []
     }
   },
@@ -10006,12 +9462,8 @@
       "description": [
         "Chuốt Mi Hold Live Long Curly Mascara  giúp lông mi nhìn cong, dài và dày hơn. Sản phẩm bền  và lâu trôi màu cùng với việc tạo độ cong tuyệt đẹp.  Sản phẩm nhanh khô, không bị lem màu, không thấm nước, bền màu ngay cả khi da bạn tiết nhiều mồ hôi."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
-      "effects": [
-        "- Chuốt mi cong dài và dày hơn"
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
+      "effects": ["- Chuốt mi cong dài và dày hơn"],
       "instruction": []
     }
   },
@@ -10102,11 +9554,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27538/z4119401963910_7e2d2fc4add9d33c1467f6f55db5296f.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27537/z4119401959693_7db86b3751b01556efa589293ddd4e86.jpg"
     ],
-    "variants": [
-      "#20 Vanilla",
-      "#21 Ivory",
-      "#22 Petal"
-    ],
+    "variants": ["#20 Vanilla", "#21 Ivory", "#22 Petal"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -10203,11 +9651,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27482/z4935400824782_67dd6b1b68b4d2a547f412beab41889e.jpg",
       "https://nuty.vn/Data/Sites/1/Product/2390/z4503029589431_bb4f30b04e6925d67d99a162dd716d61.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -10267,9 +9711,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: 3CE"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì"],
       "effects": [
         "- Thiết kế siêu mảnh mang lại nét vẽ tinh tế và sắc nét hoàn hảo là ưu điểm vượt trội. Nét vẽ sắc, thanh mảnh giúp kẻ đường viền mắt rõ nét, giúp mắt sâu hơn và quyến rũ hơn trong những buổi tiệc."
       ],
@@ -10323,9 +9765,7 @@
         "- Đầu nhỏ 2.5mm dùng để kéo dài mi dưới.",
         "- Đầu to hơn dùng để làm dày và cong mi trên."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
       "effects": [
         "- Đầu chải lớn dùng để chuốt mi trên, giúp làm cong mi và dày mi.",
         "- Không bị vón cục, nhanh khô, không thấm nước, lâu trô",
@@ -10399,9 +9839,7 @@
         "Xuất xứ: Mỹ",
         "Thương hiệu: Maybelline"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "- Đầu bút dạ dễ kẻ, giúp đường kẻ mắt đậm màu, dễ dàng kẻ dáng mắt mèo cá tính.\n- Công nghệ độc đáo giúp 48H đậm màu, kháng nước, kháng nhiệt, và không lem trôi.\n- Không gây kích ứng cho da. An toàn cho mắt kể cả khi sử dụng cùng kính áp tròng."
@@ -10508,13 +9946,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29254/69.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9022/z4976852123587_70938d67944fdce4dc0208521fb73a9f.jpg"
     ],
-    "variants": [
-      "#801",
-      "#802",
-      "#803",
-      "#805",
-      "#806"
-    ],
+    "variants": ["#801", "#802", "#803", "#805", "#806"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -10557,10 +9989,7 @@
       "https://nuty.vn/Data/Sites/1/Product/387/z4028254857552_d840e6e9f750c95f46255246f8f449e4.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29254/69.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01", "#02"],
     "brands": "Habaria",
     "tab_data": {
       "description": [
@@ -10574,9 +10003,7 @@
         "– Có khả năng hút dầu nhờn giúp làn da khô thoáng hơn.",
         "Nuty có các mã:  #01 & 02"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Sở hữu chất phấn mịn màng tan trên da mang đến cho đôi gò má màu sắc trong trẻo tựa như được ửng hồng từ sâu bên trong.",
         "- Phấn má hồng chất phấn mượt mà bám bền trên da.",
@@ -10616,19 +10043,14 @@
       "https://nuty.vn/Data/Sites/1/Product/27547/z4574519919006_54ae8f8ea0810ba2d384adc2b012f80e.jpg",
       "https://nuty.vn/Data/Sites/1/Product/387/z4028254857552_d840e6e9f750c95f46255246f8f449e4.jpg"
     ],
-    "variants": [
-      "#901",
-      "#902"
-    ],
+    "variants": ["#901", "#902"],
     "brands": "Color School",
     "tab_data": {
       "description": [
         "Bảng Phấn Mắt 16 ô Color School Streamer Firework Eyeshadow Palette",
         "Bảng Phấn Mắt 16 ô Color School Streamer Firework Eyeshadow Palette  mới từ nhà Color School nổi tiếng tại Trung có 16 ô màu cả lì cả nhũ với chất phấn mịn mượt dễ lên màu, chống bay phấn, chống nước, dễ tẩy trang, tiện lợi và đa dạng."
       ],
-      "ingredients": [
-        "-Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["-Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem dù dùng tay tán phấn vì thành phần dầu binder thân thiện với da, đồng thời khả năng bám màu cũng “siêu ấn tượng”.",
@@ -10671,9 +10093,7 @@
       "description": [
         "Tẩy Mascara Kiss Me Heroine Make Speedy Mascara Remover giúp việc loại bỏ lớp mascara waterproof trở nên dễ dàng hơn bao giờ hết."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "Chỉ cần thoa lên, dung dịch sẽ ngay lập tức thẩm thấu và hòa tan lớp Mascara cứng đầu, giúp làm sạch da một cách nhanh chóng và hiệu quả. Áp dụng công thức không làm cay mắt, giúp tẩy sạch mà không cần chà xát mạnh lên da, không gây tổn thương cho vùng mi mắt. Có chứa thành phần dưỡng mi, giúp chăm sóc và cải thiện những lông mi hư tổn."
       ],
@@ -10806,11 +10226,7 @@
       "https://nuty.vn/Data/Sites/1/Product/7341/cover.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9029/z4976852123608_c09f5de8a057a6f883f52ec57cf53027.jpg"
     ],
-    "variants": [
-      "#401",
-      "#402",
-      "#403"
-    ],
+    "variants": ["#401", "#402", "#403"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
@@ -10850,11 +10266,7 @@
       "https://nuty.vn/Data/Sites/1/Product/29003/6674238575.jpg",
       "https://nuty.vn/Data/Sites/1/Product/7341/cover.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03"
-    ],
+    "variants": ["#01", "#02", "#03"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -10863,9 +10275,7 @@
         "#02",
         "#03"
       ],
-      "ingredients": [
-        "Nuty hiện về 3 màu"
-      ],
+      "ingredients": ["Nuty hiện về 3 màu"],
       "effects": [],
       "instruction": []
     }
@@ -10917,11 +10327,7 @@
       "https://nuty.vn/Data/Sites/1/Product/6668/z4574857457384_22d72d05e6c144beae3af53a7a52f89a.jpg",
       "https://nuty.vn/Data/Sites/1/Product/7288/z4035708428531_4c11e184f0aca2c63a1672d3332fc8ec.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03"
-    ],
+    "variants": ["#01", "#02", "#03"],
     "brands": "Habaria",
     "tab_data": {
       "description": [
@@ -10934,9 +10340,7 @@
         ": Trung Quốc",
         "Habaria"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem, khả năng bám màu cũng “siêu ấn tượng”.",
@@ -10973,11 +10377,7 @@
       "https://nuty.vn/Data/Sites/1/Product/10779/z4126995846174_7a1b65d83792098ccde94884bf12fcd8.jpg",
       "https://nuty.vn/Data/Sites/1/Product/6668/z4574857457384_22d72d05e6c144beae3af53a7a52f89a.jpg"
     ],
-    "variants": [
-      "#601",
-      "#602",
-      "#603"
-    ],
+    "variants": ["#601", "#602", "#603"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
@@ -11028,9 +10428,7 @@
       "description": [
         "Mặt nạ ngủ cho môi CARE:NEL Berry Lip Night Mask 5g thuộc dòng sản phẩm được ưa chuộng vào mùa đông của hãng mỹ phẩm CARE NEL nổi tiếng Hàn Quốc. Dòng sản phẩm có hai màu cho các bạn gái lựa chọn đó là dòng trái cây được chiết xuất từ các loại quả mọng như dâu tây, quả mâm xôi, bạc hà, blueberry … sẽ có màu hồng bên ngoài hộp và hương chanh tự nhiên thơm mát với sắc xanh, được phân biệt dễ dàng."
       ],
-      "ingredients": [
-        "Hương Quả Mọng #Berry"
-      ],
+      "ingredients": ["Hương Quả Mọng #Berry"],
       "effects": [
         "- Cung cấp độ ẩm cho môi căng mọng, mềm mượt.",
         "- Hương thơm ngọt ngào, nhẹ dịu.",
@@ -11079,9 +10477,7 @@
         "Bổ sung thành phần dầu hạt Macadamia, dầu Oliu giúp cung cấp độ ẩm đầy đủ, cho làn môi trở nên căng mọng, mềm mướt, không còn cảm giác nứt nẻ, khó chịu.",
         "Hương Berry dịu ngọt tạo cảm giác dễ chịu, không gây bết rít, giúp bạn dễ dàng chìm vào giấc ngủ sâu hơn."
       ],
-      "instruction": [
-        "Bôi một lớp vừa đủ trước khi đi ngủ"
-      ]
+      "instruction": ["Bôi một lớp vừa đủ trước khi đi ngủ"]
     }
   },
   {
@@ -11174,12 +10570,7 @@
       "https://nuty.vn/Data/Sites/1/Product/11686/carenel-lip-sleeping-mask-berry-23g-8809584960401-e509e4d85d88475b8bea17127fd553e9.jpg",
       "https://nuty.vn/Data/Sites/1/Product/2567/google-shopping-mat-na-ngu-moi-care-nel-chiet-xuat-qua-mong-5g_img_358x358_843626_fit_center.jpg"
     ],
-    "variants": [
-      "Bare Pink",
-      "Bare Raspberry",
-      "Bare Melon",
-      "Bare Punch"
-    ],
+    "variants": ["Bare Pink", "Bare Raspberry", "Bare Melon", "Bare Punch"],
     "brands": "Bobbi Brown",
     "tab_data": {
       "description": [
@@ -11199,9 +10590,7 @@
       "effects": [
         "- Son dưỡng có màu \n    - Công thức dưỡng ẩm và làm mềm sâu \n    - Cải thiện tình trạng khô nứt môi \n    - Thành phần giàu vitamin và dầu dưỡng"
       ],
-      "instruction": [
-        "- Dùng khi khô môi và cần dưỡng môi"
-      ]
+      "instruction": ["- Dùng khi khô môi và cần dưỡng môi"]
     }
   },
   {
@@ -11312,13 +10701,7 @@
       "https://nuty.vn/Data/Sites/1/Product/1957/s2625655-main-zoom.jpg",
       "https://nuty.vn/Data/Sites/1/Product/3320/z4090224344723_1cfc8608aefee75b9f1351b4f98a28e9.jpg"
     ],
-    "variants": [
-      "#805",
-      "#804",
-      "#803",
-      "#802",
-      "#801"
-    ],
+    "variants": ["#805", "#804", "#803", "#802", "#801"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -11426,9 +10809,7 @@
         "Dòng  Skin Long Wear Weightless  mang đến lớp nền mỏng nhẹ nhưng che phủ hoàn hảo mọi khuyết điểm trên da, với hiệu ứng finish mịn lì tự nhiên, độ kiềm dầu cao và khả năng bền màu lên đến 16 giờ.",
         "Sản phẩm có bảng màu cực kì đa dạng với 43 tông màu, giúp hiệu chỉnh mọi sắc độ của làn da, tôn vinh vẻ đẹp rạng rỡ của phái đẹp."
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "- Giúp lớp nền bền chặt",
         "- K iềm dầu tốt, hạn chế lớp nền bị oxy hóa dẫn đến xuống tông",
@@ -11470,17 +10851,13 @@
         "Chất kem nhẹ nhàng lướt trên môi, hạn chế tối đa tình trạng môi khô căng bong tróc.",
         "Chăm sóc môi chuyên sâu vào cả ban ngày và ban đêm và hỗ trợ tẩy tế bào chết dư thừa trên môi."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:"
-      ],
+      "ingredients": ["THÀNH PHẦN:"],
       "effects": [
         "CÔNG DỤNG:",
         "Mặt Nạ Ngủ Môi Care:nel chứa thành phần chính từ lựu đỏ có hàm lượng vitamin C cao, à chất chống oxy hóa giúp ngăn ngừa nếp nhăn và ngăn ngừa lão hóa cho môi.",
         "Công nghệ đặc biệt Moisture Wrap™ cấp ẩm tốt cho môi, giúp đôi môi luôn hồng hào, căng mọng."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -11550,10 +10927,7 @@
         "THÀNH PHẦN:",
         "G684294 Ingredients: Isododecane, Cera Alba/ Beeswax, Copernicia Cerifera Cera/ Carnauba Wax, Disteardimonium Hectorite, Aqua/ Water, Allyl Stearate/ Va Copolymer, Oryza Sativa Cera/ Rice Bran Wax, Paraffin, Alcohol Denat, Polyvinyl Laurate, Vp/ Eicosene Copolymer, Propylene Carbonate, Talc, Ethylenediamine/ Stearyl Dimer Dilinoleate Copolymer, Peg-30 Glyceryl Stearate, Poly C10-30 Alkyl Acrylate, Propylparaben, Methylparaben, Hydrogenated Jojoba Oil, Calcium Sodium Borosilicate, Silica [+/- May Contain Ci 77491, Ci 77492, Ci 77499 / Iron Oxides, Ci 7707 / Ultramarines, Ci 77891 / Titanium Dioxide, Ci 75470 / Carmine, Ci 77288 / Chromium Oxide Greens, Ci 77510 / Ferric Ammonium Ferrocyanide, Ci 77742 / Manganese Violet, Mica, Ci 77266 / Black 2, Ci 77510 / Ferric Ferrocyanide]"
       ],
-      "effects": [
-        "CÔNG DỤNG:",
-        "Mascara giúp làm cong và dày mi."
-      ],
+      "effects": ["CÔNG DỤNG:", "Mascara giúp làm cong và dày mi."],
       "instruction": [
         "Lăn chai giữa 2 lòng bàn tay để làm ấm mascara (giúp mascara ít bị vón cục khi sử dụng). Lấy cọ ra khỏi chai và lau bớt phần mascara dư bằng khăn giấy. Chải cọ theo đường ziczac từ chân mi đến ngọn mi. Sau khi chuốt qua một lượt, đợi khoảng 10 giây cho khô lớp đầu tiên, chuốt tiếp lớp thứ hai, đợi thêm 10 giây nữa rồi chuốt tiếp lần thứ ba."
       ]
@@ -11597,9 +10971,7 @@
         "Matte Addict Concealer là dòng kem che khuyết điểm có kết cấu mỏng nhẹ nhưng vẫn che phủ hiệu quả. Nhờ kết cấu màng bền vững giúp kiểm soát dầu thừa, lâu trôi và hạn chế xuống tone",
         "TONE DA: \n #A𝟎𝟏  - phù hợp cho tone da trắng sáng nhưng không phải trắng bệt và nhợt nhạt. \n #A𝟎𝟐  - phù hợp cho tone da trung bình đến trung bình sáng, tự nhiên và hài hòa, đây cũng là màu sắc dễ phù hợp với đại đa số chị em chúng mình. \n #A𝟎𝟑  - phù hợp cho tone da tự nhiên, da vàng hoặc da hơi tối màu."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "- Kiềm dầu, bền màu suốt 10 tiếng đồng hồ. \n - Kết cấu dầu bay hơi đặc biệt giúp tạo lớp che phủ mịn lì hoàn hảo. \n - Được bổ sung các hoạt chất giúp dưỡng da và cấp ẩm. \n - Che phủ và làm mờ khuyết điểm tức thì, làm đầy các nếp nhăn, xóa đi các dấu hiệu mệt mỏi. \n - Chiết xuất hoa cúc La Mã có công dụng kháng viêm và làm dịu da, giúp sản phẩm an toàn với làn da mụn."
       ],
@@ -11632,11 +11004,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27734/maybelline45.png",
       "https://nuty.vn/Data/Sites/1/Product/7361/sand-dune.jpg"
     ],
-    "variants": [
-      "#02",
-      "#01",
-      "#03"
-    ],
+    "variants": ["#02", "#01", "#03"],
     "brands": "Huxley",
     "tab_data": {
       "description": [
@@ -11816,14 +11184,7 @@
       "https://nuty.vn/Data/Sites/1/Product/15991/rm8.jpg",
       "https://nuty.vn/Data/Sites/1/Product/3883/10.png"
     ],
-    "variants": [
-      "#A11",
-      "#A10",
-      "#A9",
-      "#A8",
-      "#A7",
-      "#A6"
-    ],
+    "variants": ["#A11", "#A10", "#A9", "#A8", "#A7", "#A6"],
     "brands": null,
     "tab_data": {
       "description": [],
@@ -11955,15 +11316,9 @@
         "Thiết kế son trong suốt có thể nhìn thấy màu son bên trong và phần nắp ánh kim màu vàng sang trọng.",
         "Với 8 version bao gồm 25 màu đa dạng màu sắc  cùng các tone trải đều từ warm đến cool, từ những màu sáng đến trầm đậm, cho nàng tha hồ chọn lựa"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì"
-      ],
-      "effects": [
-        "- Giúp đôi môi rạng rỡ, tràn đầy sức sống"
-      ],
-      "instruction": [
-        "- Dùng cọ thoa son lên lòng môi hoặc full môi"
-      ]
+      "ingredients": ["- Vui lòng xem trên bao bì"],
+      "effects": ["- Giúp đôi môi rạng rỡ, tràn đầy sức sống"],
+      "instruction": ["- Dùng cọ thoa son lên lòng môi hoặc full môi"]
     }
   },
   {
@@ -12080,12 +11435,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26520/a685679cd6d147e79efe6f4d4d2dcf5b_tplv-o3syd03w52-origin-jpeg.jpeg",
       "https://nuty.vn/Data/Sites/1/Product/28205/z4405993367292_a4bdbe814864156a87380fdd33005a74.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#05"
-    ],
+    "variants": ["#01", "#02", "#03", "#05"],
     "brands": "Mira",
     "tab_data": {
       "description": [
@@ -12139,10 +11489,7 @@
       "https://nuty.vn/Data/Sites/1/Product/9040/33.png",
       "https://nuty.vn/Data/Sites/1/Product/26520/a685679cd6d147e79efe6f4d4d2dcf5b_tplv-o3syd03w52-origin-jpeg.jpeg"
     ],
-    "variants": [
-      "#N032 Sand",
-      "#N042 Beige"
-    ],
+    "variants": ["#N032 Sand", "#N042 Beige"],
     "brands": "Bobbi Brown",
     "tab_data": {
       "description": [
@@ -12152,10 +11499,7 @@
       ],
       "ingredients": [],
       "effects": [],
-      "instruction": [
-        "Xuất xứ: Mỹ",
-        "Thương hiệu: Bobbi Brown"
-      ]
+      "instruction": ["Xuất xứ: Mỹ", "Thương hiệu: Bobbi Brown"]
     }
   },
   {
@@ -12176,16 +11520,11 @@
       "https://nuty.vn/Data/Sites/1/Product/28182/eyebrown-web.png",
       "https://nuty.vn/Data/Sites/1/Product/9040/33.png"
     ],
-    "variants": [
-      "#04",
-      "#05"
-    ],
+    "variants": ["#04", "#05"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [],
-      "ingredients": [
-        "Nuty về các màu: #1 #4 #5 #Brown"
-      ],
+      "ingredients": ["Nuty về các màu: #1 #4 #5 #Brown"],
       "effects": [
         "Đầu chì kẻ thanh mảnh với kích thước 1.5mm giúp đường kẻ siêu mảnh, dễ dàng tạo những đường kẻ ấn tượng cho mọi layout.",
         "Chì kẻ mắt với khả năng chống thấm nước, ngăn tình trạng lem trôi hiệu quả.",
@@ -12234,9 +11573,7 @@
         "- 1. Hướng đầu bút vào phía trong đầu mắt rồi vẽ liền một mạch dần về đuôi.",
         "- 2. Tạo một chút tinh tế cho đôi mắt bằng cách kẻ thêm một đường mảnh ở đuôi mắt, nối với đường kẻ mi trên lúc ban đầu ."
       ],
-      "ingredients": [
-        "- Vui lòng xem thông tin trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Vui lòng xem thông tin trên bao bì sản phẩm"],
       "effects": [
         "- Dùng trong trang điểm mắt",
         "- Tạo điểm nhấn cho đôi mắt thêm ấn tượng"
@@ -12282,14 +11619,7 @@
       "https://nuty.vn/Data/Sites/1/Product/6659/z4574902430856_ccffed1bc01d7f3004025f19b1c4e7eb.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27166/z4038962360870_5aeb36c3e1aaea278d4b46f04bed86dc.jpg"
     ],
-    "variants": [
-      "#DL07 ",
-      "#DL08",
-      "#DL11",
-      "#DL12",
-      "#DL13",
-      "#DL14"
-    ],
+    "variants": ["#DL07 ", "#DL08", "#DL11", "#DL12", "#DL13", "#DL14"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -12354,10 +11684,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28197/mirapen.png",
       "https://nuty.vn/Data/Sites/1/Product/6659/z4574902430856_ccffed1bc01d7f3004025f19b1c4e7eb.jpg"
     ],
-    "variants": [
-      "#HW02",
-      "#HW03"
-    ],
+    "variants": ["#HW02", "#HW03"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -12373,17 +11700,13 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Blackrouge"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì"],
       "effects": [
         "-  Son mang hương dâu dịu nhẹ, tươi mát",
         "- Chỉ cần một lần lướt cọ, lớp son set vào môi nhanh chóng như được xăm lên môi, màu sắc và độ lên màu được giữ nguyên, không trôi dính.",
         "-  Son được bổ sung các thành phần dinh dưỡng và dưỡng ẩm giúp môi không bị bong tróc."
       ],
-      "instruction": [
-        "- Dùng để đánh full môi hoặc lòng môi"
-      ]
+      "instruction": ["- Dùng để đánh full môi hoặc lòng môi"]
     }
   },
   {
@@ -12424,9 +11747,7 @@
         "- Cảm khác khô thoáng, mỏng nhẹ mịn mượt trên làn da.",
         "- Lớp nền tự nhiên, khô thoáng nhẹ tựa như không, phù hợp với mọi phong cách trang điểm."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Hạt phấn siêu mịn giúp che khuyết điểm lỗ chân lông mang lại làn da đẹp mịn màng, không tì vết.",
         "- Công thức giữ lớp nền lâu trôi, chống nắng bảo vệ da hiệu quả trước tác hại của ánh nắng mặt trời.",
@@ -12469,11 +11790,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28498/z4420633236360_cfd68f3ceb19e9757772411351833d2d.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28071/6423bd2f57503-son-kem-black-rouge-double-layer-over-velvet-ver2-4g-boshop.jpg"
     ],
-    "variants": [
-      "#G01",
-      "#G02",
-      "#G03"
-    ],
+    "variants": ["#G01", "#G02", "#G03"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -12577,11 +11894,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27661/z4635441554388_e4150d6e0f7ef026ce1146c017d89e01.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27636/z4134269336044_09c3e013345e3c8ea13e23e60ea5d05a.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -12618,9 +11931,7 @@
         "Hơn thế nữa, Crushed Lip Color tuy nhiều thành phần dưỡng ẩm nhưng lại bền màu lâu trôi suốt cả ngày giúp nàng có thể yên tâm hoạt động ngoài trời mà không cần phải lo lắng về việc son bị trôi hoặc phai màu đâu nhé."
       ],
       "ingredients": [],
-      "effects": [
-        "Dùng trong trang điểm môi."
-      ],
+      "effects": ["Dùng trong trang điểm môi."],
       "instruction": [
         "Thoa một lớp son lên môi để sở hữu bờ môi căng mọng đầy sức sống."
       ]
@@ -12650,14 +11961,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27099/z4064406082004_c25682a6ac4de8dc8e0270c33e376f30-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/3888/113.png"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05",
-      "#06"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05", "#06"],
     "brands": "Gilaa",
     "tab_data": {
       "description": [
@@ -12677,10 +11981,7 @@
         "Là màu son “quốc dân”, phù hợp với nhiều loại da và phong cách trang điểm khác nhau. Đánh lòng môi hay full môi đều sành điệu và nổi bật."
       ],
       "ingredients": [],
-      "effects": [
-        "Xuất xứ: Hàn Quốc",
-        "Thương hiệu: Black Rouge"
-      ],
+      "effects": ["Xuất xứ: Hàn Quốc", "Thương hiệu: Black Rouge"],
       "instruction": []
     }
   },
@@ -12729,12 +12030,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27150/gilaa.jpg",
       "https://nuty.vn/Data/Sites/1/Product/1952/son-mau-min-moi-bobbi-brown-mau-sunset-3-4g-1.jpg"
     ],
-    "variants": [
-      "#201",
-      "#202",
-      "#203",
-      "#204"
-    ],
+    "variants": ["#201", "#202", "#203", "#204"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
@@ -12795,11 +12091,7 @@
       "https://nuty.vn/Data/Sites/1/media/noimage.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27150/gilaa.jpg"
     ],
-    "variants": [
-      "#00 Orangie",
-      "#01 Cherie",
-      "#02 Apple-Y"
-    ],
+    "variants": ["#00 Orangie", "#01 Cherie", "#02 Apple-Y"],
     "brands": "Glamrr Q",
     "tab_data": {
       "description": [
@@ -12856,11 +12148,7 @@
       "https://nuty.vn/Data/Sites/1/Product/7292/z4682538680687_7ea381c8676f96321154e8094e3adc3d.jpg",
       "https://nuty.vn/Data/Sites/1/media/noimage.jpg"
     ],
-    "variants": [
-      "#De Rosee",
-      "#De Pech",
-      "#De Ginger"
-    ],
+    "variants": ["#De Rosee", "#De Pech", "#De Ginger"],
     "brands": "Too Cool For School",
     "tab_data": {
       "description": [
@@ -12868,9 +12156,7 @@
         "Xem trên bao bì sản phẩm",
         "HƯỚNG DẪN SỬ DỤNG: - Sau khi hoàn thành lớp nền. Lấy tay hoặc cọ trang điểm quét nhẹ vào ô màu cần dùng \n - Dùng cọ apply nhẹ nhàng lên má  \n - Có thể sử dụng kết hợp các màu với nhau để tạo ra được gam màu yêu thích"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [],
       "instruction": [
         "- Sau khi hoàn thành lớp nền. Lấy tay hoặc cọ trang điểm quét nhẹ vào ô màu cần dùng \n - Dùng cọ apply nhẹ nhàng lên má  \n - Có thể sử dụng kết hợp các màu với nhau để tạo ra được gam màu yêu thích"
@@ -12928,13 +12214,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27639/z4842170667594_c77852b4282fe58520d955ded7abe3c3.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28461/03-glam.jpg"
     ],
-    "variants": [
-      "#134",
-      "#144",
-      "#148",
-      "#149",
-      "#150"
-    ],
+    "variants": ["#134", "#144", "#148", "#149", "#150"],
     "brands": null,
     "tab_data": {
       "description": [
@@ -12984,17 +12264,13 @@
       "https://nuty.vn/Data/Sites/1/Product/10782/z4126995846818_51bec1023b8ddab25ebdb5b4d27bb2a7.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27639/z4842170667594_c77852b4282fe58520d955ded7abe3c3.jpg"
     ],
-    "variants": [
-      "#Auto Focus"
-    ],
+    "variants": ["#Auto Focus"],
     "brands": "3CE",
     "tab_data": {
       "description": [
         "Bảng phấn mắt 9 màu 3CE Multi Eye Color Palette – Auto Focus được đánh giá là bảng màu mắt gam hồng tím với những tông màu nhẹ nhàng, có chiều sâu cho đôi mắt thêm phần quyến rũ, thu hút, tông màu mắt dễ dùng và nhẹ nhàng. Dễ dàng phối hợp các phong cách trang điểm khác nhau."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
       "effects": [
         "Bảng mắt  cực kì phù hợp với phong cách trang điểm trong trẻo, ngây thơ nhưng cũng cực kì quyến rũ."
       ],
@@ -13032,13 +12308,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27137/z4254829905927_f35d290d02c404e7141468c51b693e60.jpg",
       "https://nuty.vn/Data/Sites/1/Product/10782/z4126995846818_51bec1023b8ddab25ebdb5b4d27bb2a7.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -13130,10 +12400,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: the SAEM"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Phấn má hồng the saem sở hữu chất phấn siêu mịn, màu sắc lên chuẩn chỉ với một lần chấm cọ và không gây tình trạng khô da",
@@ -13182,11 +12449,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28222/eye-0.png",
       "https://nuty.vn/Data/Sites/1/Product/27352/28.jpg"
     ],
-    "variants": [
-      "#RS101 Rosy Moon",
-      "#BR901 Marron Chou",
-      "#RD201 Garnet"
-    ],
+    "variants": ["#RS101 Rosy Moon", "#BR901 Marron Chou", "#RD201 Garnet"],
     "brands": "Espoir",
     "tab_data": {
       "description": [
@@ -13194,10 +12457,7 @@
         "Son Kem Espoir Couture Lip Tint Pure Velvet - Chất son cải tiến cực mềm xốp, không làm khô môi nhờ công thức nhiều dưỡng ẩm cho đôi môi thêm tự nhiên, ẩm mượt suốt cả ngày. Bên cạnh đó, kết cấu son dạng velvet êm ái, nhẹ lướt thoảng qua và bồng bềnh, che phủ mịn mờ đi nếp nhăn của đôi môi.",
         "Thiết kế sang trọng nắp màu vàng sáng có khắc tên thương hiệu nổi bật. Vỏ màu nhám không lộ lượng son ở trong và không bám dấu vân tay."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "- Chất son cực kỳ mềm mịn, không gây khô môi nhờ công thức giàu dưỡng.",
@@ -13243,14 +12503,9 @@
         "Xuất xứ: Trung Quốc",
         "Thương hiệu: Horus"
       ],
-      "ingredients": [
-        "THÀNH PHẦN",
-        "- Xem thêm trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN", "- Xem thêm trên bao bì sản phẩm"],
       "effects": [],
-      "instruction": [
-        "- Đậy kín nắp sau khi sử dụng, bảo quản nơi thoáng mát."
-      ]
+      "instruction": ["- Đậy kín nắp sau khi sử dụng, bảo quản nơi thoáng mát."]
     }
   },
   {
@@ -13296,9 +12551,7 @@
         "- Công thức tiên tiến giúp cải thiện khả năng giữ màu lâu trên môi",
         "- Giúp che phủ khuyết điểm môi như rãnh nhăn, vết nhăn hoàn hảo"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "S on thỏi dưỡng ẩm Espoir Lipstick Nowear Shine là dòng son thỏi dưỡng ẩm cho đôi môi luôn mềm mịn. Đồng thời, hiệu ứng màu son MLBB tự nhiên, xinh xắn giúp tô điểm cho đôi môi luôn tươi tắn, rạng rỡ.",
         "- Kết cấu son môi mềm mịn, nhẹ môi, không gây bết dính hay nặng môi",
@@ -13307,9 +12560,7 @@
         "- Công thức tiên tiến giúp cải thiện khả năng giữ màu lâu trên môi",
         "- Giúp che phủ khuyết điểm môi như rãnh nhăn, vết nhăn hoàn hảo"
       ],
-      "instruction": [
-        "- Đánh full môi hoặc lòng môi"
-      ]
+      "instruction": ["- Đánh full môi hoặc lòng môi"]
     }
   },
   {
@@ -13401,14 +12652,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28319/z4935400786764_7e408e25413adadfb71d0159ef1097ae.jpg",
       "https://nuty.vn/Data/Sites/1/Product/7317/ke-mat.jpg"
     ],
-    "variants": [
-      "#08",
-      "#09",
-      "#10",
-      "#11",
-      "#12",
-      "#13"
-    ],
+    "variants": ["#08", "#09", "#10", "#11", "#12", "#13"],
     "brands": "Gilaa",
     "tab_data": {
       "description": [
@@ -13428,9 +12672,7 @@
         "HƯỚNG DẪN SỬ DỤNG:",
         "- Lấy một lượng son vừa đủ đánh lòng môi hoặc full môi"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "- Giúp đôi môi tươi tắn và xinh đẹp hơn",
@@ -13443,9 +12685,7 @@
         "- 12 Lavish:  Cam Đất Cá Tính",
         "- 13 Curse Reverse:  Nâu Gạch Trầm Bí Ẩn"
       ],
-      "instruction": [
-        "- Lấy một lượng son vừa đủ đánh lòng môi hoặc full môi"
-      ]
+      "instruction": ["- Lấy một lượng son vừa đủ đánh lòng môi hoặc full môi"]
     }
   },
   {
@@ -13464,18 +12704,13 @@
       "https://nuty.vn/Data/Sites/1/Product/28196/diamondeyeliner.png",
       "https://nuty.vn/Data/Sites/1/Product/28319/z4935400786764_7e408e25413adadfb71d0159ef1097ae.jpg"
     ],
-    "variants": [
-      "MB ",
-      "MO "
-    ],
+    "variants": ["MB ", "MO "],
     "brands": "CANMAKE",
     "tab_data": {
       "description": [
         "Phấn Nền   Marshmallow Finish Foundation một lớp nền lì và nhẹ nhàng như những viên kẹo bông Marshmallow"
       ],
-      "ingredients": [
-        "Xem trên bao bì"
-      ],
+      "ingredients": ["Xem trên bao bì"],
       "effects": [
         "Được thiết kế chuyên biệt đánh bay những nỗi lo về độ khô cằn hay bóng nhờn"
       ],
@@ -13510,22 +12745,15 @@
       "https://nuty.vn/Data/Sites/1/Product/27606/z4810201794209_5727787040d2675e8e44d41182b0fbf8.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28196/diamondeyeliner.png"
     ],
-    "variants": [
-      "#MP01",
-      "#MP02"
-    ],
+    "variants": ["#MP01", "#MP02"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [],
       "ingredients": [
         "Synthetic Fluorphlogopite, Titanium Dioxide (CI 77891), Ethylhexyl Palmitate, Mica (CI 77019), Silica, Octyldodecyl Stearoyl Stearate, Phenyl Trimethicone, Iron Oxide Red (CI 77491), Magnesium Myristate, Methylpropanediol, Dimethicone, Magnesium Stearate, Triethoxycaprylylsilane, Macadamia Ternifolia Seed Oil, Propanediol, Dimethiconol Stearate, Tin Oxide (CI 77861), Yellow 5 Lake (CI 19140), Nylon-12, Iron Oxide Yellow (CI 77492), Carmine (CI 75470), Aluminum Hydroxide, Methicone, Boron Nitride, Iron Oxide Black (CI 77499), Mineral Oil, Lauroyl Lysine, Hydrogenated Lecithin, Manganese Violet (CI 77742), Ultramarines (CI 77007), Kaolin, Calcium Titanium Borosilicate, Talc, Triethylhexanoin, Polyglyceryl-2 Triisostearate, Hydrogenated Castor Oil Isostearate, Water, Red 30 (CI 73360), Maltodextrin, Hydrogenated Polyisobutene, Butylene/Ethylene/Styrene Copolymer, Water [MP02 Rosydation - Chilling Mauve] Talc, Methicone [MP01 Brickdation - French Vanilla] Talc, Water [MP01 Brickdation - Fall In Maple] Talc, Dipentaerythrityl Hexahydroxystearate/Hexastearate/Hexarosinate, Calcium Carbonate, Water [MP01 Brickdation - Wood Night] Talc, Isostearyl Neopentanoate, Kaolin [MP02 Rosydation - Dry Peach] Talc, Water [MP02 Rosydation - Pure Hazel] Talc, Water [MP01 Brickdation - Salted Brown] Mica (CI 77019), Water [MP01 Brickdation - Roast Nuts] Mica (CI 77019), Water [MP02 Rosydation - Earl Grey Deep] Mica (CI 77019), Water [MP02 Rosydation - Pepper Zibelling] Synthetic Fluorphlogopite, [MP01 Brickdation - Gold rust] Talc, Ethylene/Propylene/Styrene Copolymer, [MP02 Rosydation - Pink Ade] Mica (CI 77019), Water [MP01 Brickdation - Warm Almond] Talc, Water [MP02 Rosydation - Posy Rose] Talc, Shorea Robusta Seed Butter, Water [MP01 Brickdation - Cinnamon Chip] Talc, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate [MP02 Rosydation - Lavender Garden] Talc, Water [MP02 Rosydation - Tan Chilli] Talc, Polybutene, Water [MP01 Brickdation - Sand Breeze] Talc, Diisostearyl Malate"
       ],
-      "effects": [
-        "Trang điểm mắt và tạo điểm nhấn cho đôi mắt thêm cuốn hút"
-      ],
-      "instruction": [
-        "Sử dụng trong trang điểm mắt"
-      ]
+      "effects": ["Trang điểm mắt và tạo điểm nhấn cho đôi mắt thêm cuốn hút"],
+      "instruction": ["Sử dụng trong trang điểm mắt"]
     }
   },
   {
@@ -13552,10 +12780,7 @@
       "https://nuty.vn/Data/Sites/1/Product/2527/s-l500.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27606/z4810201794209_5727787040d2675e8e44d41182b0fbf8.jpg"
     ],
-    "variants": [
-      "#201",
-      "#202"
-    ],
+    "variants": ["#201", "#202"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -13571,9 +12796,7 @@
         "BƯỚC 1: Dùng kem lót mắt hoặc che khuyết điểm tan đều lên bầu mắt.",
         "BƯỚC 2: Dùng cọ lấy một lượng phấn mắt vừa đủ và tan đều lên mắt, phối màu theo cách bạn thích"
       ],
-      "ingredients": [
-        "Xem chi tiết trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Xem chi tiết trên bao bì sản phẩm"],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem dù dùng tay tán phấn vì thành phần dầu binder thân thiện với da, đồng thời khả năng bám màu cũng “siêu ấn tượng”.",
@@ -13612,10 +12835,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27735/brmp02.jpg",
       "https://nuty.vn/Data/Sites/1/Product/2527/s-l500.jpg"
     ],
-    "variants": [
-      "#CP01",
-      "#CP02"
-    ],
+    "variants": ["#CP01", "#CP02"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -13664,10 +12884,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27644/z4574538159289_3c2da881bb628b9d4d2aebba41801050.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27735/brmp02.jpg"
     ],
-    "variants": [
-      "#02",
-      "#01"
-    ],
+    "variants": ["#02", "#01"],
     "brands": "Gilaa",
     "tab_data": {
       "description": [
@@ -13733,10 +12950,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27736/brcushion.png",
       "https://nuty.vn/Data/Sites/1/Product/27644/z4574538159289_3c2da881bb628b9d4d2aebba41801050.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01", "#02"],
     "brands": "Habaria",
     "tab_data": {
       "description": [
@@ -13754,9 +12968,7 @@
         ": Trung Quốc",
         "Habaria"
       ],
-      "ingredients": [
-        "-Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["-Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem, khả năng bám màu cũng “siêu ấn tượng”.",
@@ -13806,9 +13018,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Too Cool For School"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [],
       "instruction": [
         "-  Dùng cọ trang điểm mắt, sử dụng màu nhạt đánh lên toàn bộ bầu mắt, sau đó dùng cọ đầu nhỏ nhấn màu đậm hơn ở phần đuôi mắt.",
@@ -14014,11 +13224,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28898/z4756222237723_6ad1300e4cfb854d9409eeb3e1f3ed88.jpg",
       "https://nuty.vn/Data/Sites/1/Product/14199/z4293461501131_6dd372b4096b48fc17d03f9d7b197f2a.jpg"
     ],
-    "variants": [
-      "#110",
-      "#112",
-      "#120"
-    ],
+    "variants": ["#110", "#112", "#120"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -14080,13 +13286,7 @@
       "https://nuty.vn/Data/Sites/1/Product/10777/z4126995846571_f1f80f2176daa6e6c41c3fff884ab1ef.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28898/z4756222237723_6ad1300e4cfb854d9409eeb3e1f3ed88.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05"],
     "brands": "Bbia",
     "tab_data": {
       "description": [
@@ -14102,14 +13302,8 @@
         "#04 Oh, Peony: hồng tím",
         "#05 Rose Madder: đỏ hồng ánh san hô"
       ],
-      "ingredients": [
-        "THÀNH PHẦN",
-        "- Vui lòng xem trên bao bì"
-      ],
-      "effects": [
-        "CÔNG DỤNG",
-        "- Giúp đôi môi rạng rỡ, tràn đầy sức sống"
-      ],
+      "ingredients": ["THÀNH PHẦN", "- Vui lòng xem trên bao bì"],
+      "effects": ["CÔNG DỤNG", "- Giúp đôi môi rạng rỡ, tràn đầy sức sống"],
       "instruction": [
         "HƯỚNG DẪN SỬ DỤNG",
         "- Dùng cọ thoa son lên lòng môi hoặc full môi"
@@ -14143,9 +13337,7 @@
         "Bobbi Brown  là thương hiệu mỹ phẩm trang điểm nổi tiếng của Mỹ, được đặt theo tên của một nữ nghệ sĩ, chuyên gia trang điểm hàng đầu tại New York- Mỹ.",
         "độc đáo với công thức siêu dưỡng giàu Vitamin E, C và sáp ong tăng cường khả năng dưỡng ẩm cho đôi môi căng mọng, hiệu ứng lên môi bóng nhẹ và dần tiệp vào môi để lại cảm giác thoải mái mượt mịn suốt cả ngày. Đây là dòng son nhận được rất nhiều review ca ngợi về chất son mềm nhẹ như bơ, mang lại cảm giác nhẹ nhàng và dễ chịu khi thoa lên môi, tựa như bạn đang thoa một loại son dưỡng môi mềm mại chứ không phải son màu vậy!"
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "- Chất son mềm mượt, siêu nhẹ môi.",
         "- Thành phần dưỡng ẩm vượt trội cho môi mịn màng dễ chịu suốt cả ngày dài.",
@@ -14295,11 +13487,7 @@
       "https://nuty.vn/Data/Sites/1/Product/7360/image-1-1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/7340/cover.jpg"
     ],
-    "variants": [
-      "#Clear ",
-      "#High Cover ",
-      "#Air Veil"
-    ],
+    "variants": ["#Clear ", "#High Cover ", "#Air Veil"],
     "brands": "Kiss Me",
     "tab_data": {
       "description": [],
@@ -14335,9 +13523,7 @@
         "- Sản phẩm có cọ kèm theo tiện lợi khi sử dụng.",
         "- Dùng cọ tạo nét vẽ dọc theo đường cong sát mí mắt (Có thể dùng cọ thấm một ít nước)"
       ],
-      "ingredients": [
-        "- Vui lòng xem thông tin trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Vui lòng xem thông tin trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG",
         "- Gel kẻ mắt nước MIRA Gel eyeliner kẻ mí mắt dạng gel mềm cho bạn đường viền mí mắt tự nhiên mà vẫn sắc nét với độ bám màu cao, không lem, không bết dính, dễ dàng tẩy rữa.",
@@ -14373,11 +13559,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28122/z4393006213685_ba07d76f4b21241c8fea76d683e94f7b.jpg",
       "https://nuty.vn/Data/Sites/1/Product/2524/4901008311807.jpg"
     ],
-    "variants": [
-      "#01 Black",
-      "#02 Brown",
-      "#03 Dark Brown"
-    ],
+    "variants": ["#01 Black", "#02 Brown", "#03 Dark Brown"],
     "brands": "Mira",
     "tab_data": {
       "description": [
@@ -14388,9 +13570,7 @@
         "THÀNH PHẦN:",
         "Vui lòng xem thông tin trên bao bì sản phẩm"
       ],
-      "effects": [
-        "CÔNG DỤNG:"
-      ],
+      "effects": ["CÔNG DỤNG:"],
       "instruction": []
     }
   },
@@ -14414,16 +13594,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28218/z4290944665555_615a21c440e9e2774b1975a6407c5f03.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28122/z4393006213685_ba07d76f4b21241c8fea76d683e94f7b.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05",
-      "#06",
-      "#11",
-      "#12"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05", "#06", "#11", "#12"],
     "brands": "Bbia",
     "tab_data": {
       "description": [
@@ -14470,13 +13641,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28198/aroma.png",
       "https://nuty.vn/Data/Sites/1/Product/28218/z4290944665555_615a21c440e9e2774b1975a6407c5f03.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -14518,10 +13683,7 @@
         "CÔNG DỤNG:",
         "Giúp đôi môi khởi sắc và giúp bạn nổi bật thần thái hơn"
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:",
-        "Đánh lòng môi hoặc full môi"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:", "Đánh lòng môi hoặc full môi"]
     }
   },
   {
@@ -14678,10 +13840,7 @@
       "https://nuty.vn/Data/Sites/1/Product/15994/116691991-705704076942678-4561136894335421300-n.jpg",
       "https://nuty.vn/Data/Sites/1/Product/24867/z4123670911028_35cb1b8a8099097419675a27d57cfd26.jpg"
     ],
-    "variants": [
-      "#Chili ",
-      "#Ruby Woo"
-    ],
+    "variants": ["#Chili ", "#Ruby Woo"],
     "brands": null,
     "tab_data": {
       "description": [],
@@ -14718,11 +13877,7 @@
       "https://nuty.vn/Data/Sites/1/media/noimage.jpg",
       "https://nuty.vn/Data/Sites/1/Product/15994/116691991-705704076942678-4561136894335421300-n.jpg"
     ],
-    "variants": [
-      "#101 Black",
-      "#102 Brown",
-      "#103 Light Brown"
-    ],
+    "variants": ["#101 Black", "#102 Brown", "#103 Light Brown"],
     "brands": "Mira",
     "tab_data": {
       "description": [
@@ -14733,9 +13888,7 @@
         "THÀNH PHẦN:",
         "Vui lòng xem thông tin trên bao bì sản phẩm"
       ],
-      "effects": [
-        "CÔNG DỤNG:"
-      ],
+      "effects": ["CÔNG DỤNG:"],
       "instruction": []
     }
   },
@@ -15143,10 +14296,7 @@
     "brands": "Unpa Bubi Bubi",
     "tab_data": {
       "description": [],
-      "ingredients": [
-        "- PHA",
-        "- Cellulose"
-      ],
+      "ingredients": ["- PHA", "- Cellulose"],
       "effects": [
         "- Với thành phần PHA giúp hòa tan lớp tế bào chết khô bám trên bề mặt da một cách nhẹ nhàng nhất mà không gây khô hoặc kích ứng, từ đó kết cấu da môi được cải thiện trở nên mịn màng hơn.",
         "- Kết hợp cùng thành phần Cellulose giúp làm căng mọng, nuôi dưỡng, làm mềm và mịn môi, làm giảm rõ rệt các nếp nhăn ở môi. Giúp đôi môi căng mịn và mờ thâm trông thấy.",
@@ -15184,14 +14334,7 @@
       "https://nuty.vn/Data/Sites/1/Product/15984/rich.jpg",
       "https://nuty.vn/Data/Sites/1/Product/24865/z4123670894254_ef513c83f67c2c71030e9e6a3852ec1b.jpg"
     ],
-    "variants": [
-      "#LM13",
-      " #LM12",
-      " #LM11",
-      " #LM9",
-      " #LM8",
-      " #LM3"
-    ],
+    "variants": ["#LM13", " #LM12", " #LM11", " #LM9", " #LM8", " #LM3"],
     "brands": "Ofélia",
     "tab_data": {
       "description": [
@@ -15264,9 +14407,7 @@
       "description": [
         "Lót Mascara Kissme Nâng Cong Mi Ngắn Màu Đen Tuyền   là sản phẩm nền  mascara  đến từ  thương hiệu Kissme  của Nhật Bản, với thành phần Trimethylsiloxysilicate tự khoá, khô nhanh và cố định giữ cong mi gấp 3 lần, giữ các lọn mi hướng lên ngay cả sau khi sử dụng mascara màng film."
       ],
-      "ingredients": [
-        "Vui lòng xem bao bì"
-      ],
+      "ingredients": ["Vui lòng xem bao bì"],
       "effects": [
         "- Thành phần tự khoá và khô nhanh và giữ cong mi suốt cả ngày.",
         "- Công thức bền màu giúp ngăn nhoè và lem màu bởi nước mắt, mồ hôi và bã nhờn.",
@@ -15326,9 +14467,7 @@
         "Đặc biệt, với thiết kế này, nàng sẽ dễ nhận biết được màu son bên trong mà không cần phải mở nắp. Màu son lên chuẩn từ lần apply đầu tiên và nếu nàng lo sợ về rãnh môi giống các phiên bản trước thì với em này, bạn yên tâm nhé, độ cover hơi bị “trâu” đấy.",
         "Cùng \"ngắm nghía\" màu son siêu hot trong bộ sưu tập này nhé"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Trang điểm môi \n- Thoa full môi giúp bạn trông rạng rỡ \n- Có thể thoa nhiều lớp tùy thích"
       ],
@@ -15474,11 +14613,7 @@
       "https://nuty.vn/Data/Sites/1/Product/2532/7a35b630428f2c28778fdf6d812c0dae.png",
       "https://nuty.vn/Data/Sites/1/Product/15985/melty-cream.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -15530,9 +14665,7 @@
       "https://nuty.vn/Data/Sites/1/Product/8045/4fe3940c0c0bd31919c7ae152f0a35df.jpg",
       "https://nuty.vn/Data/Sites/1/Product/2532/7a35b630428f2c28778fdf6d812c0dae.png"
     ],
-    "variants": [
-      "#Taupe"
-    ],
+    "variants": ["#Taupe"],
     "brands": "3CE",
     "tab_data": {
       "description": [
@@ -15540,9 +14673,7 @@
         "Vẫn là chất son kem lì mềm mại, không gây khô môi. BST lần này lại được khoác thêm chiếc  áo siêu cá tính.",
         "NUTY VỀ MÀU TAUPE - ĐỎ NÂU"
       ],
-      "ingredients": [
-        "Thành Phần: Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Thành Phần: Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "Bảng màu thời thượng",
         "Chất son dạng gel dễ tán, nhanh chóng cố định trên môi cùng độ lên màu chuẩn",
@@ -15608,19 +14739,14 @@
       "https://nuty.vn/Data/Sites/1/Product/17885/27.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28342/blossom.png"
     ],
-    "variants": [
-      "#01",
-      "#03"
-    ],
+    "variants": ["#01", "#03"],
     "brands": "Too Cool For School",
     "tab_data": {
       "description": [
         "Đến từ thương hiệu mỹ phẩm trang điểm nổi tiếng của Hàn, K ẻ Mắt Nước  Too Cool For School  Artclass Fixing Gel Liner được sản xuất theo công nghệ tiên tiến giúp bạn nhanh chóng có được các đường kẻ mắt chính xác, sắc sảo mà không sợ lem.",
         "Đồng thời, màu sắc được đổ ra rất đậm và sắc nét, góp phần trang điểm hoàn thiện nên đôi mắt cá tính và hiện đại trên gương mặt bạn."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- K ẻ mắt nước đầu tiên trên thị trường với thước canh siêu dễ và đầu cọ siêu chuẩn nét vẽ mắt Cat Eye trong nháy mắt!",
         "- Đầu cọ chuẩn nét và linh hoạt ôm sát đường mi.",
@@ -15669,13 +14795,7 @@
       "https://nuty.vn/Data/Sites/1/Product/10780/z4126995846241_85d2e613f5e7bd087fde9b3af968b3c2.jpg",
       "https://nuty.vn/Data/Sites/1/Product/17885/27.jpg"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03",
-      "#04",
-      "#05"
-    ],
+    "variants": ["#01", "#02", "#03", "#04", "#05"],
     "brands": "Bbia",
     "tab_data": {
       "description": [
@@ -15688,15 +14808,9 @@
         "04 BE ROSY: Màu hoa hồng",
         "05 BE BRAVE: Màu đỏ trầm"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì"
-      ],
-      "effects": [
-        "- Giúp đôi môi rạng rỡ, tràn đầy sức sống"
-      ],
-      "instruction": [
-        "- Dùng cọ thoa son lên lòng môi hoặc full môi"
-      ]
+      "ingredients": ["- Vui lòng xem trên bao bì"],
+      "effects": ["- Giúp đôi môi rạng rỡ, tràn đầy sức sống"],
+      "instruction": ["- Dùng cọ thoa son lên lòng môi hoặc full môi"]
     }
   },
   {
@@ -15776,9 +14890,7 @@
         "Son Thỏi MAC Matte Lipstick (3g)",
         "𝐌𝐚𝐭𝐭𝐞 𝐋𝐢𝐩𝐬𝐭𝐢𝐜𝐤 - \"Huyền thoại\" của những sắc đỏ, khiến nàng mãn nhãn với các màu son đều mang tinh thần mùa lễ hội. Là sản phẩm biểu tượng làm nên sự nổi tiếng và là niềm tự hào của M.A.C vượt mọi thời gian."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Trang điểm môi \n- Thoa full môi giúp bạn trông rạng rỡ \n- Có thể thoa nhiều lớp tùy thích"
       ],
@@ -15812,11 +14924,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26835/z4568166008894_1ec4005b83a0d4d1783b9e6a6561424d.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27767/z4152498517478_d35a85f5125749b986271ba0c3d8b47e.jpg"
     ],
-    "variants": [
-      "#01 Apricot",
-      "#02 Bright Cherry",
-      "#03 Latte"
-    ],
+    "variants": ["#01 Apricot", "#02 Bright Cherry", "#03 Latte"],
     "brands": "Browit",
     "tab_data": {
       "description": [
@@ -15825,9 +14933,7 @@
         "Kem má hồng và phấn mắt với kết cấu dạng kem lỏng nhẹ dễ tán, tạo bề mặt căng bóng, mịn màng, độ bật màu chuẩn sắc giúp làm tăng thêm vẻ rạng rỡ cho đôi mắt và gò má hồng hào tự nhiên.",
         "Đồng thời bổ sung thành phần dưỡng da từ 8 loại chiết xuất tự nhiên như Dưa Leo, Rau Má, Rễ Cây Hà Thủ Ô Nhật Bản, Rễ Cây Hoàng Cầm, Lá Chè, Rễ Cam Thảo, Hương Thảo và Cúc La Mã giúp dưỡng ẩm, chống oxy hóa và làm dịu làn da."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- K ết cấu dạng kem lỏng nhẹ dễ tán",
         "- T ạo bề mặt căng bóng, mịn màng",
@@ -15916,9 +15022,7 @@
         "- Chứa nhiều thành phần dương môi lành tính.",
         "- Giảm tình trạng khô nứt môi."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -15945,16 +15049,11 @@
       "https://nuty.vn/Data/Sites/1/Product/24866/z4123670902902_8d2a7aa08f8a2ee1a64c0eff0d341a36.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27355/group_02_1.png"
     ],
-    "variants": [
-      "#602",
-      "#601"
-    ],
+    "variants": ["#602", "#601"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Hạt phấn siêu mịn giúp che khuyết điểm lỗ chân lông mang lại làn da đẹp mịn màng, không tì vết.",
         "- Công thức giữ lớp nền lâu trôi, chống nắng bảo vệ da hiệu quả trước tác hại của ánh nắng mặt trời.",
@@ -15985,13 +15084,7 @@
       "https://nuty.vn/Data/Sites/1/Product/2569/70000993-4-450.jpg",
       "https://nuty.vn/Data/Sites/1/Product/24866/z4123670902902_8d2a7aa08f8a2ee1a64c0eff0d341a36.jpg"
     ],
-    "variants": [
-      "#001",
-      "#002",
-      "#003",
-      "#004",
-      "#005"
-    ],
+    "variants": ["#001", "#002", "#003", "#004", "#005"],
     "brands": "Bbia",
     "tab_data": {
       "description": [
@@ -16076,10 +15169,7 @@
         "- Phục hồi độ ẩm tự nhiên cho môi trong lúc ngủ",
         "- Khóa ẩm và giảm rãnh môi nhờ kết cấu dạng essence giàu dưỡng chất"
       ],
-      "instruction": [
-        "- Dùng vào buổi tối",
-        "- Dùng như mặt nạ ngủ cho môi"
-      ]
+      "instruction": ["- Dùng vào buổi tối", "- Dùng như mặt nạ ngủ cho môi"]
     }
   },
   {
@@ -16110,11 +15200,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26521/405c8e44142d43fd839710fd1653f6b2_tplv-o3syd03w52-origin-jpeg.jpeg",
       "https://nuty.vn/Data/Sites/1/Product/27642/z4574915481484_1f3e6f364cb2abda13def3848cffbf3f.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Aprilskin",
     "tab_data": {
       "description": [
@@ -16165,10 +15251,7 @@
       "https://nuty.vn/Data/Sites/1/Product/16366/31.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26521/405c8e44142d43fd839710fd1653f6b2_tplv-o3syd03w52-origin-jpeg.jpeg"
     ],
-    "variants": [
-      "#02",
-      "#01"
-    ],
+    "variants": ["#02", "#01"],
     "brands": "GEO Lamy",
     "tab_data": {
       "description": [
@@ -16180,10 +15263,7 @@
         "+ Thấm hút dầu giúp da luôn khô thoáng, bền màu suốt cả ngày.",
         "+ Có chỉ số chống nắng SPF 20 giúp dưỡng & bảo vệ da bạn dưới nắng hè nóng bức."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Có các hạt bắt sáng giúp làn da mịn màng trắng sáng cực kỳ đẹp.",
         "- Có khả năng kiềm dầu tốt, giúp cho lớp nền không bị đổ dầu, trôi màu và không bị mốc lớp trang điểm.",
@@ -16241,10 +15321,7 @@
         "Aesthetic lấy cảm hứng từ những màu sắc cơ bản trong mỹ thuật nhưng khi hòa phối lại có thể tạo nên những tác phẩm nghệ thuật kinh điển. Mỹ thuật nói chung và nghệ thuật trang điểm nói riêng luôn đa dạng phong cách, đa chiều góc nhìn và bức phá giới hạn sáng tạo trong việc phối màu. Aesthetic của Lemonade là một trong những góc nhìn nghệ thuật mà ở đó có những gợi ý màu sắc phù hợp cho con gái Việt Nam chúng mình ngày càng tiến xa trên hành trình làm đẹp và trang điểm.",
         "Sản phẩm của Lemonade là một khía cạnh không chạy theo thị trường thượng vàng hạ cám như mì ăn liền mà chúng mình luôn đặt tôn chỉ dễ sử dụng cho mọi đối tượng - phù hợp cho đại đa số người Việt Nam. Chính vì vậy, Aesthetic đối với bạn không quá bắt mắt nhưng Lemonade có thể đảm bảo với bạn là chỉ cần có \"Aesthetic\", bạn cân được mọi phong cách."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem trên bao bì"],
       "effects": [
         "- Bảng mắt 16 ô không có màu nào dư thừa: Bảng mắt được sắp xếp có chủ đích với những gợi ý phối màu thông qua các màu sắc nằm gần nhau."
       ],
@@ -16282,12 +15359,7 @@
       "https://nuty.vn/Data/Sites/1/Product/15481/1675653173689-phan-phu-geo-trang.jpeg",
       "https://nuty.vn/Data/Sites/1/Product/26891/z4064406207284_b903106e957e3fc0790b613380f267e7-(1).jpg"
     ],
-    "variants": [
-      "#N02",
-      "#N03",
-      "#N04",
-      "#N06"
-    ],
+    "variants": ["#N02", "#N03", "#N04", "#N06"],
     "brands": "Mira",
     "tab_data": {
       "description": [
@@ -16307,9 +15379,7 @@
         "- Dùng cọ đi kèm lấy một lượng vừa đủ sản phẩm",
         "- Tán phấn lên gò má theo hình chữ C, di chuyển cọ từ đỉnh gò má về hướng mang tai"
       ],
-      "ingredients": [
-        "- Vui lòng xem thông tin trên bao bì sản phẩm"
-      ],
+      "ingredients": ["- Vui lòng xem thông tin trên bao bì sản phẩm"],
       "effects": [
         "- Dùng trong trang điểm mặt",
         "- Tạo điểm nhấn và làm nổi bật khuôn mặt"
@@ -16399,11 +15469,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28187/blush-web.png",
       "https://nuty.vn/Data/Sites/1/Product/27386/c051e7897f5e0c3e0a54472f466c9371.png"
     ],
-    "variants": [
-      "#01",
-      "#02",
-      "#03"
-    ],
+    "variants": ["#01", "#02", "#03"],
     "brands": "Habaria",
     "tab_data": {
       "description": [
@@ -16417,9 +15483,7 @@
         ": Trung Quốc",
         "Habaria"
       ],
-      "ingredients": [
-        "- Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem, khả năng bám màu cũng “siêu ấn tượng”.",
@@ -16456,10 +15520,7 @@
       "https://nuty.vn/Data/Sites/1/Product/3843/599-d81ec3fdd16d444aac157a4e8749d1d4.jpg",
       "https://nuty.vn/Data/Sites/1/Product/28187/blush-web.png"
     ],
-    "variants": [
-      "#01",
-      "#02"
-    ],
+    "variants": ["#01", "#02"],
     "brands": "Lemonade",
     "tab_data": {
       "description": [
@@ -16523,9 +15584,7 @@
         "Bước 3: Nhờ đầu cọ cực kì sắc nét và linh hoạt, bạn có thể sáng tạo thêm những họa tiết để mắt trông thật nổi bật và thể hiện cá tính của riêng mình.",
         "Bước 4: Khi tẩy trang nên sử dụng tẩy trang chuyên dụng dành cho mắt và môi để tẩy trang dễ dàng và hiệu quả nhất."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "Kẻ mắt Agapan có màu mực đen bóng, chuẩn tự nhiên.",
         "-  Chất mực nhẹ, nhanh khô, không làm nặng mí mắt, giúp mắt được thoải mái và tiết kiệm thời gian cho bước trang điểm mắt.",
@@ -16570,10 +15629,7 @@
       "https://nuty.vn/Data/Sites/1/Product/9493/z4538226777386_0cd510a137e96d5cfd4908807893432a.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27953/z4464347630649_e4f691915178e637a7cdced03869250e.jpg"
     ],
-    "variants": [
-      "#801",
-      "#802"
-    ],
+    "variants": ["#801", "#802"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
@@ -16581,10 +15637,7 @@
         "Kết cấu phấn siêu mịn, không vón cục, không tạo cảm giác nặng nề trên mắt. Khả năng lên màu cực chuẩn, chống bay phấn và bám màu lâu trôi.",
         "Nuty về 2 tone màu cho bạn lựa chọn"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Xem trên bao bì sản phẩm"],
       "effects": [
         "- Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "- Màu đẹp, không thấm nước, lâu trôi",
@@ -16621,20 +15674,14 @@
       "https://nuty.vn/Data/Sites/1/Product/548/z4221036858097_e541c49ca397df7d93d10642af088462.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9493/z4538226777386_0cd510a137e96d5cfd4908807893432a.jpg"
     ],
-    "variants": [
-      "#L001",
-      "#L002",
-      "#L003"
-    ],
+    "variants": ["#L001", "#L002", "#L003"],
     "brands": "Color School",
     "tab_data": {
       "description": [
         "Bảng Phấn Mắt 9 ô Color School Vitality Pocket Eyeshadow Palette",
         "Bảng Phấn Mắt 9 ô Color School Vitality Pocket Eyeshadow Palette   mới từ nhà Color School nổi tiếng tại Trung có 9 ô màu cả lì cả nhũ với chất phấn mịn mượt dễ lên màu, chống bay phấn, chống nước, dễ tẩy trang, tiện lợi và đa dạng."
       ],
-      "ingredients": [
-        "-Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["-Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "– Nhỏ gọn, dễ mang theo, cố định lớp trang điểm bất cứ lúc nào, thích hợp mang theo khi đi du lịch",
         "– Chuẩn màu, không lem dù dùng tay tán phấn vì thành phần dầu binder thân thiện với da, đồng thời khả năng bám màu cũng “siêu ấn tượng”.",
@@ -16671,11 +15718,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27539/1z4464347694962_f81c8c29ddedc99e58fd83f108579b5b.jpg",
       "https://nuty.vn/Data/Sites/1/Product/548/z4221036858097_e541c49ca397df7d93d10642af088462.jpg"
     ],
-    "variants": [
-      "#801",
-      "#802",
-      "#803"
-    ],
+    "variants": ["#801", "#802", "#803"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -16688,10 +15731,7 @@
         "#802",
         "#803"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "- 8 ô màu phong phú kết hợp cả màu lì matte, màu nhũ, bắt sáng, phù hợp cho các bạn thích make up đơn giản hoặc mới tập make up thỏa sức tìm hiểu các kiểu phối màu khác nhau.",
         "- Chất phấn mịn, các màu nhũ với chất phấn dạng bùn mềm giúp chống trôi phấn, bám màu lâu hơn."
@@ -16787,11 +15827,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27623/z4574821323134_b6f2dd3324d34eb8d475d75f698640e5.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27518/l001.jpg"
     ],
-    "variants": [
-      "#201",
-      "#204",
-      "#202"
-    ],
+    "variants": ["#201", "#204", "#202"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
@@ -16799,10 +15835,7 @@
         "Bảng phấn mắt 8 ô Hold Live Fingertip Star Eyeshadow  đến từ thương hiệu Hold Live với thiết kế cực xinh xắn. Với 8 ô màu nhũ lì, đầy đủ các tone màu, phù hợp với nhiều phong cách trang điểm khác nhau, từ nhẹ nhàng nữ tính, đến quyến rũ.",
         "202"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "CÔNG DỤNG:",
         "- Bảng phấn mắt bao gồm các tông màu nhũ và lì cho bạn thỏa sức phối hợp các phong cách trang điểm khác nhau từ thanh khiết, trong trẻo dễ thương đến năng động, cá tính, ánh nhũ lấp lánh giúp đôi mắt thêm tỏa sáng lung linh thu hút mọi ánh nhìn.",
@@ -16875,10 +15908,7 @@
       "https://nuty.vn/Data/Sites/1/Product/7286/z4463685384478_fd230a15739d6ec317601be2e058faeb.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27849/z4935959106206_c6d3d33566fcd23a9cd9b76cbd76e5c0.jpg"
     ],
-    "variants": [
-      "#001",
-      "#002"
-    ],
+    "variants": ["#001", "#002"],
     "brands": "GEO Lamy",
     "tab_data": {
       "description": [
@@ -16931,12 +15961,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27960/z4191947410221_458cb695cb65c2bca2c3835aa448de2c.jpg",
       "https://nuty.vn/Data/Sites/1/Product/7286/z4463685384478_fd230a15739d6ec317601be2e058faeb.jpg"
     ],
-    "variants": [
-      "#201",
-      "#203",
-      "#204",
-      "#202"
-    ],
+    "variants": ["#201", "#203", "#204", "#202"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -16949,10 +15974,7 @@
         "#204",
         "#202"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm."],
       "effects": [
         "CÔNG DỤNG:",
         "- Bảng phấn mắt bao gồm các tông màu nhũ và lì cho bạn thỏa sức phối hợp các phong cách trang điểm khác nhau từ thanh khiết, trong trẻo dễ thương đến năng động, cá tính, ánh nhũ lấp lánh giúp đôi mắt thêm tỏa sáng lung linh thu hút mọi ánh nhìn.",
@@ -16989,10 +16011,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27439/z4092810107921_a21f3171f880d6f27e12fa55d1f51009.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27960/z4191947410221_458cb695cb65c2bca2c3835aa448de2c.jpg"
     ],
-    "variants": [
-      "#Ash Brown",
-      "#Coco Brown"
-    ],
+    "variants": ["#Ash Brown", "#Coco Brown"],
     "brands": "16Brand",
     "tab_data": {
       "description": [
@@ -17010,9 +16029,7 @@
         "-  Sử dụng cọ đầu dẹt hoặc cọ chuyên dụng cho chân mày",
         "- Dùng cọ tán phấn vào những phần chân mày bị nhạt và tạo dáng đuôi chân mày sao cho chân mày sắc nét và đều màu hơn."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Sản phẩm có thiết kế kèm cọ rất tiện lợi và dễ sử dụng ở bất cứ đâu",
         "- Kết cấu em này dạng bột nén với chất bột mịn, có độ bám màu cao, bám tốt và lì vào da",
@@ -17048,12 +16065,7 @@
       "https://nuty.vn/Data/Sites/1/Product/6658/z4463685394723_6402134964d2574b1e61d4df819f896e.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27439/z4092810107921_a21f3171f880d6f27e12fa55d1f51009.jpg"
     ],
-    "variants": [
-      "#196",
-      "#274",
-      "#299",
-      "#505"
-    ],
+    "variants": ["#196", "#274", "#299", "#505"],
     "brands": "Lancome",
     "tab_data": {
       "description": [
@@ -17103,18 +16115,13 @@
       "https://nuty.vn/Data/Sites/1/Product/27116/z4454147611405_a2809113dccafce48d27426b20cd0c72.jpg",
       "https://nuty.vn/Data/Sites/1/Product/6658/z4463685394723_6402134964d2574b1e61d4df819f896e.jpg"
     ],
-    "variants": [
-      "#02",
-      "#01"
-    ],
+    "variants": ["#02", "#01"],
     "brands": "GEO Lamy",
     "tab_data": {
       "description": [
         "Phấn Phủ Dạng Nén Geo Lamy Catalina Geo Golden Pact là phấn phủ dạng nén đến từ thương hiệu GEO Lamy có công dụng giúp che các khuyết điểm có trên da và giúp làm sáng da, tươi sáng. Sản phẩm hỗ trợ chống nắng cho da, giúp mang lại làn da mịn màng, khô thoáng cùng mức che phủ hoàn hảo, không tì vết."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Hạt phấn siêu mịn giúp che khuyết điểm lỗ chân lông mang lại làn da đẹp mịn màng, không tì vết.",
         "- Công thức giữ lớp nền lâu trôi, chống nắng bảo vệ da hiệu quả trước tác hại của ánh nắng mặt trời.",
@@ -17145,10 +16152,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28455/z4393116445831_28ec19255eda3c9fd643cd747e32a680.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27116/z4454147611405_a2809113dccafce48d27426b20cd0c72.jpg"
     ],
-    "variants": [
-      "#02",
-      "#01"
-    ],
+    "variants": ["#02", "#01"],
     "brands": null,
     "tab_data": {
       "description": [
@@ -17642,10 +16646,7 @@
         "#220",
         "#909"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Xem trên bao bì sản phẩm."],
       "effects": [
         "CÔNG DỤNG:",
         "- Môi lên màu chuẩn suốt cả ngày dài, không lem, không trôi và không gây khô môi"
@@ -17793,9 +16794,7 @@
         "- Chiết xuất thiên nhiên từ nụ tầm xuân bảo vệ vùng da mắt nhạy cảm, không bị kích ứng.",
         "- Cung cấp dưỡng chất giúp vùng da ở chân mi mềm mại, giảm thiểu khô sần, bong tróc."
       ],
-      "ingredients": [
-        "-Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["-Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Chứa các thành phần mới giúp bút kẻ mắt không trôi siêu bền, ngăn nhoè nước mắt, mồ hôi, bã nhờn và cọ xát giữ cho đôi mắt đẹp suốt cả ngày dài.",
         "-  Có khả năng kiểm soát chất lỏng cải tiến thiết kế bộ điều chỉnh để chất lỏng chảy tốt hơn tăng lực đẩy so với các sản phẩm thông thường giúp mực kẻ đều màu, mượt mà và thao tác nhanh chóng.",
@@ -17803,9 +16802,7 @@
         "-  Chứa 6 loại serum dưỡng mi chắc khoẻ, ngăn gãy rụng.",
         "-  Dễ dàng rửa bằng nước ấm."
       ],
-      "instruction": [
-        "- Kẻ viền mí mắt các nét thanh mảnh hay đậm tùy ý thích"
-      ]
+      "instruction": ["- Kẻ viền mí mắt các nét thanh mảnh hay đậm tùy ý thích"]
     }
   },
   {
@@ -18209,12 +17206,8 @@
       "description": [
         "Browit by Nong Chat là một thương hiệu mỹ phẩm trang điểm Thái Lan chuyên sản xuất các sản phẩm dành riêng cho mắt và mày như chì mày, phấn bột kẻ mày, phấn mắt, bột nhũ mắt, bút kẻ mắt, mascara,…. được tạo ra bởi Nong Chat - một chuyên gia trang điểm có “tiếng” hàng đầu tại Thái Lan."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm"
-      ],
-      "effects": [
-        "CÔNG DỤNG:"
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm"],
+      "effects": ["CÔNG DỤNG:"],
       "instruction": []
     }
   },
@@ -18254,9 +17247,7 @@
         "-  Bấm mi trước khi chuốt mascara.",
         "- Chải mascara theo đường ziczac từ chân mi ra đến ngọn mi"
       ],
-      "ingredients": [
-        "- Thành phần cải tiến mới chứa sợi EX"
-      ],
+      "ingredients": ["- Thành phần cải tiến mới chứa sợi EX"],
       "effects": [
         "- Làm dài và tăng độ dày mi giúp hàng mi cong và giữ nếp suốt cả ngày.",
         "- Khả năng dài gấp 3 lần và rậm hơn 1,2 lần so với sản phẩm trước đó",
@@ -18300,15 +17291,9 @@
       "description": [
         "Browit by Nong Chat là một thương hiệu mỹ phẩm trang điểm Thái Lan chuyên sản xuất các sản phẩm dành riêng cho mắt và mày như chì mày, phấn bột kẻ mày, phấn mắt, bột nhũ mắt, bút kẻ mắt, mascara,…. được tạo ra bởi Nong Chat - một chuyên gia trang điểm có “tiếng” hàng đầu tại Thái Lan."
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm"
-      ],
-      "effects": [
-        "CÔNG DỤNG:"
-      ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "ingredients": ["- Xem trên bao bì sản phẩm"],
+      "effects": ["CÔNG DỤNG:"],
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -18466,10 +17451,7 @@
         "Bút kẻ lông mày chứa những thành phần chống thấm nước, mồ hôi giữ cho đường kẻ luôn đẹp trong thời gian dài.",
         "Sản phẩm Bút Chì Sáp Kẻ Mày Siêu Mịn Kissme Heroine Make Quick Eyebrow có nhiều tone màu tại Nuty cho bạn lựa chọn"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "#03 nâu sáng",
         "- Tạo đường nét cho chân mày tự nhiên, dễ dàng và sắc nét trong suốt cả ngày dài.",
@@ -18578,10 +17560,7 @@
       "https://nuty.vn/Data/Sites/1/Product/9037/z4881634958685_dd0bce1465efde22e134144b2afeca6f.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9015/4.png"
     ],
-    "variants": [
-      "#A02",
-      "#A01"
-    ],
+    "variants": ["#A02", "#A01"],
     "brands": "Lemonade",
     "tab_data": {
       "description": [
@@ -18603,9 +17582,7 @@
         "Xuất xứ:  Việt Nam",
         "Thương hiệu:  Lemonade"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Mỏng nhẹ, Lì mịn màng, Set nhanh và Lâu trôi",
@@ -18648,9 +17625,7 @@
         "Sản phẩm có thiết kế dạng chai xịt phun sương, giúp bao phủ đều khắp toàn bộ gương mặt. Đặc biệt, lớp sương mỏng nhẹ cũng rất nhanh khô, không ảnh hưởng đến lớp make up cũng không mang lại cảm giác bết dính khó chịu.",
         "Sản phẩm có kết cấu lỏng, nhẹ và không màu như nước. Khi xịt lên da cực kì nhanh khô, tạo cảm giác thông thoáng cho da, không làm bít các lỗ chân lông và đảm bảo không làm ảnh hưởng đến lớp make up."
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "- Tăng cường hiệu ứng glowy cho lớp nền, làm da mịn hơn, ăn phấn hơn.",
         "-  Thích hợp với da thường và da khô."
@@ -18736,11 +17711,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27434/z4090939590761_4ed1c557f6a1434bf9437f1ec6ec092c.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26566/z4456332278588_dcdf2673ce4d5a6e37f0a3f11ec640d2.jpg"
     ],
-    "variants": [
-      " #MP",
-      "#MO",
-      "#MB"
-    ],
+    "variants": [" #MP", "#MO", "#MB"],
     "brands": "CANMAKE",
     "tab_data": {
       "description": [
@@ -18790,10 +17761,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27435/z4090830965883_27a161aeeee8153f875cff9806ae3949.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27434/z4090939590761_4ed1c557f6a1434bf9437f1ec6ec092c.jpg"
     ],
-    "variants": [
-      "#Ash Brown",
-      "#Chocolate "
-    ],
+    "variants": ["#Ash Brown", "#Chocolate "],
     "brands": "CITY COLOR",
     "tab_data": {
       "description": [
@@ -18805,9 +17773,7 @@
         "Nuty về 3 dòng cho bạn lựa chọn",
         "- Lấy 1 lượng nhỏ sản phẩm lên đầu ngón tay rồi thoa đều khắp mặt, tập trung nhiều vào những vùng có lỗ chân chân lông to."
       ],
-      "ingredients": [
-        "Xem trên bao bì"
-      ],
+      "ingredients": ["Xem trên bao bì"],
       "effects": [
         "-  Với công thức đặc biệt chứa các thành phần tự nhiên Mascara Be Bold Extreme, dòng sản phẩm tối ưu hóa dày mi, cho đôi mi đậm sắc, công thức độc đáo giữ độ cong cho mi dày và dài mà không hề nặng mi hay gây ngứa mí mắt giúp cho hàng mi của các nàng nhẹ như bông và không hề gây khó chụi và nặng mi nha."
       ],
@@ -18914,9 +17880,7 @@
         "Sản phẩm hiện đang có 3 màu cho các bạn tuỳ ý lựa chọn nhé:",
         "No.3 - Màu Nâu (Medium Brown)"
       ],
-      "ingredients": [
-        "Xem trên bao bì"
-      ],
+      "ingredients": ["Xem trên bao bì"],
       "effects": [
         "- G ồm 2 đầu với 1 đầu là chì kẻ, 1 đầu còn lại là cọ chải định hình lông mày, giúp cho bạn có cặp mày thật sự ăn ý."
       ],
@@ -18951,10 +17915,7 @@
         "Bút Kẻ Mắt Kiss Me Heroin luôn nằm trong top đầu các sản phẩm   được ưa thích nhất do người tiêu dùng bình chọn tại Nhật Bản.   với thiết kế đầu siêu mảnh chỉ   rất dễ dàng để các cô gái “biến hóa” cho đôi mắt thành những đường nét thanh mảnh, tự nhiên hay sắc nét, gợi cảm.",
         "Bút Kẻ Mắt Kiss Me Heroin tạo những đường liner “đỉnh cao” vì nét mực ra rất đều, đen nhánh và bám mi, công thức chống thấm nước tốt, ngủ 1 giấc dậy mi mắt vẫn nguyên đường liner ko xê dịch nha, sản phẩm hoàn hảo ngay cả khi đi mưa, biển."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "- Nét mực ra rất đều, đen nhánh và bám mi, công thức chống thấm nước tốt,",
         "- Khả năng chống nước và thành phần chiết xuất từ hoa cúc tác dụng làm mềm và giữ ẩm cho mi mắt."
@@ -18986,11 +17947,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27449/z4090224417066_f318f9c677b2769c337492baabc9d26a.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27437/z4341799507934_1334ff5f91a61684d32b1583c6074261-(1).jpg"
     ],
-    "variants": [
-      "#Soft Beige",
-      "#Natural",
-      "#Light"
-    ],
+    "variants": ["#Soft Beige", "#Natural", "#Light"],
     "brands": "CITY COLOR",
     "tab_data": {
       "description": [
@@ -19000,9 +17957,7 @@
         "- Thích hợp dùng cho hằng ngày hoặc đi chơi đều được.",
         "- Dùng mút hoặc cọ để dặm phấn lên da."
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
       "effects": [
         "-  Sau khi đánh phấn bột phấn được hòa tan vào da nhanh chóng làm cho lớp trang điểm của bạn trông hoàn toàn tự nhiên.",
         "- Kiểm soát dầu hiệu quả giúp giảm tối thiểu sự bóng dầu của da.",
@@ -19057,9 +18012,7 @@
         "6. Phù hợp cho mọi loại da.",
         "- Lấy một lượng phấn vừa đủ, thoa đều lên da."
       ],
-      "ingredients": [
-        "Vui lòng xem chi tiết trên bao bì sản phẩm."
-      ],
+      "ingredients": ["Vui lòng xem chi tiết trên bao bì sản phẩm."],
       "effects": [
         "1. Hiệu quả làm mờ mang đến làn da mịn ráo, không khuyết điểm.",
         "2. Calamine ưu việt giúp làm dịu da. Thành phần lành tính cho làn da nhiều khuyết điểm.",
@@ -19095,10 +18048,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27448/z4093312613694_6985b71047918ef86c3e12a876e12422.jpg",
       "https://nuty.vn/Data/Sites/1/Product/9016/z4976920088112_7550aed6b057ed7a507973205056f17e.jpg"
     ],
-    "variants": [
-      "#A02",
-      "#A01"
-    ],
+    "variants": ["#A02", "#A01"],
     "brands": "Lemonade",
     "tab_data": {
       "description": [
@@ -19124,9 +18074,7 @@
         "Xuất xứ:  Việt Nam",
         "Thương hiệu:  Lemonade"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "-  Kem lót dạng balm là bước makeup nền đầu tiên",
         "- Cushion:",
@@ -19349,9 +18297,7 @@
       "description": [
         "là sản phẩm đến từ thương hiệu Habaria với thiết kế nét siêu mạnh giúp kẻ đuôi mắt và mí trong dễ dàng. Kẻ dạ Habaria linh hoạt tô dày hay mỏng tùy theo sở thích để tạo được nhiều phong cách trang điểm cho đôi mắt. Chất liệu bút siêu mềm mịn, mực ra đều, chống trông, chống lem."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "Đầu bút dạ siêu mảnh, mềm mại, vẽ mềm mại, không lem.",
         "-  Nắp khớp lò xo tiện lợi khi sử dụng.",
@@ -19399,10 +18345,7 @@
         "- Các hạt sắc tố màu giúp màu son lên môi chuẩn sắc, độ bao phủ đều, ôm trọn đôi môi chỉ với một lần lướt son.",
         "- Khả năng bền màu lâu trôi lên đến 8 giờ sau khi sử dụng."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Màu  Cranberry",
@@ -19411,9 +18354,7 @@
         "- Các hạt sắc tố màu giúp màu son lên môi chuẩn sắc, độ bao phủ đều, ôm trọn đôi môi chỉ với một lần lướt son.",
         "- Khả năng bền màu lâu trôi lên đến 8 giờ sau khi sử dụng."
       ],
-      "instruction": [
-        "Dùng để đánh lòng môi hay full môi đều đẹp"
-      ]
+      "instruction": ["Dùng để đánh lòng môi hay full môi đều đẹp"]
     }
   },
   {
@@ -19443,9 +18384,7 @@
         "Kem lót Fit Me Primer có thành phần tích hợp đất sét khoáng giúp kiềm dầu, ngăn nền xuống tông hiệu quả suốt 16H. Chất kem dạng sữa dễ tán, đem lại hiệu ứng làm mềm da, làm mờ lỗ chân lông ngay sau khi sử dụng. Ngoài ra, sản phẩm có thêm SPF 20 giúp bảo vệ da khỏi tác hại của ánh nắng mặt trời.  Sản phẩm được khuyên dùng trước bước đánh kem nền để đem lại lớp nền mịn lì, không bóng dầu, không xuống tông suốt ngày dài.",
         "Kem lót Maybelline Fit Me Primer với dạng tuýp cơ bản, nhỏ gọn, nắp xoay vặn mở chắc chắn."
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "– Thành phần tích hợp đất sét khoáng giúp kiềm dầu, ngăn lớp nền xuống tông suốt 16H.",
         "– Đem lại hiệu ứng mịn lì, làm mờ lỗ chân lông.",
@@ -19479,11 +18418,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28140/z4261737770075_6547514e69a08c9811476a05aed6e648-(1)-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/27966/z4192358074735_8556462deb368f05a63688fac935db7d.jpg"
     ],
-    "variants": [
-      " #10 Brave",
-      "#20 Hopeful",
-      " #30 Fierce"
-    ],
+    "variants": [" #10 Brave", "#20 Hopeful", " #30 Fierce"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -19591,12 +18526,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27323/81.jpg",
       "https://nuty.vn/Data/Sites/1/Product/12140/44.png"
     ],
-    "variants": [
-      "#150",
-      "#130",
-      "#120",
-      "#110"
-    ],
+    "variants": ["#150", "#130", "#120", "#110"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -19656,10 +18586,7 @@
       "https://nuty.vn/Data/Sites/1/Product/12130/132.png",
       "https://nuty.vn/Data/Sites/1/Product/27323/81.jpg"
     ],
-    "variants": [
-      "#Talk to the hand",
-      "#Oh Snap"
-    ],
+    "variants": ["#Talk to the hand", "#Oh Snap"],
     "brands": "CITY COLOR",
     "tab_data": {
       "description": [
@@ -19698,10 +18625,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26583/46.jpg",
       "https://nuty.vn/Data/Sites/1/Product/12130/132.png"
     ],
-    "variants": [
-      "#01",
-      "#1.5 "
-    ],
+    "variants": ["#01", "#1.5 "],
     "brands": null,
     "tab_data": {
       "description": [
@@ -19800,10 +18724,7 @@
         "- Các hạt sắc tố màu giúp màu son lên môi chuẩn sắc, độ bao phủ đều, ôm trọn đôi môi chỉ với một lần lướt son.",
         "- Khả năng bền màu lâu trôi lên đến 8 giờ sau khi sử dụng."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Màu Ruby",
@@ -19812,9 +18733,7 @@
         "- Các hạt sắc tố màu giúp màu son lên môi chuẩn sắc, độ bao phủ đều, ôm trọn đôi môi chỉ với một lần lướt son.",
         "- Khả năng bền màu lâu trôi lên đến 8 giờ sau khi sử dụng."
       ],
-      "instruction": [
-        "Dùng để đánh lòng môi hay full môi đều đẹp"
-      ]
+      "instruction": ["Dùng để đánh lòng môi hay full môi đều đẹp"]
     }
   },
   {
@@ -19843,12 +18762,7 @@
       "https://nuty.vn/Data/Sites/1/Product/24085/z4646645914894_aefaa2e330db3a29855eeb765f1eee42.jpg",
       "https://nuty.vn/Data/Sites/1/Product/26581/z4256185012896_96acc8fe1bf122c6ec7ccf60328ee09d.jpg"
     ],
-    "variants": [
-      "#10",
-      "#15",
-      "#20",
-      "#25"
-    ],
+    "variants": ["#10", "#15", "#20", "#25"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -19957,9 +18871,7 @@
         "Xuất xứ: Nhật Bản",
         "Thương hiệu: Kiss Me"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "- Nét bút cực mảnh, cực sắc, đậm đẹp, bền màu, không lem trôi và đặc biệt là không thấm nước.",
         "-  Đầu bút vừa đủ cứng để dễ dàng thao tác từng nét vẽ, vừa đủ mềm để cho ra những đường nét mảnh mai mà không gây ảnh hưởng đến vùng mắt nhạy cảm."
@@ -20150,9 +19062,7 @@
         "Xuất xứ: Hàn Quốc",
         "Thương hiệu: Black Rouge"
       ],
-      "ingredients": [
-        "Công thức Creamy Velvet Matrix System độc quyền"
-      ],
+      "ingredients": ["Công thức Creamy Velvet Matrix System độc quyền"],
       "effects": [],
       "instruction": [
         "HƯỚNG DẪN SỬ DỤNG:",
@@ -20199,13 +19109,7 @@
       "https://nuty.vn/Data/Sites/1/Product/16372/1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/29020/8.jpg"
     ],
-    "variants": [
-      "#WL01",
-      "#WL02",
-      "#WL03",
-      "#WL04",
-      "#WL05"
-    ],
+    "variants": ["#WL01", "#WL02", "#WL03", "#WL04", "#WL05"],
     "brands": "Black Rouge",
     "tab_data": {
       "description": [
@@ -20226,10 +19130,7 @@
         "Thương hiệu: Black Rouge"
       ],
       "ingredients": [],
-      "effects": [
-        "Xuất xứ: Hàn Quốc",
-        "Thương hiệu: Black Rouge"
-      ],
+      "effects": ["Xuất xứ: Hàn Quốc", "Thương hiệu: Black Rouge"],
       "instruction": []
     }
   },
@@ -20344,10 +19245,7 @@
         "-  Tô son full môi theo chiều từ giữa trung tâm rồi lan dần ra ngoài",
         "- Hoặc tô lòng môi nhẹ nhàng"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG",
         "- Son kem lì che được hầu hết khuyết điểm trên môi như môi thâm, môi mỏng…",
@@ -20398,17 +19296,12 @@
         "Công thức Dark Zero Care giúp duy trì làn da sáng, không gây sạm da và xỉn màu. Sản phẩm có chỉ số chống nắng SPF 35 PA++, giúp bảo vệ da khỏi tia UVA và UVB từ ánh nắng mặt trời.",
         "- Là sản phẩm 3 trong 1: tạo nền, chống nắng và dưỡng da. \n- Khả năng kiềm dầu tốt, không gây bóng dầu, giữ lớp trang điểm mặt khô thoáng. \n- Dưỡng ẩm, hạn chế da khô trong thời gian dài. \n- Che phủ khuyết điểm như vùng da không đều màu, thâm nám, sạm da, quầng thâm, sẹo, mụn... \n- Chống nắng, tạo lớp màng ngăn ngừa tia cực tím gây hại cho da."
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "-  Tác dụng 2in1: Vừa là kem nền, vừa chống nắng lại tạo 1 lớp nền cực kì hoàn hảo, độ cover cực kì tốt."
       ],
-      "instruction": [
-        "HƯỚNG DẪN SỬ DỤNG:"
-      ]
+      "instruction": ["HƯỚNG DẪN SỬ DỤNG:"]
     }
   },
   {
@@ -20439,12 +19332,7 @@
       "https://nuty.vn/Data/Sites/1/Product/26837/26.jpg",
       "https://nuty.vn/Data/Sites/1/Product/17888/30.jpg"
     ],
-    "variants": [
-      "#V301",
-      "#V302",
-      "#V305",
-      "#V306"
-    ],
+    "variants": ["#V301", "#V302", "#V305", "#V306"],
     "brands": "Hold Live",
     "tab_data": {
       "description": [
@@ -20468,16 +19356,12 @@
         "Xuất xứ: Trung Quốc",
         "Thương hiệu: Hold Live"
       ],
-      "ingredients": [
-        "- Xem trên bao bì sản phẩm."
-      ],
+      "ingredients": ["- Xem trên bao bì sản phẩm."],
       "effects": [
         "- Cho sắc môi tươi tắn, rạng rỡ.",
         "- Khả năng bền màu lâu trôi cho các nàng tự tin khi giao tiếp và tham gia các hoạt động ngoài trời."
       ],
-      "instruction": [
-        "Lấy 1 lượng son vừa đủ thoa đều lên môi"
-      ]
+      "instruction": ["Lấy 1 lượng son vừa đủ thoa đều lên môi"]
     }
   },
   {
@@ -20500,13 +19384,7 @@
       "https://nuty.vn/Data/Sites/1/Product/27820/z4926892813141_f9edfe40a3b39a08557bac7dcb6b74ac-(1).jpg",
       "https://nuty.vn/Data/Sites/1/Product/26837/26.jpg"
     ],
-    "variants": [
-      "#01 ",
-      "#02 ",
-      "#03",
-      "#04",
-      "#05"
-    ],
+    "variants": ["#01 ", "#02 ", "#03", "#04", "#05"],
     "brands": "Maybelline",
     "tab_data": {
       "description": [
@@ -20622,11 +19500,7 @@
       "https://nuty.vn/Data/Sites/1/Product/28611/1.jpg",
       "https://nuty.vn/Data/Sites/1/Product/27511/z4682483787844_3e3604341848255ec75657a1803c5e3f.jpg"
     ],
-    "variants": [
-      "#21",
-      "#22",
-      "#23"
-    ],
+    "variants": ["#21", "#22", "#23"],
     "brands": "Gogo Tales",
     "tab_data": {
       "description": [
@@ -20643,9 +19517,7 @@
         "Xuất xứ:  Trung Quốc",
         "Thương hiệu:  Gogo Tales"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì"],
       "effects": [
         "-  Phấn Nước Kiềm Dầu 2 Lõi Gogo Tales Moist Air Cushion Cream  có độ che phủ hoàn hảo giúp bạn che phủ hoàn hảo các khuyết điểm trên da. Sản phẩm giữ cho lớp trang điểm lâu trôi hơn, đồng thời không có hiện tượng bị trôi nền hay xuống tone."
       ],
@@ -20699,10 +19571,7 @@
         "Hàn Quốc",
         "3CE"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "Vui lòng xem trên bao bì"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "Vui lòng xem trên bao bì"],
       "effects": [
         "CÔNG DỤNG:",
         "Kết cấu mềm và nhẹ môi giúp đôi môi mềm mịn.",
@@ -20861,9 +19730,7 @@
         "- Chuẩn màu sau 01 lần quẹt, hạn chế cảm giác nặng nề",
         "- Bền màu đến 12h, thách thức mọi bữa tiệc & thời tiết nhưng vẫn nâng niu môi"
       ],
-      "ingredients": [
-        "Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "- Trang điểm môi \n- Thoa full môi giúp bạn trông rạng rỡ \n- Có thể thoa nhiều lớp tùy thích"
       ],
@@ -20905,10 +19772,7 @@
         "Dưỡng da săn chắc, mịn màng nhờ chiết xuất hoa mộc lan, hoa sen, nước khoáng từ đảo Jeju.",
         "Không chứa Paraben, không cồn"
       ],
-      "ingredients": [
-        "THÀNH PHẦN:",
-        "- Vui lòng xem trên bao bì sản phẩm"
-      ],
+      "ingredients": ["THÀNH PHẦN:", "- Vui lòng xem trên bao bì sản phẩm"],
       "effects": [
         "CÔNG DỤNG:",
         "-  Xịt cố định lớp trang điểm với đầu xịt phun sương"
@@ -21064,12 +19928,8 @@
         "Phấn Má Hồng City Color Glow Pro Blush Palette bao  gồm 6 ô màu má hồng phù hợp với tất cả màu da và phong cách trang điểm.",
         "Sản phẩm có kết cấu dạng nén có khả năng lên màu chuẩn - mịn mướt - tự nhiên và bền màu suốt cả ngày, tạo hiệu ứng gò má ửng hồng tự nhiên. Chất phấn cho khả năng bám màu lâu trôi, bền màu lên đến nhiều giờ."
       ],
-      "ingredients": [
-        "- Xem trên bao bì"
-      ],
-      "effects": [
-        "- T ạo hiệu ứng gò má ửng hồng tự nhiên"
-      ],
+      "ingredients": ["- Xem trên bao bì"],
+      "effects": ["- T ạo hiệu ứng gò má ửng hồng tự nhiên"],
       "instruction": [
         "Dùng bông mút apply một lớp phấn má hồng lên má và tán đều"
       ]
