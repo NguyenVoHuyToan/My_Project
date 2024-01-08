@@ -14,34 +14,34 @@ const ProductDetailPage = () => {
   const [similarProducts, setSimilarProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  //   useEffect(() => {
-  //     fetch(`http://localhost:3000/product/products/${id}`)
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setProduct(data);
-  //         setLoading(false);
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error:", error);
-  //         setLoading(false);
-  //       });
-  //   }, [id]);
+    useEffect(() => {
+      fetch(`http://localhost:3000/product/products/${id}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setProduct(data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          setLoading(false);
+        });
+    }, [id]);
 
-  //   useEffect(() => {
-  //     if (product.brands) {
-  //       fetch(`http://localhost:3000/product/products/brand/${product.brands}`)
-  //         .then((response) => response.json())
-  //         .then((data) => {
-  //           setLoading(false);
-  //           setSimilarProducts(data);
-  //         })
-  //         .catch((error) => console.error(error));
-  //     }
-  //   }, [product.brands]);
+    useEffect(() => {
+      if (product.brands) {
+        fetch(`http://localhost:3000/product/products/brand/${product.brands}`)
+          .then((response) => response.json())
+          .then((data) => {
+            setLoading(false);
+            setSimilarProducts(data);
+          })
+          .catch((error) => console.error(error));
+      }
+    }, [product.brands]);
 
-  //   if (loading) {
-  //     return <div>Loading...</div>;
-  //   }
+    if (loading) {
+      return <div>Loading...</div>;
+    }
 
   const responsive = {
     desktop: {

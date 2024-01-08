@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./product-card.scss";
 import { toast } from "react-toastify";
@@ -7,68 +7,68 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
-  // const [isExpanded, setIsExpanded] = useState(false);
-  //  const navigate = useNavigate();
+  const [isExpanded, setIsExpanded] = useState(false);
+   const navigate = useNavigate();
 
-  // const handleAddToCartClick = async (productId) => {
+  const handleAddToCartClick = async (productId) => {
 
-  //   if (!productId) {
-  //     console.error('Product ID is undefined');
-  //     toast.error('Product ID is undefined', {
-  //       position: toast.POSITION.TOP_RIGHT,
-  //     });
-  //     return;
-  //   }
+    if (!productId) {
+      console.error('Product ID is undefined');
+      toast.error('Product ID is undefined', {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      return;
+    }
 
-  //   try {
-  //     const authToken = localStorage.getItem('token');
+    try {
+      const authToken = localStorage.getItem('token');
 
-  //     if (authToken) {
-  //       const response = await axios.post('http://localhost:3000/cart', { productId }, {
-  //         headers: {
-  //           Authorization: `Bearer ${authToken}`,
-  //         },
-  //       });
+      if (authToken) {
+        const response = await axios.post('http://localhost:3000/cart', { productId }, {
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
 
-  //       if (response.data.success) {
-  //         if (onAddToCart) {
-  //           onAddToCart(product);
-  //         }
-  //         toast.success(`Product added to cart successfully`, {
-  //           position: toast.POSITION.TOP_RIGHT,
-  //         });
-  //       } else {
-  //         console.error(`Failed to add product to cart:`);
-  //         toast.error(`Failed to add product to cart`, {
-  //           position: toast.POSITION.TOP_RIGHT,
-  //         });
-  //       }
-  //     } else {
-  //       console.error('User not logged in. Redirecting to signin page.');
-  //       toast.error('Please log in to add products to cart', {
-  //         position: toast.POSITION.TOP_RIGHT,
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error('Error adding product to cart:', error);
-  //     toast.error(`Error adding product to cart`, {
-  //       position: toast.POSITION.TOP_RIGHT,
-  //     });
-  //     navigate('/signin');
-  //   }
-  // };
+        if (response.data.success) {
+          if (onAddToCart) {
+            onAddToCart(product);
+          }
+          toast.success(`Product added to cart successfully`, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        } else {
+          console.error(`Failed to add product to cart:`);
+          toast.error(`Failed to add product to cart`, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
+      } else {
+        console.error('User not logged in. Redirecting to signin page.');
+        toast.error('Please log in to add products to cart', {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      }
+    } catch (error) {
+      console.error('Error adding product to cart:', error);
+      toast.error(`Error adding product to cart`, {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      navigate('/signin');
+    }
+  };
 
-  // const handleExpandClick = () => {
-  //     setIsExpanded((prevExpanded) => !prevExpanded);
-  // };
+  const handleExpandClick = () => {
+      setIsExpanded((prevExpanded) => !prevExpanded);
+  };
 
-  // if (!product || !product.images) {
-  //     return null;
-  // }
+  if (!product || !product.images) {
+      return null;
+  }
 
-  // const containerClassName = isExpanded
-  //     ? 'product-card-com flex-row prod-container prod-exp'
-  //     : 'product-card-com flex-row prod-container prod-c';
+  const containerClassName = isExpanded
+      ? 'product-card-com flex-row prod-container prod-exp'
+      : 'product-card-com flex-row prod-container prod-c';
 
   return (
     <div className={containerClassName}>
@@ -84,7 +84,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
         <div className="flex-row prod-info bg-ivory align-left gap-xs">
           <div className="flex-col gap-sm left-bar">
             <div className="flex-col gap-xs prod-n-pr">
-              <Link to={`/product/products/${product._id}`}>
+              <Link to={`/product/products/${product.product_id}`}>
                 <div className="prod-name" title={product.product_name}>
                   {product.product_name}
                 </div>
@@ -103,7 +103,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
             <i className="bi bi-suit-heart"></i>
             <i
               className="bi bi-cart-plus"
-              onClick={() => handleAddToCartClick(product._id)}
+              onClick={() => handleAddToCartClick(product.product_id)}
             ></i>
             <button
               disabled={expandDisable}
@@ -118,7 +118,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
         <div className="prod-info-exp-holder flex-col gap-xs align-left">
           <div className="flex-col gap-2xs prod-n-pr-review align-left">
             <p className="prod-brand">{product.brands}</p>
-            <Link to={`/product/products/${product._id}`}>
+            <Link to={`/product/products/${product.product_id}`}>
               <div className="prod-name" title={product.product_name}>
                 {product.product_name}
               </div>
