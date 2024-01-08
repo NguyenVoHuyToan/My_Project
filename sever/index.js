@@ -1,20 +1,20 @@
-import express from 'express';
-import {config} from 'dotenv';
-import databaseProject from './mongodb.js';
-import connectMongo from './routes/connectMongo.js';
+import express from "express";
+import { config } from "dotenv";
+import databaseProject from "./mongodb.js";
+import morgan from "morgan";
+import cors from "cors";
+
+const app = express();
+const port = 3000;
 
 config();
 
-const app = express();
-const port = 4000;
-
-databaseProject.run()
-
 app.use(express.json());
-
-
-app.use('/post',connectMongo);
-
+app.use(morgan("combined"));
+app.use(cors());
+databaseProject.run();
+databaseProject.users.insertOne({"name":"test"})
+databaseProject.inventory.insertOne({"name":"test"})
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-  });
+  console.log(`Server running on port ${port}`);
+});

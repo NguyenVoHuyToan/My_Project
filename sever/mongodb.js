@@ -3,16 +3,17 @@ import {config} from 'dotenv'
 
 config()
 // MongoDB connection URL
-const url = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@huytoan.8kpntu8.mongodb.net/`;
+const pass=process.env.PASS;
+const url = `mongodb+srv://lightwing2208:${pass}@database.t4myp8j.mongodb.net/`;
 
 // Database Name
-const dbName = 'my_project_db';
+
 
 // Function to connect to MongoDB
 class DatabaseService {
     constructor() {
-      this.client = new MongoClient(uri);
-      this.db = this.client.db(process.env.DB_USERNAME);
+      this.client = new MongoClient(url);
+      this.db = this.client.db(process.env.DB_NAME);
     }
     run() {
       try {
@@ -21,9 +22,12 @@ class DatabaseService {
         console.log("error", error);
       }
     }
-    get project_database() {
-      return this.db.collection("project_database");
+    get users() {
+      return this.db.collection("users");
+    }
+    get inventory() {
+      return this.db.collection("inventory");
     }
 }
-const databaseProject = DatabaseService()
+const databaseProject = new DatabaseService()
 export default databaseProject;

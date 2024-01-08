@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+
 import './homepage.scss'
 import { Link } from 'react-router-dom';
 import Pic1 from '../../assets/img/homepage/hero-1.png';
@@ -14,6 +14,7 @@ import Button from '../../components/common/button/button.jsx';
 import Productcard from '../../components/common/product-card/product-card.jsx';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useEffect, useState } from 'react';
 
 const Homepage = () => {
   const [products, setProducts] = useState([]);
@@ -152,7 +153,7 @@ const Homepage = () => {
             <div className="contact-content flex-col align-left">
               <div className="text-contact flex-col align-left gap-sm">
                 <p className="Contact-us h1"> CONTACT US</p>
-                <p className="text-contact2 body">Need assistance or have questions? Don't hesitate to get in touch with us. ShineAura's customer care team is available 24/7 to assist you. Let us know how we can help. We're here to listen and ensure you have the best shopping experience on ShineAura.</p>
+                <p className="text-contact2 body">Need assistance or have questions? Don&#39;t hesitate to get in touch with us. ShineAura&#39;s customer care team is available 24/7 to assist you. Let us know how we can help. We&#39;re here to listen and ensure you have the best shopping experience on ShineAura.</p>
                 <div className="flex-col text-contact-icon  align-left gap-xs body-bld">
                   <div className='flex-row gap-xs'>
                     <i className="bi bi-envelope-fill"></i>
