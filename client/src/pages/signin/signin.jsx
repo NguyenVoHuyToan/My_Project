@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./signin.scss";
 import Logo from "../../assets/img/logo-black.png";
@@ -24,40 +24,40 @@ const Signin = () => {
   //   }
   // }, []);
 
-  // const handleSignIn = async (e) => {
-  //   e.preventDefault();
-  //   setError("");
-  //   setLoading(true);
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
 
-  //   try {
-  //     const response = await axios.post("http://localhost:3000/signin", {
-  //       email,
-  //       password,
-  //     });
+    try {
+      const response = await axios.post("http://localhost:3000/signin", {
+        email,
+        password,
+      });
 
-  //     if (response.data.token) {
-  //       localStorage.setItem("token", response.data.token);
-  //       signIn(email);
+      if (response.data.token) {
+        localStorage.setItem("token", response.data.token);
+        signIn(email);
 
-  //       if (rememberMe) {
-  //         localStorage.setItem("rememberedEmail", email);
-  //       } else {
-  //         localStorage.removeItem("rememberedEmail");
-  //       }
+        if (rememberMe) {
+          localStorage.setItem("rememberedEmail", email);
+        } else {
+          localStorage.removeItem("rememberedEmail");
+        }
 
-  //       navigate("/");
-  //     }
-  //   } catch (err) {
-  //     console.log(err);
-  //     if (err.response && err.response.data && err.response.data.message) {
-  //       setError(err.response.data.message);
-  //     } else {
-  //       setError("An error occurred during signin.");
-  //     }
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
+        navigate("/");
+      }
+    } catch (err) {
+      console.log(err);
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message);
+      } else {
+        setError("An error occurred during signin.");
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="section-container flex-col signin-page">
