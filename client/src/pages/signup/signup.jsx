@@ -16,27 +16,32 @@ const Signup = () => {
 
   // const handleSignup = (e) => {
   //   e.preventDefault();
-  //   setError('');
+  //   setError("");
 
   //   if (!acceptTerms) {
-  //     setError('Please accept the terms and conditions.');
+  //     setError("Please accept the terms and conditions.");
   //     return;
   //   }
 
-  //   axios.post('http://localhost:3000/signup', { email, password, confirmPassword })
+  //   axios
+  //     .post("http://localhost:3000/signup", {
+  //       email,
+  //       password,
+  //       confirmPassword,
+  //     })
   //     .then((res) => {
   //       const { token } = res.data;
-  //       localStorage.setItem('token', token);
+  //       localStorage.setItem("token", token);
 
-  //       console.log('Signup successful. Token:', token);
-  //       navigate('/signin');
+  //       console.log("Signup successful. Token:", token);
+  //       navigate("/signin");
   //     })
   //     .catch((err) => {
   //       console.log(err);
   //       if (err.response && err.response.data && err.response.data.message) {
   //         setError(err.response.data.message);
   //       } else {
-  //         setError('An error occurred during signup.');
+  //         setError("An error occurred during signup.");
   //       }
   //     });
   // };
