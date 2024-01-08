@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import { animateScroll } from 'react-scroll';
 import "./product-query-page.css";
 import Heropic from "../../Components/Assets/Media/Product/Hero.png";
 import High from "../../Components/Assets/Media/Product/Highlight_Product.png";
 import Button from "../../Components/Button/NewButton/button.jsx";
 import Productcard from "../../Components/Productcard/product-card.jsx";
+import ProductCard from "../../components/common/product-card/product-card.jsx";
+import Cartpage from "../cart-page/cart-page.jsx";
 const Productpage = () => {
   const [selectedProducts, setSelectedProducts] = useState([]);
   const handleAddToCart = (product) => {

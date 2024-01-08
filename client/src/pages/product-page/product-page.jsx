@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./product-page.scss";
 import "react-multi-carousel/lib/styles.css";
-
-import axios from "axios";
 import Heropic from "../../assets/img/product/hero.png";
 import High from "../../assets/img/product/highlight.png";
 import Button from "../../components/common/button/button.jsx";
@@ -96,7 +94,7 @@ const ProductPage = () => {
   };
 
   const handleBrandClick = (brand) => {
-    fetch(`http://localhost:3000/product/products/brand/${brand}`)
+    fetch(`http://localhost:3000/product/products?brand=${brand}`)
       .then((response) => response.json())
       .then((data) => {
         setFilteredProducts(data);
@@ -109,7 +107,7 @@ const ProductPage = () => {
   };
 
   const handleTypeClick = (type) => {
-    fetch(`http://localhost:3000/product/products/type/${type}`)
+    fetch(`http://localhost:3000/product/products?type=${type}`)
       .then((response) => response.json())
       .then((data) => {
         setFilteredProducts(data);
@@ -140,7 +138,7 @@ const ProductPage = () => {
       items: 1,
     },
   };
-
+  console.log(selectedProducts);
   return (
     <div className="product-page">
       <div className="main-container flex-col">
@@ -220,14 +218,14 @@ const ProductPage = () => {
                         isExpanded2 ? "expanded" : ""
                       }`}
                     >
-                      {types.map((type) => (
+                      {types.map((type) =>{ 
                         <Button
                           text={type}
                           frameStyle="uppercase"
                           btnStyle="underline-btn"
                           onClick={() => handleTypeClick(type)}
                         ></Button>
-                      ))}
+                      })}
                     </div>
                     <button
                       className="expand-contact-button flex-col"
@@ -250,14 +248,14 @@ const ProductPage = () => {
                         isExpanded ? "expanded" : ""
                       }`}
                     >
-                      {brands.map((brand) => (
+                      {brands.map((brand) => {
                         <Button
                           text={brand}
                           frameStyle="uppercase"
                           btnStyle="underline-btn"
                           onClick={() => handleBrandClick(brand)}
                         ></Button>
-                      ))}
+                      })}
                     </div>
                     <button
                       className="expand-contact-button flex-col"
