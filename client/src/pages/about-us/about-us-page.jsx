@@ -1,18 +1,7 @@
 import React from "react";
 import ImageSlider from "../../components/about-us/image-slider/image-slider";
-import Button from "../../components/common/button/button";
-import DropdownButton from "../../components/common/button/dropdown-button";
 import "./about-us-page.css";
-import UsImage from "../../assets/img/about-us/us.png";
-import SkincareImage from "../../assets/img/about-us/skin-care.png";
-import MakeupImage from "../../assets/img/about-us/makeup.png";
-import Value1 from "../../assets/img/about-us/value-1.png";
-import Value2 from "../../assets/img/about-us/value-2.png";
-import Value3 from "../../assets/img/about-us/value-3.png";
-import Value4 from "../../assets/img/about-us/value-4.png";
-import Value5 from "../../assets/img/about-us/value-5.png";
-import Value6 from "../../assets/img/about-us/value-6.png";
-
+import { MakeupImage, SkincareImage, UsImage, Value1, Value2, Value3, Value4, Value5, Value6 } from './imports';
 const sliderImages = [UsImage, SkincareImage, MakeupImage];
 
 const valueImages = [Value1, Value2, Value3, Value4, Value5, Value6];

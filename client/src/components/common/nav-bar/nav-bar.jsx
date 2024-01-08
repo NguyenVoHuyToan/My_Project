@@ -1,11 +1,11 @@
 // Navbar.jsx
-import React, { useState, useEffect } from 'react';
-import './nav-bar.css';
-import { Link } from 'react-router-dom';
-import Logo from '../../../assets/img/logo.svg';
-import Button from '../button/button';
-import DropdownButton from '../button/dropdown-button';
-import { useAuth } from '../../../hooks/authProvider';
+import React, { useState, useEffect } from "react";
+import "./nav-bar.css";
+import { Link } from "react-router-dom";
+import Logo from "../../../assets/img/logo.svg";
+import Button from "../button/button";
+import DropdownButton from "../button/dropdown-button";
+import { useAuth } from "../../../hooks/authProvider";
 
 function Navbar({ onAddToCart }) {
   const [navColour, updateNavbar] = useState(false);
@@ -29,7 +29,7 @@ function Navbar({ onAddToCart }) {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, []); 
+  }, []);
 
   useEffect(() => {
     if (signedInEmail) {
@@ -37,31 +37,38 @@ function Navbar({ onAddToCart }) {
     }
   }, [onAddToCart, signedInEmail]);
 
-
-
   return (
-    <div className={`navigation flex-row flex-center-align ${navColour ? 'nav-scroll' : ''}`}>
+    <div
+      className={`navigation flex-row flex-center-align ${
+        navColour ? "nav-scroll" : ""
+      }`}
+    >
       <div className="nav-logo flex-col">
         <i className="navOpenBtn bi bi-list" onClick={toggleNav}></i>
         <Link to="/" className="nav-link logo-img">
           <img className="nav-logo-icon" src={Logo} alt="logo" />
         </Link>
       </div>
-      <div className={`nav-parent flex-row gap-2xs ${isNavOpen ? 'openNav' : ''}`}>
+      <div
+        className={`nav-parent flex-row gap-2xs ${isNavOpen ? "openNav" : ""}`}
+      >
         <i className="navCloseBtn bi bi-x-lg" onClick={toggleNav}></i>
-        {isSearchOpen ? (
-          null
-        ) : (
-          <div className='nav-btn-collections'>
+        {isSearchOpen ? null : (
+          <div className="nav-btn-collections">
             <div className="nav-list">
               <Link to="/" className="nav-link">
-                <Button btnStyle='nav-btn' text='HOME'/>
-              </Link> 
+                <Button btnStyle="nav-btn" text="HOME" />
+              </Link>
             </div>
             <div className="nav-list">
               <Link to="/product/products" className="nav-link">
-                <DropdownButton btnStyle='nav-btn' text='COLLECTION' iconL='bi bi-list icon-size-20 square-icon' dropdownStyle='collection-dropdown'/>
-              </Link> 
+                <DropdownButton
+                  btnStyle="nav-btn"
+                  text="COLLECTION"
+                  iconL="bi bi-list icon-size-20 square-icon"
+                  dropdownStyle="collection-dropdown"
+                />
+              </Link>
             </div>
             <div className="nav-list">
               <Link to="/contact" className="nav-link">
@@ -83,7 +90,11 @@ function Navbar({ onAddToCart }) {
       </div>
       <div className="nav-icon flex-row gap-xs">
         <div className="icon-button">
-          <Button btnStyle='icon-nav-btn' iconL='bi bi-search' onClick={() => setSearchOpen(!isSearchOpen)} />
+          <Button
+            btnStyle="icon-nav-btn"
+            iconL="bi bi-search"
+            onClick={() => setSearchOpen(!isSearchOpen)}
+          />
           {isSearchOpen && (
             <div className="search-box">
               <input type="text" placeholder="Search here..." />
@@ -91,16 +102,20 @@ function Navbar({ onAddToCart }) {
           )}
         </div>
         <div className="icon-button">
-  <Link to="/cart" className="nav-link"> 
-    <Button btnStyle='icon-nav-btn' iconL='bi bi-cart'/>
-    {signedInEmail && totalQuantity > 0 && (
-      <span className="cart-item-count">{totalQuantity}</span>
-    )}
-  </Link>
-</div>
+          <Link to="/cart" className="nav-link">
+            <Button btnStyle="icon-nav-btn" iconL="bi bi-cart" />
+            {signedInEmail && totalQuantity > 0 && (
+              <span className="cart-item-count">{totalQuantity}</span>
+            )}
+          </Link>
+        </div>
 
         <div className="icon-button">
-          <DropdownButton btnStyle='icon-nav-btn' iconL='bi bi-person' dropdownStyle='user-setting-dropdown'/>
+          <DropdownButton
+            btnStyle="icon-nav-btn"
+            iconL="bi bi-person"
+            dropdownStyle="user-setting-dropdown"
+          />
         </div>
       </div>
     </div>
