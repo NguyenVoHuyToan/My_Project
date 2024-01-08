@@ -1,41 +1,46 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./signup.scss";
 import Logo from "../../assets/img/logo-black.png";
 import Button from "../../components/common/button/button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const navigate=useNavigate;
+const navigate = useNavigate;
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [acceptTerms, setAcceptTerms] = useState(false);
-  const [error,setError] = useState("");
+  const [error, setError] = useState("");
 
   const handleSignup = (e) => {
     e.preventDefault();
-    setError('');
+    setError("");
 
     if (!acceptTerms) {
-      setError('Please accept the terms and conditions.');
+      setError("Please accept the terms and conditions.");
       return;
     }
 
-    axios.post('http://localhost:3000/signup', { email, password, confirmPassword })
+    axios
+      .post("http://localhost:3000/signup", {
+        email,
+        password,
+        confirmPassword,
+      })
       .then((res) => {
         const { token } = res.data;
-        localStorage.setItem('token', token);
+        localStorage.setItem("token", token);
 
-        console.log('Signup successful. Token:', token);
-        navigate('/signin');
+        console.log("Signup successful. Token:", token);
+        navigate("/signin");
       })
       .catch((err) => {
         console.log(err);
         if (err.response && err.response.data && err.response.data.message) {
           setError(err.response.data.message);
         } else {
-          setError('An error occurred during signup.');
+          setError("An error occurred during signup.");
         }
       });
   };

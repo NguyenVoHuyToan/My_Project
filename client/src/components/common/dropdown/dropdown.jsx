@@ -13,95 +13,95 @@ const Dropdown = ({ dropdownStyle = "" }) => {
     signOut();
     navigate("/signin");
   };
-  const dropdownCollection = (
-    <div className="collection-dropdown flex-row gap-lg align-left">
-      <div className="collection-titles flex-col gap-xs align-left">
-        <Button
-          text="all"
-          btnStyle="underline-btn collection-title main-title"
-          textStyle="btn-text"
-        />
-      </div>
-      <div className="collection-titles flex-col gap-xs align-left">
-        <Button
-          text="skin care"
-          btnStyle="underline-btn collection-title main-title"
-          textStyle="btn-text"
-        />
-        <div className="sub-titles flex-col gap-2xs align-left">
+    const dropdownCollection = (
+      <div className="collection-dropdown flex-row gap-lg align-left">
+        <div className="collection-titles flex-col gap-xs align-left">
           <Button
-            text="facial cleanser"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="sunscreen cream"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="moisturizer"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="makeup remover"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="mask"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
+            text="all"
+            btnStyle="underline-btn collection-title main-title"
+            textStyle="btn-text"
           />
         </div>
-      </div>
-      <div className="collection-titles flex-col gap-xs align-left">
-        <Button
-          text="make up"
-          btnStyle="underline-btn collection-title main-title"
-          textStyle="btn-text"
-        />
-        <div className="sub-titles flex-col gap-2xs align-left">
+        <div className="collection-titles flex-col gap-xs align-left">
           <Button
-            text="lipstick"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
+            text="skin care"
+            btnStyle="underline-btn collection-title main-title"
+            textStyle="btn-text"
           />
+          <div className="sub-titles flex-col gap-2xs align-left">
+            <Button
+              text="facial cleanser"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="sunscreen cream"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="moisturizer"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="makeup remover"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="mask"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+          </div>
+        </div>
+        <div className="collection-titles flex-col gap-xs align-left">
           <Button
-            text="foundation"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
+            text="make up"
+            btnStyle="underline-btn collection-title main-title"
+            textStyle="btn-text"
           />
-          <Button
-            text="face powder"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="mascara"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="eyeshadow"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="blush"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
-          <Button
-            text="eyeliner"
-            btnStyle="underline-btn collection-title sub-title"
-            textStyle="btn-text-lgt"
-          />
+          <div className="sub-titles flex-col gap-2xs align-left">
+            <Button
+              text="lipstick"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="foundation"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="face powder"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="mascara"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="eyeshadow"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="blush"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+            <Button
+              text="eyeliner"
+              btnStyle="underline-btn collection-title sub-title"
+              textStyle="btn-text-lgt"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
 
   const dropdownUserSetting = (
     <div className="user-setting-dropdown flex-col gap-sm align-left">

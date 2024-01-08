@@ -67,7 +67,7 @@ const Signin = () => {
         </div>
         <div className="signin-form-container max-wdth flex-col align-left gap-sm">
           <div className="title flex-col align-left gap-xs uppercase">
-            <h3 className="h3">signin</h3>
+            <h3 className="h3">sign in</h3>
           </div>
           <form
             onSubmit={handleSignIn}
