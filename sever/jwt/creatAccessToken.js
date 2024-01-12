@@ -1,6 +1,5 @@
 import jwt from "jsonwebtoken";
-import { config } from "dotenv";
-config()
+
 const key = process.env.PRIVATE_KEY;
 export const createAccessToken = (user) => {
   console.log("user", user);

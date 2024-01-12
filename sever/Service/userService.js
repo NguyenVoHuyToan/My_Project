@@ -1,6 +1,7 @@
 import { json } from "express";
 import databaseProject from "../mongodb.js";
 import jwt from "jsonwebtoken";
+
 const key=process.env.KEY;
 export const getOAuth=async (req,res)=>{
     const oauth2Client = new google.auth.OAuth2(
@@ -39,3 +40,4 @@ export const changeInfo=async (req,res)=>{
   await databaseProject.users.updateOne({userId: req.params.id},{$set:{fullName:fullName,email:email,gender:gender,birthday:birthday}});
   return res.json("completed")
 }
+
