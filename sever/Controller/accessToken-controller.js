@@ -1,4 +1,4 @@
-import { createAccessToken } from "../jwt/creatAccessToken";
+import { createAccessToken } from "../jwt/creatAccessToken.js";
 
 export const accessTokenController = async(req,res) => {
     const user = {

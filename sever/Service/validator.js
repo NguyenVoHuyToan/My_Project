@@ -1,6 +1,7 @@
 import { checkSchema, validationResult } from "express-validator";
 
-import { database } from "../Database/database.js";
+
+import databaseProject from "../mongodb.js";
 export const validator = (schema) => {
   return async (req, res, next) => {
     await schema.run(req);
@@ -20,7 +21,7 @@ export const validateRegister = validator(
         isEmail: true,
         custom: {
           options: async (value) => {
-            const isExist = await database.user().findOne({ email: value });
+            const isExist = await databaseProject.users().findOne({ email: value });
             console.log(isExist);
             if (isExist) {
               throw new Error("EMAIL IS EXISTED");
@@ -55,21 +56,20 @@ export const validateRegister = validator(
   )
 );
 
-
 export const loginValidator = validator(
   checkSchema(
     {
       email: {
-        errorMessage: "Invalid username",
+        errorMessage: "Invalid email",
         isEmail: true,
         custom: {
           options: async (value) => {
-            const isEmailExist = await database.user().findOne({ username: value });
+            const isUserExist = await databaseProject.users().findOne({ email: value });
 
-            if (isEmailExist) {
+            if (isUserExist) {
               return true;
             } else {
-              throw new Error("Error: USERNAME IS NOT EXIST");
+              throw new Error("Error: email IS NOT EXIST");
             }
           },
         },
@@ -81,8 +81,8 @@ export const loginValidator = validator(
         },
         custom: {
           options: async (value, { req }) => {
-            const userLogin = await database
-              .user()
+            const userLogin = await databaseProject
+              .users()
               .findOne({ email: req.body.email });
 
             if (userLogin.password == value) {
