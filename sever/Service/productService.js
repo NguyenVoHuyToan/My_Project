@@ -69,8 +69,28 @@ export const getAllTypes=async (req,res)=>{
     return res.json(typeList);
 }
 
-export const getOneProduct=(req,res)=>{
+export const getOneProduct=async (req,res)=>{
+    const productID= req.params.id;
+   
+    const productDetail=await databaseProject.inventory.findOne({ product_id:(productID)});
+    console.log(productDetail);
     
-    
-    return res.json()
+    return res.json(productDetail)
+}
+export const getOneBrands=async (req,res)=>{
+    const brandName=req.params.name;
+    const brandsItemList=await databaseProject.inventory.find({brands:brandName}).toArray();
+    return res.json(brandsItemList);
+}
+export const addToCart=async (req,res)=>{
+    const productID=req.params.id;
+    const productDetail= await databaseProject.cart.findOne({product_id:productID});
+    if(productDetail){
+        await databaseProject.cart.updateOne({product_id:productID},{quantity:productDetail.quantity+1})
+    }
+    else{
+        await databaseProject.cart.insertOne({...productDetail,quantity:1});
+    }
+   
+    return res.json("complete");
 }

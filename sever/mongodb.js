@@ -28,6 +28,9 @@ class DatabaseService {
     get inventory() {
       return this.db.collection("inventory");
     }
+    get cart(){
+      return this.db.collection("cart");
+    }
 }
 const databaseProject = new DatabaseService()
 export default databaseProject;
