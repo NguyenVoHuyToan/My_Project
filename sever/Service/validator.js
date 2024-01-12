@@ -17,7 +17,7 @@ export const validateRegister = validator(
     {
       email: {
         errorMessage: "Invalid email",
-        isemail: false,
+        isEmail: true,
         custom: {
           options: async (value) => {
             const isExist = await database.user().findOne({ email: value });
@@ -59,14 +59,14 @@ export const validateRegister = validator(
 export const loginValidator = validator(
   checkSchema(
     {
-      username: {
+      email: {
         errorMessage: "Invalid username",
-        isUserName: false,
+        isEmail: true,
         custom: {
           options: async (value) => {
-            const isUserExist = await database.user().findOne({ username: value });
+            const isEmailExist = await database.user().findOne({ username: value });
 
-            if (isUserExist) {
+            if (isEmailExist) {
               return true;
             } else {
               throw new Error("Error: USERNAME IS NOT EXIST");
@@ -83,7 +83,7 @@ export const loginValidator = validator(
           options: async (value, { req }) => {
             const userLogin = await database
               .user()
-              .findOne({ username: req.body.username });
+              .findOne({ email: req.body.email });
 
             if (userLogin.password == value) {
               return true;

@@ -8,7 +8,7 @@ export const createAccessToken = (user) => {
     jwt.sign(
       {
         email: user.email,
-        password: user.pass,
+        password: user.password,
       },
       key,
       (err, token) => {
@@ -21,7 +21,7 @@ export const createAccessToken = (user) => {
   });
 };
 
-export const verifyToken = ( token) => {
+export const verifyToken = (token) => {
   return new Promise((resolve, reject) => {
     jwt.verify(token, key, (err, decoded) => {
       if (err) {
