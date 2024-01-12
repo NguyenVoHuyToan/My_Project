@@ -1,0 +1,105 @@
+/* product.scss */
+.admin-product-management-page {
+  padding-top: 70px ;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.admin-products-container {
+  max-width: 100%;
+  margin: 50px;
+  align-items: flex-start;
+}
+
+h2 {
+  color: #333; 
+}
+
+.new-product-form,
+.existing-products-container,
+.update-product-form {
+  margin-bottom: 20px;
+}
+
+.new-product-form h3,
+.existing-products-container h3,
+.update-product-form h3 {
+  color: #333; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333; 
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  width: 300px
+}
+
+button {
+  padding: 10px;
+  color: #391010;
+  background-color: #fff; 
+  border: solid 2px #391010;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color:  #391010; 
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin-top: 60px;
+}
+
+
+.existing-products {
+  max-height: 400px; 
+  overflow-y: auto; 
+  width: 100%;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc; 
+}
+
+.see-more-button {
+  background-color: transparent ;
+  color: #391010; 
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  /* transition: background-color 0.3s ease-in-out; */
+}
+
+.Toastify__toast {
+  background-color: #333; 
+  color: #fff; 
+  border: 1px solid #fff; 
+}
+.update-product-form {
+  justify-content: center;
+  margin-left: 30px;
+}
+/* .Update-btn{
+  width: 100%;
+
+} */

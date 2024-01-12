@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./product-page.scss";
 import "react-multi-carousel/lib/styles.css";
 import Heropic from "../../assets/img/product/hero.png";
@@ -218,13 +218,13 @@ const ProductPage = () => {
                         isExpanded2 ? "expanded" : ""
                       }`}
                     >
-                      {types.map((type) =>{ 
+                      {types.map((type) => {
                         <Button
                           text={type}
                           frameStyle="uppercase"
                           btnStyle="underline-btn"
                           onClick={() => handleTypeClick(type)}
-                        ></Button>
+                        ></Button>;
                       })}
                     </div>
                     <button
@@ -254,7 +254,7 @@ const ProductPage = () => {
                           frameStyle="uppercase"
                           btnStyle="underline-btn"
                           onClick={() => handleBrandClick(brand)}
-                        ></Button>
+                        ></Button>;
                       })}
                     </div>
                     <button
