@@ -21,7 +21,7 @@ export const validateRegister = validator(
         isEmail: false,
         custom: {
           options: async (value) => {
-            const isExist = await databaseProject.users().findOne({ email: value });
+            const isExist = await databaseProject.users.findOne({ email: value });
             console.log(isExist);
             if (isExist) {
               throw new Error("EMAIL IS EXISTED");
@@ -64,8 +64,8 @@ export const loginValidator = validator(
         isEmail: true,
         custom: {
           options: async (value) => {
-            const isUserExist = await databaseProject.users().findOne({ email: value });
-
+            const isUserExist = await databaseProject.users.findOne({ email: value });
+           
             if (isUserExist) {
               return true;
             } else {
@@ -82,10 +82,11 @@ export const loginValidator = validator(
         custom: {
           options: async (value, { req }) => {
             const userLogin = await databaseProject
-              .users()
+              .users
               .findOne({ email: req.body.email });
-
+            
             if (userLogin.password == value) {
+              
               return true;
             } else {
               throw new Error("ERROR: PASSWORD DOES NOT MATCH");
