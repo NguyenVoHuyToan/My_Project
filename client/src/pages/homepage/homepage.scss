@@ -18,8 +18,6 @@
 
   .about-us-see-more {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 2rem;
   }
   
@@ -100,7 +98,7 @@
   
   .content-holder {
     display: flex;;
-    flex-direction: column;
+    flex-direction: column
   }
   
   .home-about-us {
@@ -118,7 +116,7 @@
   .img-container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
   }
   
   .image-box img {

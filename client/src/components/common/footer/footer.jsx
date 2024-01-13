@@ -1,9 +1,81 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./footer.scss";
 import Logo from "../../../assets/img/logo.svg";
-import Button from "../button/button";
+import ContentFooter from "./ContentFooter";
+import "./footer.scss";
 
+const siteMap = [
+  {
+    href: "/",
+    title: "Home",
+  },
+  {
+    href: "/product/products",
+    title: "Product",
+  },
+  {
+    href: "/about-us",
+    title: "About us",
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+  },
+  {
+    href: "/policy",
+    title: "Term & Condition",
+  },
+];
+
+const collectionLeft = [
+  {
+    href: "/product/products",
+    title: "Cleanser",
+  },
+  {
+    href: "/product/products",
+    title: "Sunscreen Cream",
+  },
+  {
+    href: "/product/products",
+    title: "Moisturizer",
+  },
+  {
+    href: "/product/products",
+    title: "Mask",
+  },
+];
+
+const collectionRight = [
+  {
+    href: "/product/products",
+    title: "Lipstick",
+  },
+  {
+    href: "/product/products",
+    title: "Foundation",
+  },
+  {
+    href: "/product/products",
+    title: "Face Powder ",
+  },
+  {
+    href: "/product/products",
+    title: "Mascara",
+  },
+  {
+    href: "/product/products",
+    title: "Eyeshadow",
+  },
+  {
+    href: "/product/products",
+    title: "Blush ",
+  },
+  {
+    href: "/product/products",
+    title: "Eyeliner",
+  },
+];
 const Footer = () => {
   return (
     <div className="footer flex-row">
@@ -17,31 +89,15 @@ const Footer = () => {
               <p>Sitemap</p> <hr />
             </div>
             <div className=" flex-col footer-sitemap-content align-left ">
-              <div className="footer-button">
-                <Link to="/" className="nav-link">
-                  <Button text="Home" btnStyle="footer-btn" />
-                </Link>
-              </div>
-              <div className="footer-button">
-                <Link to="/product/products" className="nav-link">
-                  <Button text="Product" btnStyle="footer-btn" />
-                </Link>
-              </div>
-              <div className="footer-button">
-                <Link to="/about-us" className="nav-link">
-                  <Button text="About us" btnStyle="footer-btn" />
-                </Link>
-              </div>
-              <div className="footer-button">
-                <Link to="/contact" className="nav-link">
-                  <Button text="Contact" btnStyle="footer-btn" />
-                </Link>
-              </div>
-              <div className="footer-button">
-                <Link to="/policy" className="nav-link">
-                  <Button text="Term & Condition" btnStyle="footer-btn" />
-                </Link>
-              </div>
+              {siteMap.map((item, index) => {
+                return (
+                  <div className="footer-button" key={index}>
+                    <Link to={item.href} className="nav-link">
+                      {item.title}
+                    </Link>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="footer-collection flex-col align-left gap-2xs">
@@ -50,101 +106,41 @@ const Footer = () => {
             </div>
             <div className=" footer-collection-content flex-row align-left flex-left-align  ">
               <div className="footer-button-left flex-left-align  flex-col align-left gap-2xs  ">
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Cleanser" btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Sunscreen Cream" btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Moisturizer" btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Mask" btnStyle="footer-btn" />
-                  </Link>
-                </div>
+                {collectionLeft.map((item, index) => {
+                  return (
+                    <div className="footer-button" key={index}>
+                      <Link to={item.href} className="nav-link">
+                        {item.title}
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
               <div className="footer-button-right flex-col align-left gap-2xs">
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Lipstick" btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Foundation " btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Face Powder " btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Mascara " btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Eyeshadow " btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Blush " btnStyle="footer-btn" />
-                  </Link>
-                </div>
-                <div className="footer-button">
-                  <Link to="/product/products" className="nav-link">
-                    <Button text="Eyeliner " btnStyle="footer-btn" />
-                  </Link>
-                </div>
+                {collectionRight.map((item, index) => {
+                  return (
+                    <div className="footer-button" key={index}>
+                      <Link to={item.href} className="nav-link">
+                        {item.title}
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
           <div className="footer-contact flex-col align-left gap-2xs">
-            <div className="footer-contact-title h4">
-              <p>Contact Us</p> <hr />
-            </div>
-            <div className=" flex-col footer-contact-content align-left gap-xs">
-              <div className="flex-row gap-xs body-lgt">
-                <i className="bi bi-envelope"></i>
-                <p>shineaura.cosmetic@gmail.com</p>
-              </div>
-              <div className="flex-row gap-xs body-lgt">
-                <i className=" bi bi-telephone"></i>
-                <p>+84 123 456 789</p>
-              </div>
-              <div className="flex-row gap-xs body-lgt ">
-                <i className="bi bi-geo-alt"></i>
-                <p>Thu Duc Viet Nam</p>
-              </div>
-            </div>
+            <ContentFooter
+              text="Contact us"
+              title1="shineaura.cosmetic@gmail.com"
+              title2="+84 123 456 789"
+              title3="Thu Duc Viet Nam"
+            />
           </div>
         </div>
         <div className="footer-media">
           <div className="body-em">
-            <label>Contact our medias:</label>
-          </div>
-          <div className="footer-icon-media">
-            <button>
-              {" "}
-              <i className="bi bi-facebook social-icon"></i>
-            </button>
-            <button>
-              <i className="bi bi-twitter-x social-icon"></i>
-            </button>
-            <button>
-              <i className="bi bi-instagram social-icon"></i>
-            </button>
+            <p> Copyright@Nhom_1_WEB74 2024</p>
           </div>
         </div>
       </div>

@@ -21,6 +21,7 @@ import Image from "./Image.jsx";
 import TitleHomePage from "./TitleHomePage.jsx";
 import TextProduct from "./TextProduct.jsx";
 import Text from "./Text.Jsx";
+import ContactUs from "./ContactUs.jsx";
 
 const Homepage = () => {
   const [products, setProducts] = useState([]);
@@ -138,14 +139,14 @@ const Homepage = () => {
                 />
               </Link>
             </div>
+          </div>
+          <div className="img-container">
+            <div className="image-box">
+              <img className="img1" src={About1} />
+              <img className="img2" src={About2} />
+              <img className="img3" src={About3} />
+              <img className="img4" src={About4} />
             </div>
-            <div className="img-container">
-              <div className="image-box">
-                <img className="img1" src={About1} />
-                <img className="img2" src={About2} />
-                <img className="img3" src={About3} />
-                <img className="img4" src={About4} />
-              </div>
           </div>
         </div>
         <div className="section-container ">
@@ -162,27 +163,20 @@ const Homepage = () => {
             </div>
             <div className="contact-content flex-col align-left">
               <div className="text-contact flex-col align-left gap-sm">
-                <p className="Contact-us h1"> CONTACT US</p>
-                <p className="text-contact2 body">
-                  Need assistance or have questions? Don&#39;t hesitate to get
+                <TextProduct
+                  content="CONTACT US"
+                  title=" Need assistance or have questions? Don&#39;t hesitate to get
                   in touch with us. ShineAura&#39;s customer care team is
                   available 24/7 to assist you. Let us know how we can help.
                   We&#39;re here to listen and ensure you have the best shopping
-                  experience on ShineAura.
-                </p>
+                  experience on ShineAura."
+                />
                 <div className="flex-col text-contact-icon  align-left gap-xs body-bld">
-                  <div className="flex-row gap-xs">
-                    <i className="bi bi-envelope-fill"></i>
-                    <p>shineaura.cosmetic@gmail.com</p>
-                  </div>
-                  <div className="flex-row gap-xs">
-                    <i className=" bi bi-telephone-fill"></i>
-                    <p>+84 123 456 789</p>
-                  </div>
-                  <div className="flex-row gap-xs">
-                    <i className="bi bi-geo-alt-fill"></i>
-                    <p>Thu Duc Viet Nam</p>
-                  </div>
+                  <ContactUs
+                    add1="shineaura.cosmetic@gmail.com"
+                    add2="+84 123 456 789"
+                    add3="Thu Duc Viet Nam"
+                  />
                 </div>
               </div>
               <div className="contact-our-media flex-col gap-sm align-left">

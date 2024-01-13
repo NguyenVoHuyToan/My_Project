@@ -4,10 +4,16 @@
   flex-wrap: wrap;
   background:#3B3023;
 
+  .nav-link{
+    color: whitesmoke;
+    font-size: 12px;
+    line-height: 40px;
+  }
+
   .footer-holder {
     max-width: 1440px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .footer-nav {
