@@ -113,3 +113,16 @@ ol li {
 .term-5 {
     padding-bottom: 5px;
 }
+
+@media screen and (max-width: 1050px) {
+    .hero-content{
+        flex-direction: column;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .hero-image-child{
+        display: flex;
+        flex-direction: column;
+        margin: 120px 0;
+    }
+}
