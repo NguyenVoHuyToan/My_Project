@@ -1,16 +1,14 @@
-import { useEffect, useState } from "react";
 import {
-  UilSignOutAlt,
-  UilEstate,
   UilClipboardAlt,
-  UilUsersAlt,
-  UilChart,
+  UilSignOutAlt,
+  UilUsersAlt
 } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import "./Sidebar.css";
 import AdminCard from "./AdminCard";
+import "./Sidebar.css";
 
 const SidebarData = [
   {
