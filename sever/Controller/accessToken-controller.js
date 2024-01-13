@@ -6,8 +6,9 @@ export const accessTokenController = async(req,res) => {
         password: req.body.password,
     };
    
-    console.log('user',user);
+    
     const token = await createAccessToken(user);
+    
     return res.json({
         accessToken : token
     })

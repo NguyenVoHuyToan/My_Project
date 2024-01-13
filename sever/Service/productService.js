@@ -4,11 +4,13 @@ export const getAllProduct= async (req,res)=>{
     
     if(Object.keys(req.query).length>0){
         if(req.query.brands){
-            const filterData=await databaseProject.inventory.find({brands:req.query.brands}).toArray();
+            const brands=decodeURIComponent(req.query.brands);
+            const filterData=await databaseProject.inventory.find({brands:brands}).toArray();
             return res.json(filterData);
         }
         if(req.query.type){
-            const filterData=await databaseProject.inventory.find({product_type:req.query.type}).toArray();
+            const type=decodeURIComponent(req.query.type)
+            const filterData=await databaseProject.inventory.find({product_type:type}).toArray();
             return res.json(filterData);
         }
     }
@@ -77,11 +79,11 @@ export const getOneProduct=async (req,res)=>{
     
     return res.json(productDetail)
 }
-export const getOneBrands=async (req,res)=>{
-    const brandName=req.params.name;
-    const brandsItemList=await databaseProject.inventory.find({brands:brandName}).toArray();
-    return res.json(brandsItemList);
-}
+// export const getOneBrands=async (req,res)=>{
+//     const brandName=req.params.name;
+//     const brandsItemList=await databaseProject.inventory.find({brands:brandName}).toArray();
+//     return res.json(brandsItemList);
+// }
 export const addToCart=async (req,res)=>{
     const productID=req.params.id;
     const productDetail= await databaseProject.cart.findOne({product_id:productID});
