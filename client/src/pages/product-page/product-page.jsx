@@ -69,7 +69,7 @@ const ProductPage = () => {
       product,
     ]);
   };
-
+console.log(selectedProducts);
   const handleChange = (event, value) => {
     setPage(value);
     const elements = document.getElementsByClassName("prod-query-content");

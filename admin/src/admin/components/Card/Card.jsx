@@ -4,8 +4,8 @@ import {
   BsFillGrid3X3GapFill,
   BsPeopleFill,
   BsFillBellFill,
-} from "react-icons";
-import useData from "../../hook/useData";
+} from "react-icons/bs";
+import useData from "../hook/useData.js";
 import "./Card.css";
 
 function Home() {

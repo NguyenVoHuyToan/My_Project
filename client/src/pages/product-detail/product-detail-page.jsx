@@ -25,6 +25,7 @@ const ProductDetailPage = () => {
           console.error("Error:", error);
           setLoading(false);
         });
+  
     }, [id]);
 
     useEffect(() => {
@@ -59,7 +60,7 @@ const ProductDetailPage = () => {
       items: 1,
     },
   };
- 
+
   return (
     <div className="flex-col content-container product-detail-page">
       <div className="section-container flex-col prod-detail-section-1">
