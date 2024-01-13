@@ -2,15 +2,66 @@ import React from "react";
 import "./collection.scss";
 
 import {All,Eyes,Face,Eyeliner,Lips,Blush1,Cleanser,Mask, Moisturizer,Mascara,Foundation,Sunscreen} from './imports'
+import Title from "./Title";
 
+const collections = [
+  {
+    image: {All}, 
+    title: "All"
+  },
+  {
+    image: {Eyes}, 
+    title: "EYESHADOW"
+  },
+  {
+    image: {Face}, 
+    title: "FACEPOWER"
+  },
+  {
+    image: {Eyeliner}, 
+    title: "EYELINER"
+  },
+  {
+    image: {Lips}, 
+    title: "LIPSTICKS"
+  },
+  {
+    image: {Blush1}, 
+    title: "BRUSHES"
+  },
+  {
+    image: {Cleanser}, 
+    title: "CLEANSER"
+  },
+  {
+    image: {Mask}, 
+    title: "MASK"
+  },
+  {
+    image: {Moisturizer}, 
+    title: "MOISTURIZER"
+  },
+  {
+    image: {Mascara}, 
+    title: "MASCARA"
+  },
+  {
+    image: {Foundation}, 
+    title: "FOUNDATION"
+  },
+  {
+    image: {Sunscreen}, 
+    title: "SUNSCEEN"
+  },
+]
 const Collection = () => {
   return (
     <div className="collection-comp flex-col">
-      <div className="home-collection">
+      {/* <div className="home-collection">
         <div className="collection-card-list">
           <a href="#" className="collection-card-item">
-            <img src={All} alt="All" />
-            <p className="text-collection h4">ALL</p>
+            <Title image={All}
+            title="All"/>
           </a>
         </div>
         <div className="collection-card-list">
@@ -58,7 +109,7 @@ const Collection = () => {
         <div className="collection-card-list">
           <a href="#" className="collection-card-item">
             <img src={Cleanser} />
-            <p className="text-collection h4">CHEANSER</p>
+            <p className="text-collection h4">CLEANSER</p>
           </a>
         </div>
         <div className="collection-card-list">
@@ -79,7 +130,7 @@ const Collection = () => {
             <p className="text-collection h4">MOISTURIZER</p>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

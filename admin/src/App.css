@@ -1,0 +1,37 @@
+.App {
+  padding: 0.5rem 3.5rem;
+  color: var(--black);
+  background: var(--Gray, #E7E7E3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  height: 100vh; 
+  width: 100vw;
+  margin: 0;
+}
+
+.AppGlass {
+  display: flex;
+  flex-direction: row;
+  height: 97%;
+  width: 100%;
+  background: var(--glass);
+
+  gap: 16px;
+  grid-template-columns: 11rem auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass{
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass{
+    grid-template-columns: 1fr;
+  } 
+}

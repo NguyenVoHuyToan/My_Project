@@ -1,12 +1,15 @@
 import { checkSchema, validationResult } from "express-validator";
 
-import { database } from "../Database/database.js";
+
+import databaseProject from "../mongodb.js";
 export const validator = (schema) => {
   return async (req, res, next) => {
     await schema.run(req);
     const error = validationResult(req).mapped();
+    console.log(error);
     if (Object.values(error).length > 0) {
-      next(error);
+
+      return res.json(error)
     }
     next();
   };
@@ -17,11 +20,11 @@ export const validateRegister = validator(
     {
       email: {
         errorMessage: "Invalid email",
-        isemail: false,
+        isEmail: false,
         custom: {
           options: async (value) => {
-            const isExist = await database.user().findOne({ email: value });
-            console.log(isExist);
+            const isExist = await databaseProject.users.findOne({ email: value });
+            
             if (isExist) {
               throw new Error("EMAIL IS EXISTED");
             } else {
@@ -55,21 +58,20 @@ export const validateRegister = validator(
   )
 );
 
-
 export const loginValidator = validator(
   checkSchema(
     {
-      username: {
-        errorMessage: "Invalid username",
-        isUserName: false,
+      email: {
+        errorMessage: "Invalid email",
+        isEmail: true,
         custom: {
           options: async (value) => {
-            const isUserExist = await database.user().findOne({ username: value });
-
+            const isUserExist = await databaseProject.users.findOne({ email: value });
+           console.log(isUserExist);
             if (isUserExist) {
               return true;
             } else {
-              throw new Error("Error: USERNAME IS NOT EXIST");
+              throw new Error("Error: email IS NOT EXIST");
             }
           },
         },
@@ -81,11 +83,12 @@ export const loginValidator = validator(
         },
         custom: {
           options: async (value, { req }) => {
-            const userLogin = await database
-              .user()
-              .findOne({ username: req.body.username });
-
+            const userLogin = await databaseProject
+              .users
+              .findOne({ email: req.body.email });
+            
             if (userLogin.password == value) {
+              console.log(userLogin);
               return true;
             } else {
               throw new Error("ERROR: PASSWORD DOES NOT MATCH");

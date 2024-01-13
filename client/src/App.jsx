@@ -27,11 +27,9 @@ import Verification from "./pages/verification/verification";
 import ResetPassword from "./pages/reset-password/reset-password";
 import { AuthProvider } from "./hooks/authProvider";
 
-
-
 function App() {
   const [load] = useState(true);
-  
+
   return (
     <Router>
         <div className="App" id={load ? "no-scroll" : "scroll"}>

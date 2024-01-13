@@ -1,3 +1,8 @@
+import { json } from "express";
+import databaseProject from "../mongodb.js";
+import jwt from "jsonwebtoken";
+
+const key=process.env.KEY;
 export const getOAuth=async (req,res)=>{
     const oauth2Client = new google.auth.OAuth2(
         "145235191844-f43anvogvcut7gab7p1etehf0idjcqs5.apps.googleusercontent.com",
@@ -7,6 +12,32 @@ export const getOAuth=async (req,res)=>{
     const {code}=req.query;
     const {token}=await oauth2Client.getToken(code);
     const userInfo= await oauth2Client.getTokenInfo(token.access_token);
-    
-    return res.json(userInfo);
+    if(userInfo.email_verified == true){
+      const user= await databaseProject.users.findOne({email:userInfo.email});
+      const password=Math.random().toString(36).substring(2,12);
+      if(user){
+        
+        const access_token= jwt.sign({email:user.email,password:password},key)
+        return res.redirect(`http://localhost:3000?${access_token}`);
+      }
+      else{
+        await databaseProject.users.insertOne()
+      }
+    }
+    else{
+      throw new Error("Email is wrong")
+    }
+    console.log(userInfo);
+
+    // return res.redirect("http://localhost:3000?access_token");
+    return res.json({})
 }
+export const changeInfo=async (req,res)=>{
+  const fullName=req.body.fullName;
+  const email=req.body.email;
+  const gender=req.body.gender;
+  const birthday=req.body.birthday;
+  await databaseProject.users.updateOne({userId: req.params.id},{$set:{fullName:fullName,email:email,gender:gender,birthday:birthday}});
+  return res.json("completed")
+}
+
