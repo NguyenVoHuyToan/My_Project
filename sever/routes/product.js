@@ -8,7 +8,7 @@ productRoute.get("/products",getAllProduct)
 productRoute.get("/brands",getAllBrands)
 productRoute.get("/types",getAllTypes)
 
-productRoute.get("/products/:id",validateToken,getOneProduct)
-productRoute.post("/cart/:id",validateToken,addToCart)
+productRoute.get("/products/:id",getOneProduct)
+productRoute.post("/cart/:id",addToCart)
 
 

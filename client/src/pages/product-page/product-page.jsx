@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./product-page.scss";
 import "react-multi-carousel/lib/styles.css";
 import Heropic from "../../assets/img/product/hero.png";
