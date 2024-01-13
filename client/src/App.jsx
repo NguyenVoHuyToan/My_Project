@@ -32,11 +32,9 @@ import AdminAddProduct from "./pages/adminPage/AdminAddProduct";
 // import MainDash from "./pages/admin/components/MainDash/MainDash";
 // import AdminProducts from "./pages/admin/components/Product/Adproduct";
 
-
-
 function App() {
   const [load] = useState(true);
-  
+
   return (
     <Router>
         <div className="App" id={load ? "no-scroll" : "scroll"} >
