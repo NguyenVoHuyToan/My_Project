@@ -16,6 +16,7 @@ import Productcard from "../../components/common/product-card/product-card.jsx";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from "react";
+
 import Image from "./Image.jsx";
 import TitleHomePage from "./TitleHomePage.jsx";
 import TextProduct from "./TextProduct.jsx";
@@ -111,6 +112,7 @@ const Homepage = () => {
             <div className="content-holder flex-col">
               <div className="about-us-content flex-col gap-md align-left">
                 <p className="h1">ABOUT US</p>
+
                 <Text
                   text1="Discover the pinnacle of beauty at ShineAura, where we redefine the
                     cosmetic experience beyond ordinary standards. As your discerning
@@ -125,69 +127,70 @@ const Homepage = () => {
                 />
               </div>
               <div className="about-us-see-more">
-              <Link to="/about-us">
-                <Button
-                  text="See more"
-                  btnStyle="underline-btn"
-                  disabled={false}
-                  iconR="bi bi-arrow-right"
-                  iconSide="right"
-                />
-              </Link>
-            </div>
-            </div>
-            <div className="img-container">
-              <div className="image-box">
-                <img className="img1" src={About1} />
-                <img className="img2" src={About2} />
-                <img className="img3" src={About3} />
-                <img className="img4" src={About4} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="section-container ">
-          <div className="text-coll h1"> COLLECTIONS</div>
-          <div className="collection-container">
-            <Collection />
-          </div>
-        </div>
-        <div className="wireframe-6 flex-col">
-          <div className="flex-row contact-container gap-2xl">
-            <div className="image-contact">
-              <img src={Contact} alt="" />
-            </div>
-            <div className="contact-content flex-col align-left">
-              <div className="text-contact flex-col align-left gap-sm">
-                <p className="Contact-us h1"> CONTACT US</p>
-                <p className="text-contact2 body">
-                  Need assistance or have questions? Don&#39;t hesitate to get
-                  in touch with us. ShineAura&#39;s customer care team is
-                  available 24/7 to assist you. Let us know how we can help.
-                  We&#39;re here to listen and ensure you have the best shopping
-                  experience on ShineAura.
-                </p>
-                <div className="flex-col text-contact-icon  align-left gap-xs body-bld">
-                  <div className="flex-row gap-xs">
-                    <i className="bi bi-envelope-fill"></i>
-                    <p>shineaura.cosmetic@gmail.com</p>
-                  </div>
-                  <div className="flex-row gap-xs">
-                    <i className=" bi bi-telephone-fill"></i>
-                    <p>+84 123 456 789</p>
-                  </div>
-                  <div className="flex-row gap-xs">
-                    <i className="bi bi-geo-alt-fill"></i>
-                    <p>Thu Duc Viet Nam</p>
+                <Link to="/about-us">
+                  <Button
+                    text="See more"
+                    btnStyle="underline-btn"
+                    disabled={false}
+                    iconR="bi bi-arrow-right"
+                    iconSide="right"
+                  />
+                </Link>
+                <div className="img-container">
+                  <div className="image-box">
+                    <img className="img1" src={About1} />
+                    <img className="img2" src={About2} />
+                    <img className="img3" src={About3} />
+                    <img className="img4" src={About4} />
                   </div>
                 </div>
               </div>
-              <div className="contact-our-media flex-col gap-sm align-left">
-                <div className="body">Contact our medias:</div>
-                <div className="flex-row gap-sm align-left">
-                  <i className="bi bi-facebook media-icon"></i>
-                  <i className="bi bi-messenger media-icon"></i>
-                  <i className="bi bi-instagram media-icon"></i>
+            </div>
+          </div>
+          <div className="section-container ">
+            <div className="text-coll h1"> COLLECTIONS</div>
+            <div className="collection-container">
+              <Collection />
+            </div>
+          </div>
+
+          <div className="wireframe-6 flex-col">
+            <div className="flex-row contact-container gap-2xl">
+              <div className="image-contact">
+                <img src={Contact} alt="" />
+              </div>
+              <div className="contact-content flex-col align-left">
+                <div className="text-contact flex-col align-left gap-sm">
+                  <p className="Contact-us h1"> CONTACT US</p>
+                  <p className="text-contact2 body">
+                    Need assistance or have questions? Don&#39;t hesitate to get
+                    in touch with us. ShineAura&#39;s customer care team is
+                    available 24/7 to assist you. Let us know how we can help.
+                    We&#39;re here to listen and ensure you have the best
+                    shopping experience on ShineAura.
+                  </p>
+                  <div className="flex-col text-contact-icon  align-left gap-xs body-bld">
+                    <div className="flex-row gap-xs">
+                      <i className="bi bi-envelope-fill"></i>
+                      <p>shineaura.cosmetic@gmail.com</p>
+                    </div>
+                    <div className="flex-row gap-xs">
+                      <i className=" bi bi-telephone-fill"></i>
+                      <p>+84 123 456 789</p>
+                    </div>
+                    <div className="flex-row gap-xs">
+                      <i className="bi bi-geo-alt-fill"></i>
+                      <p>Thu Duc Viet Nam</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="contact-our-media flex-col gap-sm align-left">
+                  <div className="body">Contact our medias:</div>
+                  <div className="flex-row gap-sm align-left">
+                    <i className="bi bi-facebook media-icon"></i>
+                    <i className="bi bi-messenger media-icon"></i>
+                    <i className="bi bi-instagram media-icon"></i>
+                  </div>
                 </div>
               </div>
             </div>

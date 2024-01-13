@@ -87,6 +87,11 @@ function Navbar({ onAddToCart }) {
                 <Button text="POLICY" btnStyle="nav-btn" />
               </Link>
             </div>
+            <div className="">
+              <Link to="/admin" className="nav-link">
+                <Button text="ADMIN" btnStyle="nav-btn" />
+              </Link>
+            </div>
           </div>
         )}
       </div>

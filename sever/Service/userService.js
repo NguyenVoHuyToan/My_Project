@@ -40,4 +40,25 @@ export const changeInfo=async (req,res)=>{
   await databaseProject.users.updateOne({userId: req.params.id},{$set:{fullName:fullName,email:email,gender:gender,birthday:birthday}});
   return res.json("completed")
 }
+export const getCartDetail=async (req,res)=>{
+  const userID=req.params.id;
+  console.log(userID);
+  const detailCart=await databaseProject.cart.aggregate([
+    {
+      '$match': {}
+    }, {
+      '$lookup': {
+        'from': 'inventory', 
+        'localField': 'cart.product_id', 
+        'foreignField': 'product_id', 
+        'as': 'product_des'
+      }
+    }, {
+      '$match': {
+        'userId': `${userID}`
+      }
+    }
+  ]).toArray();
+  return res.json(detailCart)
+}
 

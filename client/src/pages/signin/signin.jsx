@@ -30,13 +30,13 @@ const Signin = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3000/signin", {
+      const response = await axios.post("http://localhost:3000/user/login", {
         email,
         password,
       });
 
-      if (response.data.token) {
-        localStorage.setItem("token", response.data.token);
+      if (response.accessToken) {
+        localStorage.setItem("token", response.accessToken);
         signIn(email);
 
         if (rememberMe) {

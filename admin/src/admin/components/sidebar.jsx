@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { UilSignOutAlt, UilEstate, UilClipboardAlt, UilUsersAlt, UilPackage, UilChart } from '@iconscout/react-unicons';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Logo from '../imgs/logo.png';
+import Logo from "../../../assets/img/logo.svg";
 import './Sidebar.css';
 
 const SidebarData = [

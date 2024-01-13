@@ -26,13 +26,18 @@ import ProductDetailPage from "./pages/product-detail/product-detail-page";
 import Verification from "./pages/verification/verification";
 import ResetPassword from "./pages/reset-password/reset-password";
 import { AuthProvider } from "./hooks/authProvider";
+import AdminPage from "./pages/adminPage/AdminPage";
+import AdminAddProduct from "./pages/adminPage/AdminAddProduct";
+// import AdminPage from "./pages/admin/AdminPage";
+// import MainDash from "./pages/admin/components/MainDash/MainDash";
+// import AdminProducts from "./pages/admin/components/Product/Adproduct";
 
 function App() {
   const [load] = useState(true);
 
   return (
     <Router>
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <div className="App" id={load ? "no-scroll" : "scroll"} >
         <AuthProvider>
           <Navbar />
           <ScrollToTop />
@@ -52,6 +57,9 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/users" element={<User />} />
               <Route path="/product/products/:id" element={<ProductDetailPage />} />
+               <Route path="/admin" element={<AdminPage/>}/>
+               <Route path="/admin/Products" element={<AdminAddProduct/>}/>
+              
             </Routes>
           <Footer />
           </AuthProvider>

@@ -1,14 +1,15 @@
-import { createAccessToken } from "../jwt/creatAccessToken.js";
-
-export const accessTokenController = async (req, res) => {
-  const user = {
-    email: req.body.email,
-    password: req.body.password,
-  };
-
-  console.log("user", user);
-  const token = await createAccessToken(user);
-  return res.json({
-    accessToken: token,
-  });
-};
+import {createAccessToken} from "../jwt/creatAccessToken.js";
+export const accessTokenController = async(req,res) => {
+    
+    const user = {
+        email: req.body.email,
+        password: req.body.password,
+    };
+   
+    
+    const token = await createAccessToken(user);
+    
+    return res.json({
+        accessToken : token
+    })
+}
