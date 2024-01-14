@@ -60,12 +60,33 @@ class UserService {
         new User({
           ...payload,
           _id: user_id,
-          password: bcrypt.hashSync(payload.password, +process.env.HASH_ROUND),
         })
       );
     const access_token = await createAccessToken({ payload: user_id });
     return access_token;
   }
 }
-
 export const user_service = new UserService()
+
+export const getCartDetail=async (req,res)=>{
+  const userID=req.params.id;
+  console.log(userID);
+  const detailCart=await databaseProject.cart.aggregate([
+    {
+      '$match': {}
+    }, {
+      '$lookup': {
+        'from': 'inventory', 
+        'localField': 'cart.product_id', 
+        'foreignField': 'product_id', 
+        'as': 'product_des'
+      }
+    }, {
+      '$match': {
+        'userId': `${userID}`
+      }
+    }
+  ]).toArray();
+  return res.json(detailCart)
+}
+

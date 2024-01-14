@@ -1,9 +1,6 @@
 .collection-comp {
     .home-collection {
-        display: grid;
-        grid-template-columns: repeat(4, 280px);
-        grid-gap: 24px;
-        justify-content: space-around;
+        display: flex;
     }
     
     .collection-card-item {
@@ -15,7 +12,7 @@
         height: 320px;
         display: flex;
         align-items: flex-end;
-        gap: 10px;
+        gap: 0px;
         flex-shrink: 0;
     }
     

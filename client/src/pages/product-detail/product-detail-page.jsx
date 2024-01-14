@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./product-detail-page.scss";
 import { useParams } from "react-router-dom";
 import Button from "../../components/common/button/button";
 import ProductDescription from "../../components/product-detail/product-description/product-description";
 import ReviewSection from "../../components/product-detail/review-section/review-section";
-import getProductByBrand from "../../utils/getProductByBrand/getProductByBrand.js";
+
 import ProductCard from "../../components/common/product-card/product-card";
 import Carousel from "react-multi-carousel";
 
@@ -13,7 +13,7 @@ const ProductDetailPage = () => {
   const [product, setProduct] = useState({});
   const [similarProducts, setSimilarProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
     useEffect(() => {
       fetch(`http://localhost:3000/product/products/${id}`)
         .then((response) => response.json())
@@ -25,20 +25,23 @@ const ProductDetailPage = () => {
           console.error("Error:", error);
           setLoading(false);
         });
+  
     }, [id]);
 
     useEffect(() => {
       if (product.brands) {
-        fetch(`http://localhost:3000/product/products/brand/${product.brands}`)
+        const nameBrand =encodeURIComponent(product.brands);
+        fetch(`http://localhost:3000/product/products?brands=${nameBrand}`)
           .then((response) => response.json())
           .then((data) => {
             setLoading(false);
+            
             setSimilarProducts(data);
           })
           .catch((error) => console.error(error));
       }
     }, [product.brands]);
-
+    
     if (loading) {
       return <div>Loading...</div>;
     }
@@ -178,6 +181,7 @@ const ProductDetailPage = () => {
             swipeable={true}
           >
             {similarProducts.map((product) => (
+              
               <ProductCard key={product._id} product={product} />
             ))}
           </Carousel>

@@ -194,6 +194,9 @@ const Cartpage = () => {
               frameStyle="max-wdth"
               textStyle="uppercase"
               iconL="bi bi-cart-plus icon-size-16 square-icon"
+              onClick={() => {
+                window.location.href = "/product/products"
+              }}
             />
           </div>
           <div className="buy-now max-wdth">

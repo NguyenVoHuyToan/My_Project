@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./product-page.scss";
 import "react-multi-carousel/lib/styles.css";
 import Heropic from "../../assets/img/product/hero.png";
@@ -15,7 +15,8 @@ const ProductPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useEffect(() => {
+  useEffect(  () => {
+    
     fetch("http://localhost:3000/product/products")
       .then((response) => response.json())
       .then((data) => {
@@ -30,6 +31,7 @@ const ProductPage = () => {
       .then((response) => response.json())
       .then((data) => {
         setBrands(data);
+        
       })
       .catch((error) => console.error("Error:", error));
   }, []);
@@ -42,7 +44,7 @@ const ProductPage = () => {
       })
       .catch((error) => console.error("Error:", error));
   }, []);
-
+  
   useEffect(() => {
     if (!searchTerm) {
       setFilteredProducts(products);
@@ -68,7 +70,7 @@ const ProductPage = () => {
       product,
     ]);
   };
-
+console.log(selectedProducts);
   const handleChange = (event, value) => {
     setPage(value);
     const elements = document.getElementsByClassName("prod-query-content");
@@ -94,7 +96,8 @@ const ProductPage = () => {
   };
 
   const handleBrandClick = (brand) => {
-    fetch(`http://localhost:3000/product/products?brand=${brand}`)
+    const newBrands=encodeURIComponent(brand);
+    fetch(`http://localhost:3000/product/products?brands=${newBrands}`)
       .then((response) => response.json())
       .then((data) => {
         setFilteredProducts(data);
@@ -107,7 +110,8 @@ const ProductPage = () => {
   };
 
   const handleTypeClick = (type) => {
-    fetch(`http://localhost:3000/product/products?type=${type}`)
+    const newType=encodeURIComponent(type);
+    fetch(`http://localhost:3000/product/products?type=${newType}`)
       .then((response) => response.json())
       .then((data) => {
         setFilteredProducts(data);
@@ -138,7 +142,7 @@ const ProductPage = () => {
       items: 1,
     },
   };
-  console.log(selectedProducts);
+
   return (
     <div className="product-page">
       <div className="main-container flex-col">
@@ -218,13 +222,17 @@ const ProductPage = () => {
                         isExpanded2 ? "expanded" : ""
                       }`}
                     >
-                      {types.map((type) =>{ 
-                        <Button
-                          text={type}
+                      {types.map((item,index) =>{ 
+                        
+                         return <Button
+                          text={item.type}
                           frameStyle="uppercase"
                           btnStyle="underline-btn"
-                          onClick={() => handleTypeClick(type)}
+                          onClick={() => handleTypeClick(item.type)}
+                          key={index}
                         ></Button>
+                        
+                        
                       })}
                     </div>
                     <button
@@ -248,12 +256,13 @@ const ProductPage = () => {
                         isExpanded ? "expanded" : ""
                       }`}
                     >
-                      {brands.map((brand) => {
-                        <Button
-                          text={brand}
+                      {brands.map((item,index) => {
+                        return <Button
+                          text={item.brands}
                           frameStyle="uppercase"
                           btnStyle="underline-btn"
-                          onClick={() => handleBrandClick(brand)}
+                          key={index}
+                          onClick={() => handleBrandClick(item.brands)}
                         ></Button>
                       })}
                     </div>

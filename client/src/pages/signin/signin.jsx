@@ -7,6 +7,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/authProvider";
 
+
 const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,20 +24,21 @@ const Signin = () => {
   //     setRememberMe(true);
   //   }
   // }, []);
-
+ 
   const handleSignIn = async (e) => {
     e.preventDefault();
     setError("");
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3000/signin", {
+      const response = await axios.post("http://localhost:3000/user/login", {
         email,
         password,
       });
-
-      if (response.data.token) {
-        localStorage.setItem("token", response.data.token);
+      console.log(response.data.accessToken);
+      if (response.data.accessToken) {
+        
+        localStorage.setItem("token", response.data.accessToken);
         signIn(email);
 
         if (rememberMe) {
@@ -124,7 +126,9 @@ const Signin = () => {
                 icon="bi bi-google"
                 frameStyle="max-wdth"
                 customBtnStyle="max-wdth"
+               
               ></Button>
+              
               <Button
                 text="FACEBOOK"
                 btnStyle="auth-btn"

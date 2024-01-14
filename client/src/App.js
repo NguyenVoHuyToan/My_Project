@@ -6,6 +6,7 @@ import Contact from "./page/Contact.jsx";
 import Home from "./page/Home.jsx";
 import Product from "./page/Product.jsx";
 import Profile from "./page/Profile.jsx";
+import Signin from './pages/signin/signin.jsx';
 function App() {
   const [dataBase, setDataBase] = useState([]);
 
@@ -27,6 +28,7 @@ function App() {
   return (
     <Layout>
       <Routes>
+        {/* <Route path='/' element={<Signin/>}/> */}
         <Route path="/" element={<Home data={dataBase} />} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />

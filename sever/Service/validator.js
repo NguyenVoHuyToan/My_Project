@@ -1,6 +1,5 @@
 import { checkSchema, validationResult } from "express-validator";
 
-
 import databaseProject from "../mongodb.js";
 export const validator = (schema) => {
   return async (req, res, next) => {
@@ -21,7 +20,9 @@ export const validateRegister = validator(
         isEmail: true,
         custom: {
           options: async (value) => {
-            const isExist = await databaseProject.users.findOne({ email: value });
+            const isExist = await databaseProject.users.findOne({
+              email: value,
+            });
             console.log(isExist);
             if (isExist) {
               throw new Error("Email is already existsMAIL IS EXISTED");
@@ -64,12 +65,14 @@ export const loginValidator = validator(
         isEmail: true,
         custom: {
           options: async (value) => {
-            const isUserExist = await databaseProject.users.findOne({ email: value });
-           
+            const isUserExist = await databaseProject.users.findOne({
+              email: value,
+            });
+
             if (isUserExist) {
               return true;
             } else {
-              throw new Error("Error: email IS NOT EXIST");
+              throw new Error("Email is not registered");
             }
           },
         },
@@ -81,15 +84,13 @@ export const loginValidator = validator(
         },
         custom: {
           options: async (value, { req }) => {
-            const userLogin = await databaseProject
-              .users
-              .findOne({ email: req.body.email });
-            
+            const userLogin = await databaseProject.users.findOne({
+              email: req.body.email,
+            });
             if (userLogin.password == value) {
-              
               return true;
             } else {
-              throw new Error("ERROR: PASSWORD DOES NOT MATCH");
+              throw new Error(" PASSWORD DOES NOT MATCH");
             }
           },
         },

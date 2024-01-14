@@ -1,0 +1,135 @@
+/* Sidebar */
+.sidebar-main{
+  background-color: var(--Dark-Brown, #3B3023);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 4rem;
+  transition: all 300ms ease;
+}
+
+.bars {
+  display: none;
+}
+.logo {
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  font-weight: bold;
+  font-size: 22px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  filter: invert(100%);
+}
+
+.logo > span > span {
+  color: var(--pink);
+}
+
+.logo > img {
+  width: 10rem;
+  height: 3rem;
+}
+
+.menu {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 2.5rem;
+  margin-left: 2rem;
+  position: relative;
+  transition: all 300ms ease;
+  font-size: 14px;
+  color: white;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+}
+
+.menu .menuItem:last-child {
+  bottom: 2.3rem;
+  width: 100%;
+}
+
+.active {
+  background-color:white;
+  color: var(--Dark-Brown, #3B3023);
+  margin-left: 0;
+}
+
+.active::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: var(--Rodeo-Dust-500, #AE8261);
+  margin-right: calc(1rem - 8px);
+  color: white;
+}
+
+/* Tablets */
+@media screen and (max-width: 1200px) {
+  .menuItem > span {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 9;
+    background: #ffe0e0;
+    width: 55%;
+    padding-right: 1rem;
+    height: 100%;
+    left: -60%; /* Initial position off-screen */
+    transition: all 300ms ease;
+  }
+
+  .menuItem > span {
+    display: block;
+  }
+  
+  span{
+    font-size: 10px;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+
+  .menu .menuItem:last-child {
+    position: relative;
+    margin-top: 6rem;
+  }
+
+  .bars {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    left: 60%; /* Adjusted initial position */
+    background: #ffe0e0;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 9;
+  }
+
+  .close {
+    left: 0; /* Slide in when expanded */
+  }
+}
