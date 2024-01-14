@@ -31,7 +31,7 @@ const Homepage = () => {
       .then((data) => {
         setProducts(data);
       })
-      .catch((error) => console.error("Error:", error));
+      .catch((error) => console.log("Error:", error));
   }, []);
 
   const responsive = {

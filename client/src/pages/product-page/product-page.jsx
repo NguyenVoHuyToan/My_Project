@@ -15,7 +15,8 @@ const ProductPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useEffect(() => {
+  useEffect(  () => {
+    
     fetch("http://localhost:3000/product/products")
       .then((response) => response.json())
       .then((data) => {
