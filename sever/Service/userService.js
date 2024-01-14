@@ -2,6 +2,8 @@ import { json } from "express";
 import databaseProject from "../mongodb.js";
 import jwt from "jsonwebtoken";
 import { User } from "../Schema/userSchema.js";
+import { ObjectId } from "mongodb";
+import { createAccessToken } from "../jwt/creatAccessToken.js";
 const key = process.env.KEY;
 export const getOAuth = async (req, res) => {
   const oauth2Client = new google.auth.OAuth2(
@@ -53,17 +55,22 @@ export const changeInfo = async (req, res) => {
 
 class UserService {
   async register(payload) {
-    const user_id = new ObjectId();
-    await databaseProject
-      .users
-      .insertOne(
-        new User({
-          ...payload,
-          _id: user_id,
-        })
-      );
-    const access_token = await createAccessToken({ payload: user_id });
-    return access_token;
+    const existingAccount = await databaseProject.users.findOne({ email: payload.email });
+    if (!existingAccount) {
+      const user_id = new ObjectId();
+      await databaseProject
+        .users
+        .insertOne(
+          new User({
+            ...payload,
+            _id: user_id,
+          })
+        );
+      const access_token = await createAccessToken({ payload: user_id });
+      return access_token;
+      
+    }
+    return false
   }
 }
 export const user_service = new UserService()
