@@ -24,7 +24,7 @@ export const validateRegister = validator(
             const isExist = await databaseProject.users.findOne({ email: value });
             console.log(isExist);
             if (isExist) {
-              throw new Error("EMAIL IS EXISTED");
+              throw new Error("Email is already existsMAIL IS EXISTED");
             } else {
               return true;
             }
@@ -45,7 +45,7 @@ export const validateRegister = validator(
         custom: {
           options: (value, { req }) => {
             if (value != req.body.password) {
-              throw new Error("Error Pass");
+              throw new Error("Confirm password must be same as password");
             }
             return true;
           },

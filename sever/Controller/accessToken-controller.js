@@ -3,7 +3,7 @@ export const accessTokenController = async(req,res) => {
     
     const user = {
         email: req.body.email,
-        pass: req.body.password,
+        password: req.body.password,
     };
    
     console.log('user',user);
