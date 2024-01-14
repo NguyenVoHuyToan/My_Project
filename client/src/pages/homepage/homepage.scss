@@ -18,6 +18,7 @@
 
   .about-us-see-more {
     display: flex;
+    justify-content: center;
     margin-top: 2rem;
   }
   
@@ -110,9 +111,11 @@
   }
   
   .about-us-content {
-    max-width: 800px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
   }
-  
+
   .img-container {
     display: flex;
     flex-direction: column;
@@ -126,7 +129,9 @@
   
   .text-coll {
     color: var(--Dark-Brown, #3b3023);
-    padding-left: 4rem;
+    text-align: center;
+    
+    margin: 1rem 2rem;
   }
   
   .collection-container {
@@ -228,7 +233,9 @@
     }
 
     .about-us-see-more {
-      display: block;
+      display: flex;
+      justify-content: center;
+      margin: 1rem 2rem;
     }
 
     .home-product-container {
@@ -271,7 +278,21 @@
     }
 
     .contact-content {
-      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-contact{
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-our-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
 
     .home-btn-see>Button>div>p{
@@ -288,7 +309,7 @@
     }
   }
 
-@media only screen and (max-width: 770px) {
+@media screen and (max-width: 1050px) {
   .homepage-first {
     width: 100%;
     height: fit-content;
@@ -314,9 +335,35 @@
   .collection-container {
     align-items: center;
   }
+  
+  .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-right: 350px;
+  }
+  .image-box{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 950px) {
+  .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-right: 300px;
+  }
+  .image-box{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 760px) {
   .section-container {
     overflow: hidden;
   }
@@ -366,6 +413,18 @@
 
   .carousel-container {
     width: 363px;
+  }
+
+  .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-right: 250px;
+  }
+  .image-box{
+    display: flex;
+    flex-direction: row;
   }
 }
 }

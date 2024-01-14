@@ -23,6 +23,7 @@
     .logo {
         width: 50%;
         min-width: 500px;
+        background: #F1EBE3;
     }
 
     input[type="checkbox"] {
@@ -33,5 +34,14 @@
 
     input[type="checkbox"]:checked {
         accent-color: #593C35;
+    }
+}
+
+@media screen and (max-witdh: 1200px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F1EBE3;
     }
 }
