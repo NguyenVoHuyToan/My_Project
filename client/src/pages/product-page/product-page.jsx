@@ -15,8 +15,7 @@ const ProductPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useEffect(  () => {
-    
+  useEffect(() => {
     fetch("http://localhost:3000/product/products")
       .then((response) => response.json())
       .then((data) => {
@@ -31,7 +30,7 @@ const ProductPage = () => {
       .then((response) => response.json())
       .then((data) => {
         setBrands(data);
-        
+        console.log(data);
       })
       .catch((error) => console.error("Error:", error));
   }, []);
@@ -44,7 +43,7 @@ const ProductPage = () => {
       })
       .catch((error) => console.error("Error:", error));
   }, []);
-  
+
   useEffect(() => {
     if (!searchTerm) {
       setFilteredProducts(products);
@@ -70,7 +69,7 @@ const ProductPage = () => {
       product,
     ]);
   };
-console.log(selectedProducts);
+  console.log(selectedProducts);
   const handleChange = (event, value) => {
     setPage(value);
     const elements = document.getElementsByClassName("prod-query-content");
@@ -96,7 +95,7 @@ console.log(selectedProducts);
   };
 
   const handleBrandClick = (brand) => {
-    const newBrands=encodeURIComponent(brand);
+    const newBrands = encodeURIComponent(brand);
     fetch(`http://localhost:3000/product/products?brands=${newBrands}`)
       .then((response) => response.json())
       .then((data) => {
@@ -110,7 +109,7 @@ console.log(selectedProducts);
   };
 
   const handleTypeClick = (type) => {
-    const newType=encodeURIComponent(type);
+    const newType = encodeURIComponent(type);
     fetch(`http://localhost:3000/product/products?type=${newType}`)
       .then((response) => response.json())
       .then((data) => {
@@ -222,17 +221,16 @@ console.log(selectedProducts);
                         isExpanded2 ? "expanded" : ""
                       }`}
                     >
-                      {types.map((item,index) =>{ 
-                        
-                         return <Button
-                          text={item.type}
-                          frameStyle="uppercase"
-                          btnStyle="underline-btn"
-                          onClick={() => handleTypeClick(item.type)}
-                          key={index}
-                        ></Button>
-                        
-                        
+                      {types.map((item, index) => {
+                        return (
+                          <Button
+                            text={item.type}
+                            frameStyle="uppercase"
+                            btnStyle="underline-btn"
+                            onClick={() => handleTypeClick(item.type)}
+                            key={index}
+                          ></Button>
+                        );
                       })}
                     </div>
                     <button
@@ -256,14 +254,16 @@ console.log(selectedProducts);
                         isExpanded ? "expanded" : ""
                       }`}
                     >
-                      {brands.map((item,index) => {
-                        return <Button
-                          text={item.brands}
-                          frameStyle="uppercase"
-                          btnStyle="underline-btn"
-                          key={index}
-                          onClick={() => handleBrandClick(item.brands)}
-                        ></Button>
+                      {brands.map((item, index) => {
+                        return (
+                          <Button
+                            text={item.brands}
+                            frameStyle="uppercase"
+                            btnStyle="underline-btn"
+                            key={index}
+                            onClick={() => handleBrandClick(item.brands)}
+                          ></Button>
+                        );
                       })}
                     </div>
                     <button
