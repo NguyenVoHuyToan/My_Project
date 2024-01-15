@@ -4,7 +4,7 @@ import {
   BsFillGrid3X3GapFill,
   BsPeopleFill,
   BsFillBellFill,
-} from "react-icons";
+} from "react-icons/bs";
 import useData from "../../hook/useData";
 import "./Card.css";
 

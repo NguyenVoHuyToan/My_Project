@@ -30,6 +30,7 @@ const ProductPage = () => {
       .then((response) => response.json())
       .then((data) => {
         setBrands(data);
+        console.log(data);
       })
       .catch((error) => console.error("Error:", error));
   }, []);
