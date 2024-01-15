@@ -30,7 +30,7 @@ export const getAllBrands=async (req,res)=>{
         let isAdded= true;
         for (let index1 = 0; index1 < brandList.length; index1++) {
             let element1 = brandList[index1].brands;
-            console.log(element1);
+           
             if(element == element1){
                 isAdded=false;
                 break;
@@ -75,7 +75,7 @@ export const getOneProduct=async (req,res)=>{
     const productID= req.params.id;
    
     const productDetail=await databaseProject.inventory.findOne({ product_id:(productID)});
-    console.log(productDetail);
+   
     
     return res.json(productDetail)
 }
@@ -86,9 +86,9 @@ export const getOneProduct=async (req,res)=>{
 // }
 export const addToCart=async (req,res)=>{
     const productID=req.query.productID;
-    const userID=req.query.userID;
-    console.log(userID);
-    const userDetail=await databaseProject.cart.findOne({userId:userID});
+    const userEmail=req.query.userEmail;
+   
+    const userDetail=await databaseProject.cart.findOne({userEmail:userEmail});
    
     if(userDetail){
         const inCart=userDetail.cart.filter((item)=>{
@@ -98,15 +98,15 @@ export const addToCart=async (req,res)=>{
         const newIndex=userDetail.cart.indexOf(inCart[0]);
         if(inCart.length>0){
             userDetail.cart[newIndex].quantity=inCart[0].quantity+1;
-            await databaseProject.cart.updateOne({userId:userID},{$set:{cart:userDetail.cart}});
+            await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:userDetail.cart}});
         }
         else{
             userDetail.cart.push({product_id:productID,quantity:1})
-            await databaseProject.cart.updateOne({userId:userID},{$set:{cart:userDetail.cart}});
+            await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:userDetail.cart}});
         }
     }
     else{
-        await databaseProject.cart.insertOne({cart:[{product_id:productID,quantity:1}],userId:userID});
+        await databaseProject.cart.insertOne({cart:[{product_id:productID,quantity:1}],userEmail:userEmail});
     }
     // if(productDetail){
     //     await databaseProject.cart.updateOne({product_id:productID},{$set:{quantity:productDetail.quantity+1}})
@@ -118,6 +118,9 @@ export const addToCart=async (req,res)=>{
     
    
     return res.json("complete");
+}
+export const validateFunc=(req,res)=>{
+    return res.json("complete")
 }
 export const getAllCart=async (req,res)=>{
     const itemList=await databaseProject.cart.aggregate([

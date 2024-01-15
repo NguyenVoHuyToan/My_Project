@@ -5,3 +5,6 @@ export const  addProduct= async (req,res)=>{
     await databaseProject.inventory.insertOne(req.body);
     return res.json("complete");
 }
+export const validateFunc=(req,res)=>{
+    return res.json(1)
+}

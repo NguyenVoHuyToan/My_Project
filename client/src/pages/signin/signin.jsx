@@ -6,7 +6,7 @@ import Button from "../../components/common/button/button";
 
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/authProvider";
-
+import axios from 'axios';
 
 
 
@@ -57,7 +57,10 @@ const Signin = () => {
     e.preventDefault();
     setError("");
     setLoading(true);
-
+    const response = await axios.post("http://localhost:3000/user/login", {
+      email,
+      password,
+    });
     try {
       // const response = await axios.post("http://localhost:3000/user/login", {
       //   email,
@@ -76,6 +79,13 @@ const Signin = () => {
         }
 
         navigate("/");
+      }
+      else{
+       
+      if(response.data.accessToken){
+        localStorage.setItem("token", response.data.accessToken);
+        navigate("/")
+      }
       }
     
     } catch (err) {
@@ -138,6 +148,7 @@ const Signin = () => {
               frameStyle="max-wdth"
               customBtnStyle="max-wdth"
               disabled={loading}
+
             ></Button>
             {error && <div className="error-message body-err">{error}</div>}
             <div className="signup-opts flex-col max-wdth body">

@@ -27,7 +27,8 @@ export const getOAuth = async (req, res) => {
       );
       return res.redirect(`http://localhost:5173/?accessToken=${access_token}`);
     } else {
-      await databaseProject.users.insertOne({email:userInfo.email,password:password});
+      const userID=new ObjectId();
+      await databaseProject.users.insertOne(new User({email:user.email,password:password,birthday:"NA",gender:"NA",_id:userID}) );
     }
   } else {
     throw new Error("Email is wrong");

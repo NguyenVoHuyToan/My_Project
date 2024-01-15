@@ -7,7 +7,8 @@ const AdminCard = ({ item }) => {
   cart.forEach((element,index) => {
       return totalCost+=item.product_des[index].price*element.quantity;
   });
-  const title=`User ID: ${item.userId}`
+  console.log("item",item);
+  const title=`User Email: ${item.userEmail}`
   return (
     <Card
       title={title}
@@ -20,6 +21,7 @@ const AdminCard = ({ item }) => {
     >
       {cart.map((cartItem,index) => {
         return <div key={index}>
+          <p>Product Name:{item.product_des[index].product_name}</p>
         <p>Price:{item.product_des[index].price}</p>
         <p>Brands:{item.product_des[index].brands}</p>
         <p>Quantity:{cartItem.quantity}</p>
