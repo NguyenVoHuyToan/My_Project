@@ -86,8 +86,8 @@ const Signup = () => {
                 type="checkbox"
                 checked={acceptTerms}
                 onChange={() => setAcceptTerms(!acceptTerms)}
-              />
-              <p>“I accept the terms and conditions.”</p>
+                />
+                <p>“I accept the terms and conditions.”</p>
             </div>
             <Button
               text="SIGN UP"
@@ -110,14 +110,7 @@ const Signup = () => {
                 btnStyle="auth-btn"
                 customBtnStyle="max-wdth"
                 frameStyle="max-wdth"
-                icon="bi bi-google"
-              ></Button>
-              <Button
-                text="FACEBOOK"
-                btnStyle="auth-btn"
-                customBtnStyle="max-wdth"
-                frameStyle="max-wdth"
-                icon="bi bi-facebook"
+                iconL="bi bi-google"
               ></Button>
             </div>
             <div className="body-sml">

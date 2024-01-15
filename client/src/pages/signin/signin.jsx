@@ -125,19 +125,12 @@ const Signin = () => {
               <Button
                 text="GOOGLE"
                 btnStyle="auth-btn"
-                icon="bi bi-google"
+                iconL="bi bi-google"
                 frameStyle="max-wdth"
                 customBtnStyle="max-wdth"
                 
               ></Button>
               
-              <Button
-                text="FACEBOOK"
-                btnStyle="auth-btn"
-                icon="bi bi-facebook"
-                frameStyle="max-wdth"
-                customBtnStyle="max-wdth"
-              ></Button>
             </div>
           </form>
         </div>
