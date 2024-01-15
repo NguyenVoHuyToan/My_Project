@@ -57,8 +57,7 @@ input {
 } */
 
 button:hover {
-  background-color:  #391010; 
-  color: white;
+  color: blue;
 }
 
 ul {
@@ -76,12 +75,10 @@ ul {
 li {
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ccc; 
 }
 
 .see-more-button {
   background-color: transparent ;
-  color: #391010; 
   padding: 10px;
   cursor: pointer;
   border: none;
