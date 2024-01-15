@@ -26,7 +26,7 @@ import ContactUs from "./ContactUs.jsx";
 const Homepage = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("http://localhost:3000/product/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);

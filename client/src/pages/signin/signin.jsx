@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/authProvider";
 
 
+
+
 const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -60,7 +62,7 @@ const Signin = () => {
       setLoading(false);
     }
   };
-
+ 
   return (
     <div className="section-container flex-col signin-page">
       <div className="flex-row section gap-xl flex-wrap">
@@ -126,7 +128,7 @@ const Signin = () => {
                 icon="bi bi-google"
                 frameStyle="max-wdth"
                 customBtnStyle="max-wdth"
-               
+                
               ></Button>
               
               <Button

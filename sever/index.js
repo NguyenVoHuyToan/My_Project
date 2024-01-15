@@ -7,6 +7,7 @@ import { productRoute } from "./routes/product.js";
 
 import { userRoute } from "./routes/userRoute.js";
 import { AdminRoute } from "./routes/adminRoute.js";
+import { urlGoogle } from "../client/googleApi.js";
 
 const app = express();
 const port = 3000;
@@ -19,6 +20,7 @@ app.use(cors());
 app.use("/product", productRoute);
 app.use("/user", userRoute);
 app.use("/admin", AdminRoute);
+
 databaseProject.run();
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

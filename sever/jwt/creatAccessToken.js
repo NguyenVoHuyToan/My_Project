@@ -20,7 +20,7 @@ export const createAccessToken = (user) => {
   });
 };
 
-export const verifyToken = ( token) => {
+export const verifyToken = (token) => {
   return new Promise((resolve, reject) => {
     jwt.verify(token, key, (err, decoded) => {
       if (err) {

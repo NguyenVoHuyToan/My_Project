@@ -1,7 +1,7 @@
 import {
   UilClipboardAlt,
   UilSignOutAlt,
-  UilUsersAlt
+  UilUsersAlt,
 } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -19,21 +19,19 @@ const SidebarData = [
     icon: UilUsersAlt,
     heading: "Products",
   },
- 
 ];
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height:1000px;
-  margin-top:60px;
-
+  height: 1000px;
+  margin-top: 60px;
 `;
 const DetailContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:20px;
+  margin: 20px;
 `;
 
 const AdminPage = () => {
@@ -63,7 +61,7 @@ const AdminPage = () => {
 
   return (
     <Container>
-      <div className="sidebar-main" style={{width:"40%"}}>
+      <div className="sidebar-main" style={{ width: "40%" }}>
         <div
           className="bars"
           style={expanded ? { left: "60%" } : { left: "5%" }}
@@ -77,8 +75,23 @@ const AdminPage = () => {
           animate={window.innerWidth <= 768 ? `${expanded}` : ""}
         >
           <div className="menu">
-            {SidebarData.map((item, index) => (
-              <Link to={`/admin/${item.heading.toLowerCase()}`} key={index}>
+            {SidebarData.map((item, index) => {
+              if (item.heading == "Orders") {
+                return (
+                  <Link to={`/admin`} key={index}>
+                    <div
+                      className={
+                        selected === index ? "menuItem active" : "menuItem"
+                      }
+                      onClick={() => setSelected(index)}
+                    >
+                      <item.icon />
+                      <span className="btn-text-lgt-xs">{item.heading}</span>
+                    </div>
+                  </Link>
+                );
+              } else {
+                return <Link to={`/admin/${item.heading.toLowerCase()}`} key={index}>
                 <div
                   className={
                     selected === index ? "menuItem active" : "menuItem"
@@ -88,10 +101,11 @@ const AdminPage = () => {
                   <item.icon />
                   <span className="btn-text-lgt-xs">{item.heading}</span>
                 </div>
-              </Link>
-            ))}
+              </Link>;
+              }
+            })}
             <div className="menuItem">
-            <UilSignOutAlt />
+              <UilSignOutAlt />
               <p className="btn-text-lgt-xs"> Sign Out</p>
             </div>
           </div>
@@ -99,7 +113,7 @@ const AdminPage = () => {
       </div>
       <DetailContainer>
         {cartDetail.map((item, index) => {
-          return <AdminCard item={item} key={index} />
+          return <AdminCard item={item} key={index} />;
         })}
       </DetailContainer>
     </Container>

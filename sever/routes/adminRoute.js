@@ -4,4 +4,4 @@ import { validateAdminToken } from "../Service/validateToken.js";
 
 export const AdminRoute=express.Router();
 
-AdminRoute.post("/",validateAdminToken,addProduct);
+AdminRoute.post("/",addProduct);

@@ -9,15 +9,15 @@ const ContentFooter = ({text, title1, title2, title3 }) => {
       </div>
       <div className=" flex-col footer-contact-content align-left gap-xs"> 
       <div className="flex-row gap-xs body-lgt">
-        <i class="bi bi-envelope-fill"></i>
+        <i className="bi bi-envelope-fill"></i>
         <p>{title1}</p>
       </div>
       <div className="flex-row gap-xs body-lgt">
-        <i class="bi bi-telephone-fill"></i>
+        <i className="bi bi-telephone-fill"></i>
         <p>{title2}</p>
       </div>
       <div className="flex-row gap-xs body-lgt">
-        <i class="bi bi-geo-alt-fill"></i>
+        <i className="bi bi-geo-alt-fill"></i>
         <p>{title3}</p>
       </div>
       </div>
