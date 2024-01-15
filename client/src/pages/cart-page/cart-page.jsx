@@ -13,96 +13,96 @@ const Cartpage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const authToken = localStorage.getItem("token");
-  //       if (!authToken) {
-  //         throw new Error(
-  //           "User not logged in. Please log in to view cart items."
-  //         );
-  //       }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const authToken = localStorage.getItem("token");
+        if (!authToken) {
+          throw new Error(
+            "User not logged in. Please log in to view cart items."
+          );
+        }
 
-  //       const response = await fetch("http://localhost:3000/cart", {
-  //         headers: {
-  //           Authorization: `Bearer ${authToken}`,
-  //         },
-  //       });
+        const response = await fetch("http://localhost:3000/cart", {
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
 
-  //       if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-  //       const data = await response.json();
-  //       const cartItems = Array.isArray(data)
-  //         ? data
-  //         : data && Array.isArray(data.items)
-  //         ? data.items
-  //         : [];
+        const data = await response.json();
+        const cartItems = Array.isArray(data)
+          ? data
+          : data && Array.isArray(data.items)
+          ? data.items
+          : [];
 
-  //       setUserProducts(cartItems);
-  //       setLoading(false);
-  //     } catch (error) {
-  //       setError(
-  //         error.message || "An error occurred while fetching cart items."
-  //       );
-  //       setLoading(false);
-  //     }
-  //   };
+        setUserProducts(cartItems);
+        setLoading(false);
+      } catch (error) {
+        setError(
+          error.message || "An error occurred while fetching cart items."
+        );
+        setLoading(false);
+      }
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
-  // useEffect(() => {
-  //   const fetchAllProducts = async () => {
-  //     try {
-  //       const products = [];
-  //       for (let product of userProducts) {
-  //         const response = await fetch(
-  //           `http://localhost:3000/product/products/${product.productId}`
-  //         );
-  //         const data = await response.json();
-  //         products.push(data);
-  //       }
-  //       setAllProducts(products);
-  //     } catch (error) {
-  //       setError("An error occurred while fetching product details.");
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchAllProducts = async () => {
+      try {
+        const products = [];
+        for (let product of userProducts) {
+          const response = await fetch(
+            `http://localhost:3000/product/products/${product.productId}`
+          );
+          const data = await response.json();
+          products.push(data);
+        }
+        setAllProducts(products);
+      } catch (error) {
+        setError("An error occurred while fetching product details.");
+      }
+    };
 
-  //   fetchAllProducts();
-  // }, [userProducts]);
+    fetchAllProducts();
+  }, [userProducts]);
 
-  // useEffect(() => {
-  //   const newTotalPrice = allProducts.reduce(
-  //     (total, product) => total + product.price,
-  //     0
-  //   );
-  //   setTotalPrice(newTotalPrice);
-  // }, [allProducts]);
+  useEffect(() => {
+    const newTotalPrice = allProducts.reduce(
+      (total, product) => total + product.price,
+      0
+    );
+    setTotalPrice(newTotalPrice);
+  }, [allProducts]);
 
-  // const deleteProduct = (productId) => {
-  //   setUserProducts(
-  //     userProducts.filter((product) => product.productId !== productId)
-  //   );
-  // };
+  const deleteProduct = (productId) => {
+    setUserProducts(
+      userProducts.filter((product) => product.productId !== productId)
+    );
+  };
 
-  // const handleBuyNow = () => {
-  //   const paymentInfo = {
-  //     products: userProducts,
-  //     totalPrice: totalPrice,
-  //   };
+  const handleBuyNow = () => {
+    const paymentInfo = {
+      products: userProducts,
+      totalPrice: totalPrice,
+    };
 
-  //   navigate("/payment", { state: { paymentInfo } });
-  // };
+    navigate("/payment", { state: { paymentInfo } });
+  };
 
-  // if (loading) {
-  //   return <p>Loading...</p>;
-  // }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
-  // if (error) {
-  //   return <p>{error}</p>;
-  // }
+  if (error) {
+    return <p>{error}</p>;
+  }
 
   return (
     <div className="cart-page flex-row gap-sm align-left">
@@ -195,7 +195,7 @@ const Cartpage = () => {
               textStyle="uppercase"
               iconL="bi bi-cart-plus icon-size-16 square-icon"
               onClick={() => {
-                window.location.href = "/product/products"
+                window.location.href = "/product/products";
               }}
             />
           </div>
