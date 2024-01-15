@@ -17,17 +17,6 @@ export const validator = (schema) => {
 export const validateRegister = validator(
   checkSchema(
     {
-      fullName: {
-        errorMessage: "Invalid your full name",
-        custom: {
-          options: (value, { req }) => {
-            if (!value || value.trim() === "") {
-              throw new Error("Full name is required");
-            }
-            return true;
-          },
-        },
-      },
       email: {
         errorMessage: "Invalid email",
         isEmail: true,

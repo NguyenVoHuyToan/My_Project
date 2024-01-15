@@ -58,8 +58,8 @@ function App() {
               <Route path="/users" element={<User />} />
               <Route path="/product/products/:id" element={<ProductDetailPage />} />
                <Route path="/admin" element={<AdminPage/>}/>
-               <Route path="/admin/Products" element={<AdminAddProduct/>}/>
-              
+               <Route path="/admin/products" element={<AdminAddProduct/>}/>
+                
             </Routes>
           <Footer />
           </AuthProvider>
