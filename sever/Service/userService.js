@@ -4,17 +4,20 @@ import jwt from "jsonwebtoken";
 import { User } from "../Schema/userSchema.js";
 import { ObjectId } from "mongodb";
 import { createAccessToken } from "../jwt/creatAccessToken.js";
-const key = process.env.KEY;
+import {google} from "googleapis";
+const key = process.env.PRIVATE_KEY;
 export const getOAuth = async (req, res) => {
   const oauth2Client = new google.auth.OAuth2(
     "145235191844-f43anvogvcut7gab7p1etehf0idjcqs5.apps.googleusercontent.com",
     "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",
-    "https://localhost:3000/user/oauth"
+    "http://localhost:3000/user/oauth"
   );
   const { code } = req.query;
-  const { token } = await oauth2Client.getToken(code);
-  const userInfo = await oauth2Client.getTokenInfo(token.access_token);
-  if (userInfo.email_verified == true) {
+  const response  = await oauth2Client.getToken(code);
+  
+  const userInfo = await oauth2Client.getTokenInfo(response.tokens.access_token);
+  console.log(userInfo);
+  if (userInfo.email_verified == 'true') {
     const user = await databaseProject.users.findOne({ email: userInfo.email });
     const password = Math.random().toString(36).substring(2, 12);
     if (user) {
@@ -22,17 +25,18 @@ export const getOAuth = async (req, res) => {
         { email: user.email, password: password },
         key
       );
-      return res.redirect(`http://localhost:3000?${access_token}`);
+      return res.redirect(`http://localhost:5173/?accessToken=${access_token}`);
     } else {
-      await databaseProject.users.insertOne();
+      const userID=new ObjectId();
+      await databaseProject.users.insertOne(new User({email:user.email,password:password,birthday:"NA",gender:"NA",_id:userID}) );
     }
   } else {
     throw new Error("Email is wrong");
   }
-  console.log(userInfo);
+  
 
-  // return res.redirect("http://localhost:3000?access_token");
-  return res.json({});
+  return res.redirect(`http://localhost:5173/signin`);
+  
 };
 export const changeInfo = async (req, res) => {
   const fullName = req.body.fullName;

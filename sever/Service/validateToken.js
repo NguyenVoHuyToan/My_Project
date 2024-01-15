@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import databaseProject from "../mongodb.js";
 const privateKey=process.env.PRIVATE_KEY;
 export const checkToken=(privateKey,token)=>{
   
@@ -16,9 +17,9 @@ export const checkToken=(privateKey,token)=>{
   }
 
 export const validateToken = async (req, res, next) => {
-
+    console.log(req.body);
     const token = req.body.accessToken;
-
+    
    
     const userUnit= await checkToken(privateKey,token);
     
@@ -29,7 +30,7 @@ export const validateToken = async (req, res, next) => {
     //   return res.json("fail")
     // }
     
-    const result= await databaseUnit.users.findOne({email:userUnit.email});
+    const result= await databaseProject.users.findOne({email:userUnit.email});
     if(result){
       return next();
     }
@@ -50,8 +51,8 @@ export const validateAdminToken = async (req, res, next) => {
   //   return res.json("fail")
   // }
   
-  const result= await databaseUnit.users.findOne({email:userUnit.email});
-
+  const result= await databaseProject.users.findOne({email:userUnit.email});
+  console.log(result);
   if(result.email == "admin@gmail.com" ){
     return next();
   }

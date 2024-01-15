@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./product-card.scss";
 import { toast } from "react-toastify";
@@ -9,27 +9,30 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [changeColor, setChangeColor] = useState(true);
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleAddToCartClick = async (productId) => {
-
     if (!productId) {
-      console.error('Product ID is undefined');
-      toast.error('Product ID is undefined', {
+      console.error("Product ID is undefined");
+      toast.error("Product ID is undefined", {
         position: toast.POSITION.TOP_RIGHT,
       });
       return;
     }
 
     try {
-      const authToken = localStorage.getItem('token');
+      const authToken = localStorage.getItem("token");
 
       if (authToken) {
-        const response = await axios.post('http://localhost:3000/cart', { productId }, {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
-        });
+        const response = await axios.post(
+          "http://localhost:3000/cart",
+          { productId },
+          {
+            headers: {
+              Authorization: `Bearer ${authToken}`,
+            },
+          }
+        );
 
         if (response.data.success) {
           if (onAddToCart) {
@@ -45,31 +48,31 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
           });
         }
       } else {
-        console.error('User not logged in. Redirecting to signin page.');
-        toast.error('Please log in to add products to cart', {
+        console.error("User not logged in. Redirecting to signin page.");
+        toast.error("Please log in to add products to cart", {
           position: toast.POSITION.TOP_RIGHT,
         });
       }
     } catch (error) {
-      console.error('Error adding product to cart:', error);
+      console.error("Error adding product to cart:", error);
       toast.error(`Error adding product to cart`, {
         position: toast.POSITION.TOP_RIGHT,
       });
-      navigate('/signin');
+      navigate("/signin");
     }
   };
 
   const handleExpandClick = () => {
-      setIsExpanded((prevExpanded) => !prevExpanded);
+    setIsExpanded((prevExpanded) => !prevExpanded);
   };
 
   if (!product || !product.images) {
-      return null;
+    return null;
   }
 
   const containerClassName = isExpanded
-      ? 'product-card-com flex-row prod-container prod-exp'
-      : 'product-card-com flex-row prod-container prod-c';
+    ? "product-card-com flex-row prod-container prod-exp"
+    : "product-card-com flex-row prod-container prod-c";
 
   return (
     <div className={containerClassName}>
@@ -90,7 +93,13 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
                   {product.product_name}
                 </div>
               </Link>
-              <div className="prod-price">{product.price}.000&#x20AB;</div>
+              <div className="prod-price">
+                {product.price}.000&#x20AB;
+                <i
+                  className="bi bi-cart-plus"
+                  onClick={() => handleAddToCartClick(product.product_id)}
+                ></i>
+              </div>
             </div>
             <div className="flex-row gap-2xs color-vars">
               {product.variants.map((variant, index) => (
@@ -100,18 +109,19 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
               ))}
             </div>
           </div>
-          <div className="flex-col gap-2xs icon-collection">
-            <i className="bi bi-suit-heart" onClick={() => setChangeColor(!changeColor)}></i>
-            <i
-              className="bi bi-cart-plus"
-              onClick={() => handleAddToCartClick(product.product_id)}
-            ></i>
-            <button
-              disabled={expandDisable}
-              onClick={() => handleExpandClick()}
-            >
-              <i className="bi bi-box-arrow-up-right"></i>
-            </button>
+          <div className="icon-collection">
+            <div>
+              <i
+                className="bi bi-suit-heart"
+                onClick={() => setChangeColor(!changeColor)}
+              ></i>
+            </div>
+              <button className="btn-icon"
+                disabled={expandDisable}
+                onClick={() => handleExpandClick()}
+              >
+                <i className="bi bi-box-arrow-up-right"></i>
+              </button>
           </div>
         </div>
       </div>

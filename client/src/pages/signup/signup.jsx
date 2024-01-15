@@ -5,15 +5,16 @@ import Logo from "../../assets/img/logo-black.png";
 import Button from "../../components/common/button/button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const navigate = useNavigate;
+
 const Signup = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
     setError("");
 
@@ -22,27 +23,26 @@ const Signup = () => {
       return;
     }
 
-    axios
-      .post("http://localhost:3000/signup", {
-        email,
-        password,
-        confirmPassword,
-      })
-      .then((res) => {
-        const { token } = res.data;
-        localStorage.setItem("token", token);
-
-        console.log("Signup successful. Token:", token);
-        navigate("/signin");
-      })
-      .catch((err) => {
+    
+      try{
+        const resultSignUp=await axios
+        .post("http://localhost:3000/user/register", {
+          email,
+          password,
+          confirmPassword,
+        })
+        console.log(resultSignUp);
+        localStorage.setItem("token",resultSignUp.data.access_token)
+        navigate("/");
+      }
+      catch{(err) => {
         console.log(err);
         if (err.response && err.response.data && err.response.data.message) {
           setError(err.response.data.message);
         } else {
           setError("An error occurred during signup.");
         }
-      });
+      }}
   };
 
   return (
@@ -110,14 +110,7 @@ const Signup = () => {
                 btnStyle="auth-btn"
                 customBtnStyle="max-wdth"
                 frameStyle="max-wdth"
-                icon="bi bi-google"
-              ></Button>
-              <Button
-                text="FACEBOOK"
-                btnStyle="auth-btn"
-                customBtnStyle="max-wdth"
-                frameStyle="max-wdth"
-                icon="bi bi-facebook"
+                iconL="bi bi-google"
               ></Button>
             </div>
             <div className="body-sml">

@@ -57,7 +57,7 @@ function AdminAddForm() {
 
   const addProduct = async () => {
    
-     await fetch('http://localhost:3000/admin/', {
+     await fetch('http://localhost:3000/admin/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -185,12 +185,13 @@ function AdminAddForm() {
               <ul>
                 {visibleProducts.map((product) => {
                     
-                    return <li className='body flex-col gap-xs' key={product.product_id}>
+                    return <li  key={product.product_id}>
                     <strong>{product.product_name}</strong> - ${product.price} - {product.product_type} - {product.brands}
                     {/* <div className='li-button flex-row gap-xs'>
                       <button onClick={() => selectProductForUpdate(product)}>Update</button>
                       <button onClick={() => deleteProduct(product.productId)}>Delete</button>
                     </div> */}
+                    <hr/>
                   </li>
                 })}
               </ul>
