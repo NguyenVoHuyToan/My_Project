@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import "./product-query-page.css";
 import Heropic from "../../Components/Assets/Media/Product/Hero.png";
 import High from "../../Components/Assets/Media/Product/Highlight_Product.png";
-import Button from "../../Components/Button/NewButton/button.jsx";
 import Productcard from "../../Components/Productcard/product-card.jsx";
 import ProductCard from "../../components/common/product-card/product-card.jsx";
 import Cartpage from "../cart-page/cart-page.jsx";
+import Button from "../../components/common/button/button.jsx";
 const Productpage = () => {
   const [selectedProducts, setSelectedProducts] = useState([]);
   const handleAddToCart = (product) => {
@@ -98,81 +98,6 @@ const Productpage = () => {
               </div>
             </div>
             <div className="prod-query-content flex-row align-left">
-              <div className="filter-container flex-col gap-ms align-left">
-                <div className="filter-sct flex-col align-left gap-sm">
-                  <h4 className="h4 filter-title">COLLECTION</h4>
-                  <div className="sub-filter-container flex-col align-left">
-                    <Button
-                      text="COLLECTION 1"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button
-                      text="COLLECTION 2"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button
-                      text="COLLECTION 3"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button
-                      text="COLLECTION 4"
-                      btnStyle="underline-btn"
-                    ></Button>
-                  </div>
-                </div>
-                <div className="hr-divider"></div>
-                <div className="filter-sct flex-col align-left gap-sm">
-                  <h4 className="h4 filter-title">CATEGORY</h4>
-                  <div className="sub-filter-container flex-col align-left">
-                    <Button text="CLEANSER" btnStyle="underline-btn"></Button>
-                    <Button
-                      text="MOISTURIZER"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button text="MASK" btnStyle="underline-btn">
-                      Mash
-                    </Button>
-                    <Button text="LIPSTICK" btnStyle="underline-btn"></Button>
-                    <Button text="FOUNDATION" btnStyle="underline-btn"></Button>
-                    <Button text="MASCARA" btnStyle="underline-btn"></Button>
-                    <Button text="EYELINER" btnStyle="underline-btn"></Button>
-                    <Button text="BLUSH" btnStyle="underline-btn"></Button>
-                  </div>
-                </div>
-                <div className="hr-divider"></div>
-                <div className="filter-sct flex-col align-left gap-sm">
-                  <h4 className="h4 filter-title">BRAND</h4>
-                  <div className="sub-filter-container flex-col align-left">
-                    <Button text="3CE" btnStyle="underline-btn"></Button>
-                    <Button text="ROMAN" btnStyle="underline-btn"></Button>
-                    <Button text="MERZY" btnStyle="underline-btn"></Button>
-                    <Button text="PERIPERA" btnStyle="underline-btn"></Button>
-                    <Button text="CLIO" btnStyle="underline-btn"></Button>
-                  </div>
-                </div>
-                <div className="hr-divider"></div>
-                <div className="filter-sct flex-col align-left gap-sm">
-                  <h4 className="h4 filter-title">PRICE RANGE</h4>
-                  <div className="sub-filter-container flex-col align-left">
-                    <Button
-                      text="PRICE RANGE 1"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button
-                      text="PRICE RANGE 2"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button
-                      text="PRICE RANGE 3"
-                      btnStyle="underline-btn"
-                    ></Button>
-                    <Button
-                      text="PRICE RANGE 4"
-                      btnStyle="underline-btn"
-                    ></Button>
-                  </div>
-                </div>
-              </div>
               <div className="vt-divider"></div>
               <div className="prod-display flex-col align-left gap-md">
                 <div className="product-dis-icon flex-row gap-md">

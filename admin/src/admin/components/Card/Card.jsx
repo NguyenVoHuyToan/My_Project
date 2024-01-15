@@ -5,7 +5,11 @@ import {
   BsPeopleFill,
   BsFillBellFill,
 } from "react-icons/bs";
+<<<<<<< HEAD:admin/src/components/Card/Card.jsx
 import useData from "../../hook/useData";
+=======
+import useData from "../hook/useData.js";
+>>>>>>> 2e28ec3dfe74d424939f6211f546128d3a48f4c7:admin/src/admin/components/Card/Card.jsx
 import "./Card.css";
 
 function Home() {

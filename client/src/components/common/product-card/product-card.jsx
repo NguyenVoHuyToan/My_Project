@@ -8,6 +8,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [changeColor, setChangeColor] = useState(true);
    const navigate = useNavigate();
 
   const handleAddToCartClick = async (productId) => {
@@ -100,7 +101,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
             </div>
           </div>
           <div className="flex-col gap-2xs icon-collection">
-            <i className="bi bi-suit-heart"></i>
+            <i className="bi bi-suit-heart" onClick={() => setChangeColor(!changeColor)}></i>
             <i
               className="bi bi-cart-plus"
               onClick={() => handleAddToCartClick(product.product_id)}

@@ -1,11 +1,11 @@
 // App.js
-import './App.css';
-import '../../client/src/assets/css/global.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainDash from './components/MainDash/MainDash';
-import RightSide from './components/RigtSide/RightSide';
-import Sidebar from './components/sidebar';
-import Product from './components/Product/Adproduct';
+import "./App.css";
+import "../../client/src/assets/css/global.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainDash from "./admin/components/MainDash/MainDash";
+import RightSide from "./admin/components/RigtSide/RightSide";
+import Sidebar from "./admin/components/sidebar";
+import Product from "./admin/components/Product/Adproduct";
 
 function App() {
   return (

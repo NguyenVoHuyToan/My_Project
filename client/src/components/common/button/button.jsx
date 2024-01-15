@@ -4,7 +4,7 @@ import "./button.css";
 const Button = ({ text="", onClick = () => {}, type, btnStyle="", customBtnStyle="", disabled, iconL="", iconR="", iconSide="left", textStyle="", frameStyle="" }) => {
     const [defaultFrameStyle, setDefaultFrameStyle] = useState("");
     const [defaultTextStyle, setDefaultTextStyle] = useState("");
-
+    
     useEffect(() => {
         if (btnStyle === "nav-btn") {
             setDefaultFrameStyle("nav-btn-frame");

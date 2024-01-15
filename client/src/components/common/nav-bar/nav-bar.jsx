@@ -6,12 +6,14 @@ import Logo from "../../../assets/img/logo.svg";
 import Button from "../button/button";
 import DropdownButton from "../button/dropdown-button";
 import { useAuth } from "../../../hooks/authProvider";
+import Signin from "../../../pages/signin/signin";
 
 function Navbar({ onAddToCart }) {
   const [navColour, updateNavbar] = useState(false);
   const [isNavOpen, setNavOpen] = useState(false);
   const [isSearchOpen, setSearchOpen] = useState(false);
   const [totalQuantity, setTotalQuantity] = useState(0);
+  const [signin, setSignin] = useState(false);
   const { signedInEmail } = useAuth();
 
   function scrollHandler() {
@@ -85,6 +87,11 @@ function Navbar({ onAddToCart }) {
                 <Button text="POLICY" btnStyle="nav-btn" />
               </Link>
             </div>
+            <div className="">
+              <Link to="/admin" className="nav-link">
+                <Button text="ADMIN" btnStyle="nav-btn" />
+              </Link>
+            </div>
           </div>
         )}
       </div>
@@ -109,14 +116,31 @@ function Navbar({ onAddToCart }) {
             )}
           </Link>
         </div>
-
-        <div className="icon-button">
+        <div>
+          {signin ? (
+            <div className="icon-button">
+              <DropdownButton
+                btnStyle="icon-nav-btn"
+                iconL="bi bi-person"
+                dropdownStyle="user-setting-dropdown"
+              />
+            </div>
+          ) : (
+            <Link to="/signin" className="nav-link">
+              <Button text="Sign-in" btnStyle="nav-btn" />
+            </Link>
+          )}
+          {/* <Link to="/signin" className="nav-link">
+            <Button text="Sign-in" btnStyle="nav-btn" />
+          </Link> */}
+        </div>
+        {/* <div className="icon-button">
           <DropdownButton
             btnStyle="icon-nav-btn"
             iconL="bi bi-person"
             dropdownStyle="user-setting-dropdown"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

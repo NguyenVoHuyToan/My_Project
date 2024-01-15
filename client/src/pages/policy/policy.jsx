@@ -17,7 +17,6 @@ const PolicyPage = () => {
 
   return (
     <div className="policy-page">
-      {/* <NavBar /> */}
       <div className="hero-frame">
         <img className="hero-image-child" alt="" src={hero} />
         <div className="hero-content">
