@@ -24,11 +24,11 @@
     }
     
     .prod-info {
+        display: flex;
+        flex-direction: column;
         max-height: 102px;
         width: 100%;
         height: 100%;
-        padding: 14px;
-        justify-content: space-between;
     }
     
     .prod-name {
@@ -70,9 +70,21 @@
         align-items: flex-start;
     }
 
-    // .icon-collection {
-    //     height: 100%;
-    // }
+    .bi-cart-plus{
+        margin-left: 1rem;
+        font-size: 15px; 
+    }
+    .icon-collection {
+        display: flex;
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    .btn-icon{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
     
     .icon-collection i {
         font-size: 12px;

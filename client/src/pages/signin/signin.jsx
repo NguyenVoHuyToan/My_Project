@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import "./signin.scss";
 import Logo from "../../assets/img/logo-black.png";
 import Button from "../../components/common/button/button";
-import axios from "axios";
+
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/authProvider";
+import axios from 'axios';
 
 
 
@@ -26,21 +27,49 @@ const Signin = () => {
   //     setRememberMe(true);
   //   }
   // }, []);
+  // const googleApi=oauthUrl();
+  // console.log(googleApi);
+  function oauthUrl() {
+    const url = "https://accounts.google.com/o/oauth2/v2/auth";
+    const query = {
+      client_id:
+        "145235191844-f43anvogvcut7gab7p1etehf0idjcqs5.apps.googleusercontent.com",
+      redirect_uri: "http://localhost:3000/user/oauth",
+      response_type: "code",
+      scope: [
+        "https://www.googleapis.com/auth/userinfo.email",
+       "https://www.googleapis.com/auth/userinfo.profile",
+      ].join(" "),
+      prompt: "consent",
+    };
+    const queryString = new URLSearchParams(query).toString();
+    return `${url}?${queryString}`;
+  }
+  const googleApi=oauthUrl();
+ const authGoogle=()=>{
+
+    window.location.href=googleApi;
+ }
+ const [access_token]=useSearchParams();
+ const data=access_token.get("accessToken");
  
   const handleSignIn = async (e) => {
     e.preventDefault();
     setError("");
     setLoading(true);
-
+    const response = await axios.post("http://localhost:3000/user/login", {
+      email,
+      password,
+    });
     try {
-      const response = await axios.post("http://localhost:3000/user/login", {
-        email,
-        password,
-      });
-      console.log(response.data.accessToken);
-      if (response.data.accessToken) {
-        
-        localStorage.setItem("token", response.data.accessToken);
+      // const response = await axios.post("http://localhost:3000/user/login", {
+      //   email,
+      //   password,
+      // });
+      
+      
+      if (data) {
+        localStorage.setItem("token", data);
         signIn(email);
 
         if (rememberMe) {
@@ -51,6 +80,14 @@ const Signin = () => {
 
         navigate("/");
       }
+      else{
+       
+      if(response.data.accessToken){
+        localStorage.setItem("token", response.data.accessToken);
+        navigate("/")
+      }
+      }
+    
     } catch (err) {
       console.log(err);
       if (err.response && err.response.data && err.response.data.message) {
@@ -111,6 +148,7 @@ const Signin = () => {
               frameStyle="max-wdth"
               customBtnStyle="max-wdth"
               disabled={loading}
+
             ></Button>
             {error && <div className="error-message body-err">{error}</div>}
             <div className="signup-opts flex-col max-wdth body">
@@ -125,19 +163,12 @@ const Signin = () => {
               <Button
                 text="GOOGLE"
                 btnStyle="auth-btn"
-                icon="bi bi-google"
+                iconL="bi bi-google"
                 frameStyle="max-wdth"
                 customBtnStyle="max-wdth"
-                
+                onClick={()=>authGoogle()}
               ></Button>
               
-              <Button
-                text="FACEBOOK"
-                btnStyle="auth-btn"
-                icon="bi bi-facebook"
-                frameStyle="max-wdth"
-                customBtnStyle="max-wdth"
-              ></Button>
             </div>
           </form>
         </div>

@@ -1,13 +1,13 @@
 import {
   UilClipboardAlt,
   UilSignOutAlt,
-  UilUsersAlt
+  UilUsersAlt,
 } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import { useNavigate } from "react-router-dom";
 import "./Sidebar.css";
 import AdminAddForm from "./adminAddForm";
 
@@ -20,24 +20,28 @@ const SidebarData = [
     icon: UilUsersAlt,
     heading: "Products",
   },
- 
 ];
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height:1000px;
-  margin-top:60px;
-
+  height: 1000px;
+  margin-top: 60px;
 `;
 const DetailContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:20px;
+  margin: 20px;
 `;
 
 const AdminAddProduct = () => {
+  const navigate = useNavigate();
+  const signOutFunc = () => {
+   
+    localStorage.setItem("token", null);
+    navigate("/");
+  };
   // const [cartDetail, setCartDetail] = useState([]);
 
   // useEffect(() => {
@@ -64,7 +68,7 @@ const AdminAddProduct = () => {
 
   return (
     <Container>
-      <div className="sidebar-main" style={{width:"40%"}}>
+      <div className="sidebar-main" style={{ width: "40%" }}>
         <div
           className="bars"
           style={expanded ? { left: "60%" } : { left: "5%" }}
@@ -78,7 +82,7 @@ const AdminAddProduct = () => {
           animate={window.innerWidth <= 768 ? `${expanded}` : ""}
         >
           <div className="menu">
-          {SidebarData.map((item, index) => {
+            {SidebarData.map((item, index) => {
               if (item.heading == "Orders") {
                 return (
                   <Link to={`/admin`} key={index}>
@@ -94,30 +98,31 @@ const AdminAddProduct = () => {
                   </Link>
                 );
               } else {
-                return <Link to={`/admin/${item.heading.toLowerCase()}`} key={index}>
-                <div
-                  className={
-                    selected === index ? "menuItem active" : "menuItem"
-                  }
-                  onClick={() => setSelected(index)}
-                >
-                  <item.icon />
-                  <span className="btn-text-lgt-xs">{item.heading}</span>
-                </div>
-              </Link>;
-                
+                return (
+                  <Link to={`/admin/${item.heading.toLowerCase()}`} key={index}>
+                    <div
+                      className={
+                        selected === index ? "menuItem active" : "menuItem"
+                      }
+                      onClick={() => setSelected(index)}
+                    >
+                      <item.icon />
+                      <span className="btn-text-lgt-xs">{item.heading}</span>
+                    </div>
+                  </Link>
+                );
               }
             })}
 
-            <div className="menuItem">
-            <UilSignOutAlt />
-              <p className="btn-text-lgt-xs"> Sign Out</p>
+            <div className="menuItem" onClick={() => signOutFunc()}>
+              <UilSignOutAlt />
+              <p className="btn-text-lgt-xs">Sign Out</p>
             </div>
           </div>
         </motion.div>
       </div>
       <DetailContainer>
-        <AdminAddForm/>
+        <AdminAddForm />
       </DetailContainer>
     </Container>
   );

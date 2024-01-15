@@ -4,6 +4,7 @@ import "./cart-page.scss";
 import ProductTag from "../../components/cart-page/product-tag/product-tag";
 import Button from "../../components/common/button/button";
 import dongFormatter from "../../utils/dongFormatter/dongFormatter.js";
+import axios from "axios";
 
 const Cartpage = () => {
   const navigate = useNavigate();
@@ -17,31 +18,37 @@ const Cartpage = () => {
     const fetchData = async () => {
       try {
         const authToken = localStorage.getItem("token");
-        if (!authToken) {
-          throw new Error(
-            "User not logged in. Please log in to view cart items."
+
+        console.log(authToken == "null");
+        if (authToken == "null" || !authToken) {
+          console.log("vao");
+          // throw new Error(
+          //   "User not logged in. Please log in to view cart items."
+          // );
+          alert("User not logged in. Please log in to view cart items.");
+          navigate("/");
+        } else {
+          const response = await axios.post(
+            "http://localhost:3000/product/cart",
+            {
+              accessToken: authToken,
+            }
           );
+
+          if (!response) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+
+          const data = response;
+          const cartItems = Array.isArray(data)
+            ? data
+            : data && Array.isArray(data.items)
+            ? data.items
+            : [];
+
+          setUserProducts(cartItems);
+          setLoading(false);
         }
-
-        const response = await fetch("http://localhost:3000/cart", {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        const cartItems = Array.isArray(data)
-          ? data
-          : data && Array.isArray(data.items)
-          ? data.items
-          : [];
-
-        setUserProducts(cartItems);
-        setLoading(false);
       } catch (error) {
         setError(
           error.message || "An error occurred while fetching cart items."
@@ -56,15 +63,10 @@ const Cartpage = () => {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
-        const products = [];
-        for (let product of userProducts) {
-          const response = await fetch(
-            `http://localhost:3000/product/products/${product.productId}`
-          );
-          const data = await response.json();
-          products.push(data);
-        }
-        setAllProducts(products);
+        const response = await fetch(`http://localhost:3000/product/carts`);
+        const data = await response.json();
+
+        setAllProducts(data);
       } catch (error) {
         setError("An error occurred while fetching product details.");
       }
@@ -74,11 +76,17 @@ const Cartpage = () => {
   }, [userProducts]);
 
   useEffect(() => {
-    const newTotalPrice = allProducts.reduce(
-      (total, product) => total + product.price,
-      0
-    );
-    setTotalPrice(newTotalPrice);
+    let total = 0;
+    for (let index = 0; index < allProducts.length; index++) {
+      const element = allProducts[index];
+      console.log(element.cart);
+      element.cart.forEach((item, index) => {
+        total += item.quantity * element.product_des[index].price;
+      });
+    }
+
+    total = total * 0.9 + 5;
+    setTotalPrice(total);
   }, [allProducts]);
 
   const deleteProduct = (productId) => {
@@ -121,7 +129,7 @@ const Cartpage = () => {
         <div className="billing-container flex-col gap-sm align-left">
           <div className="billing-title flex-col gap-2xs align-left">
             <p className="h4 capitalize">billing detail</p>
-            <p className="body">Let's checkout!</p>
+            <p className="body">Let&#39;s checkout!</p>
           </div>
           <div className="order-summary flex-col gap-xs align-left max-wdth">
             <div className="order-title flex-row max-wdth">
@@ -129,14 +137,16 @@ const Cartpage = () => {
               <p className="body-bld capitalize">price</p>
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
-              {allProducts.map((product) => (
+              {allProducts.map((product, index) => (
                 <div
-                  key={product.productId}
+                  key={product.product_id}
                   className="item flex-row body-sml align-left max-wdth"
                 >
-                  <p className="product-name">{product.product_name}</p>
+                  <p className="product-name">
+                    {product.product_des[index].product_name}
+                  </p>
                   <p className="product-price">
-                    {dongFormatter(product.price * 1000)}
+                    {dongFormatter(product.product_des[index].price * 1000)}
                   </p>
                 </div>
               ))}
