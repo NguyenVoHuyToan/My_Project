@@ -67,7 +67,7 @@ export const loginValidator = validator(
         custom: {
           options: async (value) => {
             const isUserExist = await databaseProject.users.findOne({ email: value });
-           console.log(isUserExist);
+           
             if (isUserExist) {
               return true;
             } else {
@@ -88,7 +88,7 @@ export const loginValidator = validator(
               .findOne({ email: req.body.email });
             
             if (userLogin.password == value) {
-              console.log(userLogin);
+              
               return true;
             } else {
               throw new Error("ERROR: PASSWORD DOES NOT MATCH");
