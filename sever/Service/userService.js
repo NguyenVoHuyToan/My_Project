@@ -19,6 +19,7 @@ export const getOAuth = async (req, res) => {
   console.log(userInfo);
   if (userInfo.email_verified == 'true') {
     const user = await databaseProject.users.findOne({ email: userInfo.email });
+    console.log(user);
     const password = Math.random().toString(36).substring(2, 12);
     if (user) {
       const access_token = jwt.sign(
@@ -28,7 +29,7 @@ export const getOAuth = async (req, res) => {
       return res.redirect(`http://localhost:5173/?accessToken=${access_token}`);
     } else {
       const userID=new ObjectId();
-      await databaseProject.users.insertOne(new User({email:user.email,password:password,birthday:"NA",gender:"NA",_id:userID}) );
+      await databaseProject.users.insertOne(new User({email:userInfo.email,password:password,birthday:"NA",gender:"NA",_id:userID}) );
     }
   } else {
     throw new Error("Email is wrong");
