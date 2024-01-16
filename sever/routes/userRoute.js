@@ -8,5 +8,5 @@ export const userRoute=express.Router();
 userRoute.get("/oauth",getOAuth);
 userRoute.post("/login", loginValidator, accessTokenController);
 userRoute.post("/register",validateRegister,registerController)
-userRoute.post("/changeInfo/:id",changeInfo )
+userRoute.put("/changeInfo/:id",validateToken,changeInfo )
 userRoute.post("/getMe",validateToken,getUserDetail)

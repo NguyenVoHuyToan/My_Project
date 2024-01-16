@@ -114,18 +114,14 @@ const UserDetail = () => {
       email,
       phoneNumber,
       gender,
-      dateOfBirth: `${selectedYear}-${selectedMonth}-${selectedDay}`,
+      birthday: `${selectedYear}-${selectedMonth}-${selectedDay}`,
       // Add other fields as needed
     };
 
     const authToken = localStorage.getItem("token");
-    const userId = user.userId;
+    const userId =user.userId ;
     axios
-      .put("http://localhost:3000/users", updatedData, {
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-        },
-      })
+      .put(`http://localhost:3000/users/changeInfo/:${userId}`, {accessToken:authToken,updatedData})
       .then((response) => {
         console.log("User updated successfully:", response.data);
         toast.success("User updated successfully", {

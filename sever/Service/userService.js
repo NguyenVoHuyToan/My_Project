@@ -70,6 +70,7 @@ class UserService {
           new User({
             ...payload,
             _id: user_id,
+            userId:user_id
           })
         );
       const access_token = await createAccessToken({ payload: user_id });
