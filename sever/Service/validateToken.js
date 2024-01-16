@@ -20,7 +20,7 @@ export const validateToken = async (req, res, next) => {
     console.log("accessToken",req.body);
     const token = req.body.accessToken;
     
-   
+    console.log(token);
     const userUnit= await checkToken(privateKey,token);
     
     // if(result.username== "admin"){
@@ -29,8 +29,10 @@ export const validateToken = async (req, res, next) => {
     // else{
     //   return res.json("fail")
     // }
-    
+    console.log("userUnit",userUnit);
     const result= await databaseProject.users.findOne({email:userUnit.email});
+    
+    req.userEmail=userUnit.email;
     req.decode=result
     if(result){
       return next();

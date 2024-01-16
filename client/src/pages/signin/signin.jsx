@@ -57,6 +57,7 @@ const Signin = () => {
   if (data) {
     console.log("vao");
     localStorage.setItem("token", data);
+   
     navigate("/")
    }
  })

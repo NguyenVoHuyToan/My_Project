@@ -85,8 +85,8 @@ export const getOneProduct=async (req,res)=>{
 //     return res.json(brandsItemList);
 // }
 export const addToCart=async (req,res)=>{
-    const productID=req.query.productID;
-    const userEmail=req.query.userEmail;
+    const productID=req.body.productID;
+    const userEmail=req.userEmail;
    
     const userDetail=await databaseProject.cart.findOne({userEmail:userEmail});
    

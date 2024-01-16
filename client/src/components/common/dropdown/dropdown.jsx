@@ -12,6 +12,7 @@ const Dropdown = ({ dropdownStyle = "",method,value }) => {
   const handleSignOut = () => {
     localStorage.setItem("token",undefined)
     method(!value)
+    navigate("/")
   };
   const dropdownCollection = (
     <div className="collection-dropdown flex-row gap-lg align-left">

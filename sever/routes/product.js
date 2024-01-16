@@ -10,7 +10,7 @@ productRoute.get("/types",getAllTypes)
 
 productRoute.get("/products/:id",getOneProduct)
 productRoute.post("/cart",validateToken,validateFunc)
-productRoute.post("/cart/add",addToCart);
+productRoute.post("/cart/add",validateToken,addToCart);
 productRoute.get("/carts",getAllCart)
 
 

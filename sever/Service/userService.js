@@ -30,7 +30,7 @@ export const getOAuth = async (req, res) => {
       return res.redirect(`http://localhost:5173/signin?accessToken=${access_token}`);
     } else {
       const userID=new ObjectId();
-      await databaseProject.users.insertOne(new User({email:userInfo.email,password:password,birthday:"NA",gender:"NA",_id:userID,fullName:"NA"}) );
+      await databaseProject.users.insertOne(new User({email:userInfo.email,password:password,birthday:"NA",gender:"other",_id:userID,fullName:"NA"}) );
     }
   } else {
     throw new Error("Email is wrong");
@@ -41,12 +41,13 @@ export const getOAuth = async (req, res) => {
   
 };
 export const changeInfo = async (req, res) => {
-  const fullName = req.body.fullName;
-  const email = req.body.email;
-  const gender = req.body.gender;
-  const birthday = req.body.birthday;
+  const fullName = req.body.updatedData.fullName;
+  const email = req.body.updatedData.email;
+  const gender = req.body.updatedData.gender;
+  const birthday = req.body.updatedData.birthday;
+  
   await databaseProject.users.updateOne(
-    { userId: req.params.id },
+    { _id: new ObjectId(req.params.id) },
     {
       $set: {
         fullName: fullName,
@@ -70,10 +71,12 @@ class UserService {
           new User({
             ...payload,
             _id: user_id,
-            userId:user_id
+            fullName:"",
+            gender:"other",
+            birthday:"--"
           })
         );
-      const access_token = await createAccessToken({ payload: user_id });
+      const access_token = await createAccessToken({ email:payload.email,password:payload.password });
       return access_token;
       
     }
@@ -107,4 +110,9 @@ export const getUserDetail=async(req,res)=>{
   console.log(req.decode);
   const user=await databaseProject.users.findOne({email:req.decode.email});
   return res.json(user)
+}
+export const deleteUnit=async(req,res)=>{
+  console.log(req.params.id);
+  await databaseProject.users.deleteOne({_id:new ObjectId(req.params.id)})
+  return res.json("complete")
 }

@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import momo from "../../assets/img/user-detail/momo.png";
 import vietcom from "../../assets/img/user-detail/vietcom.png";
 import vietin from "../../assets/img/user-detail/vietin.png";
-
+import {  useNavigate } from "react-router-dom";
 const UserDetail = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,6 +25,7 @@ const UserDetail = () => {
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [retypeNewPassword, setRetypeNewPassword] = useState("");
+  const navigate = useNavigate();
   useEffect(() => {
     const authToken = localStorage.getItem("token");
     const getMe=async()=>{
@@ -32,8 +33,12 @@ const UserDetail = () => {
         const detail=await axios.post("http://localhost:3000/user/getMe", {
           accessToken:authToken
          })
+         console.log(detail);
          setUser(detail.data);
          setEmail(detail.data.email || "");
+         setFullName(detail.data.fullName);
+         setDateOfBirth(detail.data.birthday);
+         setGender(detail.data.gender);
       }
       catch{
         (error) => {
@@ -106,7 +111,7 @@ const UserDetail = () => {
     }
   };
 
-  const handleUpdate = () => {
+  const handleUpdate = async() => {
     setUpdating(true);
 
     const updatedData = {
@@ -119,9 +124,10 @@ const UserDetail = () => {
     };
 
     const authToken = localStorage.getItem("token");
-    const userId =user.userId ;
-    axios
-      .put(`http://localhost:3000/users/changeInfo/:${userId}`, {accessToken:authToken,updatedData})
+    const userId =user._id ;
+    console.log(user);
+    await axios
+      .put(`http://localhost:3000/user/changeInfo/${userId}`, {accessToken:authToken,updatedData})
       .then((response) => {
         console.log("User updated successfully:", response.data);
         toast.success("User updated successfully", {
@@ -141,15 +147,16 @@ const UserDetail = () => {
   const handleDeleteAccount = async () => {
     try {
       const authToken = localStorage.getItem("token");
-      const response = await axios.delete("http://localhost:3000/users", {
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-        },
+    const userId =user._id ;
+    
+      const response = await axios.post(`http://localhost:3000/user/delete/${userId}`, {
+       accessToken:authToken
       });
       console.log(response.data);
       toast.success("Account deleted successfully", {
         position: toast.POSITION.TOP_RIGHT,
       });
+      navigate("/");
     } catch (error) {
       console.error("Error deleting account:", error);
       toast.error("Error deleting account", {
