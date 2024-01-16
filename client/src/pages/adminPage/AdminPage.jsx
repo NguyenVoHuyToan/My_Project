@@ -24,6 +24,8 @@ const SidebarData = [
 ];
 const Container = styled.div`
   display: flex;
+  justify-content: center;
+  border: 3px solid black;
   flex-direction: row;
   height: 1000px;
   margin-top: 60px;
@@ -38,8 +40,7 @@ const DetailContainer = styled.div`
 
 const AdminPage = () => {
   const navigate = useNavigate();
-   const signOutFunc = () => {
-    
+  const signOutFunc = () => {
     localStorage.setItem("token", null);
     navigate("/");
   };
@@ -59,13 +60,13 @@ const AdminPage = () => {
   useEffect(() => {
     const checkAdminFunc = async () => {
       const accessToken = localStorage.getItem("token");
-      if (accessToken == "null"|| accessToken == "undefined"||!accessToken) {
-        alert("You must sign in ")
+      if (accessToken == "null" || accessToken == "undefined" || !accessToken) {
+        alert("You must sign in ");
         navigate("/");
       } else {
         try {
           const checkAdmin = await axios.post("http://localhost:3000/admin/", {
-            accessToken:accessToken,
+            accessToken: accessToken,
           });
 
           if (checkAdmin.data == 1) {
@@ -151,10 +152,7 @@ const AdminPage = () => {
                 })}
                 <div className="menuItem" onClick={() => signOutFunc()}>
                   <UilSignOutAlt />
-                  <p className="btn-text-lgt-xs" >
-                    
-                    Sign Out
-                  </p>
+                  <p className="btn-text-lgt-xs">Sign Out</p>
                 </div>
               </div>
             </motion.div>
@@ -167,7 +165,12 @@ const AdminPage = () => {
           </DetailContainer>
         </>
       ) : (
-        <div>You are not admin</div>
+        <div className="check-admin">
+          <div className="text-check">
+            <h1>You are not Admin</h1>
+          </div>
+          <img className="img-admin" src="https://img.pikbest.com/origin/09/22/66/67ppIkbEsTmKU.png!w700wp" />
+        </div>
       )}
     </Container>
   );
