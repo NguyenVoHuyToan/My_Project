@@ -29,7 +29,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
           { productId,accessToken:authToken }
         );
 
-        if (response.data.success) {
+        if (response.data == "complete") {
           if (onAddToCart) {
             onAddToCart(product);
           }
