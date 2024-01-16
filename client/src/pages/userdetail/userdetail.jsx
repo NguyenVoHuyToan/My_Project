@@ -202,7 +202,6 @@ const UserDetail = () => {
       <div className="userdetail-container">
         <div className="top-container flex-col">
           <div className="avatar">
-            <img src="" alt="" />
           </div>
           <Button icon="bi bi-camera" frameStyle="btt-ava"></Button>
           <h3 className="h3">

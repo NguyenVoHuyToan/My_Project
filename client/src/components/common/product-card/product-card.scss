@@ -19,14 +19,16 @@
     .prod-img {
         width: 100%;
         height: auto;
-        max-height: 202px;
+        max-height: 200px;
         border-radius: 4px;
     }
     
     .prod-info {
         display: flex;
-        flex-direction: column;
-        max-height: 102px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        flex-direction: row;
         width: 100%;
         height: 100%;
     }
@@ -36,12 +38,8 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: normal;
         letter-spacing: 0.24px;
         max-width: 400px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-       -webkit-box-orient: vertical; 
         overflow: hidden;
         cursor: pointer;
     }
@@ -50,7 +48,7 @@
         font-family: Nunito;
         font-size: 12px;
         font-weight: 500;
-        line-height: normal;
+        margin-bottom: 10px;
     }
     
     .color-vars {
@@ -71,13 +69,22 @@
     }
 
     .bi-cart-plus{
-        margin-left: 1rem;
+        justify-content: flex-end;
         font-size: 15px; 
+        color: white;
+        text-align: center;
+        margin: 0.5rem;
+
     }
     .icon-collection {
         display: flex;
-        width: 100%;
-        margin: 0.5rem;
+        align-items: center;
+        border: 1px solid white;
+        background:  #ff4820;;
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        margin-top: -10px;
     }
 
     .btn-icon{
@@ -104,7 +111,6 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
         text-decoration-line: underline;
     }
     
@@ -118,8 +124,6 @@
         font-size: 12px;
         font-style: italic;
         font-weight: 300;
-        line-height: normal;
-        letter-spacing: 0.2px;
     }
     
     .prod-des {
@@ -128,10 +132,6 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 300;
-        line-height: normal;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical; 
         overflow: hidden;
     }
     
@@ -140,8 +140,6 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;
-        letter-spacing: 0.3px;
         text-transform: uppercase;
     }
     
@@ -151,8 +149,6 @@
         font-size: 10px;
         font-style: normal;
         font-weight: 300;
-        line-height: normal;
-        letter-spacing: 0.16px;
     }
     
     .btn-collection button {
@@ -169,8 +165,6 @@
         font-size: 12px;
         font-style: italic;
         font-weight: 300;
-        line-height: normal;
-        letter-spacing: 0.24px;
     }
     
     .prod-info-exp-holder {
@@ -194,7 +188,7 @@
     border: 1.337px solid #000;
 
     .prod-img-container {
-        padding: 8px;
+        // padding: 8px;
         height: 320px;
     }
     
@@ -230,7 +224,6 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
     }
@@ -239,8 +232,7 @@
         font-family: Nunito;
         font-size: 12px;
         font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+        font-weight: 500;  
     }
 
     button:disabled {
