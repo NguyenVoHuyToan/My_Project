@@ -86,19 +86,24 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
           />
         </div>
         <div className="flex-row prod-info bg-ivory align-left gap-xs">
-          <div className="flex-col gap-sm left-bar">
-            <div className="flex-col gap-xs prod-n-pr">
-              <Link to={`/product/products/${product.product_id}`}>
-                <div className="prod-name" title={product.product_name}>
-                  {product.product_name}
+          <div className="box">
+            <div className="flex-col gap-sm left-bar justify-start">
+              <div className="flex-col gap-xs prod-n-pr">
+                <Link to={`/product/products/${product.product_id}`}>
+                  <div className="prod-name" title={product.product_name}>
+                    {product.product_name}
+                  </div>
+                </Link>
+                <div className="prod-price">{product.price}.000&#x20AB;</div>
+                <div className="icon-collection">
+                  <button className="bi bi-cart-plus">
+                    {" "}
+                    Mua ngay
+                    <i
+                      onClick={() => handleAddToCartClick(product.product_id)}
+                    ></i>
+                  </button>
                 </div>
-              </Link>
-              <div className="prod-price">
-                {product.price}.000&#x20AB;
-                <i
-                  className="bi bi-cart-plus"
-                  onClick={() => handleAddToCartClick(product.product_id)}
-                ></i>
               </div>
             </div>
             <div className="flex-row gap-2xs color-vars">
@@ -108,20 +113,6 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="icon-collection">
-            <div>
-              <i
-                className="bi bi-suit-heart"
-                onClick={() => setChangeColor(!changeColor)}
-              ></i>
-            </div>
-              <button className="btn-icon"
-                disabled={expandDisable}
-                onClick={() => handleExpandClick()}
-              >
-                <i className="bi bi-box-arrow-up-right"></i>
-              </button>
           </div>
         </div>
       </div>
