@@ -6,7 +6,7 @@ import Logo from "../../../assets/img/logo.svg";
 import Button from "../button/button";
 import DropdownButton from "../button/dropdown-button";
 import { useAuth } from "../../../hooks/authProvider";
-import Signin from "../../../pages/signin/signin";
+
 
 function Navbar({ onAddToCart }) {
   const [navColour, updateNavbar] = useState(false);
@@ -15,7 +15,7 @@ function Navbar({ onAddToCart }) {
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [signin, setSignin] = useState(false);
   const { signedInEmail } = useAuth();
-
+ const [signout,setSignout]=useState(false)
   function scrollHandler() {
     updateNavbar(window.scrollY >= 20);
   }
@@ -32,13 +32,30 @@ function Navbar({ onAddToCart }) {
       window.removeEventListener("scroll", scrollHandler);
     };
   }, []);
-
-  useEffect(() => {
+   useEffect(() => {
     if (signedInEmail) {
       setTotalQuantity((prevQuantity) => prevQuantity + 1);
     }
   }, [onAddToCart, signedInEmail]);
-
+  setInterval(()=>{
+    const token = localStorage.getItem("token");
+    if (token == "undefined" || token == "null"||!token) {
+      setSignin(false);
+    }
+    else{
+      setSignin(true);
+    }
+  },1000)
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token == "undefined" || token == "null"||!token) {
+      setSignin(false);
+    }
+    else{
+      setSignin(true);
+    }
+  },[signout]);
+ 
   return (
     <div
       className={`navigation flex-row flex-center-align ${
@@ -123,6 +140,8 @@ function Navbar({ onAddToCart }) {
                 btnStyle="icon-nav-btn"
                 iconL="bi bi-person"
                 dropdownStyle="user-setting-dropdown"
+                method={setSignout}
+                value={signout}
               />
             </div>
           ) : (

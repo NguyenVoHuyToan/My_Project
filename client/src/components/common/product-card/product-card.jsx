@@ -25,16 +25,11 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
 
       if (authToken) {
         const response = await axios.post(
-          "http://localhost:3000/cart",
-          { productId },
-          {
-            headers: {
-              Authorization: `Bearer ${authToken}`,
-            },
-          }
+          "http://localhost:3000/product/cart/add",
+          { productId,accessToken:authToken }
         );
 
-        if (response.data.success) {
+        if (response.data == "complete") {
           if (onAddToCart) {
             onAddToCart(product);
           }

@@ -20,8 +20,8 @@ const Cartpage = () => {
         const authToken = localStorage.getItem("token");
 
         console.log(authToken == "null");
-        if (authToken == "null" || !authToken) {
-          console.log("vao");
+        if (authToken == "null"||authToken == "undefined" || !authToken) {
+          
           // throw new Error(
           //   "User not logged in. Please log in to view cart items."
           // );
@@ -45,7 +45,11 @@ const Cartpage = () => {
             : data && Array.isArray(data.items)
             ? data.items
             : [];
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> ce9ad5f59cda4765fbfc768bfafb35517c15ef31
           setUserProducts(cartItems);
           setLoading(false);
         }
@@ -63,10 +67,24 @@ const Cartpage = () => {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
+<<<<<<< HEAD
         const response = await fetch(`http://localhost:3000/product/carts`);
         const data = await response.json();
 
         setAllProducts(data);
+=======
+        const authToken = localStorage.getItem("token");
+        
+          const data = await axios.post(
+            `http://localhost:3000/product/cartOne`, {
+              accessToken:authToken
+            }
+          );
+          
+          
+        console.log(data.data);
+        setAllProducts(data.data);
+>>>>>>> ce9ad5f59cda4765fbfc768bfafb35517c15ef31
       } catch (error) {
         setError("An error occurred while fetching product details.");
       }
@@ -137,6 +155,7 @@ const Cartpage = () => {
               <p className="body-bld capitalize">price</p>
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
+<<<<<<< HEAD
               {allProducts.map((product, index) => (
                 <div
                   key={product.product_id}
@@ -150,6 +169,22 @@ const Cartpage = () => {
                   </p>
                 </div>
               ))}
+=======
+              {allProducts.map((product,index) => {
+                console.log(product);
+                return (
+                  <div
+                    key={product.product_id}
+                    className="item flex-row body-sml align-left max-wdth"
+                  >
+                    <p className="product-name">{product.product_des[index].product_name}</p>
+                    <p className="product-price">
+                      {dongFormatter(product.product_des[index].price * 1000)}
+                    </p>
+                  </div>
+                )
+              })}
+>>>>>>> ce9ad5f59cda4765fbfc768bfafb35517c15ef31
             </div>
           </div>
           <div className="hr-divider"></div>
