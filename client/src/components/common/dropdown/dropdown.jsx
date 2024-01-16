@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../button/button";
 import "./dropdown.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../hooks/authProvider";
 
-const Dropdown = ({ dropdownStyle = "" }) => {
+const Dropdown = ({ dropdownStyle = "",method,value }) => {
   const navigate = useNavigate();
   const { signedInEmail } = useAuth();
   const { signOut } = useAuth();
   const userName = signedInEmail.split("@")[0];
   const handleSignOut = () => {
     localStorage.setItem("token",undefined)
-    navigate("/");
+    method(!value)
   };
   const dropdownCollection = (
     <div className="collection-dropdown flex-row gap-lg align-left">
