@@ -9,3 +9,4 @@ export const accessTokenController = async(req,res) => {
         accessToken : token
     })
 }
+

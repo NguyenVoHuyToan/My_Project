@@ -10,8 +10,8 @@ const Dropdown = ({ dropdownStyle = "" }) => {
   const { signOut } = useAuth();
   const userName = signedInEmail.split("@")[0];
   const handleSignOut = () => {
-    signOut();
-    navigate("/signin");
+    localStorage.setItem("token",undefined)
+    navigate("/");
   };
   const dropdownCollection = (
     <div className="collection-dropdown flex-row gap-lg align-left">

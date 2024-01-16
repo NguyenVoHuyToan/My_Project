@@ -27,21 +27,31 @@ const UserDetail = () => {
   const [retypeNewPassword, setRetypeNewPassword] = useState("");
   useEffect(() => {
     const authToken = localStorage.getItem("token");
-    axios
-      .get("http://localhost:3000/users", {
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-        },
-      })
-      .then((response) => {
-        console.log("User data:", response.data);
-        const userData = response.data || {};
-        setUser(userData);
-        setEmail(userData.email || "");
-      })
-      .catch((error) => {
-        console.error("Error fetching user data:", error);
-      });
+    const getMe=async()=>{
+      try{
+        const detail=await axios.post("http://localhost:3000/user/getMe", {
+          accessToken:authToken
+         })
+         setUser(detail.data);
+         setEmail(detail.data.email || "");
+      }
+      catch{
+        (error) => {
+            console.error("Error fetching user data:", error);
+          }
+      }
+     
+      // .then((response) => {
+      //   console.log("User data:", response.data);
+      //   const userData = response.data || {};
+      //   setUser(userData);
+      //   setEmail(userData.email || "");
+      // })
+      // .catch((error) => {
+      //   console.error("Error fetching user data:", error);
+      // });
+    }
+    getMe();
   }, []);
 
   const years = Array.from(

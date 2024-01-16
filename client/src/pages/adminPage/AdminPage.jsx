@@ -59,12 +59,13 @@ const AdminPage = () => {
   useEffect(() => {
     const checkAdminFunc = async () => {
       const accessToken = localStorage.getItem("token");
-      if (accessToken == null) {
+      if (accessToken == "null"|| accessToken == "undefined"||!accessToken) {
+        alert("You must sign in ")
         navigate("/");
       } else {
         try {
           const checkAdmin = await axios.post("http://localhost:3000/admin/", {
-            accessToken,
+            accessToken:accessToken,
           });
 
           if (checkAdmin.data == 1) {
