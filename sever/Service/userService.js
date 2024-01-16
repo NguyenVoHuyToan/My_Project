@@ -14,21 +14,23 @@ export const getOAuth = async (req, res) => {
   );
   const { code } = req.query;
   const response  = await oauth2Client.getToken(code);
-  
+  console.log(response);
   const userInfo = await oauth2Client.getTokenInfo(response.tokens.access_token);
   console.log(userInfo);
   if (userInfo.email_verified == 'true') {
     const user = await databaseProject.users.findOne({ email: userInfo.email });
+   
     const password = Math.random().toString(36).substring(2, 12);
     if (user) {
+      
       const access_token = jwt.sign(
         { email: user.email, password: password },
         key
       );
-      return res.redirect(`http://localhost:5173/?accessToken=${access_token}`);
+      return res.redirect(`http://localhost:5173/signin?accessToken=${access_token}`);
     } else {
       const userID=new ObjectId();
-      await databaseProject.users.insertOne(new User({email:user.email,password:password,birthday:"NA",gender:"NA",_id:userID}) );
+      await databaseProject.users.insertOne(new User({email:userInfo.email,password:password,birthday:"NA",gender:"NA",_id:userID,fullName:"NA"}) );
     }
   } else {
     throw new Error("Email is wrong");
@@ -100,4 +102,8 @@ export const getCartDetail=async (req,res)=>{
   ]).toArray();
   return res.json(detailCart)
 }
-
+export const getUserDetail=async(req,res)=>{
+  console.log(req.decode);
+  const user=await databaseProject.users.findOne({email:req.decode.email});
+  return res.json(user)
+}

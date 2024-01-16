@@ -15,6 +15,7 @@ function Navbar({ onAddToCart }) {
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [signin, setSignin] = useState(false);
   const { signedInEmail } = useAuth();
+  
 
   function scrollHandler() {
     updateNavbar(window.scrollY >= 20);
@@ -38,7 +39,15 @@ function Navbar({ onAddToCart }) {
       setTotalQuantity((prevQuantity) => prevQuantity + 1);
     }
   }, [onAddToCart, signedInEmail]);
-
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token == "undefined" || token == "null") {
+      setSignin(false);
+    }
+    else{
+      setSignin(true);
+    }
+  }, []);
   return (
     <div
       className={`navigation flex-row flex-center-align ${

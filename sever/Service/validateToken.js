@@ -5,7 +5,7 @@ export const checkToken=(privateKey,token)=>{
   
 
     return new Promise((resolve,reject)=>{
-      const decode=jwt.verify(token,privateKey,{maxAge:"1h"},(err,token)=>{
+      const decode=jwt.verify(token,privateKey,(err,token)=>{
         if(err){
           reject(err.message)
         }
@@ -17,7 +17,7 @@ export const checkToken=(privateKey,token)=>{
   }
 
 export const validateToken = async (req, res, next) => {
-    console.log(req.body);
+    console.log("accessToken",req.body);
     const token = req.body.accessToken;
     
    
@@ -31,6 +31,7 @@ export const validateToken = async (req, res, next) => {
     // }
     
     const result= await databaseProject.users.findOne({email:userUnit.email});
+    req.decode=result
     if(result){
       return next();
     }
@@ -41,7 +42,7 @@ export const validateToken = async (req, res, next) => {
 export const validateAdminToken = async (req, res, next) => {
 
   const token = req.body.accessToken;
- 
+  console.log("accessToken",token);
   const userUnit= await checkToken(privateKey,token);
   
   // if(result.username== "admin"){

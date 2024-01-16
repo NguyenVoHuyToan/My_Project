@@ -52,7 +52,11 @@ const Signin = () => {
  }
  const [access_token]=useSearchParams();
  const data=access_token.get("accessToken");
- 
+ if (data) {
+  console.log("vao");
+  localStorage.setItem("token", data);
+  navigate("/")
+ }
   const handleSignIn = async (e) => {
     e.preventDefault();
     setError("");
@@ -69,7 +73,7 @@ const Signin = () => {
       
       
       if (data) {
-        localStorage.setItem("token", data);
+       
         signIn(email);
 
         if (rememberMe) {

@@ -20,8 +20,8 @@ const Cartpage = () => {
       try {
         const authToken = localStorage.getItem("token");
         console.log(authToken == "null");
-        if (authToken == "null" || !authToken) {
-          console.log("vao");
+        if (authToken == "null"||authToken == "undefined" || !authToken) {
+          
           // throw new Error(
           //   "User not logged in. Please log in to view cart items."
           // );
