@@ -1,10 +1,11 @@
 import jwt from "jsonwebtoken";
+import databaseProject from "../mongodb.js";
 const privateKey=process.env.PRIVATE_KEY;
 export const checkToken=(privateKey,token)=>{
   
 
     return new Promise((resolve,reject)=>{
-      const decode=jwt.verify(token,privateKey,{maxAge:"1h"},(err,token)=>{
+      const decode=jwt.verify(token,privateKey,(err,token)=>{
         if(err){
           reject(err.message)
         }
@@ -16,10 +17,10 @@ export const checkToken=(privateKey,token)=>{
   }
 
 export const validateToken = async (req, res, next) => {
-
+    console.log("accessToken",req.body);
     const token = req.body.accessToken;
-
-   
+    
+    console.log(token);
     const userUnit= await checkToken(privateKey,token);
     
     // if(result.username== "admin"){
@@ -28,8 +29,11 @@ export const validateToken = async (req, res, next) => {
     // else{
     //   return res.json("fail")
     // }
+    console.log("userUnit",userUnit);
+    const result= await databaseProject.users.findOne({email:userUnit.email});
     
-    const result= await databaseUnit.users.findOne({email:userUnit.email});
+    req.userEmail=userUnit.email;
+    req.decode=result
     if(result){
       return next();
     }
@@ -40,7 +44,7 @@ export const validateToken = async (req, res, next) => {
 export const validateAdminToken = async (req, res, next) => {
 
   const token = req.body.accessToken;
- 
+  console.log("accessToken",token);
   const userUnit= await checkToken(privateKey,token);
   
   // if(result.username== "admin"){
@@ -50,8 +54,8 @@ export const validateAdminToken = async (req, res, next) => {
   //   return res.json("fail")
   // }
   
-  const result= await databaseUnit.users.findOne({email:userUnit.email});
-
+  const result= await databaseProject.users.findOne({email:userUnit.email});
+  console.log(result);
   if(result.email == "admin@gmail.com" ){
     return next();
   }

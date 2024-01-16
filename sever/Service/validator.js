@@ -4,6 +4,7 @@ import databaseProject from "../mongodb.js";
 
 export const validator = (schema) => {
   return async (req, res, next) => {
+    console.log(req);
     await schema.run(req);
     const error = validationResult(req).mapped();
     if (Object.values(error).length > 0) {
@@ -25,7 +26,7 @@ export const validateRegister = validator(
             const isExist = await databaseProject.users.findOne({
               email: value,
             });
-            console.log(isExist);
+            
             if (isExist) {
               throw new Error("Email is already existed");
             }
@@ -39,7 +40,7 @@ export const validateRegister = validator(
           errorMessage: "Password should be at least 8 chars",
         },
       },
-      confirm_pass: {
+      confirmPassword: {
         isLength: {
           options: { min: 8 },
           errorMessage: "Password should be at least 8 chars",
@@ -53,31 +54,31 @@ export const validateRegister = validator(
           },
         },
       },
-      gender: {
-        errorMessage: "Invalid gender",
-        custom: {
-          options: (value, { req }) => {
-            if (
-              !value ||
-              !(["male","female","other"].includes(value.toLowerCase()))
-            ) {
-              throw new Error(`Gender should be male, female or other`);
-            }
-            return true;
-          },
-        },
-      },
-      birthday: {
-        errorMessage: "Invalid birthday",
-        custom: {
-          options: (value, { req }) => {
-            if (!value || isNaN(Date.parse(value))) {
-              throw new Error("Birthday should be a valid date");
-            }
-            return true;
-          },
-        },
-      },
+      // gender: {
+      //   errorMessage: "Invalid gender",
+      //   custom: {
+      //     options: (value, { req }) => {
+      //       if (
+      //         !value ||
+      //         !(["male","female","other"].includes(value.toLowerCase()))
+      //       ) {
+      //         throw new Error(`Gender should be male, female or other`);
+      //       }
+      //       return true;
+      //     },
+      //   },
+      // },
+      // birthday: {
+      //   errorMessage: "Invalid birthday",
+      //   custom: {
+      //     options: (value, { req }) => {
+      //       if (!value || isNaN(Date.parse(value))) {
+      //         throw new Error("Birthday should be a valid date");
+      //       }
+      //       return true;
+      //     },
+      //   },
+      // },
     },
     ["body"]
   )

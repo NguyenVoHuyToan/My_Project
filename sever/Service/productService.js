@@ -30,7 +30,7 @@ export const getAllBrands=async (req,res)=>{
         let isAdded= true;
         for (let index1 = 0; index1 < brandList.length; index1++) {
             let element1 = brandList[index1].brands;
-            console.log(element1);
+           
             if(element == element1){
                 isAdded=false;
                 break;
@@ -75,7 +75,7 @@ export const getOneProduct=async (req,res)=>{
     const productID= req.params.id;
    
     const productDetail=await databaseProject.inventory.findOne({ product_id:(productID)});
-    console.log(productDetail);
+   
     
     return res.json(productDetail)
 }
@@ -85,28 +85,33 @@ export const getOneProduct=async (req,res)=>{
 //     return res.json(brandsItemList);
 // }
 export const addToCart=async (req,res)=>{
-    const productID=req.query.productID;
-    const userID=req.query.userID;
-    console.log(userID);
-    const userDetail=await databaseProject.cart.findOne({userId:userID});
+    const productID=req.body.productId;
+    const userEmail=req.userEmail;
+    console.log(req.body.productId);
+    const userDetail=await databaseProject.cart.findOne({userEmail:userEmail});
    
-    if(userDetail){
-        const inCart=userDetail.cart.filter((item)=>{
-            return item.product_id== productID
-        });
-        console.log(inCart);
-        const newIndex=userDetail.cart.indexOf(inCart[0]);
-        if(inCart.length>0){
-            userDetail.cart[newIndex].quantity=inCart[0].quantity+1;
-            await databaseProject.cart.updateOne({userId:userID},{$set:{cart:userDetail.cart}});
-        }
-        else{
-            userDetail.cart.push({product_id:productID,quantity:1})
-            await databaseProject.cart.updateOne({userId:userID},{$set:{cart:userDetail.cart}});
-        }
+    if(productID == "undefined"  || userDetail=="undefined"){
+        throw new Error("productID or email is wrong");
     }
     else{
-        await databaseProject.cart.insertOne({cart:[{product_id:productID,quantity:1}],userId:userID});
+        if(userDetail){
+            const inCart=userDetail.cart.filter((item)=>{
+                return item.product_id== productID
+            });
+            console.log(inCart);
+            const newIndex=userDetail.cart.indexOf(inCart[0]);
+            if(inCart.length>0){
+                userDetail.cart[newIndex].quantity=inCart[0].quantity+1;
+                await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:userDetail.cart}});
+            }
+            else{
+                userDetail.cart.push({product_id:productID,quantity:1})
+                await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:userDetail.cart}});
+            }
+        }
+        else{
+            await databaseProject.cart.insertOne({cart:[{product_id:productID,quantity:1}],userEmail:userEmail});
+        }
     }
     // if(productDetail){
     //     await databaseProject.cart.updateOne({product_id:productID},{$set:{quantity:productDetail.quantity+1}})
@@ -119,10 +124,30 @@ export const addToCart=async (req,res)=>{
    
     return res.json("complete");
 }
+export const validateFunc=(req,res)=>{
+    return res.json("complete")
+}
 export const getAllCart=async (req,res)=>{
     const itemList=await databaseProject.cart.aggregate([
         {
           '$match': {}
+        }, {
+          '$lookup': {
+            'from': 'inventory', 
+            'localField': 'cart.product_id', 
+            'foreignField': 'product_id', 
+            'as': 'product_des'
+          }
+        }
+      ]).toArray();
+
+    return res.json(itemList)
+}
+export const getOneCart=async (req,res)=>{
+    console.log(req.userEmail);
+    const itemList=await databaseProject.cart.aggregate([
+        {
+          '$match': {userEmail:req.userEmail}
         }, {
           '$lookup': {
             'from': 'inventory', 
