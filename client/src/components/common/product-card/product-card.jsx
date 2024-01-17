@@ -12,6 +12,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
   const navigate = useNavigate();
 
   const handleAddToCartClick = async (productId) => {
+    console.log("onclick");
     if (!productId) {
       console.error("Product ID is undefined");
       toast.error("Product ID is undefined", {
@@ -91,12 +92,9 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
                 </Link>
                 <div className="prod-price">{product.price}.000&#x20AB;</div>
                 <div className="icon-collection">
-                  <button className="bi bi-cart-plus">
+                  <button className="bi bi-cart-plus"  onClick={() => handleAddToCartClick(product.product_id)}>
                     {" "}
                     Mua ngay
-                    <i
-                      onClick={() => handleAddToCartClick(product.product_id)}
-                    ></i>
                   </button>
                 </div>
               </div>
