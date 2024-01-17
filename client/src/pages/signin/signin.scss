@@ -1,47 +1,53 @@
 .signin-page {
-    margin-top: 64px;
-    padding: 80px;
+  margin-top: 64px;
+  padding: 80px;
 
-    .signin-form-container {
-        max-width: 500px;
-        padding: 48px;
-        border-radius: var(--spacing-spc-none, 0px);
-        border: 1px solid var(--Pearl-Bush-900, #593C35);
-        background: var(--Rodeo-Dust-100, #F1EBE3);
-    }
+  .signin-form-container {
+    max-width: 500px;
+    padding: 48px;
+    border-radius: var(--spacing-spc-none, 0px);
+    border: 1px solid var(--Pearl-Bush-900, #593c35);
+    background: var(--Rodeo-Dust-100, #f1ebe3);
+  }
 
-    .title {
-        align-self: unset;
-    }
+  .title {
+    align-self: unset;
+  }
 
-    a { 
-        font-weight: bold;
-        color: #593C35;
-        text-decoration: none;
-    }
+  a {
+    font-weight: bold;
+    color: #593c35;
+    text-decoration: none;
+  }
 
-    .logo {
-        width: 50%;
-        min-width: 500px;
-        background: #F1EBE3;
-    }
+  .logo {
+    width: 50%;
+    min-width: 500px;
+    background: #f1ebe3;
+  }
 
-    input[type="checkbox"] {
-        border-color: #593C35;
-        width: 16px;
-        height: 16px;
-    }
+  input[type="checkbox"] {
+    border-color: #593c35;
+    width: 16px;
+    height: 16px;
+  }
 
-    input[type="checkbox"]:checked {
-        accent-color: #593C35;
-    }
+  input[type="checkbox"]:checked {
+    accent-color: #593c35;
+  }
+}
+.auth-input {
+  padding: 22px;
+  border-radius: var(--spacing-spc-none, 0px);
+  border: 2px solid rgba(94, 80, 63, 0.48);
+  background: #fff;
 }
 
 @media screen and (max-witdh: 1200px) {
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #F1EBE3;
-    }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1ebe3;
+  }
 }

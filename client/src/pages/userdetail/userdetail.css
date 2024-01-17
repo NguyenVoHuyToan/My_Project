@@ -25,9 +25,6 @@
     align-items: center;
 }
 
-
-
-
 .avatar {
     position: relative;
     width: 141px;
@@ -36,7 +33,7 @@
     background: url(../../Components/Assets/Pic_1.png), lightgray 50% / cover no-repeat;
 }
 
-input{
+input {
     font-family: 'nunito';
 }
 
@@ -53,9 +50,10 @@ input{
 
 .bot-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;    
-    gap: 25px;
+    padding: var(--spacing-spc-none, 0px);
+
+    align-items: flex-start;
+    gap: 23px;
     border-radius: var(--spacing-spc-none, 0px);
 }
 
@@ -65,9 +63,9 @@ input{
 
 .bot-left-container {
     display: flex;
-    width: 400px;
+    width: 330px;
     height: 380px;
-    padding: 2rem 1rem;
+    padding: 51px 59px 44px 42px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -88,18 +86,19 @@ input{
 
 .info-container {
     display: flex;
-    width: 600px;
-    height: 100%;
+    width: 827px;
+    height: 573px;
+    padding: 51px 137px 3px 79px;
     flex-direction: column;
-    justify-content: center;
-    border: 1px solid #000;
-    margin: 0 2rem;
-    padding: 0 2rem;
-    
+    align-items: flex-start;
+    gap: 34px;
+    border-radius: var(--spacing-spc-none, 0px);
+    border: 1px solid #000
 }
 
 .bot-right-title {
     display: flex;
+    padding: var(--spacing-spc-none, 0px);
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -107,39 +106,41 @@ input{
 }
 
 .bot-right-body {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
-    gap: 20px;
+    display: -webkit-box;
+    width: 611px;
+    padding: var(--spacing-spc-none, 0px);
+    justify-content: flex-end;
+    align-items: center;
+    gap: 28px;
     border-radius: var(--spacing-spc-none, 0px);
 }
 
 .bot-right-body1 {
     display: flex;
+    width: 164px;
+    height: 260px;
+    padding: var(--spacing-spc-none, 0px);
+
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 0 1rem;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 36px;
+    flex-shrink: 0;
 }
 
 .bot-right-body2 {
     display: flex;
-    justify-content: flex-end;
+    padding: var(--spacing-spc-none, 0px);
     flex-direction: column;
-    border-radius: 10px;
-    padding-bottom: 1rem;
-    gap: 5px;
+    border-radius: var(--spacing-spc-none, 0px);
 }
 
 .gender-choose {
     display: flex;
     padding: var(--spacing-spc-none, 0px);
     align-items: center;
-    padding-bottom: 1rem;
     gap: 16px;
+    margin: 13px 0px 32px 0px;
     border-radius: var(--spacing-spc-none, 0px);
 }
 
@@ -147,27 +148,31 @@ input{
 #month-input,
 #year-input {
     display: flex;
-    padding: 0.5rem 1rem ;
+    width: 108px;
+    height: 32px;
+    padding: 6px 12px;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
 }
 
 .bot-right-body2>input {
     display: flex;
-    width: 200px;
+    width: 419px;
+    padding: 8px 12px;
     align-items: center;
-    border-radius: 5px;
-    border: 1px solid #0000;    
+    border-radius: 2px;
+    border: 1px solid rgba(174, 174, 174, 0.50);
+    background: #FFF;
 }
 
 .bot-right-btt {
     display: flex;
+    padding: var(--spacing-spc-none, 0px);
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    border-radius: 10px;
+    align-self: stretch;
+    border-radius: var(--spacing-spc-none, 0px);
 }
 
 .date-choose {
@@ -181,14 +186,14 @@ input{
 #name-input,
 #email-input,
 #phone-input {
-    height: 30px;
-    margin-bottom: 20px;
-    border: 1px solid black
+    margin-bottom: 23px;
+    padding: 15px;
 }
 
 .bot-right-btt>Button {
     display: flex;
-    padding: 0.5rem  1rem
+    width: 129px;
+    padding: 12px 32px;
 }
 
 .pay-container {
@@ -331,7 +336,7 @@ input{
 .cp-input>input {
     display: flex;
     width: 408.308px;
-    padding: 8px 14.618px;
+    padding: 15px 14.618px;
     align-items: center;
     gap: 12.182px;
     border-radius: 2.436px;

@@ -138,7 +138,6 @@ const Cartpage = () => {
             <div className="order-title flex-row max-wdth">
               <p className="body-bld capitalize">order summary</p>
               <p className="body-bld capitalize">price</p>
-             
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
               {allProducts.map((product, index) => {
@@ -154,7 +153,6 @@ const Cartpage = () => {
                     <p className="product-price">
                       {dongFormatter(product.product_des[index].price * 1000)}
                     </p>
-                    
                   </div>
                 );
               })}

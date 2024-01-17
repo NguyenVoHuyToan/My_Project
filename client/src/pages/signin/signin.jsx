@@ -6,10 +6,7 @@ import Button from "../../components/common/button/button";
 
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/authProvider";
-import axios from 'axios';
-
-
-
+import axios from "axios";
 
 const Signin = () => {
   const [email, setEmail] = useState("");
@@ -38,29 +35,28 @@ const Signin = () => {
       response_type: "code",
       scope: [
         "https://www.googleapis.com/auth/userinfo.email",
-       "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/userinfo.profile",
       ].join(" "),
       prompt: "consent",
     };
     const queryString = new URLSearchParams(query).toString();
     return `${url}?${queryString}`;
   }
-  const googleApi=oauthUrl();
- const authGoogle=()=>{
+  const googleApi = oauthUrl();
+  const authGoogle = () => {
+    window.location.href = googleApi;
+  };
+  const [access_token] = useSearchParams();
+  const data = access_token.get("accessToken");
 
-    window.location.href=googleApi;
- }
- const [access_token]=useSearchParams();
- const data=access_token.get("accessToken");
- 
- useEffect(()=>{
-  if (data) {
-    console.log("vao");
-    localStorage.setItem("token", data);
-   
-    navigate("/")
-   }
- })
+  useEffect(() => {
+    if (data) {
+      console.log("vao");
+      localStorage.setItem("token", data);
+
+      navigate("/");
+    }
+  });
   const handleSignIn = async (e) => {
     e.preventDefault();
     setError("");
@@ -74,10 +70,8 @@ const Signin = () => {
       //   email,
       //   password,
       // });
-      
-      
+
       if (data) {
-       
         signIn(email);
 
         if (rememberMe) {
@@ -87,16 +81,13 @@ const Signin = () => {
         }
 
         navigate("/");
+      } else {
+        if (response.data.accessToken) {
+          signIn(email);
+          localStorage.setItem("token", response.data.accessToken);
+          navigate("/");
+        }
       }
-      else{
-       
-      if(response.data.accessToken){
-        signIn(email);
-        localStorage.setItem("token", response.data.accessToken);
-        navigate("/")
-      }
-      }
-    
     } catch (err) {
       console.log(err);
       if (err.response && err.response.data && err.response.data.message) {
@@ -108,7 +99,7 @@ const Signin = () => {
       setLoading(false);
     }
   };
- 
+
   return (
     <div className="section-container flex-col signin-page">
       <div className="flex-row section gap-xl flex-wrap">
@@ -157,7 +148,6 @@ const Signin = () => {
               frameStyle="max-wdth"
               customBtnStyle="max-wdth"
               disabled={loading}
-
             ></Button>
             {error && <div className="error-message body-err">{error}</div>}
             <div className="signup-opts flex-col max-wdth body">
@@ -175,9 +165,8 @@ const Signin = () => {
                 iconL="bi bi-google"
                 frameStyle="max-wdth"
                 customBtnStyle="max-wdth"
-                onClick={()=>authGoogle()}
+                onClick={() => authGoogle()}
               ></Button>
-              
             </div>
           </form>
         </div>
