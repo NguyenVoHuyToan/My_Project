@@ -28,24 +28,23 @@ const Cartpage = () => {
           navigate("/");
         } else {
           const response = await axios.post(
-            "http://localhost:3000/product/cart",
+            "http://localhost:3000/product/cartOne",
             {
               accessToken: authToken,
             }
           );
-
+            console.log("response",response);
           if (!response) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
 
           const data = response;
-          const cartItems = Array.isArray(data)
-            ? data
-            : data && Array.isArray(data.items)
-            ? data.items
-            : [];
 
-          setUserProducts(cartItems);
+          const cartItems = data.data.map((item,index)=>{
+            return item
+          })||[];
+          console.log(cartItems[0]);
+          setUserProducts(cartItems[0]);
           setLoading(false);
         }
       } catch (error) {
@@ -68,33 +67,38 @@ const Cartpage = () => {
           accessToken: authToken,
         });
 
-        console.log(data.data);
-        setAllProducts(data.data);
+        console.log(data.data[0]);
+        setAllProducts(data.data[0]);
+        
       } catch (error) {
         setError("An error occurred while fetching product details.");
       }
     };
 
     fetchAllProducts();
-  }, [userProducts]);
+  }, []);
 
   useEffect(() => {
     let total = 0;
-    for (let index = 0; index < allProducts.length; index++) {
-      const element = allProducts[index];
-      console.log(element.cart);
+    const aList=userProducts.cart;
+    console.log( userProducts.cart.length);
+    for (let index = 0; index < aList.length; index++) {
+      const element = userProducts;
+      console.log(element);
       element.cart.forEach((item, index) => {
+        console.log(item.quantity * element.product_des[index].price);
         total += item.quantity * element.product_des[index].price;
       });
     }
 
-    total = total * 0.9 + 5;
+    total = total -5.99+2.99 + 5;
+    console.log(total);
     setTotalPrice(total);
   }, [allProducts]);
 
   const deleteProduct = (productId) => {
     setUserProducts(
-      userProducts.filter((product) => product.productId !== productId)
+      userProducts.filter((product) => product.cart.productId !== productId)
     );
   };
 
@@ -114,21 +118,22 @@ const Cartpage = () => {
   if (error) {
     return <p>{error}</p>;
   }
-  console.log(userProducts);
+ 
   return (
     <div className="cart-page flex-row gap-sm align-left">
-      <div className="order-detail ">
-        {userProducts.map((item, index) => {
-          return (
-            <ProductTag
-            key={item.productId}
-            onDelete={deleteProduct}
-            product_id={item.productId}
-            selectedQuantity={item.quantity}
-            selectedVariant="#02"
-          />
-          )
-        })}
+      <div className="order-detail flex-col gap-xs">
+        {userProducts.cart.map((product,index) => {
+          
+          return <ProductTag
+          key={product.product_id}
+          onDelete={deleteProduct}
+          product_id={product.product_id}
+          selectedQuantity={product.quantity}
+          selectedVariant="#02"
+        />
+        }
+          
+        )}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
@@ -143,18 +148,18 @@ const Cartpage = () => {
              
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
-              {allProducts.map((product, index) => {
+              {userProducts.cart.map((product, index) => {
                 console.log(product);
                 return (
                   <div 
                     key={product.product_id}
                     className="item flex-row body-sml align-left max-wdth"
                   >
-                    <li className="product-name">
-                      {product.product_des[index].product_name}
-                    </li>
+                    <p className="product-name">
+                      {userProducts.product_des[index].product_name}
+                    </p>
                     <p className="product-price">
-                      {dongFormatter(product.product_des[index].price * 1000)}
+                      {dongFormatter(userProducts.product_des[index].price * 1000)}
                     </p>
                     
                   </div>
@@ -229,7 +234,7 @@ const Cartpage = () => {
               iconL="bi bi-cart-check icon-size-16 square-icon"
               onClick={() => {
                 const paymentInfo = {
-                  products: userProducts,
+                  products: userProducts[0].cart,
                   totalPrice: totalPrice,
                 };
 
