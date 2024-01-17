@@ -117,16 +117,18 @@ const Cartpage = () => {
   console.log(userProducts);
   return (
     <div className="cart-page flex-row gap-sm align-left">
-      <div className="order-detail flex-col gap-xs">
-        {userProducts.map((product) => (
-          <ProductTag
-            key={product.productId}
+      <div className="order-detail ">
+        {userProducts.map((item, index) => {
+          return (
+            <ProductTag
+            key={item.productId}
             onDelete={deleteProduct}
-            product_id={product.productId}
-            selectedQuantity={product.quantity}
+            product_id={item.productId}
+            selectedQuantity={item.quantity}
             selectedVariant="#02"
           />
-        ))}
+          )
+        })}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
@@ -144,13 +146,13 @@ const Cartpage = () => {
               {allProducts.map((product, index) => {
                 console.log(product);
                 return (
-                  <div
+                  <div 
                     key={product.product_id}
                     className="item flex-row body-sml align-left max-wdth"
                   >
-                    <p className="product-name">
+                    <li className="product-name">
                       {product.product_des[index].product_name}
-                    </p>
+                    </li>
                     <p className="product-price">
                       {dongFormatter(product.product_des[index].price * 1000)}
                     </p>
