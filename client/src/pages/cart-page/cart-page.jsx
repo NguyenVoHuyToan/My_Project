@@ -114,7 +114,7 @@ const Cartpage = () => {
   if (error) {
     return <p>{error}</p>;
   }
-
+  console.log(userProducts);
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
@@ -124,7 +124,7 @@ const Cartpage = () => {
             onDelete={deleteProduct}
             product_id={product.productId}
             selectedQuantity={product.quantity}
-            selectedVariant="#02 Rosy"
+            selectedVariant="#02"
           />
         ))}
       </div>
@@ -136,8 +136,9 @@ const Cartpage = () => {
           </div>
           <div className="order-summary flex-col gap-xs align-left max-wdth">
             <div className="order-title flex-row max-wdth">
-              <p className="body-bld capitalize">order sumary</p>
+              <p className="body-bld capitalize">order summary</p>
               <p className="body-bld capitalize">price</p>
+             
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
               {allProducts.map((product, index) => {
@@ -153,6 +154,7 @@ const Cartpage = () => {
                     <p className="product-price">
                       {dongFormatter(product.product_des[index].price * 1000)}
                     </p>
+                    
                   </div>
                 );
               })}
