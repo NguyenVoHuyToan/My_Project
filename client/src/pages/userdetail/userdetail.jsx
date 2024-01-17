@@ -156,6 +156,7 @@ const UserDetail = () => {
       toast.success("Account deleted successfully", {
         position: toast.POSITION.TOP_RIGHT,
       });
+      localStorage.setItem("token",undefined)
       navigate("/");
     } catch (error) {
       console.error("Error deleting account:", error);
@@ -176,18 +177,16 @@ const UserDetail = () => {
     };
 
     const authToken = localStorage.getItem("token");
-    const userId = user.userId;
+    console.log(user);
+    const userId = user._id;
     axios
-      .put("http://localhost:3000/users", updatedPass, {
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-        },
-      })
+      .put(`http://localhost:3000/user/changeInfo/${userId}`, {accessToken:authToken,updatedData:updatedPass})
       .then((response) => {
         console.log("Password updated successfully:", response.data);
         toast.success("Password updated successfully", {
           position: toast.POSITION.TOP_RIGHT,
         });
+        
       })
       .catch((error) => {
         console.error("Error updating password:", error);
