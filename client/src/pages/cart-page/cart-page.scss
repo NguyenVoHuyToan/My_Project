@@ -3,7 +3,7 @@
     padding-bottom: 40px;
 
     .billing-container {
-        padding: 32px 24px;
+        padding: 2rem 4rem;
         border: 1px solid #5E503F80;
         background: #F1EBE3;
         width: 354px;
@@ -43,13 +43,21 @@
     .item .product-name {
         max-width: 80%;
     }
+
+    .order-detail {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
 }
 
 @media screen and (max-width: 1050px) {
     .order-detail {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
+        background-color: aqua;
     }
     .cart-page{
         display: flex;
