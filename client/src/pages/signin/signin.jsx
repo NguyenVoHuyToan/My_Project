@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import "./signin.scss";
 import Logo from "../../assets/img/logo-black.png";
@@ -52,11 +52,15 @@ const Signin = () => {
  }
  const [access_token]=useSearchParams();
  const data=access_token.get("accessToken");
- if (data) {
-  console.log("vao");
-  localStorage.setItem("token", data);
-  navigate("/")
- }
+ 
+ useEffect(()=>{
+  if (data) {
+    console.log("vao");
+    localStorage.setItem("token", data);
+   
+    navigate("/")
+   }
+ })
   const handleSignIn = async (e) => {
     e.preventDefault();
     setError("");
@@ -87,6 +91,7 @@ const Signin = () => {
       else{
        
       if(response.data.accessToken){
+        signIn(email);
         localStorage.setItem("token", response.data.accessToken);
         navigate("/")
       }

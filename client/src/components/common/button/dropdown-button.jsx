@@ -15,6 +15,8 @@ const DropdownButton = ({
   textStyle = "",
   frameStyle = "",
   dropdownStyle = "",
+  method,
+  value
 }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const timerRef = useRef(null);
@@ -57,6 +59,8 @@ const DropdownButton = ({
           dropdownStyle={dropdownStyle}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          method={method}
+          value={value}
         />
       )}
     </div>

@@ -12,6 +12,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
   const navigate = useNavigate();
 
   const handleAddToCartClick = async (productId) => {
+    console.log("onclick");
     if (!productId) {
       console.error("Product ID is undefined");
       toast.error("Product ID is undefined", {
@@ -25,16 +26,11 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
 
       if (authToken) {
         const response = await axios.post(
-          "http://localhost:3000/cart",
-          { productId },
-          {
-            headers: {
-              Authorization: `Bearer ${authToken}`,
-            },
-          }
+          "http://localhost:3000/product/cart/add",
+          { productId,accessToken:authToken }
         );
 
-        if (response.data.success) {
+        if (response.data == "complete") {
           if (onAddToCart) {
             onAddToCart(product);
           }
@@ -86,19 +82,21 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
           />
         </div>
         <div className="flex-row prod-info bg-ivory align-left gap-xs">
-          <div className="flex-col gap-sm left-bar">
-            <div className="flex-col gap-xs prod-n-pr">
-              <Link to={`/product/products/${product.product_id}`}>
-                <div className="prod-name" title={product.product_name}>
-                  {product.product_name}
+          <div className="box">
+            <div className="flex-col gap-sm left-bar justify-start">
+              <div className="flex-col gap-xs prod-n-pr">
+                <Link to={`/product/products/${product.product_id}`}>
+                  <div className="prod-name" title={product.product_name}>
+                    {product.product_name}
+                  </div>
+                </Link>
+                <div className="prod-price">{product.price}.000&#x20AB;</div>
+                <div className="icon-collection">
+                  <button className="bi bi-cart-plus"  onClick={() => handleAddToCartClick(product.product_id)}>
+                    {" "}
+                    Mua ngay
+                  </button>
                 </div>
-              </Link>
-              <div className="prod-price">
-                {product.price}.000&#x20AB;
-                <i
-                  className="bi bi-cart-plus"
-                  onClick={() => handleAddToCartClick(product.product_id)}
-                ></i>
               </div>
             </div>
             <div className="flex-row gap-2xs color-vars">
@@ -108,20 +106,6 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="icon-collection">
-            <div>
-              <i
-                className="bi bi-suit-heart"
-                onClick={() => setChangeColor(!changeColor)}
-              ></i>
-            </div>
-              <button className="btn-icon"
-                disabled={expandDisable}
-                onClick={() => handleExpandClick()}
-              >
-                <i className="bi bi-box-arrow-up-right"></i>
-              </button>
           </div>
         </div>
       </div>

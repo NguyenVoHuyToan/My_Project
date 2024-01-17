@@ -76,6 +76,28 @@
   margin-right: calc(1rem - 8px);
   color: white;
 }
+.check-admin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-check{
+  display: flex;
+  justify-content: center;
+  border: 4px solid red;
+  color: black;
+}
+
+.text-check h1 {
+  font-size: 130px;
+}
+
+.img-admin{
+  width: 500px;
+  height: 500px;
+}
 
 /* Tablets */
 @media screen and (max-width: 1200px) {
