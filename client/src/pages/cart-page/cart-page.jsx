@@ -13,10 +13,10 @@ const Cartpage = () => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [calculateTotal, setCalcualteTotal] = useState(false);
-  const getTotal = () => {
+  const [calculateTotal,setCalcualteTotal]=useState(false);
+  const getTotal=()=>{
     let total = 0;
-
+  
     // for (let index = 0; index < aList; index++) {
     //   const element = userProducts;
     //   console.log(element);
@@ -26,14 +26,14 @@ const Cartpage = () => {
     //   });
     // }
     console.log(userProducts);
-    userProducts.cart.map((item, index) => {
-      total += item.quantity * userProducts.product_des[index].price;
-    });
+    userProducts.cart.map((item,index)=>{
+      total+=item.quantity* userProducts.product_des[index].price;
+    })
 
-    total = total * 0.8 + total * 0.1 + 5;
+    total = total*0.8+total*0.1+ 5;
     console.log(total);
     setTotalPrice(total);
-  };
+  }
   const fetchData = async () => {
     try {
       const authToken = localStorage.getItem("token");
@@ -52,29 +52,32 @@ const Cartpage = () => {
             accessToken: authToken,
           }
         );
-        console.log("response", response);
+          console.log("response",response);
         if (!response) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
 
         const data = response;
 
-        const cartItems =
-          data.data.map((item, index) => {
-            return item;
-          }) || [];
+        const cartItems = data.data.map((item,index)=>{
+          return item
+        })||[];
         console.log(cartItems[0]);
         setUserProducts(cartItems[0]);
         setLoading(false);
       }
     } catch (error) {
-      setError(error.message || "An error occurred while fetching cart items.");
+      setError(
+        error.message || "An error occurred while fetching cart items."
+      );
       setLoading(false);
     }
   };
   useEffect(() => {
+    
+    
     fetchData();
-
+   
     // if(userProducts.length>0){
     //   getTotal()
     // }
@@ -91,7 +94,7 @@ const Cartpage = () => {
 
   //       console.log(data.data[0]);
   //       setAllProducts(data.data[0]);
-
+        
   //     } catch (error) {
   //       setError("An error occurred while fetching product details.");
   //     }
@@ -100,18 +103,18 @@ const Cartpage = () => {
   //   fetchAllProducts();
   // }, []);
 
-  useEffect(() => {
-    if (Object.keys(userProducts).length > 0) {
+  useEffect(()=>{
+    if(Object.keys(userProducts).length>0){
       getTotal();
     }
-  }, [userProducts]);
+  },[userProducts])
 
   const deleteProduct = () => {
     console.log("vao delete");
     // setUserProducts(
     //   userProducts
     // );
-    fetchData();
+    fetchData()
   };
 
   const handleBuyNow = () => {
@@ -130,21 +133,22 @@ const Cartpage = () => {
   if (error) {
     return <p>{error}</p>;
   }
-
+ 
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
-        {userProducts.cart.map((product, index) => {
-          return (
-            <ProductTag
-              key={product.productId}
-              onDelete={deleteProduct}
-              product_id={product.productId}
-              selectedQuantity={product.quantity}
-              selectedVariant="#02 Rosy"
-            />
-          );
-        })}
+        {userProducts.cart.map((product,index) => {
+          
+          return <ProductTag
+          key={product.product_id}
+          onDelete={deleteProduct}
+          product_id={product.product_id}
+          selectedQuantity={product.quantity}
+          selectedVariant="#02"
+        />
+        }
+          
+        )}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
@@ -161,7 +165,7 @@ const Cartpage = () => {
               {userProducts.cart.map((product, index) => {
                 console.log(product);
                 return (
-                  <div
+                  <div 
                     key={product.product_id}
                     className="item flex-row body-sml align-left max-wdth"
                   >
@@ -169,9 +173,7 @@ const Cartpage = () => {
                       {userProducts.product_des[index].product_name}
                     </p>
                     <p className="product-price">
-                      {dongFormatter(
-                        userProducts.product_des[index].price * 1000
-                      )}
+                      {dongFormatter(userProducts.product_des[index].price * 1000)}
                     </p>
                   </div>
                 );
@@ -204,12 +206,8 @@ const Cartpage = () => {
               </div>
               <div className="item-price flex-col gap-xs body-sml align-right">
                 <p className="product-price">{dongFormatter(5000)}</p>
-                <p className="product-price">
-                  {dongFormatter(((totalPrice - 5) / 0.9) * 0.2 * 1000)}(20%)
-                </p>
-                <p className="product-price">
-                  {dongFormatter(((totalPrice - 5) / 0.9) * 0.1 * 1000)}(10%)
-                </p>
+                <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.2*1000)}(20%)</p>
+                <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.1*1000)}(10%)</p>
               </div>
             </div>
           </div>
