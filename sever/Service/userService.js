@@ -41,11 +41,12 @@ export const getOAuth = async (req, res) => {
   
 };
 export const changeInfo = async (req, res) => {
-  const fullName = req.body.updatedData.fullName;
-  const email = req.body.updatedData.email;
-  const gender = req.body.updatedData.gender;
-  const birthday = req.body.updatedData.birthday;
-  
+  const fullName = req.body.updatedData.fullName||"NA";
+  const email = req.body.updatedData.email||"NA";
+  const gender = req.body.updatedData.gender||"NA";
+  const birthday = req.body.updatedData.birthday||"--";
+  const password= req.body.updatedData.password||"123456789";
+  console.log(password);
   await databaseProject.users.updateOne(
     { _id: new ObjectId(req.params.id) },
     {
@@ -54,6 +55,7 @@ export const changeInfo = async (req, res) => {
         email: email,
         gender: gender,
         birthday: birthday,
+        password:password
       },
     }
   );

@@ -31,7 +31,7 @@ export const validateToken = async (req, res, next) => {
     // }
     console.log("userUnit",userUnit);
     const result= await databaseProject.users.findOne({email:userUnit.email});
-    
+    console.log(result);
     req.userEmail=userUnit.email;
     req.decode=result
     if(result){

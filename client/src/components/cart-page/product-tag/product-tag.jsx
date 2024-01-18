@@ -27,7 +27,7 @@ const ProductTag = ({
         setLoading(false);
       });
   }, [product_id]);
-
+  console.log(product);
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -40,17 +40,13 @@ const ProductTag = ({
     }
 
     try {
-      const response = await axios.put(
-        `http://localhost:3000/cart/${productId}`,
-        { newQuantity },
-        {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
-        }
+      const response = await axios.post(
+        `http://localhost:3000/product/cart/add`,
+        { accessToken:authToken ,productId:productId,quantity:newQuantity}
+
       );
 
-      if (response.data.success) {
+      if (response.data == "complete") {
         setQuantity(newQuantity);
       } else {
         console.error(response.data.message);
@@ -113,13 +109,13 @@ const ProductTag = ({
           <div className="order-detail flex-row gap-xs">
             <div className="order-quantity flex-row gap-2xs">
               <button
-                onClick={() => handleQuantityChange(product._id, quantity - 1)}
+                onClick={() => handleQuantityChange(product.product_id, quantity - 1)}
               >
                 <i className="bi bi-dash square-icon"></i>
               </button>
               <p className="quantity-value flex-row">{quantity}</p>
               <button
-                onClick={() => handleQuantityChange(product._id, quantity + 1)}
+                onClick={() => handleQuantityChange(product.product_id, quantity + 1)}
               >
                 <i className="bi bi-plus square-icon"></i>
               </button>
@@ -129,7 +125,7 @@ const ProductTag = ({
             </div>
           </div>
           <div className="function-btn flex-row gap-xs">
-            <div
+            {/* <div
               className="add-to-wishlist flex-row gap-2xs"
               onClick={() => handleAddToWishList(product._id)}
             >
@@ -142,7 +138,7 @@ const ProductTag = ({
             >
               <i className="bi bi-trash3 square-icon icon-size-16"></i>
               <p className="body-sml">Delete</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="prod-total-price flex-col">

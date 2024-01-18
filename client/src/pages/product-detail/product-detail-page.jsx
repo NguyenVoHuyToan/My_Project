@@ -4,16 +4,67 @@ import { useParams } from "react-router-dom";
 import Button from "../../components/common/button/button";
 import ProductDescription from "../../components/product-detail/product-description/product-description";
 import ReviewSection from "../../components/product-detail/review-section/review-section";
-
+import { toast } from "react-toastify";
 import ProductCard from "../../components/common/product-card/product-card";
 import Carousel from "react-multi-carousel";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const [similarProducts, setSimilarProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  
+  const navigate = useNavigate();
+  const buyNowOnClick=(productId)=>{
+    handleAddToCartClick(productId);
+    navigate("/cart");
+  }
+  const handleAddToCartClick = async (productId) => {
+    console.log("onclick");
+    if (!productId) {
+      console.error("Product ID is undefined");
+      toast.error("Product ID is undefined", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      return;
+    }
+
+    try {
+      const authToken = localStorage.getItem("token");
+
+      if (authToken) {
+        const response = await axios.post(
+          "http://localhost:3000/product/cart/add",
+          { productId,accessToken:authToken }
+        );
+
+        if (response.data == "complete") {
+          // if (onAddToCart) {
+          //   onAddToCart(product);
+          // }
+          toast.success(`Product added to cart successfully`, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        } else {
+          console.error(`Failed to add product to cart:`);
+          toast.error(`Failed to add product to cart`, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
+      } else {
+        console.error("User not logged in. Redirecting to signin page.");
+        toast.error("Please log in to add products to cart", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      }
+    } catch (error) {
+      console.error("Error adding product to cart:", error);
+      toast.error(`Error adding product to cart`, {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      navigate("/signin");
+    }
+  };
     useEffect(() => {
       fetch(`http://localhost:3000/product/products/${id}`)
         .then((response) => response.json())
@@ -147,6 +198,7 @@ const ProductDetailPage = () => {
                   iconL="bi bi-cart-check square-icon"
                   text="buy now"
                   frameStyle="prod-detail-btn"
+                  onClick={()=>buyNowOnClick(id)}
                 />
                 <Button
                   btnStyle="auth-btn"
@@ -154,6 +206,7 @@ const ProductDetailPage = () => {
                   iconL="bi bi-cart-plus square-icon"
                   text="add to cart"
                   frameStyle="prod-detail-btn"
+                  onClick={()=>handleAddToCartClick(id)}
                 />
               </div>
             </div>

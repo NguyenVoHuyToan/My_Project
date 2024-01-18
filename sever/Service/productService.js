@@ -87,6 +87,8 @@ export const getOneProduct=async (req,res)=>{
 export const addToCart=async (req,res)=>{
     const productID=req.body.productId;
     const userEmail=req.userEmail;
+    const newQuantity=req.body.quantity;
+    console.log(newQuantity);
     console.log(req.body.productId);
     const userDetail=await databaseProject.cart.findOne({userEmail:userEmail});
    
@@ -101,8 +103,15 @@ export const addToCart=async (req,res)=>{
             console.log(inCart);
             const newIndex=userDetail.cart.indexOf(inCart[0]);
             if(inCart.length>0){
-                userDetail.cart[newIndex].quantity=inCart[0].quantity+1;
+                if(newQuantity){
+                    userDetail.cart[newIndex].quantity=newQuantity;
                 await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:userDetail.cart}});
+                }
+                else{
+                    userDetail.cart[newIndex].quantity=inCart[0].quantity+1;
+                    await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:userDetail.cart}});
+                }
+               
             }
             else{
                 userDetail.cart.push({product_id:productID,quantity:1})

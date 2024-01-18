@@ -27,7 +27,7 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
       if (authToken) {
         const response = await axios.post(
           "http://localhost:3000/product/cart/add",
-          { productId,accessToken:authToken }
+          { productId, accessToken: authToken }
         );
 
         if (response.data == "complete") {
@@ -92,7 +92,10 @@ const ProductCard = ({ product, onAddToCart, expandDisable = "" }) => {
                 </Link>
                 <div className="prod-price">{product.price}.000&#x20AB;</div>
                 <div className="icon-collection">
-                  <button className="bi bi-cart-plus"  onClick={() => handleAddToCartClick(product.product_id)}>
+                  <button
+                    className="bi bi-cart-plus"
+                    onClick={() => handleAddToCartClick(product.product_id)}
+                  >
                     {" "}
                     Mua ngay
                   </button>

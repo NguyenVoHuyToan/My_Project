@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import momo from "../../assets/img/user-detail/momo.png";
 import vietcom from "../../assets/img/user-detail/vietcom.png";
 import vietin from "../../assets/img/user-detail/vietin.png";
-import {  useNavigate } from "react-router-dom";
+
 const UserDetail = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,38 +25,23 @@ const UserDetail = () => {
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [retypeNewPassword, setRetypeNewPassword] = useState("");
-  const navigate = useNavigate();
   useEffect(() => {
     const authToken = localStorage.getItem("token");
-    const getMe=async()=>{
-      try{
-        const detail=await axios.post("http://localhost:3000/user/getMe", {
-          accessToken:authToken
-         })
-         console.log(detail);
-         setUser(detail.data);
-         setEmail(detail.data.email || "");
-         setFullName(detail.data.fullName);
-         setDateOfBirth(detail.data.birthday);
-         setGender(detail.data.gender);
-      }
-      catch{
-        (error) => {
-            console.error("Error fetching user data:", error);
-          }
-      }
-     
-      // .then((response) => {
-      //   console.log("User data:", response.data);
-      //   const userData = response.data || {};
-      //   setUser(userData);
-      //   setEmail(userData.email || "");
-      // })
-      // .catch((error) => {
-      //   console.error("Error fetching user data:", error);
-      // });
-    }
-    getMe();
+    axios
+      .get("http://localhost:3000/users", {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+        },
+      })
+      .then((response) => {
+        console.log("User data:", response.data);
+        const userData = response.data || {};
+        setUser(userData);
+        setEmail(userData.email || "");
+      })
+      .catch((error) => {
+        console.error("Error fetching user data:", error);
+      });
   }, []);
 
   const years = Array.from(
@@ -111,7 +96,7 @@ const UserDetail = () => {
     }
   };
 
-  const handleUpdate = async() => {
+  const handleUpdate = () => {
     setUpdating(true);
 
     const updatedData = {
@@ -119,15 +104,18 @@ const UserDetail = () => {
       email,
       phoneNumber,
       gender,
-      birthday: `${selectedYear}-${selectedMonth}-${selectedDay}`,
+      dateOfBirth: `${selectedYear}-${selectedMonth}-${selectedDay}`,
       // Add other fields as needed
     };
 
     const authToken = localStorage.getItem("token");
-    const userId =user._id ;
-    console.log(user);
-    await axios
-      .put(`http://localhost:3000/user/changeInfo/${userId}`, {accessToken:authToken,updatedData})
+    const userId = user.userId;
+    axios
+      .put("http://localhost:3000/users", updatedData, {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+        },
+      })
       .then((response) => {
         console.log("User updated successfully:", response.data);
         toast.success("User updated successfully", {
@@ -147,16 +135,15 @@ const UserDetail = () => {
   const handleDeleteAccount = async () => {
     try {
       const authToken = localStorage.getItem("token");
-    const userId =user._id ;
-    
-      const response = await axios.post(`http://localhost:3000/user/delete/${userId}`, {
-       accessToken:authToken
+      const response = await axios.delete("http://localhost:3000/users", {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+        },
       });
       console.log(response.data);
       toast.success("Account deleted successfully", {
         position: toast.POSITION.TOP_RIGHT,
       });
-      navigate("/");
     } catch (error) {
       console.error("Error deleting account:", error);
       toast.error("Error deleting account", {
@@ -202,6 +189,7 @@ const UserDetail = () => {
       <div className="userdetail-container">
         <div className="top-container flex-col">
           <div className="avatar">
+            <img src="" alt="" />
           </div>
           <Button icon="bi bi-camera" frameStyle="btt-ava"></Button>
           <h3 className="h3">
