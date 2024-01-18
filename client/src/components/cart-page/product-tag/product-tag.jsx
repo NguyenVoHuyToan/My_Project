@@ -82,7 +82,6 @@ const ProductTag = ({
   };
 
   let prodTotalPrice = product.price * quantity;
-
   return (
     <div className="product-tag">
       <div className="container flex-row">
@@ -132,14 +131,16 @@ const ProductTag = ({
             >
               <i className="bi bi-suit-heart square-icon icon-size-16"></i>
               <p className="body-sml">Save</p>
-            </div> */}
+            </div>*/
+
+            // nút xóa sp 
             <div
-              className="delete-from-cart flex-row gap-2xs"
-              onClick={() => handleDeleteFromCart(product.product_id)}
+              className="delete-from-cart flex-row gap-2xs "
+              onClick={() => handleDeleteFromCart(product._id)}
             >
-              <i className="bi bi-trash3 square-icon icon-size-16"></i>
-              <p className="body-sml">Delete</p>
-            </div>
+              <i className="bi bi-trash3 square-icon icon-size-18"></i>
+              {/* <p className="body-sml">Delete</p> */}
+            </div> }
           </div>
         </div>
         <div className="prod-total-price flex-col">
