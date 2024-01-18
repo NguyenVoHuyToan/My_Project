@@ -82,7 +82,7 @@ const Cartpage = () => {
     // if(userProducts.length>0){
     //   getTotal()
     // }
-  }, []);
+  }, [changeQuantity]);
 
   // useEffect(() => {
   //   const fetchAllProducts = async () => {
@@ -142,7 +142,7 @@ const Cartpage = () => {
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
         {userProducts?userProducts.cart.map((product,index) => {
-          
+          console.log(changeQuantity);
           return <ProductTag
           key={product.product_id}
           onDelete={deleteProduct}
