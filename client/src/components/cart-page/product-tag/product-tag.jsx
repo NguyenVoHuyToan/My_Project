@@ -29,7 +29,7 @@ const ProductTag = ({
         setLoading(false);
       });
   }, [product_id]);
-  console.log(product);
+  // console.log(product);
   if (loading) {
     return <div>Loading...</div>;
   }

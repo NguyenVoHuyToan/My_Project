@@ -8,7 +8,7 @@ import axios from "axios";
 
 const Cartpage = () => {
   const navigate = useNavigate();
-  const [changeQuantity, setChangeQuantity] = useState(false);
+  const [changeQuantity,setChangeQuantity]=useState(false);
   const [userProducts, setUserProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -33,8 +33,8 @@ const Cartpage = () => {
 
     total = total * 0.8 + total * 0.1 + 5;
     console.log(total);
-    if (total - 5 <= 0) {
-      total = 0;
+    if(total-5 <=0 ){
+      total=0;
     }
     setTotalPrice(total);
   };
@@ -44,7 +44,7 @@ const Cartpage = () => {
 
       console.log(authToken == "null");
       if (authToken == "null" || authToken == "undefined" || !authToken) {
-        // throw new Error(
+        // throw new  Error(
         //   "User not logged in. Please log in to view cart items."
         // );
         alert("User not logged in. Please log in to view cart items.");
@@ -56,7 +56,7 @@ const Cartpage = () => {
             accessToken: authToken,
           }
         );
-        console.log("response", response);
+          console.log("response",response);
         if (!response) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -76,14 +76,13 @@ const Cartpage = () => {
       setLoading(false);
     }
   };
-  // console.log("changeQunatity",changeQuantity);
   useEffect(() => {
     fetchData();
 
     // if(userProducts.length>0){
     //   getTotal()
     // }
-  }, [changeQuantity]);
+  }, []);
 
   // useEffect(() => {
   //   const fetchAllProducts = async () => {
@@ -105,11 +104,9 @@ const Cartpage = () => {
   //   fetchAllProducts();
   // }, []);
 
-  useEffect(() => {
-    if(userProducts){
-      if (Object.keys(userProducts).length > 0) {
-        getTotal();
-      }
+  useEffect(()=>{
+    if(Object.keys(userProducts).length>0){
+      getTotal();
     }
   }, [userProducts]);
 
@@ -118,9 +115,10 @@ const Cartpage = () => {
     // setUserProducts(
     //   userProducts
     // );
-    fetchData();
+    fetchData()
   };
 
+  console.log(userProducts.cart);
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -137,26 +135,23 @@ const Cartpage = () => {
   if (error) {
     return <p>{error}</p>;
   }
-
+ 
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
-        {userProducts ? (
-          userProducts.cart.map((product, index) => {
-            return (
-              <ProductTag
-                key={product.product_id}
-                onDelete={deleteProduct}
-                product_id={product.product_id}
-                selectedQuantity={product.quantity}
-                selectedVariant="#02"
-                value={changeQuantity}
-                method={setChangeQuantity}
-              />
-            );
-          })
-        ) : (
-          <></>
+        {userProducts.cart.map((product,index) => {
+          
+          return <ProductTag
+          key={product.product_id}
+          onDelete={deleteProduct}
+          product_id={product.product_id}
+          selectedQuantity={product.quantity}
+          selectedVariant="#02"
+          value={changeQuantity}
+          method={setChangeQuantity}
+        />
+        }
+          
         )}
       </div>
       <div className="billing-detail flex-col gap-xs">
@@ -215,23 +210,15 @@ const Cartpage = () => {
                 <p className="tag capitalize">discount</p>
                 <p className="tag capitalize">tax</p>
               </div>
-              {totalPrice != 0 ? (
-                <div className="item-price flex-col gap-xs body-sml align-right">
-                  <p className="product-price">{dongFormatter(5000)}</p>
-                  <p className="product-price">
-                    {dongFormatter(((totalPrice - 5) / 0.9) * 0.2 * 1000)}(20%)
-                  </p>
-                  <p className="product-price">
-                    {dongFormatter(((totalPrice - 5) / 0.9) * 0.1 * 1000)}(10%)
-                  </p>
-                </div>
-              ) : (
-                <div className="item-price flex-col gap-xs body-sml align-right">
-                  <p className="product-price">{dongFormatter(0)}</p>
-                  <p className="product-price">{dongFormatter(0)}(20%)</p>
-                  <p className="product-price">{dongFormatter(0)}(10%)</p>
-                </div>
-              )}
+              {totalPrice !=0 ? <div className="item-price flex-col gap-xs body-sml align-right">
+                <p className="product-price">{dongFormatter(5000)}</p>
+                <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.2*1000)}(20%)</p>
+                <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.1*1000)}(10%)</p>
+              </div>: <div className="item-price flex-col gap-xs body-sml align-right">
+                <p className="product-price">{dongFormatter(0)}</p>
+                <p className="product-price">{dongFormatter(0)}(20%)</p>
+                <p className="product-price">{dongFormatter(0)}(10%)</p>
+              </div>}
             </div>
           </div>
           <div className="hr-divider"></div>
@@ -288,5 +275,4 @@ const Cartpage = () => {
     </div>
   );
 };
-
 export default Cartpage;

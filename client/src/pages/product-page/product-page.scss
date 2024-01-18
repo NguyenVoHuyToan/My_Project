@@ -9,9 +9,9 @@
         padding: unset;
     }
     
-    .section {
-        max-width: 1440px;
-    }
+    // .section {
+    //     max-width: 1440px;
+    // }
     
     .img-slider img {
         width: 100%;
@@ -32,10 +32,6 @@
         border-top: 1px solid #ccc;
         margin: 0px 5%;
         align-self: stretch;
-    }
-    
-    .prod-query-content {
-        padding: 80px 48px;
     }
     
     
@@ -60,8 +56,7 @@
     .collection-content {
         width: 100%;
         overflow: hidden;
-        padding: 32px;
-        padding-right: 0px;
+        padding-right: 20px;
     }
     
     .promo-collection-sct {
@@ -211,4 +206,164 @@
             background-color: rgba(59, 48, 35, 0.88);
         }
     }
+}
+
+@media screen and (max-width: 1200px){
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .promo-collection-sct{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .collection-content{
+        max-width: 1000px;
+        padding: 0;
+    }
+    .collection-img{
+        width: 300px;
+    }
+    .prod-query-content{
+        flex-direction: column;
+        margin: 0 1rem;
+        align-items: center;
+    }
+    .filter-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .prod-display{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .section-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .promo-collection-sct{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .collection-content{
+        max-width: 900px;
+        
+    }
+    .collection-img{
+        width: 300px;
+    }
+    .prod-query-content{
+        flex-direction: column;
+        margin: 0 1rem;
+        align-items: center;
+    }
+    .filter-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .prod-grid{
+        flex-direction: column;
+    }
+
+    .prod-display{
+       width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .prod-query-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prod-display{
+        max-width: 900px;
+     }
+     .section-container1{
+        display: none;;
+     }
+}
+
+@media screen and (max-width: 770px){
+    .main-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .section-container1{
+        display: none;
+    }
+    .prod-display{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+     }
+     .footer{
+        width: 100%;
+     }
+     .section-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+     }
+     .prod-query-content{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .filter-container{
+        justify-content: center;
+        margin-left: 5rem;
+     }
+}
+
+
+@media screen and (max-width: 550px){
+    .prod-display{
+        flex-direction: column;
+        max-width: 500px;
+        padding: 0;
+     }
+     .section-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 2rem;
+        width: 500px;
+     }
+     .promo-query-sct{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .prod-display{
+        flex-direction: column;
+     }
+     .product-dis-icon{
+        flex-direction: column;
+     }
+     .filter-container{
+        flex-direction: column;
+     }
+     .promo-collection-sct{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .collection-content{
+        margin: 0 3rem;
+     }
+     .prod-grid{
+        flex: 1;
+        flex-direction: column;
+        padding: 0;
+     }
 }
