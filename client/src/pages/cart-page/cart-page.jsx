@@ -41,7 +41,7 @@ const Cartpage = () => {
 
         console.log(authToken == "null");
         if (authToken == "null" || authToken == "undefined" || !authToken) {
-          // throw new Error(
+          // throw new  Error(
           //   "User not logged in. Please log in to view cart items."
           // );
           alert("User not logged in. Please log in to view cart items.");
@@ -108,12 +108,15 @@ const Cartpage = () => {
     }
   },[userProducts])
 
-  const deleteProduct = (productId) => {
-    setUserProducts(
-      userProducts.filter((product) => product.cart.productId !== productId)
-    );
-  };
+  const deleteProduct = (item) => {
 
+    const updateCart = userProducts.cart.filter((cartItem)=> cartItem.product_id !== item.product_id)
+    setUserProducts(updateCart)
+    // setUserProducts(
+    //   userProducts.cart.filter((product) => product.cart.product_id !== item.cart.product_id)
+    // );
+  };
+console.log(userProducts.cart)
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -130,22 +133,20 @@ const Cartpage = () => {
   if (error) {
     return <p>{error}</p>;
   }
- 
+ console.log(userProducts.cart)
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
-        {userProducts.cart.map((product,index) => {
-          
-          return <ProductTag
-          key={product.product_id}
-          onDelete={deleteProduct}
-          product_id={product.product_id}
-          selectedQuantity={product.quantity}
-          selectedVariant="#02"
-        />
-        }
-          
-        )}
+        
+      {userProducts.cart.map((product) => (
+  <ProductTag
+    key={product.product_id}
+    onDelete={() => deleteProduct(product)}
+    product_id={product.product_id}
+    selectedQuantity={product.quantity}
+    selectedVariant="#02"
+  />
+))}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
