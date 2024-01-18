@@ -10,11 +10,13 @@ const ProductTag = ({
   selectedQuantity,
   selectedVariant,
   checkState,
+  value,
+  method
 }) => {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(selectedQuantity);
-
+  console.log("value",value);
   useEffect(() => {
     fetch(`http://localhost:3000/product/products/${product_id}`)
       .then((response) => response.json())
@@ -48,6 +50,7 @@ const ProductTag = ({
 
       if (response.data == "complete") {
         setQuantity(newQuantity);
+        method(!value);
       } else {
         console.error(response.data.message);
       }

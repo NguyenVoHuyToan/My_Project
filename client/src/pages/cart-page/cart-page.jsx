@@ -125,11 +125,6 @@ const Cartpage = () => {
     fetchData();
   };
 
-  
-    // setUserProducts(
-    //   userProducts.cart.filter((product) => product.cart.product_id !== item.cart.product_id)
-    // );
-  // };
 console.log(userProducts.cart)
   const handleBuyNow = () => {
     const paymentInfo = {
