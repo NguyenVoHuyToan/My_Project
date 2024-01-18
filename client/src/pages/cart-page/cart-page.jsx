@@ -34,46 +34,47 @@ const Cartpage = () => {
     console.log(total);
     setTotalPrice(total);
   }
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const authToken = localStorage.getItem("token");
+  const fetchData = async () => {
+    try {
+      const authToken = localStorage.getItem("token");
 
-        console.log(authToken == "null");
-        if (authToken == "null" || authToken == "undefined" || !authToken) {
-          // throw new Error(
-          //   "User not logged in. Please log in to view cart items."
-          // );
-          alert("User not logged in. Please log in to view cart items.");
-          navigate("/");
-        } else {
-          const response = await axios.post(
-            "http://localhost:3000/product/cartOne",
-            {
-              accessToken: authToken,
-            }
-          );
-            console.log("response",response);
-          if (!response) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+      console.log(authToken == "null");
+      if (authToken == "null" || authToken == "undefined" || !authToken) {
+        // throw new Error(
+        //   "User not logged in. Please log in to view cart items."
+        // );
+        alert("User not logged in. Please log in to view cart items.");
+        navigate("/");
+      } else {
+        const response = await axios.post(
+          "http://localhost:3000/product/cartOne",
+          {
+            accessToken: authToken,
           }
-
-          const data = response;
-
-          const cartItems = data.data.map((item,index)=>{
-            return item
-          })||[];
-          console.log(cartItems[0]);
-          setUserProducts(cartItems[0]);
-          setLoading(false);
-        }
-      } catch (error) {
-        setError(
-          error.message || "An error occurred while fetching cart items."
         );
+          console.log("response",response);
+        if (!response) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = response;
+
+        const cartItems = data.data.map((item,index)=>{
+          return item
+        })||[];
+        console.log(cartItems[0]);
+        setUserProducts(cartItems[0]);
         setLoading(false);
       }
-    };
+    } catch (error) {
+      setError(
+        error.message || "An error occurred while fetching cart items."
+      );
+      setLoading(false);
+    }
+  };
+  useEffect(() => {
+    
     
     fetchData();
    
@@ -108,10 +109,12 @@ const Cartpage = () => {
     }
   },[userProducts])
 
-  const deleteProduct = (productId) => {
-    setUserProducts(
-      userProducts.filter((product) => product.cart.productId !== productId)
-    );
+  const deleteProduct = () => {
+    console.log("vao delete");
+    // setUserProducts(
+    //   userProducts
+    // );
+    fetchData()
   };
 
   const handleBuyNow = () => {

@@ -60,18 +60,16 @@ const ProductTag = ({
     const authToken = localStorage.getItem("token");
 
     try {
-      const response = await axios.delete(
-        `http://localhost:3000/cart/${productId}`,
+      const response = await axios.post(
+        `http://localhost:3000/product/cart/delete/${productId}`,
         {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
+          accessToken:authToken
         }
       );
 
-      if (response.data.success) {
+      if (response.data == "complete") {
         console.log("Product deleted from cart successfully");
-        onDelete(product_id);
+        onDelete(productId);
       } else {
         console.error(response.data.message);
       }
@@ -131,14 +129,14 @@ const ProductTag = ({
             >
               <i className="bi bi-suit-heart square-icon icon-size-16"></i>
               <p className="body-sml">Save</p>
-            </div>
+            </div> */}
             <div
               className="delete-from-cart flex-row gap-2xs"
-              onClick={() => handleDeleteFromCart(product._id)}
+              onClick={() => handleDeleteFromCart(product.product_id)}
             >
               <i className="bi bi-trash3 square-icon icon-size-16"></i>
               <p className="body-sml">Delete</p>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="prod-total-price flex-col">
