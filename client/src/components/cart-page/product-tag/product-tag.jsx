@@ -136,7 +136,7 @@ const ProductTag = ({
             // nút xóa sp 
             <div
               className="delete-from-cart flex-row gap-2xs "
-              onClick={() => handleDeleteFromCart(product._id)}
+              onClick={() => handleDeleteFromCart(product.product_id)}
             >
               <i className="bi bi-trash3 square-icon icon-size-18"></i>
               {/* <p className="body-sml">Delete</p> */}

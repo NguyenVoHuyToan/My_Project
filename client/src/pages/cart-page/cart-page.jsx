@@ -42,25 +42,20 @@ const Cartpage = () => {
     try {
       const authToken = localStorage.getItem("token");
 
-        console.log(authToken == "null");
-        if (authToken == "null" || authToken == "undefined" || !authToken) {
-          // throw new  Error(
-          //   "User not logged in. Please log in to view cart items."
-          // );
-          alert("User not logged in. Please log in to view cart items.");
-          navigate("/");
-        } else {
-          const response = await axios.post(
-            "http://localhost:3000/product/cartOne",
-            {
-              accessToken: authToken,
-            }
-          );
-            console.log("response",response);
-          if (!response) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+      console.log(authToken == "null");
+      if (authToken == "null" || authToken == "undefined" || !authToken) {
+        // throw new Error(
+        //   "User not logged in. Please log in to view cart items."
+        // );
+        alert("User not logged in. Please log in to view cart items.");
+        navigate("/");
+      } else {
+        const response = await axios.post(
+          "http://localhost:3000/product/cartOne",
+          {
+            accessToken: authToken,
           }
-        ;
+        );
           console.log("response",response);
         if (!response) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -121,20 +116,12 @@ const Cartpage = () => {
 
   const deleteProduct = () => {
     console.log("vao delete");
-    const updateCart = userProducts.cart.filter((cartItem)=> cartItem.product_id !== item.product_id)
-    setUserProducts(updateCart)
     // setUserProducts(
     //   userProducts
     // );
     fetchData()
   };
 
-  
-    // setUserProducts(
-    //   userProducts.cart.filter((product) => product.cart.product_id !== item.cart.product_id)
-    // );
-  // };
-console.log(userProducts.cart)
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -151,7 +138,7 @@ console.log(userProducts.cart)
   if (error) {
     return <p>{error}</p>;
   }
- console.log(userProducts.cart)
+ 
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
@@ -288,7 +275,6 @@ console.log(userProducts.cart)
       </div>
     </div>
   );
-            }
-;
+};
 
 export default Cartpage;
