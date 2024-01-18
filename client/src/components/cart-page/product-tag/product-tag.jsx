@@ -71,8 +71,7 @@ const ProductTag = ({
         console.log("Product deleted from cart successfully");
         onDelete(productId);
       } else {
-        // console.error(response.data.message);
-        console.log('lỗi')
+        console.error(response.data.message);
       }
     } catch (error) {
       console.error("Error:", error);
@@ -80,7 +79,6 @@ const ProductTag = ({
   };
 
   let prodTotalPrice = product.price * quantity;
-
   return (
     <div className="product-tag">
       <div className="container flex-row">

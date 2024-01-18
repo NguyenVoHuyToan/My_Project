@@ -116,14 +116,15 @@ const Cartpage = () => {
 
   const deleteProduct = () => {
     console.log("vao delete");
+    const updateCart = userProducts.cart.filter((cartItem)=> cartItem.product_id !== item.product_id)
+    setUserProducts(updateCart)
     // setUserProducts(
     //   userProducts
     // );
     fetchData()
   };
 
-    // const updateCart = userProducts.cart.filter((cartItem)=> cartItem.product_id !== item.product_id)
-    // setUserProducts(updateCart)
+  
     // setUserProducts(
     //   userProducts.cart.filter((product) => product.cart.product_id !== item.cart.product_id)
     // );
