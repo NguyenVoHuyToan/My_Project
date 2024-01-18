@@ -20,7 +20,7 @@ import { useEffect, useState } from "react";
 import Image from "./Image.jsx";
 import TitleHomePage from "./TitleHomePage.jsx";
 import TextProduct from "./TextProduct.jsx";
-import Text from "./Text.Jsx";
+import Text from "./Text.jsx";
 import ContactUs from "./ContactUs.jsx";
 
 const Homepage = () => {

@@ -78,9 +78,12 @@
     letter-spacing: 0.24px;
   }
 
-  .add-to-wishlist,
-  .delete-from-cart {
+  .add-to-wishlist {
     cursor: pointer;
+  }
+  .delete-from-cart{
+    cursor: pointer;
+    padding: 2rem 0px;
   }
 
   .function-btn > div:hover {

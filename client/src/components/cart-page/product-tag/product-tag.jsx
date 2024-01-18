@@ -10,11 +10,13 @@ const ProductTag = ({
   selectedQuantity,
   selectedVariant,
   checkState,
+  value,
+  method
 }) => {
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(selectedQuantity);
-
+  console.log("value",value);
   useEffect(() => {
     fetch(`http://localhost:3000/product/products/${product_id}`)
       .then((response) => response.json())
@@ -27,7 +29,7 @@ const ProductTag = ({
         setLoading(false);
       });
   }, [product_id]);
-  console.log(product);
+  // console.log(product);
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -48,6 +50,7 @@ const ProductTag = ({
 
       if (response.data == "complete") {
         setQuantity(newQuantity);
+        method(!value);
       } else {
         console.error(response.data.message);
       }
@@ -79,7 +82,6 @@ const ProductTag = ({
   };
 
   let prodTotalPrice = product.price * quantity;
-
   return (
     <div className="product-tag">
       <div className="container flex-row">
@@ -129,14 +131,16 @@ const ProductTag = ({
             >
               <i className="bi bi-suit-heart square-icon icon-size-16"></i>
               <p className="body-sml">Save</p>
-            </div> */}
+            </div>*/
+
+            // nút xóa sp 
             <div
-              className="delete-from-cart flex-row gap-2xs"
+              className="delete-from-cart flex-row gap-2xs "
               onClick={() => handleDeleteFromCart(product.product_id)}
             >
-              <i className="bi bi-trash3 square-icon icon-size-16"></i>
-              <p className="body-sml">Delete</p>
-            </div>
+              <i className="bi bi-trash3 square-icon icon-size-18"></i>
+              {/* <p className="body-sml">Delete</p> */}
+            </div> }
           </div>
         </div>
         <div className="prod-total-price flex-col">

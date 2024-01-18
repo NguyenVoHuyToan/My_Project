@@ -40,7 +40,7 @@ const Cartpage = () => {
 
       console.log(authToken == "null");
       if (authToken == "null" || authToken == "undefined" || !authToken) {
-        // throw new Error(
+        // throw new  Error(
         //   "User not logged in. Please log in to view cart items."
         // );
         alert("User not logged in. Please log in to view cart items.");
@@ -52,6 +52,10 @@ const Cartpage = () => {
             accessToken: authToken,
           }
         );
+        console.log("response", response);
+        if (!response) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         console.log("response", response);
         if (!response) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -75,9 +79,9 @@ const Cartpage = () => {
   useEffect(() => {
     fetchData();
 
-    if (userProducts.length > 0) {
-      getTotal();
-    }
+    // if(userProducts.length>0){
+    //   getTotal()
+    // }
   }, []);
 
   // useEffect(() => {
@@ -106,14 +110,18 @@ const Cartpage = () => {
     }
   }, [userProducts]);
 
-  const deleteProduct = () => {
-    console.log("vao delete");
-    // setUserProducts(
-    //   userProducts
-    // );
+  const deleteProduct = (productId) => {
+    const updatedCart = userProducts.cart.filter(
+      (cartItem) => cartItem.product_id !== productId
+    );
+    setUserProducts((prevUserProducts) => ({
+      ...prevUserProducts,
+      cart: updatedCart,
+    }));
     fetchData();
   };
 
+  console.log(userProducts.cart);
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -130,21 +138,19 @@ const Cartpage = () => {
   if (error) {
     return <p>{error}</p>;
   }
-
+  console.log(userProducts.cart);
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
-        {userProducts.cart.map((product, index) => {
-          return (
-            <ProductTag
-              key={product.productId}
-              onDelete={deleteProduct}
-              product_id={product.productId}
-              selectedQuantity={product.quantity}
-              selectedVariant="#02 Rosy"
-            />
-          );
-        })}
+        {userProducts.cart.map((product) => (
+          <ProductTag
+            key={product.product_id}
+            onDelete={() => deleteProduct(product.product_id)}
+            product_id={product.product_id}
+            selectedQuantity={product.quantity}
+            selectedVariant="#02"
+          />
+        ))}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
@@ -267,5 +273,4 @@ const Cartpage = () => {
     </div>
   );
 };
-
 export default Cartpage;

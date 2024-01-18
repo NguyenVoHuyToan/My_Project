@@ -97,6 +97,7 @@ input {
 }
 
 .bot-right-title {
+    padding-top: 32px;
     display: flex;
     padding: var(--spacing-spc-none, 0px);
     flex-direction: column;
