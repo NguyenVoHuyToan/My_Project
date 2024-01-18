@@ -105,8 +105,10 @@ const Cartpage = () => {
   // }, []);
 
   useEffect(()=>{
-    if(Object.keys(userProducts).length>0){
-      getTotal();
+    if(userProducts){
+      if(Object.keys(userProducts).length>0){
+        getTotal();
+      }
     }
   }, [userProducts]);
 
@@ -118,7 +120,7 @@ const Cartpage = () => {
     fetchData()
   };
 
-  console.log(userProducts.cart);
+  
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -139,7 +141,7 @@ const Cartpage = () => {
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
-        {userProducts.cart.map((product,index) => {
+        {userProducts?userProducts.cart.map((product,index) => {
           
           return <ProductTag
           key={product.product_id}
@@ -152,7 +154,7 @@ const Cartpage = () => {
         />
         }
           
-        )}
+        ):<></>}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
