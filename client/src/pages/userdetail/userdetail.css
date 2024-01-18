@@ -53,9 +53,9 @@ input{
 
 .bot-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;    
-    gap: 25px;
+   
+   width: 100%;
+    /* gap: 20px; */
     border-radius: var(--spacing-spc-none, 0px);
 }
 
@@ -65,7 +65,7 @@ input{
 
 .bot-left-container {
     display: flex;
-    width: 400px;
+    width: 500px;
     height: 380px;
     padding: 2rem 1rem;
     flex-direction: column;
@@ -88,7 +88,7 @@ input{
 
 .info-container {
     display: flex;
-    width: 600px;
+    width: 90%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +99,7 @@ input{
 }
 
 .bot-right-title {
+    padding-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -112,7 +113,7 @@ input{
     flex-direction: row;
     justify-content: center;
     align-items: space-between;
-    gap: 20px;
+    gap: 5px;
     border-radius: var(--spacing-spc-none, 0px);
 }
 
@@ -121,24 +122,24 @@ input{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
     padding: 0 1rem;
 }
 
 .bot-right-body2 {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex; */
     flex-direction: column;
     border-radius: 10px;
     padding-bottom: 1rem;
-    gap: 5px;
+    gap: 3px;
 }
 
 .gender-choose {
     display: flex;
     padding: var(--spacing-spc-none, 0px);
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
     gap: 16px;
     border-radius: var(--spacing-spc-none, 0px);
 }
@@ -166,7 +167,7 @@ input{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     border-radius: 10px;
 }
 
@@ -181,7 +182,9 @@ input{
 #name-input,
 #email-input,
 #phone-input {
-    height: 30px;
+    height: 37px;
+    width: 250px;
+    padding: 5px;
     margin-bottom: 20px;
     border: 1px solid black
 }
