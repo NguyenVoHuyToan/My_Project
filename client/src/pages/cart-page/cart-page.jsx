@@ -75,9 +75,9 @@ const Cartpage = () => {
   useEffect(() => {
     fetchData();
 
-    // if(userProducts.length>0){
-    //   getTotal()
-    // }
+    if (userProducts.length > 0) {
+      getTotal();
+    }
   }, []);
 
   // useEffect(() => {
