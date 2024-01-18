@@ -2,6 +2,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
+    .billing-detail{
+        margin-top: 4.5rem;
+    }
+
     .billing-container {
         padding: 2rem 4rem;
         border: 1px solid #5E503F80;
@@ -48,20 +52,84 @@
         display: block;
         justify-content: center;
         align-items: center;
-        background-color: aqua;
+        margin-top: 4rem;
+    }
+    .product-tag{
+        padding: 0.5rem;
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1280px) {
     .order-detail {
         display: block;
         justify-content: center;
         align-items: center;
-        background-color: aqua;
+       
     }
     .cart-page{
-        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .order-detail{
+        flex-direction: column;
+        max-width: 1000px;
+    }
+    .product-tag{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .order-detail{
+        flex-direction: column;
+        max-width: 700px;
+    }
+    .product-tag{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .order-detail{
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .product-tag{
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 750px){
+    .order-detail{
+        flex-direction: column;
+        max-width: 500px;
+        padding: 1rem;
+    }
+    .product-tag{
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .order-detail{
+        flex-direction: column;
+        max-width: 400px;
+        padding: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .product-tag{
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 390px){
+    .order-detail{
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 370px;
     }
+
+    .product-tag{
+        padding: 0.5rem;
+    }   
 }
