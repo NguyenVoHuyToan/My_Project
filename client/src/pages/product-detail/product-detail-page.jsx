@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./product-detail-page.scss";
 import { useParams } from "react-router-dom";
 import Button from "../../components/common/button/button";
@@ -15,10 +15,54 @@ const ProductDetailPage = () => {
   const [similarProducts, setSimilarProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const buyNowOnClick=(productId)=>{
-    handleAddToCartClick(productId);
-    navigate("/cart");
-  }
+  const buyNowOnClick = async (productId) => {
+    console.log("onclick");
+    if (!productId) {
+      console.error("Product ID is undefined");
+      toast.error("Product ID is undefined", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      return;
+    }
+
+    try {
+      const authToken = localStorage.getItem("token");
+
+      if (authToken) {
+        const response = await axios.post(
+          "http://localhost:3000/product/cart/add",
+          { productId, accessToken: authToken }
+        );
+
+        if (response.data == "complete") {
+          // if (onAddToCart) {
+          //   onAddToCart(product);
+          // }
+          toast.success(`Product added to cart successfully`, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+          navigate("/cart");
+        } else {
+          console.error(`Failed to add product to cart:`);
+          toast.error(`Failed to add product to cart`, {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
+      } else {
+        console.error("User not logged in. Redirecting to signin page.");
+        toast.error("Please log in to add products to cart", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      }
+    } catch (error) {
+      console.error("Error adding product to cart:", error);
+      toast.error(`Error adding product to cart`, {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      navigate("/signin");
+    }
+   
+  };
   const handleAddToCartClick = async (productId) => {
     console.log("onclick");
     if (!productId) {
@@ -35,7 +79,7 @@ const ProductDetailPage = () => {
       if (authToken) {
         const response = await axios.post(
           "http://localhost:3000/product/cart/add",
-          { productId,accessToken:authToken }
+          { productId, accessToken: authToken }
         );
 
         if (response.data == "complete") {
@@ -65,37 +109,36 @@ const ProductDetailPage = () => {
       navigate("/signin");
     }
   };
-    useEffect(() => {
-      fetch(`http://localhost:3000/product/products/${id}`)
+  useEffect(() => {
+    fetch(`http://localhost:3000/product/products/${id}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setProduct(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
+  }, [id]);
+
+  useEffect(() => {
+    if (product.brands) {
+      const nameBrand = encodeURIComponent(product.brands);
+      fetch(`http://localhost:3000/product/products?brands=${nameBrand}`)
         .then((response) => response.json())
         .then((data) => {
-          setProduct(data);
           setLoading(false);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          setLoading(false);
-        });
-  
-    }, [id]);
 
-    useEffect(() => {
-      if (product.brands) {
-        const nameBrand =encodeURIComponent(product.brands);
-        fetch(`http://localhost:3000/product/products?brands=${nameBrand}`)
-          .then((response) => response.json())
-          .then((data) => {
-            setLoading(false);
-            
-            setSimilarProducts(data);
-          })
-          .catch((error) => console.error(error));
-      }
-    }, [product.brands]);
-    
-    if (loading) {
-      return <div>Loading...</div>;
+          setSimilarProducts(data);
+        })
+        .catch((error) => console.error(error));
     }
+  }, [product.brands]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   const responsive = {
     desktop: {
@@ -198,7 +241,7 @@ const ProductDetailPage = () => {
                   iconL="bi bi-cart-check square-icon"
                   text="buy now"
                   frameStyle="prod-detail-btn"
-                  onClick={()=>buyNowOnClick(id)}
+                  onClick={() => buyNowOnClick(id)}
                 />
                 <Button
                   btnStyle="auth-btn"
@@ -206,7 +249,7 @@ const ProductDetailPage = () => {
                   iconL="bi bi-cart-plus square-icon"
                   text="add to cart"
                   frameStyle="prod-detail-btn"
-                  onClick={()=>handleAddToCartClick(id)}
+                  onClick={() => handleAddToCartClick(id)}
                 />
               </div>
             </div>
@@ -234,7 +277,6 @@ const ProductDetailPage = () => {
             swipeable={true}
           >
             {similarProducts.map((product) => (
-              
               <ProductCard key={product._id} product={product} />
             ))}
           </Carousel>

@@ -8,6 +8,7 @@ import axios from "axios";
 
 const Cartpage = () => {
   const navigate = useNavigate();
+  const [changeQuantity,setChangeQuantity]=useState(false);
   const [userProducts, setUserProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -32,6 +33,9 @@ const Cartpage = () => {
 
     total = total*0.8+total*0.1+ 5;
     console.log(total);
+    if(total-5 <=0 ){
+      total=0;
+    }
     setTotalPrice(total);
   }
   const fetchData = async () => {
@@ -73,6 +77,7 @@ const Cartpage = () => {
       setLoading(false);
     }
   };
+  // console.log("changeQunatity",changeQuantity);
   useEffect(() => {
     
     
@@ -81,7 +86,7 @@ const Cartpage = () => {
     // if(userProducts.length>0){
     //   getTotal()
     // }
-  }, []);
+  }, [changeQuantity]);
 
   // useEffect(() => {
   //   const fetchAllProducts = async () => {
@@ -145,6 +150,8 @@ const Cartpage = () => {
           product_id={product.product_id}
           selectedQuantity={product.quantity}
           selectedVariant="#02"
+          value={changeQuantity}
+          method={setChangeQuantity}
         />
         }
           
@@ -204,11 +211,15 @@ const Cartpage = () => {
                 <p className="tag capitalize">discount</p>
                 <p className="tag capitalize">tax</p>
               </div>
-              <div className="item-price flex-col gap-xs body-sml align-right">
+              {totalPrice !=0 ? <div className="item-price flex-col gap-xs body-sml align-right">
                 <p className="product-price">{dongFormatter(5000)}</p>
                 <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.2*1000)}(20%)</p>
                 <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.1*1000)}(10%)</p>
-              </div>
+              </div>: <div className="item-price flex-col gap-xs body-sml align-right">
+                <p className="product-price">{dongFormatter(0)}</p>
+                <p className="product-price">{dongFormatter(0)}(20%)</p>
+                <p className="product-price">{dongFormatter(0)}(10%)</p>
+              </div>}
             </div>
           </div>
           <div className="hr-divider"></div>
