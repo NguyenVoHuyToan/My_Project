@@ -114,14 +114,15 @@ const Cartpage = () => {
     }
   },[userProducts])
 
-  const deleteProduct = () => {
-    console.log("vao delete");
-    const updateCart = userProducts.cart.filter((cartItem)=> cartItem.product_id !== item.product_id)
-    setUserProducts(updateCart)
-    // setUserProducts(
-    //   userProducts
-    // );
-    fetchData()
+  const deleteProduct = (productId) => {
+    const updatedCart = userProducts.cart.filter(
+      (cartItem) => cartItem.product_id !== productId
+    );
+    setUserProducts((prevUserProducts) => ({
+      ...prevUserProducts,
+      cart: updatedCart,
+    }));
+    fetchData();
   };
 
   
@@ -154,7 +155,7 @@ console.log(userProducts.cart)
       {userProducts.cart.map((product) => (
   <ProductTag
     key={product.product_id}
-    onDelete={() => deleteProduct(product)}
+    onDelete={() => deleteProduct(product.product_id)}
     product_id={product.product_id}
     selectedQuantity={product.quantity}
     selectedVariant="#02"
