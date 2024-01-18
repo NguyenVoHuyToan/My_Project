@@ -71,7 +71,8 @@ const ProductTag = ({
         console.log("Product deleted from cart successfully");
         onDelete(productId);
       } else {
-        console.error(response.data.message);
+        // console.error(response.data.message);
+        console.log('lỗi')
       }
     } catch (error) {
       console.error("Error:", error);
