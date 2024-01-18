@@ -192,3 +192,12 @@ export const deleteCart= async (req,res)=>{
     }
     return res.json("error")
 }
+export const deleteAllCart=async(req,res)=>{
+    const userEmail=req.userEmail;
+    const deleted=await databaseProject.cart.deleteOne({userEmail:userEmail});
+    if(deleted){
+        return res.json("complete")
+    }
+    
+   
+}
