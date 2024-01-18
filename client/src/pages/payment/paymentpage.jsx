@@ -6,12 +6,17 @@ import dongFormatter from '../../utils/dongFormatter/dongFormatter.js';
 const PaymentPage = () => {
   const [cartInfo, setCartInfo] = useState({});
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-
+  const [paymentTotal,setPaymentTotal]=useState(0);
   const location = useLocation();
-
+  const decode=decodeURIComponent(location.search.split("?")[1])
   useEffect(() => {
-    if (location.state && location.state.paymentInfo) {
-      setCartInfo(location.state.paymentInfo);
+      
+      const {products,totalPrice}=JSON.parse(decode.split("=")[1]);
+      console.log(products);
+    if (products) {
+      
+      setCartInfo(products);
+      setPaymentTotal(totalPrice);
     } else {
       console.error('No payment information found.');
     }
@@ -23,7 +28,7 @@ const PaymentPage = () => {
     const delivery = calculateDelivery();
     const discount = calculateDiscount(subtotal);
     const tax = calculateTax(subtotal);
-    const total = calculateTotal(subtotal, delivery, discount, tax);
+    const total = paymentTotal;
 
     // Sử dụng giá trị total theo cách phù hợp trong component của bạn
   }, [cartInfo]);
@@ -34,11 +39,11 @@ const PaymentPage = () => {
       : 0
   );
 
-  const calculateDelivery = () => 5.00;
+  const calculateDelivery = () => 5000;
 
-  const calculateDiscount = (subtotal) => subtotal * 0.20; // 20% discount
+  const calculateDiscount = () => ((paymentTotal-5)/0.9)*0.2*1000; // 20% discount
 
-  const calculateTax = (subtotal) => subtotal * 0.10; // 10% tax
+  const calculateTax = () => ((paymentTotal-5)/0.9)*0.1*1000; // 10% tax
 
   const calculateTotal = (subtotal, delivery, discount, tax) => subtotal + delivery - discount + tax;
 
@@ -51,18 +56,18 @@ const PaymentPage = () => {
     }
   };
 
-  const renderSelectedProducts = () => (
-    Array.isArray(cartInfo.products) && cartInfo.products.length > 0 ? (
-      cartInfo.products.map((product) => (
-        <div key={product.productId} className="order-detail">
-          <div className="body-sml">
-            {`${product.product_name} - Color ${product.color} - Version ${product.version}`}
-          </div>
-          <div className="body-sml">{dongFormatter(product.price * product.quantity)}</div>
+  const renderSelectedProducts = () => {
+    if(Object.keys(cartInfo).length>0){
+      return  cartInfo.cart.map((product,index)=>{
+        return <div key={product.product_id} className="order-detail">
+        <div className="body-sml">
+          {`${cartInfo.product_des[index].product_name}`}
         </div>
-      ))
-    ) : null
-  );
+        <div className="body-sml">{dongFormatter(cartInfo.product_des[index].price * product.quantity*1000)}</div>
+      </div>
+      })
+    }
+  };
 
   return (
     <div className="payment-page">
@@ -189,17 +194,17 @@ const PaymentPage = () => {
     </div>
     <div className="sub-line">
       <div className="body-sml left-item">Discount</div>
-      <div className="body-sml">- {dongFormatter(calculateDiscount(calculateSubtotal()))} (20%)</div>
+      <div className="body-sml">- {dongFormatter(calculateDiscount())} (20%)</div>
     </div>
     <div className="sub-line">
       <div className="body-sml left-item">Tax</div>
-      <div className="body-sml">{dongFormatter(calculateTax(calculateSubtotal()))} (10%)</div>
+      <div className="body-sml">{dongFormatter(calculateTax())} (10%)</div>
     </div>
   </div>
 
   <div className="total">
     <div className="total-title body-bld">Total</div>
-    <div className="total-cost body-bld">{formatCurrency(calculateTotal())}</div>
+    <div className="total-cost body-bld">{dongFormatter(paymentTotal*1000)}</div>
   </div>
 </div>
 

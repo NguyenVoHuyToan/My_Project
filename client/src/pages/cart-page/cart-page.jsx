@@ -13,7 +13,27 @@ const Cartpage = () => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [calculateTotal,setCalcualteTotal]=useState(false);
+  const getTotal=()=>{
+    let total = 0;
+  
+    // for (let index = 0; index < aList; index++) {
+    //   const element = userProducts;
+    //   console.log(element);
+    //   element.cart.forEach((item, index) => {
+    //     console.log(item.quantity * element.product_des[index].price);
+    //     total += item.quantity * element.product_des[index].price;
+    //   });
+    // }
+    console.log(userProducts);
+    userProducts.cart.map((item,index)=>{
+      total+=item.quantity* userProducts.product_des[index].price;
+    })
 
+    total = total*0.8+total*0.1+ 5;
+    console.log(total);
+    setTotalPrice(total);
+  }
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -54,47 +74,39 @@ const Cartpage = () => {
         setLoading(false);
       }
     };
-
+    
     fetchData();
+   
+    // if(userProducts.length>0){
+    //   getTotal()
+    // }
   }, []);
 
-  useEffect(() => {
-    const fetchAllProducts = async () => {
-      try {
-        const authToken = localStorage.getItem("token");
+  // useEffect(() => {
+  //   const fetchAllProducts = async () => {
+  //     try {
+  //       const authToken = localStorage.getItem("token");
 
-        const data = await axios.post(`http://localhost:3000/product/cartOne`, {
-          accessToken: authToken,
-        });
+  //       const data = await axios.post(`http://localhost:3000/product/cartOne`, {
+  //         accessToken: authToken,
+  //       });
 
-        console.log(data.data[0]);
-        setAllProducts(data.data[0]);
+  //       console.log(data.data[0]);
+  //       setAllProducts(data.data[0]);
         
-      } catch (error) {
-        setError("An error occurred while fetching product details.");
-      }
-    };
+  //     } catch (error) {
+  //       setError("An error occurred while fetching product details.");
+  //     }
+  //   };
 
-    fetchAllProducts();
-  }, []);
+  //   fetchAllProducts();
+  // }, []);
 
-  useEffect(() => {
-    let total = 0;
-    const aList=userProducts.cart;
-    console.log( userProducts.cart.length);
-    for (let index = 0; index < aList.length; index++) {
-      const element = userProducts;
-      console.log(element);
-      element.cart.forEach((item, index) => {
-        console.log(item.quantity * element.product_des[index].price);
-        total += item.quantity * element.product_des[index].price;
-      });
+  useEffect(()=>{
+    if(Object.keys(userProducts).length>0){
+      getTotal();
     }
-
-    total = total -5.99+2.99 + 5;
-    console.log(total);
-    setTotalPrice(total);
-  }, [allProducts]);
+  },[userProducts])
 
   const deleteProduct = (productId) => {
     setUserProducts(
@@ -104,7 +116,7 @@ const Cartpage = () => {
 
   const handleBuyNow = () => {
     const paymentInfo = {
-      products: userProducts,
+      products: userProducts.cart,
       totalPrice: totalPrice,
     };
 
@@ -190,9 +202,9 @@ const Cartpage = () => {
                 <p className="tag capitalize">tax</p>
               </div>
               <div className="item-price flex-col gap-xs body-sml align-right">
-                <p className="product-price">5.00</p>
-                <p className="product-price">-5.99 (20%)</p>
-                <p className="product-price">2.99 (10%)</p>
+                <p className="product-price">{dongFormatter(5000)}</p>
+                <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.2*1000)}(20%)</p>
+                <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.1*1000)}(10%)</p>
               </div>
             </div>
           </div>
@@ -232,7 +244,7 @@ const Cartpage = () => {
               iconL="bi bi-cart-check icon-size-16 square-icon"
               onClick={() => {
                 const paymentInfo = {
-                  products: userProducts[0].cart,
+                  products: userProducts,
                   totalPrice: totalPrice,
                 };
 
