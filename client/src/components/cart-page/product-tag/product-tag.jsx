@@ -60,18 +60,16 @@ const ProductTag = ({
     const authToken = localStorage.getItem("token");
 
     try {
-      const response = await axios.delete(
-        `http://localhost:3000/cart/${productId}`,
+      const response = await axios.post(
+        `http://localhost:3000/product/cart/delete/${productId}`,
         {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
+          accessToken:authToken
         }
       );
 
-      if (response.data.success) {
+      if (response.data == "complete") {
         console.log("Product deleted from cart successfully");
-        onDelete(product_id);
+        onDelete(productId);
       } else {
         console.error(response.data.message);
       }

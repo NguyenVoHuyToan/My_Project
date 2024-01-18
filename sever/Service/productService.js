@@ -169,3 +169,26 @@ export const getOneCart=async (req,res)=>{
 
     return res.json(itemList)
 }
+export const deleteCart= async (req,res)=>{
+    let deleteIndex=-1;
+    const productId=req.params.id;
+    const userEmail=req.userEmail;
+    const cartDetail=await databaseProject.cart.findOne({userEmail:userEmail});
+    cartDetail.cart.map((item,index)=>{
+        if(item.product_id == productId){
+            return deleteIndex=index
+        }
+    });
+    
+    if(deleteIndex>=0){
+        if(Object.keys(cartDetail).length>0){
+            
+            const removed=cartDetail.cart.splice(deleteIndex,1);
+    const updatedCart=cartDetail.cart;
+    await databaseProject.cart.updateOne({userEmail:userEmail},{$set:{cart:updatedCart}})
+    return res.json("complete")
+        }
+        return res.json("cart Error")
+    }
+    return res.json("error")
+}
