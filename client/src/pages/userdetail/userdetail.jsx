@@ -265,7 +265,7 @@ const UserDetail = () => {
           {selectedFunction === "accountInformation" && (
             <div className="info-container">
               <div className="bot-right-title">
-                <h4 className="h4 ">Account informations</h4>
+                <h4 className="h4 gap-3xl ">Account informations</h4>
                 <p className="body">
                   Please update the informations you want to change
                 </p>

@@ -9,9 +9,9 @@
         padding: unset;
     }
     
-    .section {
-        max-width: 1440px;
-    }
+    // .section {
+    //     max-width: 1440px;
+    // }
     
     .img-slider img {
         width: 100%;
@@ -211,8 +211,7 @@
 @media screen and (max-width: 1200px){
     .section-container{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: column;
     }
     .promo-collection-sct{
         flex-direction: column;
@@ -287,9 +286,7 @@
         max-width: 900px;
      }
      .section-container1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;;
      }
 }
 
@@ -300,24 +297,29 @@
         align-items: center;
     }
     .section-container1{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: flex-end;
-        margin-left: 2rem;
+        display: none;
     }
     .prod-display{
         flex-direction: column;
-        max-width: 500px;
-        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
      }
      .footer{
         width: 100%;
      }
      .section-container{
         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+     }
+     .prod-query-content{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .filter-container{
         justify-content: center;
-        align-items: center;
+        margin-left: 5rem;
      }
 }
 
@@ -340,4 +342,28 @@
         align-items: center;
     }
 
+}
+
+@media screen and (max-width: 390px) {
+    .prod-display{
+        flex-direction: column;
+     }
+     .product-dis-icon{
+        flex-direction: column;
+     }
+     .filter-container{
+        flex-direction: column;
+     }
+     .promo-collection-sct{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .collection-content{
+        margin: 0 3rem;
+     }
+     .prod-grid{
+        flex: 1;
+        flex-direction: column;
+        padding: 0;
+     }
 }
