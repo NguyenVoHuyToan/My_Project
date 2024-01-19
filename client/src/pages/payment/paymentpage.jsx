@@ -175,12 +175,10 @@ const PaymentPage = () => {
                 <div className="VCB">
                   <p className="body card-text">Vietcombank</p>
                   <p className=" card-textbody">*** **** **99</p>
-                  <i className="bi bi-exclude"></i>
                 </div>
                 <div className="vietin">
                   <p className="body card-text">Vietinbank</p>
                   <p className="body card-text">*** **** **99</p>
-                  <i className="bi bi-exclude"></i>
                   {/* <exclude /> */}
                 </div>
                 <div className="new-card">
