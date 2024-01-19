@@ -25,7 +25,7 @@
     
     .payment-detail {
         display: flex;
-        padding: 30px 36px 20px 37px;
+        padding: 2rem 1rem;
         flex-direction: column;
         align-items: flex-start;
         gap: 14px;
@@ -80,9 +80,9 @@
     
     .selection-table {
         display: flex;
-        padding: var(--Spacing-5, 40px) 55px 24px 45px;
+        padding: 10px 10px 20px 20px;
         align-items: flex-start;
-        gap: 63px;
+        gap: 20px;
         border-radius: var(--spacing-spc-none, 0px);
         background: var(--Desert-Storm, #F1EBE3);
     }
@@ -116,8 +116,8 @@
     .vietin,
     .new-card {
         display: flex;
-        width: 229px;
-        height: 106px;
+        width:100%;
+        height: 100%;
         padding: 10px 16px;
         flex-direction: column;
         align-items: flex-start;
@@ -147,6 +147,7 @@
     
     .right-frame {
         display: flex;
+        width: 100%;
         padding: var(--spacing-spc-none, 0px);
         flex-direction: column;
         align-items: flex-start;
@@ -266,8 +267,7 @@
         gap: 23px;
         border-radius: var(--spacing-spc-none, 0px);
         border: 1px solid rgba(94, 80, 63, 0.30);
-        padding: 29px 36px 72px 37px;
-        /* padding: 50px; */
+        padding: 1rem 2rem;
         flex: 1;
         height: auto;
         width: auto;
@@ -463,6 +463,135 @@
         line-height: normal;
         letter-spacing: 0.36px;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .payment-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .main-UI{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 0 2rem;
+    }
+    .billing-detail{
+        padding: 0 2rem;
+        margin: 1rem;
+    }
+    .payment-detail{
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .payment-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .main-UI{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .payment-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .main-UI{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-detail{
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .payment-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .main-UI{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .payment-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .main-UI{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .selection-table{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        flex-direction: column;
+        overflow: scroll;
+        padding: 0;
+    }
+    .left-info{
+        max-width: 150px;
+        flex-direction: row;
+    }
+    .VCB,
+    .vietin,
+    .new-card {
+        width: 100%;
+    }
+    .btn{
+        margin: 0;
+        padding: 0;
     }
 }
 
