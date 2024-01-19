@@ -16,7 +16,7 @@ const ProductTag = ({
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(selectedQuantity);
-  console.log("value",value);
+  // console.log("value",value);
   useEffect(() => {
     fetch(`http://localhost:3000/product/products/${product_id}`)
       .then((response) => response.json())
@@ -34,7 +34,7 @@ const ProductTag = ({
     return <div>Loading...</div>;
   }
 
-  const handleQuantityChange = async (productId, newQuantity) => {
+   const handleQuantityChange = async (productId, newQuantity) => {
     const authToken = localStorage.getItem("token");
 
     if (newQuantity < 1) {

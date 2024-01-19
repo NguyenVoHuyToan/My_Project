@@ -29,6 +29,9 @@ const PaymentPage = () => {
 
     // Sử dụng giá trị total theo cách phù hợp trong component của bạn
   }, [cartInfo]);
+  useEffect(()=> {
+
+  })
 
   const calculateSubtotal = () =>
     Array.isArray(cartInfo?.products) && cartInfo.products.length > 0

@@ -113,7 +113,9 @@ const Cartpage = () => {
       getTotal();
     }
   },[userProducts])
+useEffect(()=>{
 
+},[userProducts.cart])
   const deleteProduct = (productId) => {
     const updatedCart = userProducts.cart.filter(
       (cartItem) => cartItem.product_id !== productId
@@ -125,7 +127,6 @@ const Cartpage = () => {
     fetchData();
   };
 
-console.log(userProducts.cart)
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -142,7 +143,7 @@ console.log(userProducts.cart)
   if (error) {
     return <p>{error}</p>;
   }
- console.log(userProducts.cart)
+
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
@@ -170,7 +171,7 @@ console.log(userProducts.cart)
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
               {userProducts.cart.map((product, index) => {
-                console.log(product);
+               
                 return (
                   <div 
                     key={product.product_id}
@@ -179,9 +180,16 @@ console.log(userProducts.cart)
                     <p className="product-name">
                       {userProducts.product_des[index].product_name}
                     </p>
+                    <div style={{display:'flex',flexDirection:'column', justifyContent:'space-between', height:'42px'}}>
+                    <div>
                     <p className="product-price">
                       {dongFormatter(userProducts.product_des[index].price * 1000)}
                     </p>
+                    </div>
+                    <div>
+                    <p>x{product.quantity}</p>
+                    </div>
+                    </div>
                   </div>
                 );
               })}
