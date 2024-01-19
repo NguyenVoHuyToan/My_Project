@@ -145,7 +145,7 @@ const ProductPage = () => {
   return (
     <div className="product-page">
       <div className="main-container flex-col">
-        <div className="section-container flex-col">
+        <div className="section-container1 flex-col">
           <div className="hero-sct section flex-col">
             <div className="img-slider">
               <img src={Heropic} alt="hero-img" />

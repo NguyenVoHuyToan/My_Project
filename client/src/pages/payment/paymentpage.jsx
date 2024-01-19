@@ -2,11 +2,30 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./payment-page.scss";
 import dongFormatter from "../../utils/dongFormatter/dongFormatter.js";
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const PaymentPage = () => {
+  const navigate = useNavigate();
   const [cartInfo, setCartInfo] = useState({});
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [paymentTotal, setPaymentTotal] = useState(0);
+  const [cardNumber,setCardNumber]=useState("");
+  const [cardName,setCardName]=useState("");
+  const [expDate,setExpDate]=useState("");
+  const [CVV,setCVV]=useState("");
+  const onChangeCardNumber=(e)=>{
+    console.log(e);
+    setCardNumber(e.target.value);
+  }
+  const onChangeCardName=(e)=>{
+    setCardName(e.target.value);
+  }
+  const onChangeExpDate=(e)=>{
+    setExpDate(e.target.value);
+  }
+  const onChangeCVV=(e)=>{
+    setCVV(e.target.value);
+  }
   const location = useLocation();
   const decode = decodeURIComponent(location.search.split("?")[1]);
   useEffect(() => {
@@ -69,13 +88,43 @@ const PaymentPage = () => {
 
   const formatCurrency = (amount) => `$${amount.toFixed(2)}`;
 
-  const handleConfirmOrder = () => {
-    if (window.confirm("Bạn có chắc chắn muốn đặt hàng không?")) {
-      // Gọi API hoặc xử lý đặt hàng ở đây
-      setShowSuccessMessage(true);
+  const handleDeleteAllCart = async () => {
+    const authToken = localStorage.getItem("token");
+
+    try {
+      const response = await axios.post(
+        `http://localhost:3000/product/cart/deleteAll`,
+        {
+          accessToken:authToken
+        }
+      );
+
+      if (response.data == "complete") {
+        console.log("Product deleted from cart successfully");
+        
+      } else {
+        console.error(response.data.message);
+      }
+    } catch (error) {
+      console.error("Error:", error);
     }
   };
-
+  const handleConfirmOrder = () => {
+    if(cardNumber && cardName && expDate && CVV)
+    {
+      if (window.confirm("Bạn có chắc chắn muốn đặt hàng không?")) {
+        // Gọi API hoặc xử lý đặt hàng ở đây
+        setShowSuccessMessage(true);
+        handleDeleteAllCart();
+        navigate("/")
+      }
+    }
+    else{
+      alert("Nhập chưa đủ thông tin")
+    }
+    
+  };
+  console.log(cartInfo);
   const renderSelectedProducts = () => {
     if (Object.keys(cartInfo).length > 0) {
       return cartInfo.cart.map((product, index) => {
@@ -85,10 +134,12 @@ const PaymentPage = () => {
               {`${cartInfo.product_des[index].product_name}`}
             </div>
             <div className="body-sml">
+              {dongFormatter(cartInfo.product_des[index].price*1000)}*{ product.quantity}=
               {dongFormatter(
                 cartInfo.product_des[index].price * product.quantity * 1000
               )}
             </div>
+           
           </div>
         );
       });
@@ -146,6 +197,7 @@ const PaymentPage = () => {
                       type="text"
                       inputMode="numeric"
                       className="fill-num"
+                      onChange={(e)=>onChangeCardNumber(e)}
                     />
                     <select
                       className="card-type-list body"
@@ -161,25 +213,25 @@ const PaymentPage = () => {
                   <label htmlFor="" className="body">
                     Name
                   </label>
-                  <input type="text" className="form-name-fill" />
+                  <input type="text" className="form-name-fill" onChange={(e)=>onChangeCardName(e)}  />
                 </div>
                 <div className="expi-cvv">
                   <div className="expi-date">
                     <label htmlFor="" className="body">
                       Expiration Date
                     </label>
-                    <input type="text" className="expi-fill" />
+                    <input type="text" className="expi-fill" onChange={(e)=>onChangeExpDate(e)}/>
                   </div>
                   <div className="cvv">
                     <label htmlFor="" className="body">
                       CVV
                     </label>
-                    <input type="text" className="cvv-fill" />
+                    <input type="text" className="cvv-fill" onChange={(e)=>onChangeCVV(e)} />
                   </div>
                 </div>
                 <div className="btn">
                   <div className="action-btn button_2">
-                    <Link to="/cart" className="LinkBut">
+                    
                       <button
                         className="ButtonConfirm"
                         onClick={handleConfirmOrder}
@@ -187,7 +239,7 @@ const PaymentPage = () => {
                         <i className="bi bi-check-circle"></i>
                         <span>CONFIRM</span>
                       </button>
-                    </Link>
+                    
                   </div>
                   <div className="action-btn button_2">
                     <Link to="/cart" className="LinkBut">
@@ -217,7 +269,8 @@ const PaymentPage = () => {
           <div className="order-sum">
             <div className="order-sum-title">
               <div className="body-bld OST">Order Summary</div>
-              <div className="body-bld">Price</div>
+              <div className="body-bld">(Quantity x Price)=Price</div>
+             
             </div>
 
             {renderSelectedProducts()}

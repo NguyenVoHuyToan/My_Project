@@ -28,7 +28,7 @@ const Container = styled.div`
   justify-content: center;
   border: 3px solid black;
   flex-direction: row;
-  height: 1000px;
+  height: 100%;
   margin-top: 60px;
 `;
 const DetailContainer = styled.div`

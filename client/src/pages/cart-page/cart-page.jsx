@@ -8,15 +8,16 @@ import axios from "axios";
 
 const Cartpage = () => {
   const navigate = useNavigate();
+  const [changeQuantity,setChangeQuantity]=useState(false);
   const [userProducts, setUserProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [calculateTotal,setCalcualteTotal]=useState(false);
-  const getTotal=()=>{
+  const [calculateTotal, setCalcualteTotal] = useState(false);
+  const getTotal = () => {
     let total = 0;
-  
+
     // for (let index = 0; index < aList; index++) {
     //   const element = userProducts;
     //   console.log(element);
@@ -26,37 +27,35 @@ const Cartpage = () => {
     //   });
     // }
     console.log(userProducts);
-    userProducts.cart.map((item,index)=>{
-      total+=item.quantity* userProducts.product_des[index].price;
-    })
+    userProducts.cart.map((item, index) => {
+      total += item.quantity * userProducts.product_des[index].price;
+    });
 
-    total = total*0.8+total*0.1+ 5;
+    total = total * 0.8 + total * 0.1 + 5;
     console.log(total);
+    if(total-5 <=0 ){
+      total=0;
+    }
     setTotalPrice(total);
-  }
+  };
   const fetchData = async () => {
     try {
       const authToken = localStorage.getItem("token");
 
-        console.log(authToken == "null");
-        if (authToken == "null" || authToken == "undefined" || !authToken) {
-          // throw new  Error(
-          //   "User not logged in. Please log in to view cart items."
-          // );
-          alert("User not logged in. Please log in to view cart items.");
-          navigate("/");
-        } else {
-          const response = await axios.post(
-            "http://localhost:3000/product/cartOne",
-            {
-              accessToken: authToken,
-            }
-          );
-            console.log("response",response);
-          if (!response) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+      console.log(authToken == "null");
+      if (authToken == "null" || authToken == "undefined" || !authToken) {
+        // throw new  Error(
+        //   "User not logged in. Please log in to view cart items."
+        // );
+        alert("User not logged in. Please log in to view cart items.");
+        navigate("/");
+      } else {
+        const response = await axios.post(
+          "http://localhost:3000/product/cartOne",
+          {
+            accessToken: authToken,
           }
-        ;
+        );
           console.log("response",response);
         if (!response) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -64,29 +63,26 @@ const Cartpage = () => {
 
         const data = response;
 
-        const cartItems = data.data.map((item,index)=>{
-          return item
-        })||[];
+        const cartItems =
+          data.data.map((item, index) => {
+            return item;
+          }) || [];
         console.log(cartItems[0]);
         setUserProducts(cartItems[0]);
         setLoading(false);
       }
     } catch (error) {
-      setError(
-        error.message || "An error occurred while fetching cart items."
-      );
+      setError(error.message || "An error occurred while fetching cart items.");
       setLoading(false);
     }
   };
   useEffect(() => {
-    
-    
     fetchData();
-   
+
     // if(userProducts.length>0){
     //   getTotal()
     // }
-  }, []);
+  }, [changeQuantity]);
 
   // useEffect(() => {
   //   const fetchAllProducts = async () => {
@@ -99,7 +95,7 @@ const Cartpage = () => {
 
   //       console.log(data.data[0]);
   //       setAllProducts(data.data[0]);
-        
+
   //     } catch (error) {
   //       setError("An error occurred while fetching product details.");
   //     }
@@ -109,9 +105,12 @@ const Cartpage = () => {
   // }, []);
 
   useEffect(()=>{
-    if(Object.keys(userProducts).length>0){
-      getTotal();
+    if(userProducts){
+      if(Object.keys(userProducts).length>0){
+        getTotal();
+      }
     }
+<<<<<<< HEAD
   },[userProducts])
 useEffect(()=>{
 
@@ -127,6 +126,19 @@ useEffect(()=>{
     fetchData();
   };
 
+=======
+  }, [userProducts]);
+
+  const deleteProduct = () => {
+    console.log("vao delete");
+    // setUserProducts(
+    //   userProducts
+    // );
+    fetchData()
+  };
+
+  
+>>>>>>> af5f6ad4d49de715cf29939a54af65b8c04fd565
   const handleBuyNow = () => {
     const paymentInfo = {
       products: userProducts.cart,
@@ -143,20 +155,28 @@ useEffect(()=>{
   if (error) {
     return <p>{error}</p>;
   }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> af5f6ad4d49de715cf29939a54af65b8c04fd565
   return (
     <div className="cart-page flex-row gap-sm align-left">
       <div className="order-detail flex-col gap-xs">
-        
-      {userProducts.cart.map((product) => (
-  <ProductTag
-    key={product.product_id}
-    onDelete={() => deleteProduct(product.product_id)}
-    product_id={product.product_id}
-    selectedQuantity={product.quantity}
-    selectedVariant="#02"
-  />
-))}
+        {userProducts?userProducts.cart.map((product,index) => {
+          console.log(changeQuantity);
+          return <ProductTag
+          key={product.product_id}
+          onDelete={deleteProduct}
+          product_id={product.product_id}
+          selectedQuantity={product.quantity}
+          selectedVariant="#02"
+          value={changeQuantity}
+          method={setChangeQuantity}
+        />
+        }
+          
+        ):<></>}
       </div>
       <div className="billing-detail flex-col gap-xs">
         <div className="billing-container flex-col gap-sm align-left">
@@ -170,10 +190,15 @@ useEffect(()=>{
               <p className="body-bld capitalize">price</p>
             </div>
             <div className="order-items flex-col max-wdth gap-xs">
+<<<<<<< HEAD
               {userProducts.cart.map((product, index) => {
                
+=======
+              {userProducts?userProducts.cart.map((product, index) => {
+                console.log(product);
+>>>>>>> af5f6ad4d49de715cf29939a54af65b8c04fd565
                 return (
-                  <div 
+                  <div
                     key={product.product_id}
                     className="item flex-row body-sml align-left max-wdth"
                   >
@@ -183,7 +208,9 @@ useEffect(()=>{
                     <div style={{display:'flex',flexDirection:'column', justifyContent:'space-between', height:'42px'}}>
                     <div>
                     <p className="product-price">
-                      {dongFormatter(userProducts.product_des[index].price * 1000)}
+                      {dongFormatter(
+                        userProducts.product_des[index].price * 1000
+                      )}
                     </p>
                     </div>
                     <div>
@@ -192,7 +219,7 @@ useEffect(()=>{
                     </div>
                   </div>
                 );
-              })}
+              }):<></>}
             </div>
           </div>
           <div className="hr-divider"></div>
@@ -219,11 +246,15 @@ useEffect(()=>{
                 <p className="tag capitalize">discount</p>
                 <p className="tag capitalize">tax</p>
               </div>
-              <div className="item-price flex-col gap-xs body-sml align-right">
+              {totalPrice !=0 ? <div className="item-price flex-col gap-xs body-sml align-right">
                 <p className="product-price">{dongFormatter(5000)}</p>
                 <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.2*1000)}(20%)</p>
                 <p className="product-price">{dongFormatter(((totalPrice-5)/0.9)*0.1*1000)}(10%)</p>
-              </div>
+              </div>: <div className="item-price flex-col gap-xs body-sml align-right">
+                <p className="product-price">{dongFormatter(0)}</p>
+                <p className="product-price">{dongFormatter(0)}(20%)</p>
+                <p className="product-price">{dongFormatter(0)}(10%)</p>
+              </div>}
             </div>
           </div>
           <div className="hr-divider"></div>
@@ -279,7 +310,5 @@ useEffect(()=>{
       </div>
     </div>
   );
-            }
-;
-
+};
 export default Cartpage;
