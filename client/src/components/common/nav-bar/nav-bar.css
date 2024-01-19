@@ -70,11 +70,12 @@
 
 .search-box input {
   height: 30px;
+  width: 250px;
   border: none;
   outline: none;
   border-radius: 6px;
   background-color: #fff;
-  padding: 0 15px 0 45px;
+  padding: 10px;
 }
 .cart-item-count {
   position: absolute;

@@ -14,6 +14,8 @@ const ProductPage = () => {
   const [types, setTypes] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [filterPrice,setFilterPrice] = useState([])
+  const [sortOption,setSortOption] = useState('')
 
   useEffect(() => {
     fetch("http://localhost:3000/product/products")
@@ -21,10 +23,11 @@ const ProductPage = () => {
       .then((data) => {
         setProducts(data);
         setFilteredProducts(data);
+        setFilterPrice(data)
+        // console.log('data',data)
       })
       .catch((error) => console.error("Error:", error));
   }, []);
-
   useEffect(() => {
     fetch("http://localhost:3000/product/brands")
       .then((response) => response.json())
@@ -57,7 +60,17 @@ const ProductPage = () => {
       setFilteredProducts(tempFilteredProducts);
     }
   }, [searchTerm, products]);
-
+  useEffect(() => {
+    if (sortOption === "p:low-high") {
+      // Sort products by price in ascending order
+      const sortedProducts = filterPrice.sort(() => a.price - b.price);
+      setFilterPrice(sortedProducts);
+    } else if (sortOption === "p:high-low") {
+      // Sort products by price in descending order
+      const sortedProducts = filterPrice.sort((a, b) => b.price - a.price);
+      setFilterPrice(sortedProducts);
+    }
+  }, [searchTerm, products, sortOption]);
   const [inputValue, setInputValue] = useState("");
 
   const [page, setPage] = useState(1);
@@ -93,6 +106,9 @@ const ProductPage = () => {
     setIsExpanded2(!isExpanded2);
     setIconState2(!iconState2);
   };
+  const arrangeUp = () => {
+    filterPrice.sort((a,b) => a-b);
+  }
 
   const handleBrandClick = (brand) => {
     const newBrands = encodeURIComponent(brand);
@@ -141,11 +157,14 @@ const ProductPage = () => {
       items: 1,
     },
   };
-
+ const handleSortChange = (event) => {
+    const selectedOption = event.target.value;
+    setSortOption(selectedOption);
+  };
   return (
     <div className="product-page">
       <div className="main-container flex-col">
-        <div className="section-container1 flex-col">
+        <div className="section-container flex-col">
           <div className="hero-sct section flex-col">
             <div className="img-slider">
               <img src={Heropic} alt="hero-img" />
@@ -321,12 +340,13 @@ const ProductPage = () => {
                       />
                     </div>
                     <div className="sort-filter-selected flex-row gap-2xs">
-                      <select name="sort" className="body">
+                      <select name="sort" className="body"value={sortOption}
+                onChange={handleSortChange}>
                         <option value="Sort">Sort by</option>
                         <option value="p:low-high">Price: Low to High</option>
                         <option value="p:high-low">Price: High to Low</option>
-                        <option value="n:a-z">Name: A to Z</option>
-                        <option value="n:z-a">Name: Z to A</option>
+                        {/* <option value="n:a-z">Name: A to Z</option>
+                        <option value="n:z-a">Name: Z to A</option> */}
                       </select>
                     </div>
                   </div>

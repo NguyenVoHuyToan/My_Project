@@ -113,7 +113,7 @@ function Navbar({ onAddToCart }) {
         )}
       </div>
       <div className="nav-icon flex-row gap-xs">
-        <div className="icon-button">
+        {/* <div className="icon-button">
           <Button
             btnStyle="icon-nav-btn"
             iconL="bi bi-search"
@@ -124,7 +124,7 @@ function Navbar({ onAddToCart }) {
               <input type="text" placeholder="Search here..." />
             </div>
           )}
-        </div>
+        </div> */}
         <div className="icon-button">
           <Link to="/cart" className="nav-link">
             <Button btnStyle="icon-nav-btn" iconL="bi bi-cart" />
