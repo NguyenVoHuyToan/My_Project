@@ -129,15 +129,16 @@ const PaymentPage = () => {
     if (Object.keys(cartInfo).length > 0) {
       return cartInfo.cart.map((product, index) => {
         return (
-          <div key={product.product_id} className="order-detail">
+          <div key={product.product_id} >
             <div className="body-sml">
               {`${cartInfo.product_des[index].product_name}`}
             </div>
-            <div className="body-sml">
-              {dongFormatter(cartInfo.product_des[index].price*1000)}*{ product.quantity}=
-              {dongFormatter(
+            <div style={{display:'flex'}} className="body-sml ">
+              <div>{dongFormatter(cartInfo.product_des[index].price*1000)}</div>
+             <div style={{paddingLeft:'250px'}}>x{ product.quantity}</div> 
+              {/* {dongFormatter(
                 cartInfo.product_des[index].price * product.quantity * 1000
-              )}
+              )} */}
             </div>
            
           </div>
@@ -211,7 +212,7 @@ const PaymentPage = () => {
                 </div>
                 <div className="name-fill">
                   <label htmlFor="" className="body">
-                    Name
+                    Adress 
                   </label>
                   <input type="text" className="form-name-fill" onChange={(e)=>onChangeCardName(e)}  />
                 </div>
@@ -269,7 +270,7 @@ const PaymentPage = () => {
           <div className="order-sum">
             <div className="order-sum-title">
               <div className="body-bld OST">Order Summary</div>
-              <div className="body-bld">(Quantity x Price)=Price</div>
+              <div className="body-bld">Price</div>
              
             </div>
 
@@ -300,7 +301,7 @@ const PaymentPage = () => {
 
           <div className="total">
             <div className="total-title body-bld">Total</div>
-            <div className="total-cost body-bld">
+            <div style={{ width:'fit-content'}} className="total-cost body-bld">
               {dongFormatter(paymentTotal * 1000)}
             </div>
           </div>
